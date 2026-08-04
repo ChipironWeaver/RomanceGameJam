@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: Dialogue 1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Dia
+  dialogueText: 2
   dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
