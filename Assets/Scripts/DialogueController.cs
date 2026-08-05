@@ -60,6 +60,10 @@ public class DialogueController : MonoBehaviour
                 {
                     _textMeshProUGUI.maxVisibleCharacters = _typeWriterWaitTimes.Count;
                     _typeWriterState = 0;
+                    if (_dialogueSequenceIndex >= _currentDialogueSequence.dialogues.Count)
+                    {
+                        EndOfSequence();
+                    }
                 }
             }
         }
@@ -73,16 +77,24 @@ public class DialogueController : MonoBehaviour
             return;
         }
         
-        if (_dialogueSequenceIndex >= _currentDialogueSequence.dialogues.Count)
+        if(_typeWriterState == 0 || force)
         {
-            EndOfSequence();
-            return;
+            if (_dialogueSequenceIndex >= _currentDialogueSequence.dialogues.Count)
+            {
+                EndOfSequence();
+                return;
+            }
+            
+            print("Displaying Dialogue " + _dialogueSequenceIndex + " in " + _currentDialogueSequence.name);
+            DisplayDialogue(_currentDialogueSequence.dialogues[_dialogueSequenceIndex]);
+            _dialogueSequenceIndex++;
+            
         }
-        
-        print("Displaying Dialogue " + _dialogueSequenceIndex + " in " + _currentDialogueSequence.name);
-        DisplayDialogue(_currentDialogueSequence.dialogues[_dialogueSequenceIndex]);
-        
-        _dialogueSequenceIndex++;
+        else
+        {
+            _typeWriterState++;
+            _timeSinceLastDialogue = Time.time;
+        }
     }
     
     public void StartDialogue(DialogueSequence dialogueSequence)

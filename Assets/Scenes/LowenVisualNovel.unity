@@ -874,7 +874,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1596456154
 RectTransform:
   m_ObjectHideFlags: 0
@@ -907,7 +907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1183,10 +1183,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a45e074e2cdd164b9cbc700477b99c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueController
-  _dialogueSkipCooldown: 2
+  _dialogueSkipCooldown: 0.5
   _choiceButtonPrefab: {fileID: 1437269672531194878, guid: 464528c233ef6a44590b8666b22097e5, type: 3}
   _speedMultiplier: 1
-  _skippingSpeedMultiplier: 3
+  _skippingSpeedMultiplier: 10
   _timeToWaitPerCharacter: 0.025
   _timeToWaitForSpaces: 0.05
   _hiddenCharacters:
