@@ -11,6 +11,9 @@ public class DialogueController : MonoBehaviour
 {
     [SerializeField] private float _dialogueSkipCooldown;
     [SerializeField] private GameObject _choiceButtonPrefab;
+    [Header("AutoWaitTimer")]
+    [SerializeField] private bool _isOnAuto;
+    [SerializeField] private float _autoWaitTime = 0.5f;
     [Header("TypeWriterSettings")]
     [SerializeField] private float _speedMultiplier;
     [SerializeField] private float _skippingSpeedMultiplier;
@@ -29,12 +32,14 @@ public class DialogueController : MonoBehaviour
     private DialogueSequence _currentDialogueSequence;
     private int _dialogueSequenceIndex;
     private Sequence _sequence;
+
+    private float _autoTimer = -1;
     
+    private float _typeWriterTimer;
     private int _typeWriterState; //0 = not writing 1 = writing 2 = writing fast 3 = Force End It
     private int _typeWriterIndex;
-    private float _typeWriterTimer;
-    List<float> _typeWriterWaitTimes = new List<float>();
     
+    List<float> _typeWriterWaitTimes = new List<float>();
     
     private List<ChoiceButton> _choicesButtons = new List<ChoiceButton>();
     private Dictionary<char, float> _specialCharacterWaitsDictionary;
@@ -64,7 +69,17 @@ public class DialogueController : MonoBehaviour
                     {
                         EndOfSequence();
                     }
+                    else if (_isOnAuto) _autoTimer = 0f;
                 }
+            }
+        }
+        else if (_autoTimer >= 0f && _isOnAuto)
+        {
+            _autoTimer += Time.deltaTime;
+            if (_autoTimer >= _autoWaitTime)
+            {
+                _autoTimer = -1f;
+                TryDialogue();
             }
         }
     }
@@ -93,6 +108,7 @@ public class DialogueController : MonoBehaviour
         else
         {
             _typeWriterState++;
+            print("Type Writer Start: " + _typeWriterState);
             _timeSinceLastDialogue = Time.time;
         }
     }
@@ -198,7 +214,6 @@ public class DialogueController : MonoBehaviour
         print("End of Sequence");
         for (int i = 0; i < _currentDialogueSequence.choices.Count; i++)
         {
-            print( "Displaying Button : " + _currentDialogueSequence.choices[i].choiceString + " n°" +  i);
             DisplayChoice(_currentDialogueSequence.choices[i],i);
         }
     }
@@ -207,7 +222,6 @@ public class DialogueController : MonoBehaviour
     {
         if (index >= _choicesButtons.Count)
         {
-            print("New button");
             GameObject newButton = Instantiate(_choiceButtonPrefab, _choicePanel.transform);
             newButton.name = "ChoiceButton " + (index + 1);
             _choicesButtons.Add(newButton.GetComponent<ChoiceButton>());
