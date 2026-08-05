@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: Dialogue
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: 1
+  dialogueText: "This a good and long test, that changes color <color=#005500>WooWoWo</color>...
+    \nyou are really <color=#FEC7FF>p#r#e#t#t#y</color>! $#Love $<3"
+  triggerAnimation: 0
+  animatorCallback: {fileID: 0}
+  triggerName: 
+  invokeEvents: 0
   dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
   dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
+  changeReputation: 0
+  thisIsWIP: 0

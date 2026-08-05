@@ -176,10 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP
-    YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP
-    YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP
-    YAP YAP  '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -206,8 +203,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1188,6 +1185,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueController
   _dialogueSkipCooldown: 2
   _choiceButtonPrefab: {fileID: 1437269672531194878, guid: 464528c233ef6a44590b8666b22097e5, type: 3}
+  _speedMultiplier: 1
+  _skippingSpeedMultiplier: 3
+  _timeToWaitPerCharacter: 0.025
+  _timeToWaitForSpaces: 0.05
+  _hiddenCharacters:
+  - '#'
+  _specialCharacterWaits:
+  - character: ','
+    waitTime: 0.15
+  - character: .
+    waitTime: 0.3
+  - character: '#'
+    waitTime: 0.2
   _dialoguePanel: {fileID: 1834389765}
   _choicePanel: {fileID: 1596456153}
   _textMeshProUGUI: {fileID: 254481780}
