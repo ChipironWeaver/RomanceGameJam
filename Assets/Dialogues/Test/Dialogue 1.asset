@@ -10,12 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
-  m_Name: Dialogue 2
+  m_Name: Dialogue 1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: 3
+  dialogueText: 2
+  triggerAnimation: 0
+  animatorCallback: {fileID: 0}
+  triggerName: 
+  invokeEvents: 0
   dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
   dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
+  changeReputation: 0
+  thisIsWIP: 0

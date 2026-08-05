@@ -5,5 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Create Dialogue Sequence", fileName = "new DialogueSequence", order = 0)]
 public class DialogueSequence : ScriptableObject
 {
-    [Expandable]public List<Dialogue> dialogues;
+    [Expandable] public List<Dialogue> dialogues;
+    public List<DialogueChoice> choices;
 }

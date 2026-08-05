@@ -15,4 +15,20 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: 340d4ad356d81f54097c19ee64d1728d, type: 2}
   - {fileID: 11400000, guid: 8af6b9f0e2056e64aa217962443df4fb, type: 2}
-  - {fileID: 11400000, guid: bbd3c1bdc67d0754b8faeb585306d259, type: 2}
+  choices:
+  - choiceString: Go to an other Sequence
+    linkedDialogueSequence: {fileID: 11400000, guid: 7be9c7dcd0ae2104791b0d74d3ef77e7, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceConditions: 0
+    charactersReputation: 0
+    reputationAmount: 0
+  - choiceString: Don't Go
+    linkedDialogueSequence: {fileID: 0}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    choiceConditions: 0
+    charactersReputation: 0
+    reputationAmount: 0
