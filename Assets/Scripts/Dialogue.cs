@@ -12,11 +12,8 @@ public class Dialogue : ScriptableObject
     
     [ShowIf("triggerAnimation")] public DatableCharacters characters;
     [ShowIf("triggerAnimation")] public string triggerName;
-
-    public bool invokeEvents;
-
-    [ShowIf("invokeEvents")] public UnityEvent dialogueStartEvent;
-    [ShowIf("invokeEvents")] public UnityEvent dialogueEndEvent;
+    
+    [ShowIf("invokeEvents")] public UnityEvent dialogueEvent;
 
     public bool changeReputation;
     [ShowIf("changeReputation")] public bool isSet;

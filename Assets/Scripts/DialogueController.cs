@@ -127,6 +127,11 @@ public class DialogueController : MonoBehaviour
     
     public void StartDialogue(DialogueSequence dialogueSequence)
     {
+        if(!dialogueSequence)
+        {
+            SetActivation(false);
+            return;
+        }
         SetActivation(true);
         _currentDialogueSequence = dialogueSequence;
         _dialogueSequenceIndex = 0;
@@ -154,6 +159,8 @@ public class DialogueController : MonoBehaviour
                     break;
             }
         }
+        
+        dialogue.dialogueEvent?.Invoke();
         
         if (_specialCharacterWaitsDictionary == null)
         {
@@ -244,10 +251,23 @@ public class DialogueController : MonoBehaviour
     public void EndOfSequence()
     {
         print("End of Sequence");
-        for (int i = 0; i < _currentDialogueSequence.choices.Count; i++)
+        if(_currentDialogueSequence.hasEndChoices)
         {
-            DisplayChoice(_currentDialogueSequence.choices[i],i);
+            int removedChoices = 0;
+            for (int i = 0; i < _currentDialogueSequence.choices.Count; i++)
+            {
+                if (_currentDialogueSequence.choices[i].branching.GetBool())
+                    DisplayChoice(_currentDialogueSequence.choices[i], i - removedChoices);
+                else removedChoices++;
+            }
+            return;
         }
+        if (_currentDialogueSequence.hasEndBranch)
+        {
+            StartDialogue(_currentDialogueSequence.GetEndDialogueSequence());
+            return;
+        }
+        SetActivation(false);
     }
 
     public void DisplayChoice(DialogueChoice choice, int index)

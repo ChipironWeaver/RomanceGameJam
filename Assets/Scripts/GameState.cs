@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameState : MonoBehaviour
@@ -6,6 +7,8 @@ public class GameState : MonoBehaviour
     public static float AngelinaReputation{ get; private set; }
     public static float KarinReputation{ get; private set; }
     public static float CubeChanReputation{ get; private set; }
+    
+    public static Dictionary<string, DatableCharacters> CharacterEvent;
 
     public static void SetCharacterReputation(float reputation,DatableCharacters character)
     {
@@ -45,10 +48,21 @@ public class GameState : MonoBehaviour
         }
     }
 
-
-
-
-
+    public static float GetCharacterReputation(DatableCharacters character)
+    {
+        switch (character)
+        {
+            case DatableCharacters.Daria:
+                return DariaReputation;
+            case DatableCharacters.Angelina:
+                return AngelinaReputation;
+            case DatableCharacters.Karin:
+                return KarinReputation;
+            case DatableCharacters.CubeChan:
+                return CubeChanReputation;
+        }
+        return 0;
+    }
 
     void OnEnable()
     {
@@ -70,6 +84,7 @@ public class GameState : MonoBehaviour
 
 public enum DatableCharacters
 {
+    None,
     Daria,
     Angelina,
     Karin,
