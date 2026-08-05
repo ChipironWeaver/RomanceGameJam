@@ -8,15 +8,17 @@ public class Dialogue : ScriptableObject
     [ResizableTextArea]
     public string dialogueText;
 
+    [Header("Animation")]
     public bool triggerAnimation;
     
-    [ShowIf("triggerAnimation")] public DatableCharacters characters;
+    [ShowIf("triggerAnimation")] public DatableCharacters animatedCharacters;
     [ShowIf("triggerAnimation")] public string triggerName;
     
-    [ShowIf("invokeEvents")] public UnityEvent dialogueEvent;
-
+    [Header("Reputation")]
     public bool changeReputation;
+    [ShowIf("changeReputation")] public DatableCharacters reputationCharacters;
     [ShowIf("changeReputation")] public bool isSet;
     [ShowIf("changeReputation")] public float reputationAmount;
-
+    
+    public UnityEvent dialogueEvent;
 }

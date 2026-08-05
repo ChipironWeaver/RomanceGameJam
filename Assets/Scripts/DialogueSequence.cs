@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Events;
@@ -24,7 +25,7 @@ public class DialogueSequence : ScriptableObject
         return null;
     }
 }
-
+[Serializable]
 public class DialogueChoice
 {
     public string choiceString;
@@ -38,6 +39,7 @@ public class DialogueChoice
     }
 }
 
+[Serializable]
 public class EndBranch
 {
     public DialogueBranching branching;

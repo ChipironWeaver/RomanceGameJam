@@ -140,10 +140,15 @@ public class DialogueController : MonoBehaviour
 
     public void DisplayDialogue(Dialogue dialogue, bool skipAnimation = false)
     {
-
+        if (dialogue.changeReputation)
+        {
+            if (dialogue.isSet) GameState.SetCharacterReputation(dialogue.reputationAmount,dialogue.reputationCharacters);
+            else GameState.AddCharacterReputation(dialogue.reputationAmount,dialogue.reputationCharacters);
+        }
+        
         if (dialogue.triggerAnimation)
         {
-            switch (dialogue.characters)
+            switch (dialogue.animatedCharacters)
             {
                 case DatableCharacters.Daria:
                     _dariaAnimator.SetTrigger(dialogue.triggerName);

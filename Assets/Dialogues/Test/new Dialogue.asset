@@ -10,18 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
-  m_Name: Dialogue 1
+  m_Name: new Dialogue
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Idle Yap yap yap yap ... yap
+  dialogueText: 
   triggerAnimation: 0
-  animatorCallback: {fileID: 0}
+  characters: 0
   triggerName: 
-  invokeEvents: 0
-  dialogueStartEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  dialogueEndEvent:
+  dialogueEvent:
     m_PersistentCalls:
       m_Calls: []
   changeReputation: 0
-  thisIsWIP: 0
+  isSet: 0
+  reputationAmount: 0
