@@ -5,6 +5,7 @@ public class GameState : MonoBehaviour
     public static float DariaReputation{ get; private set; }
     public static float AngelinaReputation{ get; private set; }
     public static float KarinReputation{ get; private set; }
+    public static float CubeChanReputation{ get; private set; }
 
     public static void SetCharacterReputation(float reputation,DatableCharacters character)
     {
@@ -18,6 +19,9 @@ public class GameState : MonoBehaviour
                 break;
             case DatableCharacters.Karin:
                 KarinReputation = reputation;
+                break;
+            case DatableCharacters.CubeChan:
+                CubeChanReputation = reputation;
                 break;
         }
     }
@@ -34,6 +38,9 @@ public class GameState : MonoBehaviour
                 break;
             case DatableCharacters.Karin:
                 KarinReputation += reputation;
+                break;
+            case DatableCharacters.CubeChan:
+                CubeChanReputation += reputation;
                 break;
         }
     }
@@ -65,5 +72,6 @@ public enum DatableCharacters
 {
     Daria,
     Angelina,
-    Karin
+    Karin,
+    CubeChan
 }

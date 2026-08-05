@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   dialogueText: "This a good and long test, that changes color <color=#005500>WooWoWo</color>...
     \nyou are really <color=#FEC7FF>p#r#e#t#t#y</color>! $#Love $<3"
-  triggerAnimation: 0
-  animatorCallback: {fileID: 0}
-  triggerName: 
+  triggerAnimation: 1
+  characters: 3
+  triggerName: Idle
   invokeEvents: 0
   dialogueStartEvent:
     m_PersistentCalls:

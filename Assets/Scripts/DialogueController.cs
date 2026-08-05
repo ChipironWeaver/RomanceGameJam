@@ -11,9 +11,13 @@ public class DialogueController : MonoBehaviour
 {
     [SerializeField] private float _dialogueSkipCooldown;
     [SerializeField] private GameObject _choiceButtonPrefab;
+    
+    
+    
     [Header("AutoWaitTimer")]
     [SerializeField] private bool _isOnAuto;
     [SerializeField] private float _autoWaitTime = 0.5f;
+    
     [Header("TypeWriterSettings")]
     [SerializeField] private float _speedMultiplier;
     [SerializeField] private float _skippingSpeedMultiplier;
@@ -21,10 +25,18 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private float _timeToWaitForSpaces;
     [SerializeField] private List<string> _hiddenCharacters;
     [SerializeField] private List<TypeWriterCharacterWait> _specialCharacterWaits = new List<TypeWriterCharacterWait>();
+    
     [Header("References")]
     [SerializeField] private GameObject _dialoguePanel;
     [SerializeField] private GameObject _choicePanel;
     [SerializeField] private TextMeshProUGUI _textMeshProUGUI;
+    
+    [Header("AutoWaitTimer")]
+    [SerializeField] private Animator _dariaAnimator;
+    [SerializeField] private Animator _angelinaAnimator;
+    [SerializeField] private Animator _karinAnimator;
+    [SerializeField] private Animator _cubeChanAnimator;
+    
     [Header("Tests")]
     [SerializeField,Expandable] private DialogueSequence _testDialogueSequence;
     
@@ -123,6 +135,26 @@ public class DialogueController : MonoBehaviour
 
     public void DisplayDialogue(Dialogue dialogue, bool skipAnimation = false)
     {
+
+        if (dialogue.triggerAnimation)
+        {
+            switch (dialogue.characters)
+            {
+                case DatableCharacters.Daria:
+                    _dariaAnimator.SetTrigger(dialogue.triggerName);
+                    break;
+                case DatableCharacters.Angelina:
+                    _angelinaAnimator.SetTrigger(dialogue.triggerName);
+                    break;
+                case DatableCharacters.Karin:
+                    _karinAnimator.SetTrigger(dialogue.triggerName);
+                    break;
+                case DatableCharacters.CubeChan:
+                    _cubeChanAnimator.SetTrigger(dialogue.triggerName);
+                    break;
+            }
+        }
+        
         if (_specialCharacterWaitsDictionary == null)
         {
             _specialCharacterWaitsDictionary = new Dictionary<char, float>();

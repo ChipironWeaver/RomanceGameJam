@@ -10,8 +10,8 @@ public class Dialogue : ScriptableObject
 
     public bool triggerAnimation;
     
-    [ShowIf("triggerAnimation")] public Animator animatorCallback;
-    [ShowIf("triggerAnimation"),AnimatorParam("animatorCallback")] public string triggerName;
+    [ShowIf("triggerAnimation")] public DatableCharacters characters;
+    [ShowIf("triggerAnimation")] public string triggerName;
 
     public bool invokeEvents;
 
@@ -19,6 +19,7 @@ public class Dialogue : ScriptableObject
     [ShowIf("invokeEvents")] public UnityEvent dialogueEndEvent;
 
     public bool changeReputation;
-    [ShowIf("changeReputation")] public float thisIsWIP;
+    [ShowIf("changeReputation")] public bool isSet;
+    [ShowIf("changeReputation")] public float reputationAmount;
 
 }

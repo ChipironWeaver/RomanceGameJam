@@ -15,6 +15,8 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: 340d4ad356d81f54097c19ee64d1728d, type: 2}
   - {fileID: 11400000, guid: 8af6b9f0e2056e64aa217962443df4fb, type: 2}
+  - {fileID: 11400000, guid: 51e0898298c2c9741874b3eac3ff7031, type: 2}
+  - {fileID: 11400000, guid: 4d885c4dde9dbab429cb5d69b988dfce, type: 2}
   choices:
   - choiceString: Go to an other Sequence
     linkedDialogueSequence: {fileID: 11400000, guid: 7be9c7dcd0ae2104791b0d74d3ef77e7, type: 2}
