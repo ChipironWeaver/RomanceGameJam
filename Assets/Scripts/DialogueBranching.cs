@@ -69,14 +69,14 @@ public class DialogueBranching
     private class DialogueEventCondition
     {
         public string eventName;
-        public DatableCharacters eventCharacter;
+        public MainCharacters eventCharacter;
         public bool invertCondition;
         
         public bool GetBool()
         {
             if (GameState.CharacterEvent.ContainsKey(eventName))
             {
-                GameState.CharacterEvent.TryGetValue(eventName, out DatableCharacters character);
+                GameState.CharacterEvent.TryGetValue(eventName, out MainCharacters character);
                 return character == eventCharacter ^ invertCondition;
             }
             return false ^ invertCondition;
@@ -87,7 +87,7 @@ public class DialogueBranching
     private class DialogueReputationCondition
     {
         public ReputationConditionType reputationType;
-        public DatableCharacters reputationCharacter;
+        public MainCharacters reputationCharacter;
         public float conditionNumber;
 
         public enum ReputationConditionType

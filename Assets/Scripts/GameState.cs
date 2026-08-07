@@ -3,62 +3,65 @@ using UnityEngine;
 
 public class GameState : MonoBehaviour
 {
+    public static string PlayerName;
+    public string testPlayerName;
+    
     public static float DariaReputation{ get; private set; }
     public static float AngelinaReputation{ get; private set; }
     public static float KarinReputation{ get; private set; }
     public static float CubeChanReputation{ get; private set; }
     
-    public static Dictionary<string, DatableCharacters> CharacterEvent = new Dictionary<string, DatableCharacters>();
+    public static Dictionary<string, MainCharacters> CharacterEvent = new Dictionary<string, MainCharacters>();
 
-    public static void SetCharacterReputation(float reputation,DatableCharacters character)
+    public static void SetCharacterReputation(float reputation,MainCharacters character)
     {
         switch (character)
         {
-            case DatableCharacters.Daria:
+            case MainCharacters.Daria:
                 DariaReputation = reputation;
                 break;
-            case DatableCharacters.Angelina:
+            case MainCharacters.Angelina:
                 AngelinaReputation = reputation;
                 break;
-            case DatableCharacters.Karin:
+            case MainCharacters.Karin:
                 KarinReputation = reputation;
                 break;
-            case DatableCharacters.CubeChan:
+            case MainCharacters.CubeChan:
                 CubeChanReputation = reputation;
                 break;
         }
     }
     
-    public static void AddCharacterReputation(float reputation,DatableCharacters character)
+    public static void AddCharacterReputation(float reputation,MainCharacters character)
     {
         switch (character)
         {
-            case DatableCharacters.Daria:
+            case MainCharacters.Daria:
                 DariaReputation += reputation;
                 break;
-            case DatableCharacters.Angelina:
+            case MainCharacters.Angelina:
                 AngelinaReputation += reputation;
                 break;
-            case DatableCharacters.Karin:
+            case MainCharacters.Karin:
                 KarinReputation += reputation;
                 break;
-            case DatableCharacters.CubeChan:
+            case MainCharacters.CubeChan:
                 CubeChanReputation += reputation;
                 break;
         }
     }
 
-    public static float GetCharacterReputation(DatableCharacters character)
+    public static float GetCharacterReputation(MainCharacters character)
     {
         switch (character)
         {
-            case DatableCharacters.Daria:
+            case MainCharacters.Daria:
                 return DariaReputation;
-            case DatableCharacters.Angelina:
+            case MainCharacters.Angelina:
                 return AngelinaReputation;
-            case DatableCharacters.Karin:
+            case MainCharacters.Karin:
                 return KarinReputation;
-            case DatableCharacters.CubeChan:
+            case MainCharacters.CubeChan:
                 return CubeChanReputation;
         }
         return 0;
@@ -67,6 +70,10 @@ public class GameState : MonoBehaviour
     void OnEnable()
     {
         Singleton();
+        if (PlayerName == null && testPlayerName != null)
+        {
+            PlayerName = testPlayerName;
+        }
     }
     public static GameState Instance{ get; private set; }
     void Singleton()
@@ -82,9 +89,10 @@ public class GameState : MonoBehaviour
     }
 }
 
-public enum DatableCharacters
+public enum MainCharacters
 {
     None,
+    Player,
     Daria,
     Angelina,
     Karin,

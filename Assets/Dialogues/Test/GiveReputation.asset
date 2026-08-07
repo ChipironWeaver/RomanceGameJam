@@ -13,13 +13,19 @@ MonoBehaviour:
   m_Name: GiveReputation
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   dialogueText: I am giving you reputation woohooo good job
+  speakingCharacter: 5
+  npcName: 
+  npcIcon: {fileID: 0}
   triggerAnimation: 1
-  animatedCharacters: 4
+  animatedCharacters: 5
   triggerName: Happy
   changeReputation: 1
   reputationCharacters: 4
   isSet: 0
   reputationAmount: 30
+  hasCharacterEvent: 0
+  charactersEvent: 0
+  eventName: 
   dialogueEvent:
     m_PersistentCalls:
       m_Calls: []

@@ -10,23 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
-  m_Name: EventTrigger
+  m_Name: PlayerTalkReputation
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: This is a very sad event we are going through, pls support me what
-    ever
-  speakingCharacter: 0
+  dialogueText: I love you cube chan pls marry me
+  speakingCharacter: 1
   npcName: 
   npcIcon: {fileID: 0}
-  triggerAnimation: 1
+  triggerAnimation: 0
   animatedCharacters: 5
-  triggerName: Sad
+  triggerName: Happy
   changeReputation: 0
-  reputationCharacters: 0
+  reputationCharacters: 4
   isSet: 0
-  reputationAmount: 0
-  hasCharacterEvent: 1
-  charactersEvent: 4
-  eventName: Bob
+  reputationAmount: 30
+  hasCharacterEvent: 0
+  charactersEvent: 0
+  eventName: 
   dialogueEvent:
     m_PersistentCalls:
       m_Calls: []

@@ -11,48 +11,60 @@ public class DialogueController : MonoBehaviour
 {
     [SerializeField] private float _dialogueSkipCooldown;
     [SerializeField] private GameObject _choiceButtonPrefab;
-    
-    
-    
-    [Header("AutoWaitTimer")]
-    [SerializeField] private bool _isOnAuto;
+
+    [Header("PlayerAndCharacterIcons")] 
+    [SerializeField] private Sprite _playerIcon;
+    [SerializeField] private Sprite _dariaIcon;
+    [SerializeField] private Sprite _angelinaIcon;
+    [SerializeField] private Sprite _karinIcon;
+    [SerializeField] private Sprite _cubeChanIcon;
+
+    [Header("AutoWaitTimer")] [SerializeField]
+    private bool _isOnAuto;
+
     [SerializeField] private float _autoWaitTime = 0.5f;
-    
-    [Header("TypeWriterSettings")]
-    [SerializeField] private float _speedMultiplier;
+
+    [Header("TypeWriterSettings")] [SerializeField]
+    private float _speedMultiplier;
+
     [SerializeField] private float _skippingSpeedMultiplier;
     [SerializeField] private float _timeToWaitPerCharacter;
     [SerializeField] private float _timeToWaitForSpaces;
     [SerializeField] private List<string> _hiddenCharacters;
     [SerializeField] private List<TypeWriterCharacterWait> _specialCharacterWaits = new List<TypeWriterCharacterWait>();
-    
-    [Header("References")]
-    [SerializeField] private GameObject _dialoguePanel;
+
+    [Header("References")] [SerializeField]
+    private GameObject _dialoguePanel;
+
     [SerializeField] private GameObject _choicePanel;
-    [SerializeField] private TextMeshProUGUI _textMeshProUGUI;
-    
-    [Header("AutoWaitTimer")]
-    [SerializeField] private Animator _dariaAnimator;
+    [SerializeField] private TextMeshProUGUI _dialogueText;
+    [SerializeField] private TextMeshProUGUI _characterNameText;
+    [SerializeField] private Image _characterIcon;
+
+    [Header("CharacterAnimation")] [SerializeField]
+    private Animator _dariaAnimator;
+
     [SerializeField] private Animator _angelinaAnimator;
     [SerializeField] private Animator _karinAnimator;
     [SerializeField] private Animator _cubeChanAnimator;
-    
-    [Header("Tests")]
-    [SerializeField,Expandable] private DialogueSequence _testDialogueSequence;
-    
+
+    [Header("Tests")] [SerializeField, Expandable]
+    private DialogueSequence _testDialogueSequence;
+
     private float _timeSinceLastDialogue;
     private DialogueSequence _currentDialogueSequence;
     private int _dialogueSequenceIndex;
     private Sequence _sequence;
 
     private float _autoTimer = -1;
-    
+
     private float _typeWriterTimer;
     private int _typeWriterState; //0 = not writing 1 = writing 2 = writing fast 3 = Force End It
     private int _typeWriterIndex;
-    
+    private bool _endBranchShown;
+
     List<float> _typeWriterWaitTimes = new List<float>();
-    
+
     private List<ChoiceButton> _choicesButtons = new List<ChoiceButton>();
     private Dictionary<char, float> _specialCharacterWaitsDictionary;
 
@@ -62,20 +74,21 @@ public class DialogueController : MonoBehaviour
         {
             if (_typeWriterState == 3)
             {
-                _textMeshProUGUI.maxVisibleCharacters = _typeWriterWaitTimes.Count;
+                _dialogueText.maxVisibleCharacters = _typeWriterWaitTimes.Count;
                 _typeWriterState = 0;
                 return;
             }
+
             _typeWriterTimer += Time.deltaTime;
             if (_typeWriterTimer >= _typeWriterWaitTimes[_typeWriterIndex] /
-                     (_speedMultiplier * (_typeWriterState > 1 ? _skippingSpeedMultiplier : 1)))
+                (_speedMultiplier * (_typeWriterState > 1 ? _skippingSpeedMultiplier : 1)))
             {
                 _typeWriterIndex++;
                 _typeWriterTimer = 0;
-                _textMeshProUGUI.maxVisibleCharacters++;
+                _dialogueText.maxVisibleCharacters++;
                 if (_typeWriterIndex >= _typeWriterWaitTimes.Count)
                 {
-                    _textMeshProUGUI.maxVisibleCharacters = _typeWriterWaitTimes.Count;
+                    _dialogueText.maxVisibleCharacters = _typeWriterWaitTimes.Count;
                     _typeWriterState = 0;
                     if (_dialogueSequenceIndex >= _currentDialogueSequence.dialogues.Count)
                     {
@@ -95,7 +108,7 @@ public class DialogueController : MonoBehaviour
             }
         }
     }
-    
+
     public void TryDialogue(bool force = false)
     {
         if (!(Time.time > _timeSinceLastDialogue + _dialogueSkipCooldown) && !force)
@@ -103,19 +116,18 @@ public class DialogueController : MonoBehaviour
             print("Can't");
             return;
         }
-        
-        if(_typeWriterState == 0 || force)
+
+        if (_typeWriterState == 0 || force)
         {
             if (_dialogueSequenceIndex >= _currentDialogueSequence.dialogues.Count)
             {
                 EndOfSequence();
                 return;
             }
-            
+
             print("Displaying Dialogue " + _dialogueSequenceIndex + " in " + _currentDialogueSequence.name);
             DisplayDialogue(_currentDialogueSequence.dialogues[_dialogueSequenceIndex]);
             _dialogueSequenceIndex++;
-            
         }
         else
         {
@@ -124,14 +136,15 @@ public class DialogueController : MonoBehaviour
             _timeSinceLastDialogue = Time.time;
         }
     }
-    
+
     public void StartDialogue(DialogueSequence dialogueSequence)
     {
-        if(!dialogueSequence)
+        if (!dialogueSequence)
         {
             SetActivation(false);
             return;
         }
+
         SetActivation(true);
         _currentDialogueSequence = dialogueSequence;
         _dialogueSequenceIndex = 0;
@@ -142,24 +155,25 @@ public class DialogueController : MonoBehaviour
     {
         if (dialogue.changeReputation)
         {
-            if (dialogue.isSet) GameState.SetCharacterReputation(dialogue.reputationAmount,dialogue.reputationCharacters);
-            else GameState.AddCharacterReputation(dialogue.reputationAmount,dialogue.reputationCharacters);
+            if (dialogue.isSet)
+                GameState.SetCharacterReputation(dialogue.reputationAmount, dialogue.reputationCharacters);
+            else GameState.AddCharacterReputation(dialogue.reputationAmount, dialogue.reputationCharacters);
         }
-        
+
         if (dialogue.triggerAnimation)
         {
             switch (dialogue.animatedCharacters)
             {
-                case DatableCharacters.Daria:
+                case MainCharacters.Daria:
                     _dariaAnimator.SetTrigger(dialogue.triggerName);
                     break;
-                case DatableCharacters.Angelina:
+                case MainCharacters.Angelina:
                     _angelinaAnimator.SetTrigger(dialogue.triggerName);
                     break;
-                case DatableCharacters.Karin:
+                case MainCharacters.Karin:
                     _karinAnimator.SetTrigger(dialogue.triggerName);
                     break;
-                case DatableCharacters.CubeChan:
+                case MainCharacters.CubeChan:
                     _cubeChanAnimator.SetTrigger(dialogue.triggerName);
                     break;
             }
@@ -167,11 +181,51 @@ public class DialogueController : MonoBehaviour
 
         if (dialogue.hasCharacterEvent)
         {
-            GameState.CharacterEvent.Add(dialogue.eventName,dialogue.charactersEvent);
+            GameState.CharacterEvent.Add(dialogue.eventName, dialogue.charactersEvent);
+        }
+
+        Sprite icon = null;
+
+        switch (dialogue.speakingCharacter)
+        {
+            case MainCharacters.None:
+                icon = dialogue.npcIcon;
+                _characterNameText.text = dialogue.npcName;
+                break;
+            case MainCharacters.Player:
+                icon = _playerIcon;
+                _characterNameText.text = GameState.PlayerName;
+                break;
+            case MainCharacters.Karin:
+                icon = _karinIcon;
+                _characterNameText.text = "Karin";
+                break;
+            case MainCharacters.Daria:
+                icon = _dariaIcon;
+                _characterNameText.text = "Daria";
+                break;
+            case MainCharacters.Angelina:
+                icon = _angelinaIcon;
+                _characterNameText.text = "Angelina";
+                break;
+            case MainCharacters.CubeChan:
+                icon = _cubeChanIcon;
+                _characterNameText.text = "Cube Chan";
+                break;
+        }
+        
+        if (icon)
+        {
+            _characterIcon.sprite = icon;
+            _characterIcon.color = Color.white;
+        }
+        else
+        {
+            _characterIcon.color = Color.clear;
         }
         
         dialogue.dialogueEvent?.Invoke();
-        
+
         if (_specialCharacterWaitsDictionary == null)
         {
             _specialCharacterWaitsDictionary = new Dictionary<char, float>();
@@ -180,14 +234,14 @@ public class DialogueController : MonoBehaviour
                 _specialCharacterWaitsDictionary.Add(wait.character.ToCharArray()[0], wait.waitTime);
             }
         }
-        
+
         string textFinalString = "";
         _typeWriterWaitTimes = new List<float>();
         bool isInMarkdown = false;
         bool previousCharacterHiddenSpecialTime = false;
         bool ignoreSpecialBehavior = false;
-        
-        foreach(char character in dialogue.dialogueText)
+
+        foreach (char character in dialogue.dialogueText)
         {
             if (ignoreSpecialBehavior)
             {
@@ -232,7 +286,7 @@ public class DialogueController : MonoBehaviour
             else
             {
                 textFinalString += character;
-                if(!previousCharacterHiddenSpecialTime)
+                if (!previousCharacterHiddenSpecialTime)
                 {
                     _typeWriterWaitTimes.Add(_timeToWaitPerCharacter);
                 }
@@ -242,26 +296,26 @@ public class DialogueController : MonoBehaviour
                 }
             }
         }
-        
-        _textMeshProUGUI.text = textFinalString;
-        if(skipAnimation)
+
+        _dialogueText.text = textFinalString;
+        if (skipAnimation)
         {
-            _textMeshProUGUI.maxVisibleCharacters = _typeWriterWaitTimes.Count;
+            _dialogueText.maxVisibleCharacters = _typeWriterWaitTimes.Count;
         }
         else
         {
             print("time slot :" + _typeWriterWaitTimes.Count);
-            _textMeshProUGUI.maxVisibleCharacters = 0;
+            _dialogueText.maxVisibleCharacters = 0;
             _typeWriterState = 1;
             _typeWriterIndex = 0;
             _typeWriterTimer = 0f;
         }
     }
-    
+
     public void EndOfSequence()
     {
         print("End of Sequence");
-        if(_currentDialogueSequence.hasEndChoices)
+        if (_currentDialogueSequence.hasEndChoices)
         {
             int removedChoices = 0;
             for (int i = 0; i < _currentDialogueSequence.choices.Count; i++)
@@ -270,13 +324,21 @@ public class DialogueController : MonoBehaviour
                     DisplayChoice(_currentDialogueSequence.choices[i], i - removedChoices);
                 else removedChoices++;
             }
+
             return;
         }
+
         if (_currentDialogueSequence.hasEndBranch)
         {
-            StartDialogue(_currentDialogueSequence.GetEndDialogueSequence());
+            if(_endBranchShown)
+            {
+                _endBranchShown = false;
+                StartDialogue(_currentDialogueSequence.GetEndDialogueSequence());
+            }
+            else _endBranchShown = true;
             return;
         }
+
         SetActivation(false);
     }
 
@@ -288,8 +350,9 @@ public class DialogueController : MonoBehaviour
             newButton.name = "ChoiceButton " + (index + 1);
             _choicesButtons.Add(newButton.GetComponent<ChoiceButton>());
         }
+
         _choicesButtons[index].gameObject.SetActive(true);
-        _choicesButtons[index].Initialize(choice,this);
+        _choicesButtons[index].Initialize(choice, this);
     }
 
     public void HideChoices()
@@ -302,12 +365,13 @@ public class DialogueController : MonoBehaviour
             }
         }
     }
-    
+
     [Button]
     public void TestDialogueSequence()
     {
         StartDialogue(_testDialogueSequence);
     }
+
     public void SetActivation(bool active)
     {
         _dialoguePanel.SetActive(active);

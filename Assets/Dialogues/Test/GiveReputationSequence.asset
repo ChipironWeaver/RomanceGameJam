@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GiveReputationSequence
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogues:
+  - {fileID: 11400000, guid: 2c2025f2c65d1b748a0962f9107f9edb, type: 2}
   - {fileID: 11400000, guid: fb801192fc6ef78449beb72d600f6cfb, type: 2}
   hasEndChoices: 0
   choices: []
