@@ -93,6 +93,7 @@ public class DialogueController : MonoBehaviour
                     if (_dialogueSequenceIndex >= _currentDialogueSequence.dialogues.Count)
                     {
                         EndOfSequence();
+                        if(_endBranchShown && _isOnAuto) _autoTimer = 0f;
                     }
                     else if (_isOnAuto) _autoTimer = 0f;
                 }
