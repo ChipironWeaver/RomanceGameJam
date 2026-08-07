@@ -164,6 +164,11 @@ public class DialogueController : MonoBehaviour
                     break;
             }
         }
+
+        if (dialogue.hasCharacterEvent)
+        {
+            GameState.CharacterEvent.Add(dialogue.eventName,dialogue.charactersEvent);
+        }
         
         dialogue.dialogueEvent?.Invoke();
         

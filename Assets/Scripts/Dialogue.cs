@@ -19,6 +19,10 @@ public class Dialogue : ScriptableObject
     [ShowIf("changeReputation")] public DatableCharacters reputationCharacters;
     [ShowIf("changeReputation")] public bool isSet;
     [ShowIf("changeReputation")] public float reputationAmount;
+
+    public bool hasCharacterEvent;
+    [ShowIf("hasCharacterEvent")] public DatableCharacters charactersEvent;
+    [ShowIf("hasCharacterEvent")] public string eventName;
     
     public UnityEvent dialogueEvent;
 }

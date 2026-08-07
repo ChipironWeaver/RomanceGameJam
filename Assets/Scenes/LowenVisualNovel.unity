@@ -1218,7 +1218,7 @@ MonoBehaviour:
   _angelinaAnimator: {fileID: 0}
   _karinAnimator: {fileID: 0}
   _cubeChanAnimator: {fileID: 1719847729}
-  _testDialogueSequence: {fileID: 0}
+  _testDialogueSequence: {fileID: 11400000, guid: eb76cfb6e45ecc748a2faa28f96a5154, type: 2}
 --- !u!1001 &3003109473022744651
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class DialogueBranching
     
     [SerializeField] private DialogueConditionType _conditionType;
     [SerializeField] private float _conditionNumber;
-    [SerializeField,MinMaxRangeSlider(0,100)] private float _conditionPercentage;
+    [SerializeField,Range(0,100)] private float _conditionPercentage;
 
     public bool GetBool()
     {
@@ -36,6 +36,8 @@ public class DialogueBranching
 
         switch (_conditionType)
         {
+            case DialogueConditionType.None:
+                return true;
             case DialogueConditionType.AtLeastOrEqualNumber:
                 return totalTrue >= _conditionNumber;
             case DialogueConditionType.AtMostOrEqualNumber:
@@ -54,6 +56,7 @@ public class DialogueBranching
     
     private enum DialogueConditionType
     {
+        None,
         AtLeastOrEqualNumber,
         AtMostOrEqualNumber,
         AtLeastOrEqualPercent,
@@ -71,8 +74,12 @@ public class DialogueBranching
         
         public bool GetBool()
         {
-            GameState.CharacterEvent.TryGetValue(eventName, out DatableCharacters character);
-            return character ==  eventCharacter ^ invertCondition;
+            if (GameState.CharacterEvent.ContainsKey(eventName))
+            {
+                GameState.CharacterEvent.TryGetValue(eventName, out DatableCharacters character);
+                return character == eventCharacter ^ invertCondition;
+            }
+            return false ^ invertCondition;
         }
     }
 

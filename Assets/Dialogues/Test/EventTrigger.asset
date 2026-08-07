@@ -10,15 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
-  m_Name: new Dialogue
+  m_Name: EventTrigger
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: 
-  triggerAnimation: 0
-  characters: 0
-  triggerName: 
+  dialogueText: This is a very sad event we are going through, pls support me what
+    ever
+  triggerAnimation: 1
+  animatedCharacters: 4
+  triggerName: Sad
+  changeReputation: 0
+  reputationCharacters: 0
+  isSet: 0
+  reputationAmount: 0
+  hasCharacterEvent: 1
+  charactersEvent: 4
+  eventName: Bob
   dialogueEvent:
     m_PersistentCalls:
       m_Calls: []
-  changeReputation: 0
-  isSet: 0
-  reputationAmount: 0

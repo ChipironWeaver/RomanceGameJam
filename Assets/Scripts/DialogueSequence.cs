@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using NaughtyAttributes;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -24,6 +25,7 @@ public class DialogueSequence : ScriptableObject
         }
         return null;
     }
+    
 }
 [Serializable]
 public class DialogueChoice

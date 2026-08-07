@@ -8,7 +8,7 @@ public class GameState : MonoBehaviour
     public static float KarinReputation{ get; private set; }
     public static float CubeChanReputation{ get; private set; }
     
-    public static Dictionary<string, DatableCharacters> CharacterEvent;
+    public static Dictionary<string, DatableCharacters> CharacterEvent = new Dictionary<string, DatableCharacters>();
 
     public static void SetCharacterReputation(float reputation,DatableCharacters character)
     {
