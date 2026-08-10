@@ -51,10 +51,9 @@ public class LiquidController : MonoBehaviour
         }
     }
 
-    public void AddLiquid(int liquidIndex)
+    public void AddLiquid(Liquid liquid)
     {
         if (_isInAnimation) return;
-        Liquid liquid = _liquids[liquidIndex];
         float liquidTime = 1 - _currentNumberOfLiquids / ((float)_currentNumberOfLiquids + 1);
         if (_currentNumberOfLiquids == 0)
         {
@@ -67,12 +66,15 @@ public class LiquidController : MonoBehaviour
             hueShift = ChipironUtility.EvaluateFloat(_currentLiquid.hueShift, liquid.hueShift, liquidTime),
             valueShift = ChipironUtility.EvaluateFloat(_currentLiquid.valueShift, liquid.valueShift, liquidTime),
             saturationShift = ChipironUtility.EvaluateFloat(_currentLiquid.saturationShift, liquid.saturationShift, liquidTime),
-            
         };
         _currentNumberOfLiquids++;
         _isInAnimation = true;
     }
 
+    public void AddLiquidFromIndex(int liquidIndex)
+    {
+        AddLiquid(_liquids[liquidIndex]);
+    }
     [Button]
     public void Empty()
     {
@@ -98,14 +100,15 @@ public class LiquidController : MonoBehaviour
         SetLiquids(_liquids[0], 1f);
     }
 
-    [Serializable]
-    private class Liquid
-    {
-        public string name;
-        public Color color;
-        public float alpha;
-        public float hueShift;
-        public float valueShift;
-        public float saturationShift;
-    }
+    
+}
+[Serializable]
+public class Liquid
+{
+    public string name;
+    public Color color;
+    public float alpha;
+    public float hueShift;
+    public float valueShift;
+    public float saturationShift;
 }
