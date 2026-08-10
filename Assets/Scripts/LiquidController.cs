@@ -9,6 +9,7 @@ public class LiquidController : MonoBehaviour
     [SerializeField] private List<Liquid> _liquids = new List<Liquid>();
     [Header("Animation Settings")]
     [SerializeField,MinMaxSlider(0,1)] private Vector2 _waveStrengthRange;
+    [SerializeField,MinMaxSlider(0,1)] private Vector2 _liquidMinMaxHeight;
     [SerializeField,CurveRange(0, 0, 1, 1,EColor.Violet)] private AnimationCurve _waveStrengthCurve;
     [SerializeField,CurveRange(0, 0, 1, 1)] private AnimationCurve _animationEase;
     [SerializeField] private float _animationDuration;
@@ -32,7 +33,7 @@ public class LiquidController : MonoBehaviour
                 _animationTimer = 0f;
                 _isInAnimation = false;
                 _currentLiquid = _endLiquid;
-                SetLiquids(_endLiquid, _currentNumberOfLiquids * _sizePerLiquid);
+                SetLiquids(_endLiquid,ChipironUtility.EvaluateVector2(_liquidMinMaxHeight, _currentNumberOfLiquids * _sizePerLiquid));
             }
             else
             {
@@ -46,7 +47,8 @@ public class LiquidController : MonoBehaviour
                     saturationShift = ChipironUtility.EvaluateFloat(_currentLiquid.saturationShift, _endLiquid.saturationShift, currentEasedTime),
                 };
                 _material.SetFloat("_WaveStrenght", ChipironUtility.EvaluateVector2(_waveStrengthRange,_waveStrengthCurve.Evaluate(_animationTimer / _animationDuration)));
-                SetLiquids(_timedLiquid, ChipironUtility.EvaluateFloat((_currentNumberOfLiquids-1) * _sizePerLiquid ,_currentNumberOfLiquids * _sizePerLiquid , currentEasedTime));
+                SetLiquids(_timedLiquid, ChipironUtility.EvaluateVector2(_liquidMinMaxHeight,
+                    ChipironUtility.EvaluateFloat((_currentNumberOfLiquids-1) * _sizePerLiquid ,_currentNumberOfLiquids * _sizePerLiquid , currentEasedTime)));
             }
         }
     }
@@ -78,7 +80,7 @@ public class LiquidController : MonoBehaviour
     [Button]
     public void Empty()
     {
-        SetLiquids(new Liquid(), 0f);
+        SetLiquids(new Liquid(), 0);
         _currentNumberOfLiquids = 0;
         _isInAnimation = false;
     }
