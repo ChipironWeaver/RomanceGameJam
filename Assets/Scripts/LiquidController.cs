@@ -42,6 +42,7 @@ public class LiquidController : MonoBehaviour
                 {
                     color = Color.Lerp(_currentLiquid.color, _endLiquid.color, currentEasedTime),
                     alpha = ChipironUtility.EvaluateFloat(_currentLiquid.alpha, _endLiquid.alpha, currentEasedTime),
+                    smoothness = ChipironUtility.EvaluateFloat(_currentLiquid.smoothness, _endLiquid.smoothness, currentEasedTime),
                     hueShift = ChipironUtility.EvaluateFloat(_currentLiquid.hueShift, _endLiquid.hueShift, currentEasedTime),
                     valueShift = ChipironUtility.EvaluateFloat(_currentLiquid.valueShift, _endLiquid.valueShift, currentEasedTime),
                     saturationShift = ChipironUtility.EvaluateFloat(_currentLiquid.saturationShift, _endLiquid.saturationShift, currentEasedTime),
@@ -65,6 +66,7 @@ public class LiquidController : MonoBehaviour
         {
             color = Color.Lerp(_currentLiquid.color, liquid.color, liquidTime),
             alpha = ChipironUtility.EvaluateFloat(_currentLiquid.alpha, liquid.alpha, liquidTime),
+            smoothness = ChipironUtility.EvaluateFloat(_currentLiquid.smoothness, liquid.smoothness, liquidTime),
             hueShift = ChipironUtility.EvaluateFloat(_currentLiquid.hueShift, liquid.hueShift, liquidTime),
             valueShift = ChipironUtility.EvaluateFloat(_currentLiquid.valueShift, liquid.valueShift, liquidTime),
             saturationShift = ChipironUtility.EvaluateFloat(_currentLiquid.saturationShift, liquid.saturationShift, liquidTime),
@@ -90,6 +92,7 @@ public class LiquidController : MonoBehaviour
         _material.SetFloat("_Height", height);
         _material.SetColor("_BaseColor", liquid.color);
         _material.SetFloat("_Alpha", height <= 0 ?  0f : liquid.alpha);
+        _material.SetFloat("_Smoothness", liquid.smoothness);
         _material.SetFloat("_HueShift", liquid.hueShift);
         _material.SetFloat("_ValueShift", liquid.valueShift);
         _material.SetFloat("_SaturationShift", liquid.saturationShift);
@@ -110,6 +113,7 @@ public class Liquid
     public string name;
     public Color color;
     public float alpha;
+    public float smoothness;
     public float hueShift;
     public float valueShift;
     public float saturationShift;

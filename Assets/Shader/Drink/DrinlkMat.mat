@@ -20,7 +20,7 @@ Material:
   stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
-  m_LockedProperties: 
+  m_LockedProperties: _BaseColor
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -42,21 +42,22 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0
+    - _Alpha: 0.86
     - _BubbleThreeshold: 0.5
     - _Bubble_Strengh: 1
-    - _Height: 0
-    - _HueShift: 0
+    - _Height: 1
+    - _HueShift: -0.05
     - _MinHeight: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SaturationShift: 0
-    - _ValueShift: 0
+    - _SaturationShift: 0.2
+    - _Smoothness: 0
+    - _ValueShift: -0.01
     - _WaveDensity: 1
     - _WaveSpeed: 10
-    - _WaveStrenght: 0.00035721483
+    - _WaveStrenght: 0.00033600774
     m_Colors:
-    - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    - _BaseColor: {r: 1, g: 0.32400048, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &9116739510971679461
