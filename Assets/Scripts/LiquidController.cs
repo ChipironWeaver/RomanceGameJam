@@ -6,17 +6,18 @@ using UnityEngine;
 public class LiquidController : MonoBehaviour
 {
     [SerializeField] private Material _material;
-    [SerializeField] private List<Liquid> _liquids = new List<Liquid>();
+    public List<Liquid> liquids = new List<Liquid>();
     [Header("Animation Settings")]
     [SerializeField,MinMaxSlider(0,1)] private Vector2 _waveStrengthRange;
     [SerializeField,MinMaxSlider(0,1)] private Vector2 _liquidMinMaxHeight;
     [SerializeField,CurveRange(0, 0, 1, 1,EColor.Violet)] private AnimationCurve _waveStrengthCurve;
     [SerializeField,CurveRange(0, 0, 1, 1)] private AnimationCurve _animationEase;
     [SerializeField] private float _animationDuration;
-    [SerializeField] private float _sizePerLiquid;
+    public float sizePerLiquid;
     
     private Liquid _currentLiquid = new Liquid();
     private int _currentNumberOfLiquids;
+    private int _backUpCurrentNumberOfLiquids;
     private Liquid _endLiquid = new Liquid();
 
     private Liquid _timedLiquid;
@@ -33,7 +34,7 @@ public class LiquidController : MonoBehaviour
                 _animationTimer = 0f;
                 _isInAnimation = false;
                 _currentLiquid = _endLiquid;
-                SetLiquids(_endLiquid,ChipironUtility.EvaluateVector2(_liquidMinMaxHeight, _currentNumberOfLiquids * _sizePerLiquid));
+                SetLiquids(_endLiquid,ChipironUtility.EvaluateVector2(_liquidMinMaxHeight, _currentNumberOfLiquids * sizePerLiquid));
             }
             else
             {
@@ -48,8 +49,14 @@ public class LiquidController : MonoBehaviour
                     saturationShift = ChipironUtility.EvaluateFloat(_currentLiquid.saturationShift, _endLiquid.saturationShift, currentEasedTime),
                 };
                 _material.SetFloat("_WaveStrenght", ChipironUtility.EvaluateVector2(_waveStrengthRange,_waveStrengthCurve.Evaluate(_animationTimer / _animationDuration)));
-                SetLiquids(_timedLiquid, ChipironUtility.EvaluateVector2(_liquidMinMaxHeight,
-                    ChipironUtility.EvaluateFloat((_currentNumberOfLiquids-1) * _sizePerLiquid ,_currentNumberOfLiquids * _sizePerLiquid , currentEasedTime)));
+                if(_currentNumberOfLiquids == 0)
+                {
+                    SetLiquids(_timedLiquid, ChipironUtility.EvaluateVector2(_liquidMinMaxHeight, ChipironUtility.EvaluateFloat(_backUpCurrentNumberOfLiquids * sizePerLiquid, 0, currentEasedTime)));
+                }
+                else
+                {
+                    SetLiquids(_timedLiquid, ChipironUtility.EvaluateVector2(_liquidMinMaxHeight, ChipironUtility.EvaluateFloat((_currentNumberOfLiquids - 1) * sizePerLiquid, _currentNumberOfLiquids * sizePerLiquid, currentEasedTime)));
+                }
             }
         }
     }
@@ -77,14 +84,20 @@ public class LiquidController : MonoBehaviour
 
     public void AddLiquidFromIndex(int liquidIndex)
     {
-        AddLiquid(_liquids[liquidIndex]);
+        AddLiquid(liquids[liquidIndex]);
     }
     [Button]
     public void Empty()
     {
-        SetLiquids(new Liquid(), 0);
+        if (_isInAnimation) return;
+        _backUpCurrentNumberOfLiquids = _currentNumberOfLiquids;
         _currentNumberOfLiquids = 0;
-        _isInAnimation = false;
+        _isInAnimation = true;
+        _endLiquid = new Liquid
+        {
+            color = _currentLiquid.color,
+            alpha = 0,
+        };
     }
     
     private void SetLiquids(Liquid liquid, float height)
@@ -102,7 +115,7 @@ public class LiquidController : MonoBehaviour
     [Button]
     private void Test()
     {
-        SetLiquids(_liquids[0], 1f);
+        SetLiquids(liquids[0], 1f);
     }
 
     
@@ -111,6 +124,8 @@ public class LiquidController : MonoBehaviour
 public class Liquid
 {
     public string name;
+    public bool usable;
+    public Sprite sprite;
     public Color color;
     public float alpha;
     public float smoothness;
