@@ -42,21 +42,21 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0
+    - _Alpha: 0.66
     - _BubbleThreeshold: 0.5
     - _Bubble_Strengh: 1
-    - _Height: 0
-    - _HueShift: 0
+    - _Height: 0.238
+    - _HueShift: 0.030000003
     - _MinHeight: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SaturationShift: 0
-    - _ValueShift: 0
+    - _SaturationShift: 0.120000005
+    - _ValueShift: -0.013999996
     - _WaveDensity: 1
     - _WaveSpeed: 10
-    - _WaveStrenght: 0.00035721483
+    - _WaveStrenght: 0.0008771883
     m_Colors:
-    - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    - _BaseColor: {r: 0.9625851, g: 0.8474991, b: 0.6671549, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &9116739510971679461
