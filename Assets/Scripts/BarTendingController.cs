@@ -86,6 +86,11 @@ public class BarTendingController : MonoBehaviour
         _completeButton.interactable = false;
         _liquidController.Empty();
     }
+
+    public void ShowDecoration(int index)
+    {
+        
+    }
     
 }
 

@@ -31,7 +31,6 @@ public class LiquidController : MonoBehaviour
             _animationTimer += Time.unscaledDeltaTime;
             if (_animationTimer >= _animationDuration)
             {
-                print("STOP");
                 _animationTimer = 0f;
                 _isInAnimation = false;
                 _currentLiquid = _endLiquid;
