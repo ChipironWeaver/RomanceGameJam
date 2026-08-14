@@ -28,10 +28,12 @@ public class BarTendingController : MonoBehaviour
     [SerializeField] private int _maxLiquids = 3;
     [SerializeField] private string _recipes;
     
-    int _currentLiquidAmount = 0;
-
+    private int _currentLiquidAmount = 0;
+    private int _currentGameState;
+    
     public void Start()
     {
+        Empty();
         _liquidController.liquids = _liquids;
         _liquidController.sizePerLiquid = 1f / _maxLiquids;
         _completeButton.interactable = false;
@@ -68,10 +70,14 @@ public class BarTendingController : MonoBehaviour
     
     public void AddLiquidIndex(int index)
     {
-        if (_currentLiquidAmount == _maxLiquids) return;
-        _currentLiquidAmount ++;
-        if (_currentLiquidAmount == _maxLiquids) _completeButton.interactable = true;
-        _liquidController.AddLiquidFromIndex(index);
+        if (_currentLiquidAmount == _maxLiquids)
+        {
+            _completeButton.interactable = true;
+        }
+
+        bool result = _liquidController.AddLiquidFromIndex(index);
+        print(result);
+        if (result) _currentLiquidAmount ++;
     }
 
     public void Empty()

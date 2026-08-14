@@ -17,11 +17,11 @@ public class LiquidController : MonoBehaviour
     
     private Liquid _currentLiquid = new Liquid();
     private int _currentNumberOfLiquids;
-    private int _backUpCurrentNumberOfLiquids;
+    private int _backUpCurrentNumberOfLiquids = 0;
     private Liquid _endLiquid = new Liquid();
 
     private Liquid _timedLiquid;
-    private bool _isInAnimation;
+    private bool _isInAnimation = false;
     private float _animationTimer;
 
     public void Update()
@@ -61,9 +61,9 @@ public class LiquidController : MonoBehaviour
         }
     }
 
-    public void AddLiquid(Liquid liquid)
+    public bool AddLiquid(Liquid liquid)
     {
-        if (_isInAnimation) return;
+        if (_isInAnimation) return false;
         float liquidTime = 1 - _currentNumberOfLiquids / ((float)_currentNumberOfLiquids + 1);
         if (_currentNumberOfLiquids == 0)
         {
@@ -80,13 +80,14 @@ public class LiquidController : MonoBehaviour
         };
         _currentNumberOfLiquids++;
         _isInAnimation = true;
+        return true;
     }
 
-    public void AddLiquidFromIndex(int liquidIndex)
+    public bool AddLiquidFromIndex(int liquidIndex)
     {
-        AddLiquid(liquids[liquidIndex]);
+        return AddLiquid(liquids[liquidIndex]);
     }
-    [Button]
+
     public void Empty()
     {
         if (_isInAnimation) return;
