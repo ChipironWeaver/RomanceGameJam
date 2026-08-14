@@ -383,7 +383,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _animationDuration: 1
-  sizePerLiquid: 0
+  sizePerLiquid: 0.33
 --- !u!4 &282555115
 Transform:
   m_ObjectHideFlags: 0

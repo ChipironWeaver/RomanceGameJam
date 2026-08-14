@@ -28,9 +28,10 @@ public class LiquidController : MonoBehaviour
     {
         if (_isInAnimation)
         {
-            _animationTimer += Time.deltaTime;
+            _animationTimer += Time.unscaledDeltaTime;
             if (_animationTimer >= _animationDuration)
             {
+                print("STOP");
                 _animationTimer = 0f;
                 _isInAnimation = false;
                 _currentLiquid = _endLiquid;
@@ -49,14 +50,14 @@ public class LiquidController : MonoBehaviour
                     saturationShift = ChipironUtility.EvaluateFloat(_currentLiquid.saturationShift, _endLiquid.saturationShift, currentEasedTime),
                 };
                 _material.SetFloat("_WaveStrenght", ChipironUtility.EvaluateVector2(_waveStrengthRange,_waveStrengthCurve.Evaluate(_animationTimer / _animationDuration)));
-                if(_currentNumberOfLiquids == 0)
-                {
-                    SetLiquids(_timedLiquid, ChipironUtility.EvaluateVector2(_liquidMinMaxHeight, ChipironUtility.EvaluateFloat(_backUpCurrentNumberOfLiquids * sizePerLiquid, 0, currentEasedTime)));
-                }
-                else
-                {
-                    SetLiquids(_timedLiquid, ChipironUtility.EvaluateVector2(_liquidMinMaxHeight, ChipironUtility.EvaluateFloat((_currentNumberOfLiquids - 1) * sizePerLiquid, _currentNumberOfLiquids * sizePerLiquid, currentEasedTime)));
-                }
+                SetLiquids(_timedLiquid,
+                    _currentNumberOfLiquids == 0
+                        ? ChipironUtility.EvaluateVector2(_liquidMinMaxHeight,
+                            ChipironUtility.EvaluateFloat(_backUpCurrentNumberOfLiquids * sizePerLiquid, 0,
+                                currentEasedTime))
+                        : ChipironUtility.EvaluateVector2(_liquidMinMaxHeight,
+                            ChipironUtility.EvaluateFloat((_currentNumberOfLiquids - 1) * sizePerLiquid,
+                                _currentNumberOfLiquids * sizePerLiquid, currentEasedTime)));
             }
         }
     }
