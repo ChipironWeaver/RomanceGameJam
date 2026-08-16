@@ -19,6 +19,8 @@ public class BarTendingController : MonoBehaviour
     [SerializeField] private List<DecorationGroup> _decorationGroups = new List<DecorationGroup>();
     [SerializeField] private GameObject _decorationGroupPanelPrefab;
     [SerializeField] private GameObject _decorationPrefab;
+    [SerializeField] private Color _uiSelectedColor;
+    [SerializeField] private Color _uiUnSelectedColor;
 
     [Header("Drink")] 
     [SerializeField] private GameObject _singularDrinkUiPrefab;
@@ -28,7 +30,7 @@ public class BarTendingController : MonoBehaviour
     [SerializeField] private int _maxLiquids = 3;
     [SerializeField] private string _recipes;
     
-    private int _currentLiquidAmount = 0;
+    private int _currentLiquidAmount;
     private int _currentGameState;
     
     public void Start()
@@ -89,9 +91,53 @@ public class BarTendingController : MonoBehaviour
 
     public void ShowDecoration(int index)
     {
+        //find the decoration group
+        int indexSearch = 0;
+        DecorationGroup group = null;
+        Decoration decoration = null;
+        for (int i = 0; i < _decorationGroups.Count; i++)
+        {
+            if (indexSearch + _decorationGroups[i].decorations.Count > index)
+            {
+                group = _decorationGroups[i];
+                decoration = group.decorations[index - indexSearch];
+                break;
+            }
+
+            indexSearch += _decorationGroups[i].decorations.Count;
+        }
         
+        print(group != null ? group.name : "No group found");
+        print(decoration != null ? decoration.name : "No decoration found");
+        if(decoration == null | group == null) return;
+        
+        foreach (Decoration dec in group.decorations)
+        {
+            if (dec == decoration)
+            {
+                if (!dec.decorationObject.activeSelf)
+                {
+                    if(dec.linkedImage) dec.linkedImage.color = _uiSelectedColor;
+                    dec.decorationObject.SetActive(true);
+                }
+            }
+            else
+            {
+                if (dec.decorationObject.activeSelf)
+                {
+                    if(dec.linkedImage) dec.linkedImage.color = _uiUnSelectedColor;
+                    dec.decorationObject.SetActive(false);
+                }
+            }
+        }
     }
-    
+
+    [Button]
+    public void Test()
+    {
+        ShowDecoration(2);
+        ShowDecoration(1);
+    }
 }
 
 [Serializable]
@@ -105,8 +151,9 @@ public class DecorationGroup
 public class Decoration
 {
     public string name;
-    public bool usable;
+    public bool usable = true;
     public GameObject decorationObject;
+    public Image linkedImage;
     public Material material;
     public Sprite sprite;
     public bool hasColorOptions;

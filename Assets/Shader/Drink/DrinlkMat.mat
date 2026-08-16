@@ -55,7 +55,7 @@ Material:
     - _ValueShift: 0
     - _WaveDensity: 1
     - _WaveSpeed: 10
-    - _WaveStrenght: 0.00023456798
+    - _WaveStrenght: 0.0005052697
     m_Colors:
     - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
