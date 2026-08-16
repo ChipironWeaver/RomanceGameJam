@@ -701,7 +701,7 @@ MonoBehaviour:
     decorations:
     - name: Square Biscuit
       usable: 0
-      decorationObject: {fileID: 0}
+      decorationObject: {fileID: 8186873442721340807}
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -728,6 +728,8 @@ MonoBehaviour:
       customColorSprites: []
   _decorationGroupPanelPrefab: {fileID: 6076995114525198006, guid: f329d069e83bef747b408b9b0d03d77a, type: 3}
   _decorationPrefab: {fileID: 1029218397518121308, guid: 16185fe30484cb44096f11b230b7ba31, type: 3}
+  _uiSelectedColor: {r: 0, g: 0, b: 0, a: 0}
+  _uiUnSelectedColor: {r: 0, g: 0, b: 0, a: 0}
   _singularDrinkUiPrefab: {fileID: 3888891298634507957, guid: 061a97d9f9185ed4a92318aee5f5d023, type: 3}
   _liquids:
   - name: Lemonade
@@ -2737,8 +2739,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -162.5, y: 145}
-  m_SizeDelta: {x: 325, y: 290}
+  m_AnchoredPosition: {x: -162.5, y: 170}
+  m_SizeDelta: {x: 325, y: 340}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1629769623
 MonoBehaviour:

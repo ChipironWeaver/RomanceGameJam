@@ -137,7 +137,7 @@ MonoBehaviour:
   image: {fileID: 540394835770310488}
   groupChild: {fileID: 0}
   nameText: {fileID: 0}
-  button: {fileID: 0}
+  button: {fileID: 5723683943466032999}
 --- !u!1 &4127817896823479338
 GameObject:
   m_ObjectHideFlags: 0

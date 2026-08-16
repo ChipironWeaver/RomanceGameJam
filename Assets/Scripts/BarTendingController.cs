@@ -21,6 +21,7 @@ public class BarTendingController : MonoBehaviour
     [SerializeField] private GameObject _decorationPrefab;
     [SerializeField] private Color _uiSelectedColor;
     [SerializeField] private Color _uiUnSelectedColor;
+    [SerializeField] private Sprite _uiRemoveGroupSprite;
 
     [Header("Drink")] 
     [SerializeField] private GameObject _singularDrinkUiPrefab;
@@ -48,6 +49,38 @@ public class BarTendingController : MonoBehaviour
         for (int i = 0; i < _liquids.Count; i++)
         {
             CreateLiquidButton(i);
+        }
+
+        int currentGroupIndex = 0;
+        for (int i = 0; i < _decorationGroups.Count; i++)
+        {
+            GameObject group = Instantiate(_decorationGroupPanelPrefab, _decorationPanel.transform);
+            group.name = "Decoration Panel " + _decorationGroups[i].name + " at " + i;
+            UIDrinkReferences uiGroupReferences = group.GetComponent<UIDrinkReferences>();
+
+            GameObject removeGroupButton = Instantiate(_decorationPrefab, uiGroupReferences.groupChild.transform);
+            removeGroupButton.name = "Remove Decoration Group Button";
+            UIDrinkReferences  uiRemoveGroupReference = removeGroupButton.GetComponent<UIDrinkReferences>();
+                
+            if(_uiRemoveGroupSprite) uiRemoveGroupReference.image.sprite = _uiRemoveGroupSprite;
+            else uiRemoveGroupReference.image.color = Color.crimson;
+            var i1 = i;
+            uiRemoveGroupReference.button.onClick.AddListener(() => RemoveDecorationGroup(i1));
+            
+            for (int y = 0; y < _decorationGroups[i].decorations.Count; y++)
+            {
+                GameObject decoration = Instantiate(_decorationPrefab, uiGroupReferences.groupChild.transform);
+                decoration.name = "Decoration: " + _decorationGroups[i].decorations[y].name + " at " + y;
+                UIDrinkReferences  uiDecoReference = decoration.GetComponent<UIDrinkReferences>();
+
+                if (_decorationGroups[i].decorations[y].sprite)
+                    uiDecoReference.image.sprite = _decorationGroups[i].decorations[y].sprite;
+                var index = currentGroupIndex;
+                var y1 = y;
+                uiDecoReference.button.onClick.AddListener(() => ShowDecoration(index + y1));
+            }
+            
+            currentGroupIndex += _decorationGroups[i].decorations.Count;
         }
     }
 
@@ -130,6 +163,31 @@ public class BarTendingController : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void RemoveDecorationGroup(int index)
+    {
+        if (_decorationGroups.Count > index)
+        {
+            foreach (Decoration decoration in _decorationGroups[index].decorations)
+            {
+                print(decoration.name + decoration.decorationObject.activeSelf);
+                if (decoration.decorationObject.activeSelf)
+                {
+                    if(decoration.linkedImage) decoration.linkedImage.color = _uiUnSelectedColor;
+                    decoration.decorationObject.SetActive(false);
+                }
+            }
+        }
+    }
+
+    public void ResetDrink()
+    {
+        for (int i = 0; i < _decorationGroups.Count; i++)
+        {
+            RemoveDecorationGroup(i);
+        }
+        Empty();
     }
 
     [Button]
