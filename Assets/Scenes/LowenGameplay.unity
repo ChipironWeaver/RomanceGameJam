@@ -507,7 +507,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339412082}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc72516d6e90bbc4ab75597168936846, type: 3}
   m_Name: 
@@ -547,6 +547,39 @@ MonoBehaviour:
   _basePanelIndex: 0
   _fadeBasePanelOnStart: 1
   eventSystem: {fileID: 339412084}
+--- !u!1 &433439305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 433439306}
+  m_Layer: 0
+  m_Name: NoCream
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &433439306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433439305}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 375142041284915845}
+  - {fileID: 5770032907167568948}
+  m_Father: {fileID: 543450652855437171}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &466461976
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,8 +902,9 @@ MonoBehaviour:
     sprite: {fileID: 0}
     noDecorationState:
       name: 
-      decorationObject: []
-      optionToDisable: 
+      decorationObject:
+      - {fileID: 433439305}
+      optionToDisable: 0400000005000000060000000b0000000c000000
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -881,7 +915,7 @@ MonoBehaviour:
     - name: One Layer Icecream
       decorationObject:
       - {fileID: 792856952676425870}
-      optionToDisable: 
+      optionToDisable: 07000000
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -891,7 +925,7 @@ MonoBehaviour:
     - name: Two Layer Icecream
       decorationObject:
       - {fileID: 303085816645009348}
-      optionToDisable: 
+      optionToDisable: 07000000
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -901,7 +935,7 @@ MonoBehaviour:
     - name: Three Layer IceCream
       decorationObject:
       - {fileID: 2353683291587521546}
-      optionToDisable: 
+      optionToDisable: 07000000
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -911,17 +945,7 @@ MonoBehaviour:
     - name: Whipped Cream
       decorationObject:
       - {fileID: 8604165058100066300}
-      optionToDisable: 
-      linkedImage: {fileID: 0}
-      material: {fileID: 0}
-      sprite: {fileID: 0}
-      hasColorOptions: 0
-      colorOptions: []
-      customColorSprites: []
-    - name: Fruit Slice
-      decorationObject:
-      - {fileID: 2824252405610270802}
-      optionToDisable: 
+      optionToDisable: 07000000
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -931,7 +955,7 @@ MonoBehaviour:
   - name: Fruits
     sprite: {fileID: 0}
     noDecorationState:
-      name: 
+      name: null
       decorationObject: []
       optionToDisable: 
       linkedImage: {fileID: 0}
@@ -1002,8 +1026,9 @@ MonoBehaviour:
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
-    - name: Lemon
-      decorationObject: []
+    - name: Fruit Slice
+      decorationObject:
+      - {fileID: 2824252405610270802}
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
@@ -1112,8 +1137,8 @@ MonoBehaviour:
       customColorSprites: []
   _decorationGroupPanelPrefab: {fileID: 6076995114525198006, guid: f329d069e83bef747b408b9b0d03d77a, type: 3}
   _decorationPrefab: {fileID: 1029218397518121308, guid: 16185fe30484cb44096f11b230b7ba31, type: 3}
-  _uiSelectedColor: {r: 1, g: 1, b: 1, a: 1}
-  _uiUnSelectedColor: {r: 1, g: 0.6367924, b: 0.6367924, a: 1}
+  _uiSelectedColor: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
+  _uiUnSelectedColor: {r: 1, g: 1, b: 1, a: 1}
   _uiRemoveGroupSprite: {fileID: 0}
   _singularDrinkUiPrefab: {fileID: 3888891298634507957, guid: 061a97d9f9185ed4a92318aee5f5d023, type: 3}
   _liquids:
@@ -2991,8 +3016,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -162.5, y: 170}
-  m_SizeDelta: {x: 325, y: 340}
+  m_AnchoredPosition: {x: -167, y: 170}
+  m_SizeDelta: {x: 337.5, y: 340}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1629769623
 MonoBehaviour:
@@ -3811,13 +3836,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2824252405610270802}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5770032907167568948}
-  m_Father: {fileID: 543450652855437171}
+  m_Children: []
+  m_Father: {fileID: 433439306}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &433343524139280802
 Transform:
@@ -3879,7 +3903,7 @@ Transform:
   - {fileID: 7825568273356932297}
   - {fileID: 4346783442950894191}
   - {fileID: 7491145220861004835}
-  - {fileID: 375142041284915845}
+  - {fileID: 433439306}
   - {fileID: 1157187506747227367}
   - {fileID: 2666194720940958089}
   - {fileID: 7787824410678114708}
@@ -7140,12 +7164,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2889141237817881405}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 375142041284915845}
+  m_Father: {fileID: 433439306}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5773973975281743933
 GameObject:

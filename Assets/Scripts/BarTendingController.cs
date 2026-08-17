@@ -39,15 +39,13 @@ public class BarTendingController : MonoBehaviour
     
     public void Start()
     {
-        Empty();
+        
         _liquidController.liquids = _liquids;
         _liquidController.sizePerLiquid = 1f / _maxLiquids;
         _completeButton.interactable = false;
+        
         CreateUI();
-        foreach (var bob in _decorationGroups)
-        {
-            _activeDecorationGroups.Add(-1);
-        }
+        ResetDrink();
     }
     
     [Button]
@@ -134,34 +132,30 @@ public class BarTendingController : MonoBehaviour
 
     public void ShowDecoration(int index)
     {
-        //find the decoration group
-        int indexSearch = 0;
-        int groupIndex = 0;
-        DecorationGroup group = null;
-        Decoration decoration = null;
-        for (int i = 0; i < _decorationGroups.Count; i++)
-        {
-            if (indexSearch + _decorationGroups[i].decorations.Count > index)
-            {
-                group = _decorationGroups[i];
-                groupIndex = i;
-                decoration = group.decorations[index - indexSearch];
-                break;
-            }
-
-            indexSearch += _decorationGroups[i].decorations.Count;
-        }
         
-        print(group != null ? group.name : "No group found");
-        print(decoration != null ? decoration.name : "No decoration found");
-        if(decoration == null | group == null) return;
+        int groupIndex = FindGroupIndex(index);
+        if (index == -1) return;
+        DecorationGroup group = _decorationGroups[groupIndex];
+        Decoration decoration = group.decorations[index - FindGroupIndex(index,true)];
+        
         
         if(decoration.linkedImage) decoration.linkedImage.color = _uiSelectedColor;
         
         if(_activeDecorationGroups[groupIndex] != -1) foreach(int y in _decorationGroups[groupIndex].decorations[_activeDecorationGroups[groupIndex]].optionToDisable) _decorationUiList[y].SetActive(true);
+        
         else foreach (int y in group.noDecorationState.optionToDisable) _decorationUiList[y].SetActive(true);
-        foreach(int y in decoration.optionToDisable) _decorationUiList[y].SetActive(false);
-        _activeDecorationGroups[groupIndex] = index - indexSearch;
+        
+        foreach(int y in decoration.optionToDisable)
+        {
+            _decorationUiList[y].SetActive(false);
+            if (y - FindGroupIndex(y,true) == _activeDecorationGroups[FindGroupIndex(y)])
+            {
+                print("y");
+                RemoveDecorationGroup(FindGroupIndex(y));
+            }
+        }
+        
+        _activeDecorationGroups[groupIndex] = index - FindGroupIndex(index,true);
         
         foreach (Decoration dec in group.decorations)
         {
@@ -172,16 +166,20 @@ public class BarTendingController : MonoBehaviour
                 obj.SetActive(decoration.decorationObject.Contains(obj));
             }
         }
+        foreach (var dec in _decorationGroups[groupIndex].noDecorationState.decorationObject)
+        {
+            dec.SetActive(decoration.decorationObject.Contains(dec));
+        }
+        
+        print(ChipironUtility.GetListString(_activeDecorationGroups));
     }
 
-    public void RemoveDecorationGroup(int index)
+    public void RemoveDecorationGroup(int index,List<int> blackList = null)
     {
         if (_decorationGroups.Count > index)
         {
             foreach (Decoration decoration in _decorationGroups[index].decorations)
             {
-                print(decoration.name + decoration.decorationObject[0].activeSelf);
-                
                 if(decoration.linkedImage) decoration.linkedImage.color = _uiUnSelectedColor;
                 foreach (var dec in decoration.decorationObject)
                 {
@@ -189,15 +187,51 @@ public class BarTendingController : MonoBehaviour
                 }
             }
             //Set null case as active
+            foreach (var dec in _decorationGroups[index].noDecorationState.decorationObject)
+            {
+                dec.SetActive(true);
+            }
             if(_activeDecorationGroups[index] != -1) foreach(int i in _decorationGroups[index].decorations[_activeDecorationGroups[index]].optionToDisable) _decorationUiList[i].SetActive(true);
+            if(_decorationGroups[index].noDecorationState.linkedImage) _decorationGroups[index].noDecorationState.linkedImage.color = _uiUnSelectedColor;
             
             _activeDecorationGroups[index] = -1;
-            foreach (int y in _decorationGroups[index].noDecorationState.optionToDisable) _decorationUiList[y].SetActive(false);
+            foreach (int y in _decorationGroups[index].noDecorationState.optionToDisable)
+            {
+                _decorationUiList[y].SetActive(false);
+                int groupIndex = FindGroupIndex(y);
+                blackList ??= new List<int>();
+                if(!blackList.Contains(y))
+                {
+                    blackList.Add(y);
+                    RemoveDecorationGroup(groupIndex);
+                }
+            }
         }
+        
+        print(ChipironUtility.GetListString(_activeDecorationGroups));
+    }
+    
+    public int FindGroupIndex(int index, bool isPosition = false)
+    {
+        int indexSearch = 0;
+        for (int i = 0; i < _decorationGroups.Count; i++)
+        {
+            if (indexSearch + _decorationGroups[i].decorations.Count > index)
+            {
+                return isPosition? indexSearch : i;
+            }
+            indexSearch += _decorationGroups[i].decorations.Count;
+        }
+        return -1;
     }
 
     public void ResetDrink()
     {
+        _activeDecorationGroups.Clear();
+        foreach (var bob in _decorationGroups)
+        {
+            _activeDecorationGroups.Add(-1);
+        }
         for (int i = 0; i < _decorationGroups.Count; i++)
         {
             RemoveDecorationGroup(i);
