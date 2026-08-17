@@ -527,7 +527,10 @@ PlayerSettings:
       m_Height: 720
       m_Kind: 1
       m_SubKind: 
-  m_BuildTargetBatching: []
+  m_BuildTargetBatching:
+  - m_BuildTarget: Android
+    m_StaticBatching: 1
+    m_DynamicBatching: 0
   m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs: []
   m_BuildTargetGraphicsJobMode: []
@@ -830,7 +833,7 @@ PlayerSettings:
   webWasm2023: 1
   webEnableSubmoduleStrippingCompatibility: 0
   scriptingDefineSymbols:
-    Android: DOTWEEN;DOTWEEN_NOPHYSICS2D;UNITY_POST_PROCESSING_STACK_V2
+    Android: DOTWEEN;DOTWEEN_NOPHYSICS2D;UNITY_POST_PROCESSING_STACK_V2;UNITY_PIPELINE_URP
     EmbeddedLinux: DOTWEEN;DOTWEEN_NOPHYSICS2D;UNITY_POST_PROCESSING_STACK_V2
     GameCoreScarlett: DOTWEEN;DOTWEEN_NOPHYSICS2D;UNITY_POST_PROCESSING_STACK_V2
     GameCoreXboxOne: DOTWEEN;DOTWEEN_NOPHYSICS2D;UNITY_POST_PROCESSING_STACK_V2
