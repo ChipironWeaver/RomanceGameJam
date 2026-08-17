@@ -33,6 +33,9 @@ public class BarTendingController : MonoBehaviour
     
     private int _currentLiquidAmount;
     private int _currentGameState;
+    private List<int> _activeDecorationGroups = new List<int>();
+    private List<GameObject> _drinkUiList = new List<GameObject>();
+    private List<GameObject> _decorationUiList = new List<GameObject>();
     
     public void Start()
     {
@@ -41,6 +44,10 @@ public class BarTendingController : MonoBehaviour
         _liquidController.sizePerLiquid = 1f / _maxLiquids;
         _completeButton.interactable = false;
         CreateUI();
+        foreach (var bob in _decorationGroups)
+        {
+            _activeDecorationGroups.Add(-1);
+        }
     }
     
     [Button]
@@ -57,11 +64,11 @@ public class BarTendingController : MonoBehaviour
             GameObject group = Instantiate(_decorationGroupPanelPrefab, _decorationPanel.transform);
             group.name = "Decoration Panel " + _decorationGroups[i].name + " at " + i;
             UIDrinkReferences uiGroupReferences = group.GetComponent<UIDrinkReferences>();
+            uiGroupReferences.nameText.text = _decorationGroups[i].name;
 
             GameObject removeGroupButton = Instantiate(_decorationPrefab, uiGroupReferences.groupChild.transform);
             removeGroupButton.name = "Remove Decoration Group Button";
             UIDrinkReferences  uiRemoveGroupReference = removeGroupButton.GetComponent<UIDrinkReferences>();
-                
             if(_uiRemoveGroupSprite) uiRemoveGroupReference.image.sprite = _uiRemoveGroupSprite;
             else uiRemoveGroupReference.image.color = Color.crimson;
             var i1 = i;
@@ -72,12 +79,14 @@ public class BarTendingController : MonoBehaviour
                 GameObject decoration = Instantiate(_decorationPrefab, uiGroupReferences.groupChild.transform);
                 decoration.name = "Decoration: " + _decorationGroups[i].decorations[y].name + " at " + y;
                 UIDrinkReferences  uiDecoReference = decoration.GetComponent<UIDrinkReferences>();
+                _decorationGroups[i].decorations[y].linkedImage = uiDecoReference.backGround;
 
                 if (_decorationGroups[i].decorations[y].sprite)
                     uiDecoReference.image.sprite = _decorationGroups[i].decorations[y].sprite;
                 var index = currentGroupIndex;
                 var y1 = y;
                 uiDecoReference.button.onClick.AddListener(() => ShowDecoration(index + y1));
+                _decorationUiList.Add(decoration);
             }
             
             currentGroupIndex += _decorationGroups[i].decorations.Count;
@@ -101,6 +110,7 @@ public class BarTendingController : MonoBehaviour
             uiDrinkReferences.image.sprite = null;
             uiDrinkReferences.image.color = liquid.color;
         }
+        _drinkUiList.Add(liquidUI);
     }
     
     public void AddLiquidIndex(int index)
@@ -126,6 +136,7 @@ public class BarTendingController : MonoBehaviour
     {
         //find the decoration group
         int indexSearch = 0;
+        int groupIndex = 0;
         DecorationGroup group = null;
         Decoration decoration = null;
         for (int i = 0; i < _decorationGroups.Count; i++)
@@ -133,6 +144,7 @@ public class BarTendingController : MonoBehaviour
             if (indexSearch + _decorationGroups[i].decorations.Count > index)
             {
                 group = _decorationGroups[i];
+                groupIndex = i;
                 decoration = group.decorations[index - indexSearch];
                 break;
             }
@@ -144,23 +156,20 @@ public class BarTendingController : MonoBehaviour
         print(decoration != null ? decoration.name : "No decoration found");
         if(decoration == null | group == null) return;
         
+        if(decoration.linkedImage) decoration.linkedImage.color = _uiSelectedColor;
+        
+        if(_activeDecorationGroups[groupIndex] != -1) foreach(int y in _decorationGroups[groupIndex].decorations[_activeDecorationGroups[groupIndex]].optionToDisable) _decorationUiList[y].SetActive(true);
+        else foreach (int y in group.noDecorationState.optionToDisable) _decorationUiList[y].SetActive(true);
+        foreach(int y in decoration.optionToDisable) _decorationUiList[y].SetActive(false);
+        _activeDecorationGroups[groupIndex] = index - indexSearch;
+        
         foreach (Decoration dec in group.decorations)
         {
-            if (dec == decoration)
+            if (dec.linkedImage) dec.linkedImage.color = dec == decoration ? _uiSelectedColor : _uiUnSelectedColor;
+            
+            foreach (GameObject obj in dec.decorationObject)
             {
-                if (!dec.decorationObject.activeSelf)
-                {
-                    if(dec.linkedImage) dec.linkedImage.color = _uiSelectedColor;
-                    dec.decorationObject.SetActive(true);
-                }
-            }
-            else
-            {
-                if (dec.decorationObject.activeSelf)
-                {
-                    if(dec.linkedImage) dec.linkedImage.color = _uiUnSelectedColor;
-                    dec.decorationObject.SetActive(false);
-                }
+                obj.SetActive(decoration.decorationObject.Contains(obj));
             }
         }
     }
@@ -171,13 +180,19 @@ public class BarTendingController : MonoBehaviour
         {
             foreach (Decoration decoration in _decorationGroups[index].decorations)
             {
-                print(decoration.name + decoration.decorationObject.activeSelf);
-                if (decoration.decorationObject.activeSelf)
+                print(decoration.name + decoration.decorationObject[0].activeSelf);
+                
+                if(decoration.linkedImage) decoration.linkedImage.color = _uiUnSelectedColor;
+                foreach (var dec in decoration.decorationObject)
                 {
-                    if(decoration.linkedImage) decoration.linkedImage.color = _uiUnSelectedColor;
-                    decoration.decorationObject.SetActive(false);
+                    dec.SetActive(false);
                 }
             }
+            //Set null case as active
+            if(_activeDecorationGroups[index] != -1) foreach(int i in _decorationGroups[index].decorations[_activeDecorationGroups[index]].optionToDisable) _decorationUiList[i].SetActive(true);
+            
+            _activeDecorationGroups[index] = -1;
+            foreach (int y in _decorationGroups[index].noDecorationState.optionToDisable) _decorationUiList[y].SetActive(false);
         }
     }
 
@@ -189,13 +204,7 @@ public class BarTendingController : MonoBehaviour
         }
         Empty();
     }
-
-    [Button]
-    public void Test()
-    {
-        ShowDecoration(2);
-        ShowDecoration(1);
-    }
+    
 }
 
 [Serializable]
@@ -203,14 +212,15 @@ public class DecorationGroup
 {
     public string name;
     public Sprite sprite;
+    public Decoration noDecorationState;
     public List<Decoration> decorations = new List<Decoration>();
 }
 [Serializable]
 public class Decoration
 {
     public string name;
-    public bool usable = true;
-    public GameObject decorationObject;
+    public List<GameObject> decorationObject = new List<GameObject>();
+    public List<int> optionToDisable = new List<int>();
     public Image linkedImage;
     public Material material;
     public Sprite sprite;
