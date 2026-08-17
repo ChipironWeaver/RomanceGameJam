@@ -867,10 +867,21 @@ MonoBehaviour:
   _decorationGroups:
   - name: Topping
     sprite: {fileID: 0}
+    noDecorationState:
+      name: 
+      decorationObject: []
+      optionToDisable: 
+      linkedImage: {fileID: 0}
+      material: {fileID: 0}
+      sprite: {fileID: 0}
+      hasColorOptions: 0
+      colorOptions: []
+      customColorSprites: []
     decorations:
     - name: One Layer Icecream
       decorationObject:
       - {fileID: 792856952676425870}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -880,6 +891,7 @@ MonoBehaviour:
     - name: Two Layer Icecream
       decorationObject:
       - {fileID: 303085816645009348}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -889,6 +901,7 @@ MonoBehaviour:
     - name: Three Layer IceCream
       decorationObject:
       - {fileID: 2353683291587521546}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -898,6 +911,7 @@ MonoBehaviour:
     - name: Whipped Cream
       decorationObject:
       - {fileID: 8604165058100066300}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -907,6 +921,7 @@ MonoBehaviour:
     - name: Fruit Slice
       decorationObject:
       - {fileID: 2824252405610270802}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -915,6 +930,16 @@ MonoBehaviour:
       customColorSprites: []
   - name: Fruits
     sprite: {fileID: 0}
+    noDecorationState:
+      name: 
+      decorationObject: []
+      optionToDisable: 
+      linkedImage: {fileID: 0}
+      material: {fileID: 0}
+      sprite: {fileID: 0}
+      hasColorOptions: 0
+      colorOptions: []
+      customColorSprites: []
     decorations:
     - name: BlueBerry
       decorationObject:
@@ -935,6 +960,7 @@ MonoBehaviour:
       - {fileID: 4113885923136435479}
       - {fileID: 89862223443557709}
       - {fileID: 4166190852001196255}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -947,6 +973,7 @@ MonoBehaviour:
       - {fileID: 587861129860172738}
       - {fileID: 7359861379952926850}
       - {fileID: 2094178809380591098}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -968,6 +995,16 @@ MonoBehaviour:
       - {fileID: 7889492822282207121}
       - {fileID: 466107617916700995}
       - {fileID: 879531705027735680}
+      optionToDisable: 
+      linkedImage: {fileID: 0}
+      material: {fileID: 0}
+      sprite: {fileID: 0}
+      hasColorOptions: 0
+      colorOptions: []
+      customColorSprites: []
+    - name: Lemon
+      decorationObject: []
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -976,10 +1013,21 @@ MonoBehaviour:
       customColorSprites: []
   - name: Ice Cubes
     sprite: {fileID: 0}
+    noDecorationState:
+      name: 
+      decorationObject: []
+      optionToDisable: 
+      linkedImage: {fileID: 0}
+      material: {fileID: 0}
+      sprite: {fileID: 0}
+      hasColorOptions: 0
+      colorOptions: []
+      customColorSprites: []
     decorations:
     - name: 1
       decorationObject:
       - {fileID: 5773973975281743933}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -990,6 +1038,7 @@ MonoBehaviour:
       decorationObject:
       - {fileID: 5773973975281743933}
       - {fileID: 7029716034693404716}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -1001,6 +1050,7 @@ MonoBehaviour:
       - {fileID: 5773973975281743933}
       - {fileID: 3315348195554855775}
       - {fileID: 7029716034693404716}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -1009,6 +1059,16 @@ MonoBehaviour:
       customColorSprites: []
   - name: Decorative
     sprite: {fileID: 0}
+    noDecorationState:
+      name: 
+      decorationObject: []
+      optionToDisable: 
+      linkedImage: {fileID: 0}
+      material: {fileID: 0}
+      sprite: {fileID: 0}
+      hasColorOptions: 0
+      colorOptions: []
+      customColorSprites: []
     decorations:
     - name: BiscuitStraw
       decorationObject:
@@ -1016,6 +1076,7 @@ MonoBehaviour:
       - {fileID: 5020917918083521242}
       - {fileID: 466461976}
       - {fileID: 1219618243211689578}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -1028,6 +1089,7 @@ MonoBehaviour:
       - {fileID: 8177221754491588113}
       - {fileID: 8749829489881020186}
       - {fileID: 3461974912753130279}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -1041,6 +1103,7 @@ MonoBehaviour:
       - {fileID: 3646436992898813270}
       - {fileID: 5320773369692123122}
       - {fileID: 2889141237817881405}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
