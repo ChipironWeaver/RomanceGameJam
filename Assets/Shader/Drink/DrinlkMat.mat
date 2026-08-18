@@ -46,25 +46,25 @@ Material:
     - _BubbleThreeshold: 0.5
     - _Bubble_Strengh: 1
     - _Height: 0.161
-    - _HighLightStrengh: 0.266
-    - _HighLightThreshold: -0.562
-    - _HueShift: 0
+    - _HighLightStrengh: 0.308
+    - _HighLightThreshold: -0.499
+    - _HueShift: 0.16
     - _LightIntensity: 1
     - _MinHeight: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SaturationShift: 0
-    - _ShadowStrengh: 0.309
-    - _ShadowThreshold: 0.328
-    - _Smoothness: 0.332
-    - _ValueShift: 0
+    - _SaturationShift: 0.023
+    - _ShadowStrengh: 0.453
+    - _ShadowThreshold: 0.312
+    - _Smoothness: 0
+    - _ValueShift: 0.234
     - _WaveDensity: 1
     - _WaveSpeed: 10
     - _WaveStrenght: 0
     - _XRMotionVectorsPass: 1
     m_Colors:
-    - _BaseColor: {r: 0.751634, g: 0.89534926, b: 0.875817, a: 1}
-    - _LightColor: {r: 1, g: 0.9624692, b: 0.8820755, a: 1}
+    - _BaseColor: {r: 0.3568441, g: 0.9339623, b: 0.853807, a: 1}
+    - _LightColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &9116739510971679461

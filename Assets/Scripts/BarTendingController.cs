@@ -30,6 +30,12 @@ public class BarTendingController : MonoBehaviour
     [Header("Gameplay")] 
     [SerializeField] private int _maxLiquids = 3;
     [SerializeField] private List<Recipe> _recipes;
+    [SerializeField] private float _liquidScoreMultiplier = 1f;
+    [SerializeField] private float _decorationScoreMultiplier = 1f;
+
+    [Header("Current Unlocked")] 
+    [SerializeField] public int currentUnlockedDrinkAmount = -1;
+    [SerializeField] public int currentUnlockedDecorationAmount = -1;
     
     private int _currentLiquidAmount;
     private List<int> _activeLiquidGroups = new List<int>();
@@ -249,6 +255,46 @@ public class BarTendingController : MonoBehaviour
         
         print(ChipironUtility.GetListString(_activeDecorationGroups));
     }
+
+    public Recipe GenerateRecipe(string recipeName, List<int> liquids, List<int> decorations)
+    {
+        return new Recipe
+        {
+            name = recipeName,
+            liquids = liquids,
+            decorations = decorations,
+        };
+    }
+
+    public float RateRecipe(Recipe ratedRecipe, Recipe recipe)
+    {
+        float liquidScore = 0;
+        float liquidTotalScore = 0;
+        float decorationScore = 0;
+        float decorationTotalScore = 0;
+
+        for (int i = 0; i < Mathf.Min(recipe.liquids.Count, ratedRecipe.liquids.Count ); i++)
+        {
+            if (recipe.liquids[i] != -1)
+            {
+                liquidTotalScore++;
+                if (ratedRecipe.liquids[i] == recipe.liquids[i]) liquidScore++;
+            }
+        }
+        
+        for (int i = 0; i < Mathf.Min(recipe.decorations.Count, ratedRecipe.decorations.Count ); i++)
+        {
+            if (recipe.decorations[i] != -1)
+            {
+                decorationTotalScore++;
+                if (ratedRecipe.decorations[i] == recipe.decorations[i]) decorationScore++;
+            }
+        }
+        
+        if (liquidTotalScore == 0) return -1;
+        return (liquidScore / liquidTotalScore * _liquidScoreMultiplier + decorationScore / decorationTotalScore * _decorationScoreMultiplier) / (_liquidScoreMultiplier + _decorationScoreMultiplier);
+    }
+    
     
     public int FindGroupIndex(int index, bool isPosition = false)
     {
