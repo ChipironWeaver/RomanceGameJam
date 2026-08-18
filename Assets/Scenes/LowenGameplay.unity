@@ -631,7 +631,7 @@ MonoBehaviour:
   _completeButton: {fileID: 1347365240}
   _uiAnimator: {fileID: 528513703}
   _decorationGroups:
-  - name: Topping
+  - name: "Cr\xE8me"
     sprite: {fileID: 0}
     noDecorationState:
       name: 
@@ -769,7 +769,7 @@ MonoBehaviour:
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
-  - name: Ice Cubes
+  - name: "Gla\xE7on"
     sprite: {fileID: 0}
     noDecorationState:
       name: 
@@ -815,7 +815,7 @@ MonoBehaviour:
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
-  - name: Decorative
+  - name: "D\xE9coration"
     sprite: {fileID: 0}
     noDecorationState:
       name: 
@@ -861,6 +861,39 @@ MonoBehaviour:
       - {fileID: 3646436992898813270}
       - {fileID: 5320773369692123122}
       - {fileID: 2889141237817881405}
+      optionToDisable: 
+      linkedImage: {fileID: 0}
+      material: {fileID: 0}
+      sprite: {fileID: 0}
+      hasColorOptions: 0
+      colorOptions: []
+      customColorSprites: []
+  - name: Paille
+    sprite: {fileID: 0}
+    noDecorationState:
+      name: 
+      decorationObject: []
+      optionToDisable: 
+      linkedImage: {fileID: 0}
+      material: {fileID: 0}
+      sprite: {fileID: 0}
+      hasColorOptions: 0
+      colorOptions: []
+      customColorSprites: []
+    decorations:
+    - name: StrawBend
+      decorationObject:
+      - {fileID: 4199156242286353225}
+      optionToDisable: 
+      linkedImage: {fileID: 0}
+      material: {fileID: 0}
+      sprite: {fileID: 0}
+      hasColorOptions: 0
+      colorOptions: []
+      customColorSprites: []
+    - name: Straw
+      decorationObject:
+      - {fileID: 8625498652610745777}
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
@@ -1020,7 +1053,10 @@ MonoBehaviour:
     valueShift: 0
     saturationShift: 0
   _maxLiquids: 3
-  _recipes: 
+  _recipes:
+  - name: 
+    liquids: 
+    decorations: 
 --- !u!114 &528513703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1850,8 +1886,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -167, y: 170}
-  m_SizeDelta: {x: 337.5, y: 340}
+  m_AnchoredPosition: {x: -168.75, y: 180}
+  m_SizeDelta: {x: 337.5, y: 360}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1629769623
 MonoBehaviour:
@@ -2008,13 +2044,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756977672}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.3557531, y: 0.042235658, z: 0.2281357, w: 0.90532315}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 38.673, y: 17.81, z: 34.582}
 --- !u!114 &1756977675
 MonoBehaviour:
   m_ObjectHideFlags: 0

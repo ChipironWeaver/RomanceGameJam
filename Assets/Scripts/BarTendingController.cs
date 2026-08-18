@@ -29,7 +29,7 @@ public class BarTendingController : MonoBehaviour
 
     [Header("Gameplay")] 
     [SerializeField] private int _maxLiquids = 3;
-    [SerializeField] private string _recipes;
+    [SerializeField] private List<Recipe> _recipes;
     
     private int _currentLiquidAmount;
     private List<int> _activeLiquidGroups = new List<int>();
