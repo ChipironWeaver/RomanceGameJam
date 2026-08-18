@@ -42,10 +42,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0
+    - _Alpha: 0.8
     - _BubbleThreeshold: 0.5
     - _Bubble_Strengh: 1
-    - _Height: 0.04
+    - _Height: 0.161
     - _HueShift: 0
     - _MinHeight: 0
     - _QueueControl: 0
@@ -58,7 +58,7 @@ Material:
     - _WaveStrenght: 0
     - _XRMotionVectorsPass: 1
     m_Colors:
-    - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    - _BaseColor: {r: 0.6898161, g: 0.81350064, b: 0.875817, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &9116739510971679461

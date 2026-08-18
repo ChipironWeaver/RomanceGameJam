@@ -33,6 +33,7 @@ public class UIAnimator : MonoBehaviour
 
     public void Fade(int baseIndex)
     {
+        print(baseIndex);
         int index = Mathf.Abs(baseIndex);
         if(_activeIndexList.Contains(index)) return;
         if (isInAnimation && !_animationGroups[index].forceAnimation) return;
@@ -58,8 +59,9 @@ public class UIAnimator : MonoBehaviour
 
     public void FadeOut(int index)
     {
+        print("Fade Out " + index);
         _animationGroups[index].Animate(true);
-        _activeIndexList.RemoveAt(index);
+        if(_activeIndexList.Contains(index)) _activeIndexList.Remove(index);
     }
 
     private IEnumerator ToggleIsInAnimation(float duration)

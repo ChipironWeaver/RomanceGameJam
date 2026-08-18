@@ -32,21 +32,11 @@ public class BarTendingController : MonoBehaviour
     [SerializeField] private string _recipes;
     
     private int _currentLiquidAmount;
+    private List<int> _activeLiquidGroups = new List<int>();
     private int _currentGameState;
     private List<int> _activeDecorationGroups = new List<int>();
     private List<GameObject> _drinkUiList = new List<GameObject>();
     private List<GameObject> _decorationUiList = new List<GameObject>();
-    
-    public void Start()
-    {
-        
-        _liquidController.liquids = _liquids;
-        _liquidController.sizePerLiquid = 1f / _maxLiquids;
-        _completeButton.interactable = false;
-        
-        CreateUI();
-        ResetDrink();
-    }
     
     [Button]
     public void CreateUI()
@@ -91,6 +81,40 @@ public class BarTendingController : MonoBehaviour
         }
     }
 
+    [Button]
+    public void GameplayStart()
+    {
+        if(_currentGameState > 0) return;
+        ResetDrink();
+        _currentGameState = 1;
+        NextGameplayPhase();
+    }
+
+    [Button]
+    public void NextGameplayPhase()
+    {
+        switch (_currentGameState)
+        {
+            case 1 : //null to drink
+                _uiAnimator.Fade(0);
+                _currentGameState++;
+                break;
+            case 2 : //drink to decoration
+                if (_currentLiquidAmount == _maxLiquids)
+                {
+                    _uiAnimator.Fade(1);
+                    _uiAnimator.FadeOut(0);
+                    _uiAnimator.FadeOut(2);
+                    _currentGameState++;
+                }
+                break;
+            case 3 : //decoration to review
+                break;
+            case 4 : //review to replay or game end
+                break;
+        }
+    }
+
     private void CreateLiquidButton(int index)
     {
         Liquid liquid = _liquids[index];
@@ -113,18 +137,32 @@ public class BarTendingController : MonoBehaviour
     
     public void AddLiquidIndex(int index)
     {
-        if (_currentLiquidAmount == _maxLiquids)
-        {
-            _completeButton.interactable = true;
-        }
+        if(_currentGameState != 2 | _currentLiquidAmount == _maxLiquids) return;
+        
+        if(!_emptyButton.gameObject.activeSelf) _uiAnimator.Fade(2);
+        
 
         bool result = _liquidController.AddLiquidFromIndex(index);
         print(result);
-        if (result) _currentLiquidAmount ++;
+        if (result)
+        {
+            _currentLiquidAmount++;
+            if (_currentLiquidAmount == _maxLiquids)
+            {
+                _completeButton.interactable = true;
+                _uiAnimator.FadeOut(2);
+                _uiAnimator.Fade(3);
+                //fade
+            }
+            _activeLiquidGroups.Add(index);
+        }
     }
 
     public void Empty()
     {
+        if(_currentGameState > 2) return;
+        _activeLiquidGroups.Clear();
+        _uiAnimator.FadeOut(2);
         _currentLiquidAmount = 0;
         _completeButton.interactable = false;
         _liquidController.Empty();
@@ -132,6 +170,7 @@ public class BarTendingController : MonoBehaviour
 
     public void ShowDecoration(int index)
     {
+        if(_currentGameState != 3) return;
         
         int groupIndex = FindGroupIndex(index);
         if (index == -1) return;
@@ -186,7 +225,7 @@ public class BarTendingController : MonoBehaviour
                     dec.SetActive(false);
                 }
             }
-            //Set null case as active
+            
             foreach (var dec in _decorationGroups[index].noDecorationState.decorationObject)
             {
                 dec.SetActive(true);
@@ -236,6 +275,9 @@ public class BarTendingController : MonoBehaviour
         {
             RemoveDecorationGroup(i);
         }
+        _liquidController.liquids = _liquids;
+        _liquidController.sizePerLiquid = 1f / _maxLiquids;
+        _completeButton.interactable = false;
         Empty();
     }
     
@@ -261,4 +303,12 @@ public class Decoration
     public bool hasColorOptions;
     [ShowIf("hasColorOptions")] public List<Color> colorOptions = new List<Color>();
     [ShowIf("hasColorOptions")] public List<Sprite> customColorSprites = new List<Sprite>();
+}
+
+[Serializable]
+public class Recipe
+{
+    public string name;
+    public List<int> liquids;
+    public List<int> decorations; 
 }
