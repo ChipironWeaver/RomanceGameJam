@@ -300,6 +300,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 375142041284915845}
+  - {fileID: 1792528598}
   - {fileID: 5770032907167568948}
   m_Father: {fileID: 159665028}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -631,13 +632,12 @@ MonoBehaviour:
   _completeButton: {fileID: 1347365240}
   _uiAnimator: {fileID: 528513703}
   _decorationGroups:
-  - name: "Cr\xE8me"
+  - name: Paille
     sprite: {fileID: 0}
     noDecorationState:
       name: 
-      decorationObject:
-      - {fileID: 433439305}
-      optionToDisable: 0400000005000000060000000b0000000c000000
+      decorationObject: []
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -645,40 +645,66 @@ MonoBehaviour:
       colorOptions: []
       customColorSprites: []
     decorations:
-    - name: One Layer Icecream
+    - name: StrawBend
       decorationObject:
-      - {fileID: 792856952676425870}
-      optionToDisable: 07000000
+      - {fileID: 4199156242286353225}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
-    - name: Two Layer Icecream
+    - name: Straw
       decorationObject:
-      - {fileID: 303085816645009348}
-      optionToDisable: 07000000
+      - {fileID: 8625498652610745777}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
-    - name: Three Layer IceCream
-      decorationObject:
-      - {fileID: 2353683291587521546}
-      optionToDisable: 07000000
+  - name: "Gla\xE7on"
+    sprite: {fileID: 0}
+    noDecorationState:
+      name: 
+      decorationObject: []
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
-    - name: Whipped Cream
+    decorations:
+    - name: 1
       decorationObject:
-      - {fileID: 8604165058100066300}
-      optionToDisable: 07000000
+      - {fileID: 5773973975281743933}
+      optionToDisable: 
+      linkedImage: {fileID: 0}
+      material: {fileID: 0}
+      sprite: {fileID: 0}
+      hasColorOptions: 0
+      colorOptions: []
+      customColorSprites: []
+    - name: 2
+      decorationObject:
+      - {fileID: 5773973975281743933}
+      - {fileID: 7029716034693404716}
+      optionToDisable: 
+      linkedImage: {fileID: 0}
+      material: {fileID: 0}
+      sprite: {fileID: 0}
+      hasColorOptions: 0
+      colorOptions: []
+      customColorSprites: []
+    - name: 3
+      decorationObject:
+      - {fileID: 5773973975281743933}
+      - {fileID: 3315348195554855775}
+      - {fileID: 7029716034693404716}
+      optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -759,7 +785,7 @@ MonoBehaviour:
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
-    - name: Fruit Slice
+    - name: Lemon
       decorationObject:
       - {fileID: 2824252405610270802}
       optionToDisable: 
@@ -769,45 +795,9 @@ MonoBehaviour:
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
-  - name: "Gla\xE7on"
-    sprite: {fileID: 0}
-    noDecorationState:
-      name: 
-      decorationObject: []
-      optionToDisable: 
-      linkedImage: {fileID: 0}
-      material: {fileID: 0}
-      sprite: {fileID: 0}
-      hasColorOptions: 0
-      colorOptions: []
-      customColorSprites: []
-    decorations:
-    - name: 1
+    - name: Orange
       decorationObject:
-      - {fileID: 5773973975281743933}
-      optionToDisable: 
-      linkedImage: {fileID: 0}
-      material: {fileID: 0}
-      sprite: {fileID: 0}
-      hasColorOptions: 0
-      colorOptions: []
-      customColorSprites: []
-    - name: 2
-      decorationObject:
-      - {fileID: 5773973975281743933}
-      - {fileID: 7029716034693404716}
-      optionToDisable: 
-      linkedImage: {fileID: 0}
-      material: {fileID: 0}
-      sprite: {fileID: 0}
-      hasColorOptions: 0
-      colorOptions: []
-      customColorSprites: []
-    - name: 3
-      decorationObject:
-      - {fileID: 5773973975281743933}
-      - {fileID: 3315348195554855775}
-      - {fileID: 7029716034693404716}
+      - {fileID: 1792528597}
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
@@ -868,12 +858,13 @@ MonoBehaviour:
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
-  - name: Paille
+  - name: "Cr\xE8me"
     sprite: {fileID: 0}
     noDecorationState:
       name: 
-      decorationObject: []
-      optionToDisable: 
+      decorationObject:
+      - {fileID: 433439305}
+      optionToDisable: 0500000006000000070000000a0000000b000000
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -881,20 +872,40 @@ MonoBehaviour:
       colorOptions: []
       customColorSprites: []
     decorations:
-    - name: StrawBend
+    - name: One Layer Icecream
       decorationObject:
-      - {fileID: 4199156242286353225}
-      optionToDisable: 
+      - {fileID: 792856952676425870}
+      optionToDisable: 0800000009000000
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
-    - name: Straw
+    - name: Two Layer Icecream
       decorationObject:
-      - {fileID: 8625498652610745777}
-      optionToDisable: 
+      - {fileID: 303085816645009348}
+      optionToDisable: 0800000009000000
+      linkedImage: {fileID: 0}
+      material: {fileID: 0}
+      sprite: {fileID: 0}
+      hasColorOptions: 0
+      colorOptions: []
+      customColorSprites: []
+    - name: Three Layer IceCream
+      decorationObject:
+      - {fileID: 2353683291587521546}
+      optionToDisable: 0800000009000000
+      linkedImage: {fileID: 0}
+      material: {fileID: 0}
+      sprite: {fileID: 0}
+      hasColorOptions: 0
+      colorOptions: []
+      customColorSprites: []
+    - name: Whipped Cream
+      decorationObject:
+      - {fileID: 8604165058100066300}
+      optionToDisable: 0800000009000000
       linkedImage: {fileID: 0}
       material: {fileID: 0}
       sprite: {fileID: 0}
@@ -908,7 +919,7 @@ MonoBehaviour:
   _uiRemoveGroupSprite: {fileID: 0}
   _singularDrinkUiPrefab: {fileID: 3888891298634507957, guid: 061a97d9f9185ed4a92318aee5f5d023, type: 3}
   _liquids:
-  - name: Lemonade
+  - name: Soda
     usable: 0
     sprite: {fileID: 0}
     color: {r: 1, g: 0.9986682, b: 0.627451, a: 1}
@@ -917,43 +928,7 @@ MonoBehaviour:
     hueShift: 0
     valueShift: 0
     saturationShift: 0
-  - name: Lemonade
-    usable: 0
-    sprite: {fileID: 0}
-    color: {r: 0.8117921, g: 1, b: 0.627451, a: 1}
-    alpha: 0.8
-    smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
-  - name: Lemonade
-    usable: 0
-    sprite: {fileID: 0}
-    color: {r: 0.63931555, g: 1, b: 0.627451, a: 1}
-    alpha: 0.8
-    smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
-  - name: Lemonade
-    usable: 0
-    sprite: {fileID: 0}
-    color: {r: 0.627451, g: 1, b: 0.8180098, a: 1}
-    alpha: 0.8
-    smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
-  - name: Lemonade
-    usable: 0
-    sprite: {fileID: 0}
-    color: {r: 0.627451, g: 1, b: 0.9885887, a: 1}
-    alpha: 0.8
-    smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
-  - name: Lemonade
+  - name: "Th\xE9"
     usable: 0
     sprite: {fileID: 0}
     color: {r: 0.627451, g: 0.87432873, b: 1, a: 1}
@@ -962,7 +937,43 @@ MonoBehaviour:
     hueShift: 0
     valueShift: 0
     saturationShift: 0
-  - name: Lemonade
+  - name: Jus d'orange
+    usable: 0
+    sprite: {fileID: 0}
+    color: {r: 0.8117921, g: 1, b: 0.627451, a: 1}
+    alpha: 0.8
+    smoothness: 0
+    hueShift: 0
+    valueShift: 0
+    saturationShift: 0
+  - name: Jus de cerise
+    usable: 0
+    sprite: {fileID: 0}
+    color: {r: 0.63931555, g: 1, b: 0.627451, a: 1}
+    alpha: 0.8
+    smoothness: 0
+    hueShift: 0
+    valueShift: 0
+    saturationShift: 0
+  - name: Jus de myrtille
+    usable: 0
+    sprite: {fileID: 0}
+    color: {r: 0.627451, g: 1, b: 0.8180098, a: 1}
+    alpha: 0.8
+    smoothness: 0
+    hueShift: 0
+    valueShift: 0
+    saturationShift: 0
+  - name: Sirop de canne
+    usable: 0
+    sprite: {fileID: 0}
+    color: {r: 0.627451, g: 1, b: 0.9885887, a: 1}
+    alpha: 0.8
+    smoothness: 0
+    hueShift: 0
+    valueShift: 0
+    saturationShift: 0
+  - name: Sirop de citron
     usable: 0
     sprite: {fileID: 0}
     color: {r: 0.627451, g: 0.81305087, b: 1, a: 1}
@@ -971,7 +982,7 @@ MonoBehaviour:
     hueShift: 0
     valueShift: 0
     saturationShift: 0
-  - name: Lemonade
+  - name: Sirop de Melon
     usable: 0
     sprite: {fileID: 0}
     color: {r: 0.6302053, g: 0.627451, b: 1, a: 1}
@@ -980,7 +991,7 @@ MonoBehaviour:
     hueShift: 0
     valueShift: 0
     saturationShift: 0
-  - name: Lemonade
+  - name: Sirop De Fraise
     usable: 0
     sprite: {fileID: 0}
     color: {r: 0.78325546, g: 0.627451, b: 1, a: 1}
@@ -989,74 +1000,12 @@ MonoBehaviour:
     hueShift: 0
     valueShift: 0
     saturationShift: 0
-  - name: Lemonade
-    usable: 0
-    sprite: {fileID: 0}
-    color: {r: 1, g: 0.627451, b: 0.9558506, a: 1}
-    alpha: 0.8
-    smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
-  - name: Lemonade
-    usable: 0
-    sprite: {fileID: 0}
-    color: {r: 1, g: 0.627451, b: 0.7656794, a: 1}
-    alpha: 0.8
-    smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
-  - name: Lemonade
-    usable: 0
-    sprite: {fileID: 0}
-    color: {r: 1, g: 0.627451, b: 0.6565761, a: 1}
-    alpha: 0.8
-    smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
-  - name: Lemonade
-    usable: 0
-    sprite: {fileID: 0}
-    color: {r: 1, g: 0.67413396, b: 0.627451, a: 1}
-    alpha: 0.8
-    smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
-  - name: Lemonade
-    usable: 0
-    sprite: {fileID: 0}
-    color: {r: 1, g: 0.9986682, b: 0.627451, a: 1}
-    alpha: 0.8
-    smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
-  - name: Lemonade
-    usable: 0
-    sprite: {fileID: 0}
-    color: {r: 1, g: 0.80626166, b: 0.627451, a: 1}
-    alpha: 0.8
-    smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
-  - name: Lemonade
-    usable: 0
-    sprite: {fileID: 0}
-    color: {r: 1, g: 0.9288271, b: 0.627451, a: 1}
-    alpha: 0.8
-    smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
   _maxLiquids: 3
-  _recipes:
-  - name: 
-    liquids: 
-    decorations: 
+  _recipes: []
+  _liquidScoreMultiplier: 1
+  _decorationScoreMultiplier: 1
+  currentUnlockedDrinkAmount: -1
+  currentUnlockedDecorationAmount: -1
 --- !u!114 &528513703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1945,9 +1894,9 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 0
+  m_Spacing: 5
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
@@ -2080,6 +2029,96 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &1792528597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1792528598}
+  - component: {fileID: 1792528600}
+  - component: {fileID: 1792528599}
+  m_Layer: 0
+  m_Name: orangeSlice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1792528598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792528597}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00038, y: -0.00886, z: 0}
+  m_LocalScale: {x: 1.05886, y: 1.06501, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 433439306}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1792528599
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792528597}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5e2cdc5d01cc25745a5827770bcd02b2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1792528600
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792528597}
+  m_Mesh: {fileID: 5643415380423485049, guid: f71638fe2f309c741906bbc37b4f6164, type: 3}
 --- !u!1 &1830582524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2319,6 +2358,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037454946}
   m_CullTransparentMesh: 1
+--- !u!1 &2040217276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2040217277}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2040217277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040217276}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.30342, y: -0, z: -0.40046}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &44880856498484734
 GameObject:
   m_ObjectHideFlags: 0
@@ -4266,7 +4336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &3339394308790713001
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5778,7 +5848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &5886852412985114750
 GameObject:
   m_ObjectHideFlags: 0
@@ -6254,7 +6324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &7053843137230184856
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7639,3 +7709,4 @@ SceneRoots:
   - {fileID: 339412085}
   - {fileID: 41616531}
   - {fileID: 543450652855437171}
+  - {fileID: 2040217277}

@@ -43,52 +43,32 @@ public class BarTendingController : MonoBehaviour
     private List<int> _activeDecorationGroups = new List<int>();
     private List<GameObject> _drinkUiList = new List<GameObject>();
     private List<GameObject> _decorationUiList = new List<GameObject>();
-    
-    [Button]
-    public void CreateUI()
+
+
+    public void Start()
     {
-        for (int i = 0; i < _liquids.Count; i++)
-        {
-            CreateLiquidButton(i);
-        }
-
-        int currentGroupIndex = 0;
-        for (int i = 0; i < _decorationGroups.Count; i++)
-        {
-            GameObject group = Instantiate(_decorationGroupPanelPrefab, _decorationPanel.transform);
-            group.name = "Decoration Panel " + _decorationGroups[i].name + " at " + i;
-            UIDrinkReferences uiGroupReferences = group.GetComponent<UIDrinkReferences>();
-            uiGroupReferences.nameText.text = _decorationGroups[i].name;
-
-            GameObject removeGroupButton = Instantiate(_decorationPrefab, uiGroupReferences.groupChild.transform);
-            removeGroupButton.name = "Remove Decoration Group Button";
-            UIDrinkReferences  uiRemoveGroupReference = removeGroupButton.GetComponent<UIDrinkReferences>();
-            if(_uiRemoveGroupSprite) uiRemoveGroupReference.image.sprite = _uiRemoveGroupSprite;
-            else uiRemoveGroupReference.image.color = Color.crimson;
-            var i1 = i;
-            uiRemoveGroupReference.button.onClick.AddListener(() => RemoveDecorationGroup(i1));
-            
-            for (int y = 0; y < _decorationGroups[i].decorations.Count; y++)
-            {
-                GameObject decoration = Instantiate(_decorationPrefab, uiGroupReferences.groupChild.transform);
-                decoration.name = "Decoration: " + _decorationGroups[i].decorations[y].name + " at " + y;
-                UIDrinkReferences  uiDecoReference = decoration.GetComponent<UIDrinkReferences>();
-                _decorationGroups[i].decorations[y].linkedImage = uiDecoReference.backGround;
-
-                if (_decorationGroups[i].decorations[y].sprite)
-                    uiDecoReference.image.sprite = _decorationGroups[i].decorations[y].sprite;
-                var index = currentGroupIndex;
-                var y1 = y;
-                uiDecoReference.button.onClick.AddListener(() => ShowDecoration(index + y1));
-                _decorationUiList.Add(decoration);
-            }
-            
-            currentGroupIndex += _decorationGroups[i].decorations.Count;
-        }
+     
     }
 
     [Button]
-    public void GameplayStart()
+    public void CreateUI()
+    {
+        if(currentUnlockedDrinkAmount == -1) for (int i = 0; i < _liquids.Count; i++) CreateLiquidButton(i);
+        else for (int i = 0; i < Mathf.Min(_liquids.Count,currentUnlockedDrinkAmount); i++) CreateLiquidButton(i);
+        
+        if(currentUnlockedDecorationAmount == -1) for (int i = 0; i < _decorationGroups.Count; i++) CreateDecorationButton(i);
+        else for (int i = 0; i < Mathf.Min(_decorationGroups.Count,currentUnlockedDecorationAmount); i++) CreateDecorationButton(i);
+    }
+
+    public void DeleteUI()
+    {
+        foreach(GameObject ui in _drinkUiList) Destroy(ui);
+        _drinkUiList.Clear();
+        foreach(GameObject ui in _decorationUiList) Destroy(ui);
+        _decorationUiList.Clear();
+    }
+    
+    public void GameplayStart(int amountOfClient, int difficulty, MainCharacters characters = MainCharacters.None)
     {
         if(_currentGameState > 0) return;
         ResetDrink();
@@ -115,12 +95,14 @@ public class BarTendingController : MonoBehaviour
                 }
                 break;
             case 3 : //decoration to review
+                _uiAnimator.FadeOut(1);
+                _uiAnimator.FadeOut(3);
+                print("bob");
                 break;
             case 4 : //review to replay or game end
                 break;
         }
     }
-
     private void CreateLiquidButton(int index)
     {
         Liquid liquid = _liquids[index];
@@ -140,7 +122,35 @@ public class BarTendingController : MonoBehaviour
         }
         _drinkUiList.Add(liquidUI);
     }
-    
+    private void CreateDecorationButton(int index)
+    {
+        GameObject group = Instantiate(_decorationGroupPanelPrefab, _decorationPanel.transform);
+        group.name = "Decoration Panel " + _decorationGroups[index].name + " at " + index;
+        UIDrinkReferences uiGroupReferences = group.GetComponent<UIDrinkReferences>();
+        uiGroupReferences.nameText.text = _decorationGroups[index].name;
+
+        GameObject removeGroupButton = Instantiate(_decorationPrefab, uiGroupReferences.groupChild.transform);
+        removeGroupButton.name = "Remove Decoration Group Button";
+        UIDrinkReferences  uiRemoveGroupReference = removeGroupButton.GetComponent<UIDrinkReferences>();
+        if(_uiRemoveGroupSprite) uiRemoveGroupReference.image.sprite = _uiRemoveGroupSprite;
+        else uiRemoveGroupReference.image.color = Color.crimson;
+        uiRemoveGroupReference.button.onClick.AddListener(() => RemoveDecorationGroup(index));
+            
+        for (int y = 0; y < _decorationGroups[index].decorations.Count; y++)
+        {
+            GameObject decoration = Instantiate(_decorationPrefab, uiGroupReferences.groupChild.transform);
+            decoration.name = "Decoration: " + _decorationGroups[index].decorations[y].name + " at " + y;
+            UIDrinkReferences  uiDecoReference = decoration.GetComponent<UIDrinkReferences>();
+            _decorationGroups[index].decorations[y].linkedImage = uiDecoReference.backGround;
+
+            if (_decorationGroups[index].decorations[y].sprite)
+                uiDecoReference.image.sprite = _decorationGroups[index].decorations[y].sprite;
+
+            int y1 = y;
+            uiDecoReference.button.onClick.AddListener(() => ShowDecoration(FindGroupCount(index) + y1));
+            _decorationUiList.Add(decoration);
+        }
+    }
     public void AddLiquidIndex(int index)
     {
         if(_currentGameState != 2 | _currentLiquidAmount == _maxLiquids) return;
@@ -176,6 +186,7 @@ public class BarTendingController : MonoBehaviour
 
     public void ShowDecoration(int index)
     {
+        print("showing decoration nmb : "  + index);
         if(_currentGameState != 3) return;
         
         int groupIndex = FindGroupIndex(index);
@@ -195,7 +206,6 @@ public class BarTendingController : MonoBehaviour
             _decorationUiList[y].SetActive(false);
             if (y - FindGroupIndex(y,true) == _activeDecorationGroups[FindGroupIndex(y)])
             {
-                print("y");
                 RemoveDecorationGroup(FindGroupIndex(y));
             }
         }
@@ -221,6 +231,8 @@ public class BarTendingController : MonoBehaviour
 
     public void RemoveDecorationGroup(int index,List<int> blackList = null)
     {
+        if (currentUnlockedDecorationAmount != -1 && index < currentUnlockedDecorationAmount) return;
+        
         if (_decorationGroups.Count > index)
         {
             foreach (Decoration decoration in _decorationGroups[index].decorations)
@@ -242,59 +254,62 @@ public class BarTendingController : MonoBehaviour
             _activeDecorationGroups[index] = -1;
             foreach (int y in _decorationGroups[index].noDecorationState.optionToDisable)
             {
-                _decorationUiList[y].SetActive(false);
-                int groupIndex = FindGroupIndex(y);
-                blackList ??= new List<int>();
-                if(!blackList.Contains(y))
+                if(y < _decorationUiList.Count)
                 {
-                    blackList.Add(y);
-                    RemoveDecorationGroup(groupIndex);
+                    _decorationUiList[y].SetActive(false);
+                    int groupIndex = FindGroupIndex(y);
+                    blackList ??= new List<int>();
+                    if (!blackList.Contains(y))
+                    {
+                        blackList.Add(y);
+                        RemoveDecorationGroup(groupIndex, blackList);
+                    }
                 }
             }
         }
         
         print(ChipironUtility.GetListString(_activeDecorationGroups));
-    }
+    } 
 
-    public Recipe GenerateRecipe(string recipeName, List<int> liquids, List<int> decorations)
-    {
-        return new Recipe
-        {
-            name = recipeName,
-            liquids = liquids,
-            decorations = decorations,
-        };
-    }
 
-    public float RateRecipe(Recipe ratedRecipe, Recipe recipe)
+
+    public float RateRecipe(List<int> decoration,List<int> liquids, Recipe recipe)
     {
         float liquidScore = 0;
         float liquidTotalScore = 0;
         float decorationScore = 0;
         float decorationTotalScore = 0;
 
-        for (int i = 0; i < Mathf.Min(recipe.liquids.Count, ratedRecipe.liquids.Count ); i++)
+        
+        for (int i = 0; i < Mathf.Min(recipe.liquids.Count, liquids.Count ); i++)
         {
             if (recipe.liquids[i] != -1)
             {
                 liquidTotalScore++;
-                if (ratedRecipe.liquids[i] == recipe.liquids[i]) liquidScore++;
+                if (liquids[i] == recipe.liquids[i]) liquidScore++;
             }
         }
         
-        for (int i = 0; i < Mathf.Min(recipe.decorations.Count, ratedRecipe.decorations.Count ); i++)
+        for (int i = 0; i < Mathf.Min(recipe.decorations.Count, decoration.Count ); i++)
         {
-            if (recipe.decorations[i] != -1)
+            if (recipe.decorations[i].validIndexes.Count == 0)
+            {
+                if (recipe.decorations[i].hasToBeEmpty)
+                {
+                    decorationTotalScore++;
+                    if (decoration[i] == -1) decorationScore++;
+                } 
+            }
+            else
             {
                 decorationTotalScore++;
-                if (ratedRecipe.decorations[i] == recipe.decorations[i]) decorationScore++;
+                if (recipe.decorations[i].validIndexes.Contains(decoration[i])) decorationScore++;
             }
         }
         
         if (liquidTotalScore == 0) return -1;
         return (liquidScore / liquidTotalScore * _liquidScoreMultiplier + decorationScore / decorationTotalScore * _decorationScoreMultiplier) / (_liquidScoreMultiplier + _decorationScoreMultiplier);
     }
-    
     
     public int FindGroupIndex(int index, bool isPosition = false)
     {
@@ -304,6 +319,20 @@ public class BarTendingController : MonoBehaviour
             if (indexSearch + _decorationGroups[i].decorations.Count > index)
             {
                 return isPosition? indexSearch : i;
+            }
+            indexSearch += _decorationGroups[i].decorations.Count;
+        }
+        return -1;
+    }
+    
+    public int FindGroupCount(int index)
+    {
+        int indexSearch = 0;
+        for (int i = 0; i < _decorationGroups.Count; i++)
+        {
+            if (i == index)
+            {
+                return indexSearch;
             }
             indexSearch += _decorationGroups[i].decorations.Count;
         }
@@ -347,7 +376,7 @@ public class Decoration
     public Material material;
     public Sprite sprite;
     public bool hasColorOptions;
-    [ShowIf("hasColorOptions")] public List<Color> colorOptions = new List<Color>();
+    [ShowIf("hasColorOptions")] public List<Material> colorOptions = new List<Material>();
     [ShowIf("hasColorOptions")] public List<Sprite> customColorSprites = new List<Sprite>();
 }
 
@@ -355,6 +384,15 @@ public class Decoration
 public class Recipe
 {
     public string name;
+    public int difficulty;
+    public MainCharacters characters;
     public List<int> liquids;
-    public List<int> decorations; 
+    public List<RecipeComponent> decorations; 
+}
+
+[Serializable]
+public class RecipeComponent
+{
+    public bool hasToBeEmpty;
+    public List<int> validIndexes;
 }
