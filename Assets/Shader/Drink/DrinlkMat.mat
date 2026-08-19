@@ -63,7 +63,7 @@ Material:
     - _WaveStrenght: 0
     - _XRMotionVectorsPass: 1
     m_Colors:
-    - _BaseColor: {r: 0.751634, g: 0.9372397, b: 0.8720132, a: 1}
+    - _BaseColor: {r: 0.875817, g: 0.9991121, b: 0.6909706, a: 1}
     - _LightColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

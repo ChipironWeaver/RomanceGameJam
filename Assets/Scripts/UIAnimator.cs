@@ -33,11 +33,10 @@ public class UIAnimator : MonoBehaviour
 
     public void Fade(int baseIndex)
     {
-        print(baseIndex);
         int index = Mathf.Abs(baseIndex);
         if(_activeIndexList.Contains(index)) return;
         if (isInAnimation && !_animationGroups[index].forceAnimation) return;
-        if (_animationGroups[index].forceAnimation) DOTween.KillAll();
+        //if (_animationGroups[index].forceAnimation) DOTween.KillAll();
 
         if(_animationGroups[index].soloOnScreen)
         {
@@ -133,7 +132,7 @@ public class UIAnimator : MonoBehaviour
             }
             else
             {
-                DOTween.Kill(singleAnimationObject);
+                //DOTween.Kill(singleAnimationObject);
                 sequenceTime = singleAnimationObject.delay + singleAnimationObject.duration;
                 singleAnimationObject.Animate(isFadeOut);
             }
@@ -157,6 +156,8 @@ public class UIAnimator : MonoBehaviour
         public float delay;
         public UnityEvent onAnimationStart;
         public UnityEvent onAnimationEnd;
+
+        private Sequence seq;
         
         private Vector2 _basePosition;
         public void Animate(bool isFadeOut = false, float biggestDelay = 0)
@@ -175,7 +176,7 @@ public class UIAnimator : MonoBehaviour
                 target.localPosition = distance * direction + (useBaseTargetPosition ? target.localPosition : targetPosition);
             }
             
-            Sequence seq = DOTween.Sequence();
+            seq = DOTween.Sequence();
             seq.SetUpdate(true);
             seq.AppendInterval( isFadeOut ? Mathf.Max(biggestDelay - (delay + duration),0) : delay);
             seq.Append(target.DOLocalMove(isFadeOut ? distance * direction + (useBaseTargetPosition ? _basePosition : targetPosition):

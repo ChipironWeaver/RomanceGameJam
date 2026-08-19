@@ -1,20 +1,36 @@
 using System;
 using System.Collections.Generic;
+using DG.Tweening;
 using NaughtyAttributes;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class BarTendingController : MonoBehaviour
 {
+    public UnityEvent endShiftEvent = new UnityEvent(); 
+    
     [Header("References")] 
     [SerializeField] private LiquidController _liquidController;
     [SerializeField] private GameObject _drinkParentModel;
     [SerializeField] private GameObject _drinkPanel;
     [SerializeField] private GameObject _decorationPanel;
+    [SerializeField] private TextMeshProUGUI _hintText;
+    [SerializeField] private UIDrinkReferences _ratingPanel;
     [SerializeField] private Button _emptyButton;
     [SerializeField] private Button _completeButton;
     [SerializeField] private UIAnimator _uiAnimator;
 
+    [Header("Camera")] 
+    [SerializeField] private Camera _camera;
+    [SerializeField] private Vector3 _baseCameraRotation;
+    [SerializeField] private Vector3 _gameplayCameraRotation;
+    [SerializeField] private float _baseFOV;
+    [SerializeField] private float _gameplayFOV;
+    [SerializeField] private Ease _cameraEase;
+    [SerializeField] private float _cameraMoveTime;
+    
     [Header("Decoration")] 
     [SerializeField] private List<DecorationGroup> _decorationGroups = new List<DecorationGroup>();
     [SerializeField] private GameObject _decorationGroupPanelPrefab;
@@ -32,10 +48,27 @@ public class BarTendingController : MonoBehaviour
     [SerializeField] private List<Recipe> _recipes;
     [SerializeField] private float _liquidScoreMultiplier = 1f;
     [SerializeField] private float _decorationScoreMultiplier = 1f;
+    [SerializeField] private float _maxDay;
+    [SerializeField,CurveRange(0,0,1,100,EColor.Red)] private AnimationCurve _angryThreshold;
+    [SerializeField,CurveRange(0,0,1,100)] private AnimationCurve _happyThreshold;
+
+    [Header("Review Graphism")] 
+    [SerializeField] private Sprite _angrySprite;
+    [SerializeField] private Sprite _happySprite;
+    [SerializeField] private Sprite _neutralSprite;
+    [SerializeField] private Color _neutralColor;
+    [SerializeField] private Color _happyColor;
+    [SerializeField] private Color _angryColor;
 
     [Header("Current Unlocked")] 
     [SerializeField] public int currentUnlockedDrinkAmount = -1;
     [SerializeField] public int currentUnlockedDecorationAmount = -1;
+
+    [Header("Characters")] 
+    [SerializeField] private GameObject _daria;
+    [SerializeField] private GameObject _angelina;
+    [SerializeField] private GameObject _karin;
+    [SerializeField] private List<GameObject> _npcs;
     
     private int _currentLiquidAmount;
     private List<int> _activeLiquidGroups = new List<int>();
@@ -44,10 +77,16 @@ public class BarTendingController : MonoBehaviour
     private List<GameObject> _drinkUiList = new List<GameObject>();
     private List<GameObject> _decorationUiList = new List<GameObject>();
 
+    private int _amountOfClientLeft = 0;
+    private int _currentDay = 1;
+    private MainCharacters _currentCharacter = MainCharacters.None;
+    private GameObject _currentCharacterObject;
+    private Recipe _currentRecipe;
+    
 
     public void Start()
     {
-     
+        GameplayStart(1, 1, MainCharacters.Angelina);
     }
 
     [Button]
@@ -60,6 +99,12 @@ public class BarTendingController : MonoBehaviour
         else for (int i = 0; i < Mathf.Min(_decorationGroups.Count,currentUnlockedDecorationAmount); i++) CreateDecorationButton(i);
     }
 
+    public void DoCameraMove(bool toGameplay)
+    {
+        _camera.transform.DORotate(toGameplay?_gameplayCameraRotation : _baseCameraRotation,_cameraMoveTime).SetEase(_cameraEase);
+        _camera.DOFieldOfView(toGameplay?_gameplayFOV : _baseFOV,_cameraMoveTime).SetEase(_cameraEase);
+    }
+    
     public void DeleteUI()
     {
         foreach(GameObject ui in _drinkUiList) Destroy(ui);
@@ -68,9 +113,13 @@ public class BarTendingController : MonoBehaviour
         _decorationUiList.Clear();
     }
     
-    public void GameplayStart(int amountOfClient, int difficulty, MainCharacters characters = MainCharacters.None)
+    public void GameplayStart(int amountOfClient, int day, MainCharacters characters = MainCharacters.None)
     {
         if(_currentGameState > 0) return;
+        _amountOfClientLeft = amountOfClient;
+        _currentDay = day;
+        _currentCharacter = characters;
+        CreateUI();
         ResetDrink();
         _currentGameState = 1;
         NextGameplayPhase();
@@ -82,8 +131,13 @@ public class BarTendingController : MonoBehaviour
         switch (_currentGameState)
         {
             case 1 : //null to drink
+                _currentRecipe = _recipes[0]; // Need to randomize the recipes
+                _uiAnimator.Fade(4);
                 _uiAnimator.Fade(0);
+                _hintText.text = _currentRecipe.hint;
+                
                 _currentGameState++;
+                DoCameraMove(true);
                 break;
             case 2 : //drink to decoration
                 if (_currentLiquidAmount == _maxLiquids)
@@ -91,18 +145,83 @@ public class BarTendingController : MonoBehaviour
                     _uiAnimator.Fade(1);
                     _uiAnimator.FadeOut(0);
                     _uiAnimator.FadeOut(2);
+                    _uiAnimator.FadeOut(4);
                     _currentGameState++;
                 }
                 break;
             case 3 : //decoration to review
                 _uiAnimator.FadeOut(1);
                 _uiAnimator.FadeOut(3);
-                print("bob");
+                Rate();
+                _uiAnimator.Fade(5);
+                DoCameraMove(false);
+                _currentGameState++;
                 break;
-            case 4 : //review to replay or game end
+            case 4 : 
+                _uiAnimator.Fade(5);
                 break;
         }
     }
+
+    private void Rate()
+    {
+        float happyScore =  _happyThreshold.Evaluate(_currentDay/_maxDay);
+        float angryScore = _angryThreshold.Evaluate(_currentDay/_maxDay);
+        print(happyScore + " > " + angryScore);
+
+        float score  = RateRecipe(_activeDecorationGroups,_activeLiquidGroups,_currentRecipe);
+
+        _ratingPanel.nameText.text = score.ToString("N0") + " %";
+        
+        if (score > happyScore)
+        {
+            if(_happySprite)
+            {
+                _ratingPanel.image.sprite = _happySprite;
+                _ratingPanel.image.color = Color.white;
+            }
+            else
+            {
+                _ratingPanel.image.sprite = null;
+                _ratingPanel.image.color = _happyColor;
+            }
+            _ratingPanel.nameText.color = _happyColor;
+        }
+        else if (score < angryScore)
+        {
+            if(_angrySprite)
+            {
+                _ratingPanel.image.sprite = _angrySprite;
+                _ratingPanel.image.color = Color.white;
+            }
+            else
+            {
+                _ratingPanel.image.sprite = null;
+                _ratingPanel.image.color = _angryColor;
+            }
+            _ratingPanel.nameText.color = _angryColor;
+        }
+        else
+        {
+            if(_neutralSprite)
+            {
+                _ratingPanel.image.sprite = _neutralSprite;
+                _ratingPanel.image.color = Color.white;
+            }
+            else
+            {
+                _ratingPanel.image.sprite = null;
+                _ratingPanel.image.color = _neutralColor;
+            }
+            _ratingPanel.nameText.color = _neutralColor;
+        }
+    }
+
+    private void FadeCharacter(MainCharacters character, bool isFadeIn)
+    {
+        
+    }
+    
     private void CreateLiquidButton(int index)
     {
         Liquid liquid = _liquids[index];
@@ -157,9 +276,7 @@ public class BarTendingController : MonoBehaviour
         
         if(!_emptyButton.gameObject.activeSelf) _uiAnimator.Fade(2);
         
-
         bool result = _liquidController.AddLiquidFromIndex(index);
-        print(result);
         if (result)
         {
             _currentLiquidAmount++;
@@ -186,7 +303,6 @@ public class BarTendingController : MonoBehaviour
 
     public void ShowDecoration(int index)
     {
-        print("showing decoration nmb : "  + index);
         if(_currentGameState != 3) return;
         
         int groupIndex = FindGroupIndex(index);
@@ -267,26 +383,29 @@ public class BarTendingController : MonoBehaviour
                 }
             }
         }
-        
-        print(ChipironUtility.GetListString(_activeDecorationGroups));
     } 
-
-
 
     public float RateRecipe(List<int> decoration,List<int> liquids, Recipe recipe)
     {
+        print("Décoration : " + ChipironUtility.GetListString(decoration));
+        print("Liquids : " + ChipironUtility.GetListString(liquids));
         float liquidScore = 0;
         float liquidTotalScore = 0;
         float decorationScore = 0;
         float decorationTotalScore = 0;
 
+        recipe.liquids.Sort();
+        liquids.Sort();
         
-        for (int i = 0; i < Mathf.Min(recipe.liquids.Count, liquids.Count ); i++)
+        for (int i = 0 ; i < recipe.liquids.Count ; i++)
         {
             if (recipe.liquids[i] != -1)
             {
                 liquidTotalScore++;
-                if (liquids[i] == recipe.liquids[i]) liquidScore++;
+                if (liquids.Count > i)
+                {
+                    if(recipe.liquids[i] == liquids[i]) liquidScore++;
+                }
             }
         }
         
@@ -306,9 +425,9 @@ public class BarTendingController : MonoBehaviour
                 if (recipe.decorations[i].validIndexes.Contains(decoration[i])) decorationScore++;
             }
         }
-        
+        print(liquidScore + " / " + liquidTotalScore + " | " + decorationScore +  " / " + decorationTotalScore);
         if (liquidTotalScore == 0) return -1;
-        return (liquidScore / liquidTotalScore * _liquidScoreMultiplier + decorationScore / decorationTotalScore * _decorationScoreMultiplier) / (_liquidScoreMultiplier + _decorationScoreMultiplier);
+        return (liquidScore / liquidTotalScore * _liquidScoreMultiplier + decorationScore / decorationTotalScore * _decorationScoreMultiplier) / (_liquidScoreMultiplier + _decorationScoreMultiplier) *100;
     }
     
     public int FindGroupIndex(int index, bool isPosition = false)
@@ -355,7 +474,6 @@ public class BarTendingController : MonoBehaviour
         _completeButton.interactable = false;
         Empty();
     }
-    
 }
 
 [Serializable]
@@ -384,7 +502,8 @@ public class Decoration
 public class Recipe
 {
     public string name;
-    public int difficulty;
+    public int day;
+    public string hint;
     public MainCharacters characters;
     public List<int> liquids;
     public List<RecipeComponent> decorations; 
