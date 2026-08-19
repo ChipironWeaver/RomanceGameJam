@@ -7926,6 +7926,14 @@ MonoBehaviour:
     hueShift: 0
     valueShift: 0
     saturationShift: 0
+  _maxDay: 8
+  _clientAmountRange: {x: 2, y: 20}
+  _numberOfCustomerPerDayCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   _maxLiquids: 3
   _recipes:
   - name: Test
@@ -7940,7 +7948,6 @@ MonoBehaviour:
       validIndexes: 000000000100000002000000
   _liquidScoreMultiplier: 2
   _decorationScoreMultiplier: 1
-  _maxDay: 7
   _angryThreshold:
     serializedVersion: 2
     m_Curve:
@@ -7995,8 +8002,8 @@ MonoBehaviour:
   _neutralColor: {r: 0.6037736, g: 0.43646532, b: 0, a: 1}
   _happyColor: {r: 0.0012268232, g: 0.49056602, b: 0, a: 1}
   _angryColor: {r: 0.5188679, g: 0, b: 0.022817029, a: 1}
-  currentUnlockedDrinkAmount: -1
-  currentUnlockedDecorationAmount: -1
+  _currentUnlockedDrinkAmount: -1
+  _currentUnlockedDecorationAmount: -1
   _daria: {fileID: 0}
   _angelina: {fileID: 0}
   _karin: {fileID: 0}

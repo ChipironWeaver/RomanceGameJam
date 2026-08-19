@@ -44,11 +44,13 @@ public class BarTendingController : MonoBehaviour
     [SerializeField] private List<Liquid> _liquids = new List<Liquid>();
 
     [Header("Gameplay")] 
+    [SerializeField] private float _maxDay;
+    [SerializeField,MinMaxSlider(0.0f, 20.0f)] private Vector2 _clientAmountRange;
+    [SerializeField,CurveRange(0,0,1,100,EColor.Red)] private AnimationCurve _numberOfCustomerPerDayCurve;
     [SerializeField] private int _maxLiquids = 3;
     [SerializeField] private List<Recipe> _recipes;
     [SerializeField] private float _liquidScoreMultiplier = 1f;
     [SerializeField] private float _decorationScoreMultiplier = 1f;
-    [SerializeField] private float _maxDay;
     [SerializeField,CurveRange(0,0,1,100,EColor.Red)] private AnimationCurve _angryThreshold;
     [SerializeField,CurveRange(0,0,1,100)] private AnimationCurve _happyThreshold;
 
@@ -61,8 +63,8 @@ public class BarTendingController : MonoBehaviour
     [SerializeField] private Color _angryColor;
 
     [Header("Current Unlocked")] 
-    [SerializeField] public int currentUnlockedDrinkAmount = -1;
-    [SerializeField] public int currentUnlockedDecorationAmount = -1;
+    [SerializeField] private int _currentUnlockedDrinkAmount = -1;
+    [SerializeField] private int _currentUnlockedDecorationAmount = -1;
 
     [Header("Characters")] 
     [SerializeField] private GameObject _daria;
@@ -78,7 +80,7 @@ public class BarTendingController : MonoBehaviour
     private List<GameObject> _decorationUiList = new List<GameObject>();
 
     private int _amountOfClientLeft = 0;
-    private int _currentDay = 1;
+    private float _currentDay = 1;
     private MainCharacters _currentCharacter = MainCharacters.None;
     private GameObject _currentCharacterObject;
     private Recipe _currentRecipe;
@@ -86,17 +88,17 @@ public class BarTendingController : MonoBehaviour
 
     public void Start()
     {
-        GameplayStart(1, 1, MainCharacters.Angelina);
+        GameplayStart( 1, MainCharacters.None);
     }
 
     [Button]
     public void CreateUI()
     {
-        if(currentUnlockedDrinkAmount == -1) for (int i = 0; i < _liquids.Count; i++) CreateLiquidButton(i);
-        else for (int i = 0; i < Mathf.Min(_liquids.Count,currentUnlockedDrinkAmount); i++) CreateLiquidButton(i);
+        if(_currentUnlockedDrinkAmount == -1) for (int i = 0; i < _liquids.Count; i++) CreateLiquidButton(i);
+        else for (int i = 0; i < Mathf.Min(_liquids.Count,_currentUnlockedDrinkAmount); i++) CreateLiquidButton(i);
         
-        if(currentUnlockedDecorationAmount == -1) for (int i = 0; i < _decorationGroups.Count; i++) CreateDecorationButton(i);
-        else for (int i = 0; i < Mathf.Min(_decorationGroups.Count,currentUnlockedDecorationAmount); i++) CreateDecorationButton(i);
+        if(_currentUnlockedDecorationAmount == -1) for (int i = 0; i < _decorationGroups.Count; i++) CreateDecorationButton(i);
+        else for (int i = 0; i < Mathf.Min(_decorationGroups.Count,_currentUnlockedDecorationAmount); i++) CreateDecorationButton(i);
     }
 
     public void DoCameraMove(bool toGameplay)
@@ -113,10 +115,15 @@ public class BarTendingController : MonoBehaviour
         _decorationUiList.Clear();
     }
     
-    public void GameplayStart(int amountOfClient, int day, MainCharacters characters = MainCharacters.None)
+    public void GameplayStart(float day, MainCharacters characters = MainCharacters.None)
     {
         if(_currentGameState > 0) return;
-        _amountOfClientLeft = amountOfClient;
+        if(characters == MainCharacters.None)
+        {
+            _amountOfClientLeft = (int)ChipironUtility.EvaluateVector2(_clientAmountRange, _numberOfCustomerPerDayCurve.Evaluate(day / _maxDay));
+            if(_amountOfClientLeft <= 0) return;
+        }
+        else _amountOfClientLeft = 1;
         _currentDay = day;
         _currentCharacter = characters;
         CreateUI();
@@ -158,7 +165,19 @@ public class BarTendingController : MonoBehaviour
                 _currentGameState++;
                 break;
             case 4 : 
-                _uiAnimator.Fade(5);
+                _uiAnimator.FadeOut(5);
+                _amountOfClientLeft--;
+                ResetDrink();
+                if (_amountOfClientLeft == 0)
+                {
+                    DeleteUI();
+                    _currentGameState = -1;
+                }
+                else
+                {
+                    _currentGameState = 1;
+                    NextGameplayPhase();
+                }
                 break;
         }
     }
@@ -291,9 +310,9 @@ public class BarTendingController : MonoBehaviour
         }
     }
 
-    public void Empty()
+    public void Empty(bool force = false)
     {
-        if(_currentGameState > 2) return;
+        if(_currentGameState > 2 && ! force) return;
         _activeLiquidGroups.Clear();
         _uiAnimator.FadeOut(2);
         _currentLiquidAmount = 0;
@@ -347,7 +366,7 @@ public class BarTendingController : MonoBehaviour
 
     public void RemoveDecorationGroup(int index,List<int> blackList = null)
     {
-        if (currentUnlockedDecorationAmount != -1 && index < currentUnlockedDecorationAmount) return;
+        if (_currentUnlockedDecorationAmount != -1 && index < _currentUnlockedDecorationAmount) return;
         
         if (_decorationGroups.Count > index)
         {
@@ -472,7 +491,7 @@ public class BarTendingController : MonoBehaviour
         _liquidController.liquids = _liquids;
         _liquidController.sizePerLiquid = 1f / _maxLiquids;
         _completeButton.interactable = false;
-        Empty();
+        Empty(true);
     }
 }
 
