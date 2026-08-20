@@ -1738,7 +1738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5934065723119028206, guid: f8351be1c4715fa4696c96251a89b43f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 480
+      value: 490.19
       objectReference: {fileID: 0}
     - target: {fileID: 5934065723119028206, guid: f8351be1c4715fa4696c96251a89b43f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1746,7 +1746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5934065723119028206, guid: f8351be1c4715fa4696c96251a89b43f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 98.82
+      value: 93.83
       objectReference: {fileID: 0}
     - target: {fileID: 5934065723119028206, guid: f8351be1c4715fa4696c96251a89b43f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2412,7 +2412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8459640249049076627, guid: 0cf2f4037455a2a4ebe28238fd1e92fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 480.05
+      value: 488.5
       objectReference: {fileID: 0}
     - target: {fileID: 8459640249049076627, guid: 0cf2f4037455a2a4ebe28238fd1e92fc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2420,7 +2420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8459640249049076627, guid: 0cf2f4037455a2a4ebe28238fd1e92fc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 93.95
+      value: 94.8
       objectReference: {fileID: 0}
     - target: {fileID: 8459640249049076627, guid: 0cf2f4037455a2a4ebe28238fd1e92fc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4287,8 +4287,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -168.75, y: 180}
-  m_SizeDelta: {x: 337.5, y: 360}
+  m_AnchoredPosition: {x: -208, y: 195}
+  m_SizeDelta: {x: 406, y: 380}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &526488759790501378
 CanvasRenderer:
@@ -4309,7 +4309,7 @@ GameObject:
   - component: {fileID: 512631436969447263}
   - component: {fileID: 4915066445167752607}
   - component: {fileID: 1649609649514416824}
-  - component: {fileID: 7851135224071262879}
+  - component: {fileID: 4915066445167752608}
   m_Layer: 5
   m_Name: DecorationPanel
   m_TagString: Untagged
@@ -5347,14 +5347,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.81708205, b: 0.4009434, a: 1}
+  m_Color: {r: 0.9019608, g: 0.19607843, b: 0.40784314, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -576109322, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7949,6 +7949,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561315409519304016}
   m_CullTransparentMesh: 1
+--- !u!114 &4915066445167752608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561315409519304016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
+  m_Padding:
+    m_Left: 5
+    m_Right: 5
+    m_Top: 5
+    m_Bottom: 5
+  m_ChildAlignment: 0
+  m_Spacing: 5
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!4 &4921362919749924180
 Transform:
   m_ObjectHideFlags: 0
@@ -8582,7 +8608,7 @@ MonoBehaviour:
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: -2135513706, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8592,7 +8618,7 @@ MonoBehaviour:
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: -541461783, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8615,7 +8641,7 @@ MonoBehaviour:
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: 809339545, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8626,7 +8652,7 @@ MonoBehaviour:
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: 1293286688, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8638,7 +8664,7 @@ MonoBehaviour:
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: 733839617, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8677,7 +8703,7 @@ MonoBehaviour:
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: -966681551, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8690,7 +8716,7 @@ MonoBehaviour:
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: -294914223, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8712,7 +8738,7 @@ MonoBehaviour:
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: -1239806389, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8722,7 +8748,7 @@ MonoBehaviour:
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: 114109829, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8732,7 +8758,7 @@ MonoBehaviour:
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: -1868273090, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8758,7 +8784,7 @@ MonoBehaviour:
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: -1229959381, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8771,7 +8797,7 @@ MonoBehaviour:
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: -146943395, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8785,7 +8811,7 @@ MonoBehaviour:
       optionToDisable: 
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: 1490611659, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8809,7 +8835,7 @@ MonoBehaviour:
       optionToDisable: 0800000009000000
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: -1238460568, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8819,7 +8845,7 @@ MonoBehaviour:
       optionToDisable: 0800000009000000
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: 451818884, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8829,7 +8855,7 @@ MonoBehaviour:
       optionToDisable: 0800000009000000
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: 1295565969, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8839,7 +8865,7 @@ MonoBehaviour:
       optionToDisable: 0800000009000000
       linkedImage: {fileID: 0}
       material: {fileID: 0}
-      sprite: {fileID: 0}
+      sprite: {fileID: -2112002912, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
       hasColorOptions: 0
       colorOptions: []
       customColorSprites: []
@@ -8847,7 +8873,7 @@ MonoBehaviour:
   _decorationPrefab: {fileID: 1029218397518121308, guid: 16185fe30484cb44096f11b230b7ba31, type: 3}
   _uiSelectedColor: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
   _uiUnSelectedColor: {r: 1, g: 1, b: 1, a: 1}
-  _uiRemoveGroupSprite: {fileID: 0}
+  _uiRemoveGroupSprite: {fileID: 1309964954, guid: 2a602308e308ee44cab8750369b6818c, type: 3}
   _singularDrinkUiPrefab: {fileID: 3888891298634507957, guid: 061a97d9f9185ed4a92318aee5f5d023, type: 3}
   _liquids:
   - name: Soda
@@ -10773,32 +10799,6 @@ MonoBehaviour:
   _basePanelIndex: 0
   _fadeBasePanelOnStart: 0
   eventSystem: {fileID: 0}
---- !u!114 &7851135224071262879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561315409519304016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.VerticalLayoutGroup
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 0
-  m_Spacing: 5
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 1
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!1 &7878198368888488905
 GameObject:
   m_ObjectHideFlags: 0
