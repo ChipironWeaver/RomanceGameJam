@@ -9,6 +9,7 @@ using UnityEngine.Events;
 public class DialogueSequence : ScriptableObject
 {
     [Expandable] public List<Dialogue> dialogues;
+    public UnityEvent endEvent;
     
     [Header("End Branch Options")]
     public bool hasEndChoices;

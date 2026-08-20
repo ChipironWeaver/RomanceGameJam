@@ -7,6 +7,7 @@ using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class BarTendingController : MonoBehaviour
 {
@@ -22,6 +23,11 @@ public class BarTendingController : MonoBehaviour
     [SerializeField] private Button _emptyButton;
     [SerializeField] private Button _completeButton;
     [SerializeField] private UIAnimator _uiAnimator;
+    
+    [Header("Dialogue")]
+    [SerializeField] private DialogueController _dialogueController;
+    [SerializeField] private DialogueSequence _dialogueSequence;
+    [SerializeField] private List<String> _npcNames = new List<String>();
 
     [Header("Camera")] 
     [SerializeField] private Camera _camera;
@@ -75,7 +81,7 @@ public class BarTendingController : MonoBehaviour
     
     private int _currentLiquidAmount;
     private List<int> _activeLiquidGroups = new List<int>();
-    private int _currentGameState;
+    private int _currentGameState = -1;
     private List<int> _activeDecorationGroups = new List<int>();
     private List<GameObject> _drinkUiList = new List<GameObject>();
     private List<GameObject> _decorationUiList = new List<GameObject>();
@@ -85,13 +91,12 @@ public class BarTendingController : MonoBehaviour
     private MainCharacters _currentCharacter = MainCharacters.None;
     private GameObject _currentCharacterObject;
     private Recipe _currentRecipe;
-
-    private GameObject _activeCharacter;
     
 
     public void Start()
     {
         GameplayStart( 1, MainCharacters.None);
+        _dialogueSequence.endEvent.AddListener(NextGameplayPhase);
     }
 
     [Button]
@@ -120,22 +125,38 @@ public class BarTendingController : MonoBehaviour
     
     public void GameplayStart(float day, MainCharacters characters = MainCharacters.None)
     {
-        if(_currentGameState > 0) return;
+        if(_currentGameState >= 0) return;
+        _dialogueSequence.dialogues[0].speakingCharacter = characters;
+        
         if(characters == MainCharacters.None)
         {
             _amountOfClientLeft = (int)ChipironUtility.EvaluateVector2(_clientAmountRange, _numberOfCustomerPerDayCurve.Evaluate(day / _maxDay));
             if(_amountOfClientLeft <= 0) return;
         }
-        else _amountOfClientLeft = 1;
-        MoveCharacter(CharacterReference.Instance.GetGameObject(characters),true);
+        else
+        {
+            _amountOfClientLeft = 1;
+        }
+        print(_amountOfClientLeft);
+        
         _currentDay = day;
         _currentCharacter = characters;
         CreateUI();
         ResetDrink();
-        _currentGameState = 1;
+        _currentGameState = 0;
         NextGameplayPhase();
     }
 
+    public void StartClient()
+    {
+        _currentCharacterObject = CharacterReference.Instance.GetGameObject(_currentCharacter);
+        MoveCharacter(_currentCharacterObject,true);
+        if(_currentCharacter == MainCharacters.None) _dialogueSequence.dialogues[0].npcName = _npcNames[Random.Range(0, _npcNames.Count)];
+        _currentRecipe = _recipes[0]; // Need to randomize the recipes
+        _dialogueSequence.dialogues[0].dialogueText = _currentRecipe.description;
+        _hintText.text = _currentRecipe.hint;
+        _dialogueController.StartDialogue(_dialogueSequence);
+    }
     
     private void MoveCharacter(GameObject character,bool active, bool instant = false)
     {
@@ -150,13 +171,12 @@ public class BarTendingController : MonoBehaviour
         {
             case 0 :
                 //YAP ABOUt RECIPE
+                StartClient();
+                _currentGameState++;
                 break;
             case 1 : //null to drink
-                _currentRecipe = _recipes[0]; // Need to randomize the recipes
                 _uiAnimator.Fade(4);
                 _uiAnimator.Fade(0);
-                _hintText.text = _currentRecipe.hint;
-                
                 _currentGameState++;
                 DoCameraMove(true);
                 break;
@@ -181,6 +201,7 @@ public class BarTendingController : MonoBehaviour
             case 4 : 
                 _uiAnimator.FadeOut(5);
                 _amountOfClientLeft--;
+                MoveCharacter(_currentCharacterObject,false);
                 ResetDrink();
                 if (_amountOfClientLeft == 0)
                 {
@@ -189,7 +210,7 @@ public class BarTendingController : MonoBehaviour
                 }
                 else
                 {
-                    _currentGameState = 1;
+                    _currentGameState = 0;
                     NextGameplayPhase();
                 }
                 break;
@@ -318,7 +339,6 @@ public class BarTendingController : MonoBehaviour
                 _completeButton.interactable = true;
                 _uiAnimator.FadeOut(2);
                 _uiAnimator.Fade(3);
-                //fade
             }
             _activeLiquidGroups.Add(index);
         }
@@ -536,6 +556,7 @@ public class Recipe
 {
     public string name;
     public int day;
+    public string description;
     public string hint;
     public MainCharacters characters;
     public List<int> liquids;

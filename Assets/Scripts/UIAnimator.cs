@@ -151,7 +151,10 @@ public class UIAnimator : MonoBehaviour
         public Vector2 direction;
         public float distance;
         public Vector2 baseScale;
-        public Ease easeType;
+        public bool differentEase;
+        [HideIf("differentEase")] public Ease easeType;
+        [ShowIf("differentEase")] public Ease inEaseType;
+        [ShowIf("differentEase")] public Ease outEaseType;
         public float duration;
         public float delay;
         public UnityEvent onAnimationStart;
@@ -163,7 +166,9 @@ public class UIAnimator : MonoBehaviour
         public void Animate(bool isFadeOut = false, float biggestDelay = 0)
         {
             DOTween.Kill(target);
+            print("animating " + isFadeOut);
             _basePosition = target.localPosition;
+            
             if (isFadeOut)
             {
                 if(!target.gameObject.activeSelf) return;
@@ -175,13 +180,13 @@ public class UIAnimator : MonoBehaviour
                 target.localScale = baseScale;
                 target.localPosition = distance * direction + (useBaseTargetPosition ? target.localPosition : targetPosition);
             }
-            
+            Ease usedEase = differentEase ? (isFadeOut ? outEaseType : inEaseType) : easeType;
             seq = DOTween.Sequence();
             seq.SetUpdate(true);
             seq.AppendInterval( isFadeOut ? Mathf.Max(biggestDelay - (delay + duration),0) : delay);
             seq.Append(target.DOLocalMove(isFadeOut ? distance * direction + (useBaseTargetPosition ? _basePosition : targetPosition):
-                useBaseTargetPosition ? _basePosition  : targetPosition, duration).SetEase(easeType)); 
-            seq.Join(target.DOScale(isFadeOut ? baseScale : Vector2.one, duration).SetEase(easeType));
+                useBaseTargetPosition ? _basePosition  : targetPosition, duration).SetEase(usedEase)); 
+            seq.Join(target.DOScale(isFadeOut ? baseScale : Vector2.one, duration).SetEase(usedEase));
             seq.JoinCallback(() => onAnimationStart?.Invoke());
             seq.OnComplete(() =>
             {

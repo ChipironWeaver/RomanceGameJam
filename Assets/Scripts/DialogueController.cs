@@ -11,7 +11,7 @@ public class DialogueController : MonoBehaviour
 {
     [SerializeField] private float _dialogueSkipCooldown;
     [SerializeField] private GameObject _choiceButtonPrefab;
-
+    [SerializeField] private UIAnimator.AnimationObject _panelAnimation;
     [Header("PlayerAndCharacterIcons")] 
     [SerializeField] private Sprite _playerIcon;
     [SerializeField] private Sprite _dariaIcon;
@@ -36,18 +36,12 @@ public class DialogueController : MonoBehaviour
     [Header("References")] [SerializeField]
     private GameObject _dialoguePanel;
 
+    [SerializeField] private Image _nextButton;
     [SerializeField] private GameObject _choicePanel;
     [SerializeField] private TextMeshProUGUI _dialogueText;
     [SerializeField] private TextMeshProUGUI _characterNameText;
     [SerializeField] private Image _characterIcon;
-
-    [Header("CharacterAnimation")] [SerializeField]
-    private Animator _dariaAnimator;
-
-    [SerializeField] private Animator _angelinaAnimator;
-    [SerializeField] private Animator _karinAnimator;
-    [SerializeField] private Animator _cubeChanAnimator;
-
+    
     [Header("Tests")] [SerializeField, Expandable]
     private DialogueSequence _testDialogueSequence;
 
@@ -152,7 +146,7 @@ public class DialogueController : MonoBehaviour
         TryDialogue(true);
     }
 
-    public void DisplayDialogue(Dialogue dialogue, bool skipAnimation = false)
+    private void DisplayDialogue(Dialogue dialogue, bool skipAnimation = false, bool isSingular = false)
     {
         if (dialogue.changeReputation)
         {
@@ -163,21 +157,8 @@ public class DialogueController : MonoBehaviour
 
         if (dialogue.triggerAnimation)
         {
-            switch (dialogue.animatedCharacters)
-            {
-                case MainCharacters.Daria:
-                    _dariaAnimator.SetTrigger(dialogue.triggerName);
-                    break;
-                case MainCharacters.Angelina:
-                    _angelinaAnimator.SetTrigger(dialogue.triggerName);
-                    break;
-                case MainCharacters.Karin:
-                    _karinAnimator.SetTrigger(dialogue.triggerName);
-                    break;
-                case MainCharacters.CubeChan:
-                    _cubeChanAnimator.SetTrigger(dialogue.triggerName);
-                    break;
-            }
+            Animator animator = CharacterReference.Instance.GetAnimatorObject(dialogue.animatedCharacters);
+            if(animator) animator.SetTrigger(dialogue.triggerName);
         }
 
         if (dialogue.hasCharacterEvent)
@@ -318,6 +299,7 @@ public class DialogueController : MonoBehaviour
         print("End of Sequence");
         if (_currentDialogueSequence.hasEndChoices)
         {
+            _currentDialogueSequence.endEvent?.Invoke();
             int removedChoices = 0;
             for (int i = 0; i < _currentDialogueSequence.choices.Count; i++)
             {
@@ -329,18 +311,14 @@ public class DialogueController : MonoBehaviour
             return;
         }
 
-        if (_currentDialogueSequence.hasEndBranch)
+        if (_endBranchShown)
         {
-            if(_endBranchShown)
-            {
-                _endBranchShown = false;
-                StartDialogue(_currentDialogueSequence.GetEndDialogueSequence());
-            }
-            else _endBranchShown = true;
-            return;
+            _endBranchShown = false;
+            _currentDialogueSequence.endEvent?.Invoke();
+            if (_currentDialogueSequence.hasEndBranch) StartDialogue(_currentDialogueSequence.GetEndDialogueSequence());
+            else SetActivation(false);
         }
-
-        SetActivation(false);
+        else _endBranchShown = true;
     }
 
     public void DisplayChoice(DialogueChoice choice, int index)
@@ -375,7 +353,10 @@ public class DialogueController : MonoBehaviour
 
     public void SetActivation(bool active)
     {
-        _dialoguePanel.SetActive(active);
+        if (_dialoguePanel.gameObject.activeSelf == active) return;
+        print("<color = #FF0000>Set Activation : " + active);
+        _panelAnimation.Animate(!active);
+        _nextButton.raycastTarget = active;
     }
 }
 
