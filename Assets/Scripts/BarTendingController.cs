@@ -95,7 +95,7 @@ public class BarTendingController : MonoBehaviour
 
     public void Start()
     {
-        GameplayStart( 1, MainCharacters.None);
+        GameplayStart( 1, MainCharacters.Angelina);
         _dialogueSequence.endEvent.AddListener(NextGameplayPhase);
     }
 
@@ -123,7 +123,7 @@ public class BarTendingController : MonoBehaviour
         _decorationUiList.Clear();
     }
     
-    public void GameplayStart(float day, MainCharacters characters = MainCharacters.None)
+    public void GameplayStart(float day, MainCharacters characters = MainCharacters.None, bool skipDialogue = false)
     {
         if(_currentGameState >= 0) return;
         _dialogueSequence.dialogues[0].speakingCharacter = characters;
@@ -143,7 +143,12 @@ public class BarTendingController : MonoBehaviour
         _currentCharacter = characters;
         CreateUI();
         ResetDrink();
-        _currentGameState = 0;
+        if (skipDialogue)
+        {
+            _currentGameState = 1;
+            StartClient();
+        }
+        else _currentGameState = 0;
         NextGameplayPhase();
     }
 
@@ -155,7 +160,6 @@ public class BarTendingController : MonoBehaviour
         _currentRecipe = _recipes[0]; // Need to randomize the recipes
         _dialogueSequence.dialogues[0].dialogueText = _currentRecipe.description;
         _hintText.text = _currentRecipe.hint;
-        _dialogueController.StartDialogue(_dialogueSequence);
     }
     
     private void MoveCharacter(GameObject character,bool active, bool instant = false)
@@ -172,6 +176,7 @@ public class BarTendingController : MonoBehaviour
             case 0 :
                 //YAP ABOUt RECIPE
                 StartClient();
+                _dialogueController.StartDialogue(_dialogueSequence);
                 _currentGameState++;
                 break;
             case 1 : //null to drink
@@ -225,7 +230,7 @@ public class BarTendingController : MonoBehaviour
 
         float score  = RateRecipe(_activeDecorationGroups,_activeLiquidGroups,_currentRecipe);
 
-        _ratingPanel.nameText.text = score.ToString("N0") + " %";
+        _ratingPanel.nameText.text ="<font-weight=\"300\">" + score.ToString("N0") + " %";
         
         if (score > happyScore)
         {
@@ -269,11 +274,6 @@ public class BarTendingController : MonoBehaviour
             }
             _ratingPanel.nameText.color = _neutralColor;
         }
-    }
-
-    private void FadeCharacter(MainCharacters character, bool isFadeIn)
-    {
-        
     }
     
     private void CreateLiquidButton(int index)
