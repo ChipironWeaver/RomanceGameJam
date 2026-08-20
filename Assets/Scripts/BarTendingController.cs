@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using NaughtyAttributes;
 using TMPro;
+using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -67,10 +68,10 @@ public class BarTendingController : MonoBehaviour
     [SerializeField] private int _currentUnlockedDecorationAmount = -1;
 
     [Header("Characters")] 
-    [SerializeField] private GameObject _daria;
-    [SerializeField] private GameObject _angelina;
-    [SerializeField] private GameObject _karin;
-    [SerializeField] private List<GameObject> _npcs;
+    [SerializeField] private Vector3 _activePosition;
+    [SerializeField] private Vector3 _notActivePosition;
+    [SerializeField] private float _moveTime;
+    [SerializeField] private Ease _easeType;
     
     private int _currentLiquidAmount;
     private List<int> _activeLiquidGroups = new List<int>();
@@ -84,6 +85,8 @@ public class BarTendingController : MonoBehaviour
     private MainCharacters _currentCharacter = MainCharacters.None;
     private GameObject _currentCharacterObject;
     private Recipe _currentRecipe;
+
+    private GameObject _activeCharacter;
     
 
     public void Start()
@@ -124,6 +127,7 @@ public class BarTendingController : MonoBehaviour
             if(_amountOfClientLeft <= 0) return;
         }
         else _amountOfClientLeft = 1;
+        MoveCharacter(CharacterReference.Instance.GetGameObject(characters),true);
         _currentDay = day;
         _currentCharacter = characters;
         CreateUI();
@@ -132,11 +136,21 @@ public class BarTendingController : MonoBehaviour
         NextGameplayPhase();
     }
 
+    
+    private void MoveCharacter(GameObject character,bool active, bool instant = false)
+    {
+        if (instant) character.transform.position = active ? _activePosition : _notActivePosition;
+        else character.transform.DOMove(active ? _activePosition : _notActivePosition, 0.5f).SetEase(_easeType);
+    }
+
     [Button]
     public void NextGameplayPhase()
     {
         switch (_currentGameState)
         {
+            case 0 :
+                //YAP ABOUt RECIPE
+                break;
             case 1 : //null to drink
                 _currentRecipe = _recipes[0]; // Need to randomize the recipes
                 _uiAnimator.Fade(4);
