@@ -9628,11 +9628,191 @@ MonoBehaviour:
     description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Blueberry Punch </color>,
       merci beaucoup! '
     hint: Le client veut un <color=#E969F0>Blueberry Punch
-    characters: 3
+    characters: 0
     liquids: 000000000000000002000000
     decorations:
     - hasToBeEmpty: 0
       validIndexes: 0000000001000000
+    - hasToBeEmpty: 0
+      validIndexes: 000000000100000002000000
+  - name: Orange Blossom Fizz Normal
+    day: 1
+    description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Orange Blossom Fizz</color>,
+      merci beaucoup! '
+    hint: Le client veut un <color=#E969F0>Orange Blossom Fizz
+    characters: 0
+    liquids: 000000000000000001000000
+    decorations:
+    - hasToBeEmpty: 0
+      validIndexes: 
+    - hasToBeEmpty: 0
+      validIndexes: 000000000100000002000000
+    - hasToBeEmpty: 0
+      validIndexes: 04000000
+    - hasToBeEmpty: 1
+      validIndexes: 
+    - hasToBeEmpty: 1
+      validIndexes: 
+  - name: Cherry Fizz Normal
+    day: 2
+    description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Cherry Fizz</color>,
+      merci beaucoup! '
+    hint: Le client veut un <color=#E969F0>Cherry Fizz
+    characters: 0
+    liquids: 000000000000000004000000
+    decorations:
+    - hasToBeEmpty: 0
+      validIndexes: 
+    - hasToBeEmpty: 0
+      validIndexes: 000000000100000002000000
+    - hasToBeEmpty: 0
+      validIndexes: 
+    - hasToBeEmpty: 0
+      validIndexes: 02000000
+    - hasToBeEmpty: 1
+      validIndexes: 
+  - name: Ice Lemon Tea Normal
+    day: 2
+    description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Ice Lemon Tea</color>,
+      merci beaucoup! '
+    hint: Le client veut un <color=#E969F0>Ice Lemon Tea
+    characters: 0
+    liquids: 030000000600000005000000
+    decorations:
+    - hasToBeEmpty: 0
+      validIndexes: 
+    - hasToBeEmpty: 0
+      validIndexes: 000000000100000002000000
+    - hasToBeEmpty: 0
+      validIndexes: 03000000
+    - hasToBeEmpty: 0
+      validIndexes: 02000000
+    - hasToBeEmpty: 1
+      validIndexes: 
+  - name: Fresh Lime Normal
+    day: 2
+    description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Fresh Lime</color>,
+      merci beaucoup! '
+    hint: Le client veut un <color=#E969F0>Fresh Lime
+    characters: 0
+    liquids: 030000000300000005000000
+    decorations:
+    - hasToBeEmpty: 0
+      validIndexes: 0000000001000000
+    - hasToBeEmpty: 1
+      validIndexes: 
+    - hasToBeEmpty: 0
+      validIndexes: 04000000
+    - hasToBeEmpty: 0
+      validIndexes: 02000000
+    - hasToBeEmpty: 1
+      validIndexes: 
+  - name: Blue Melba Normal
+    day: 3
+    description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Blue Melba</color>,
+      merci beaucoup! '
+    hint: Le client veut un <color=#E969F0>Blue Melba
+    characters: 0
+    liquids: 030000000300000002000000
+    decorations:
+    - hasToBeEmpty: 1
+      validIndexes: 
+    - hasToBeEmpty: 1
+      validIndexes: 
+    - hasToBeEmpty: 1
+      validIndexes: 
+    - hasToBeEmpty: 0
+      validIndexes: 0000000001000000
+    - hasToBeEmpty: 0
+      validIndexes: 04000000
+  - name: Vanilla Dream Normal
+    day: 3
+    description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Vanilla Dream</color>,
+      merci beaucoup! '
+    hint: Le client veut un <color=#E969F0>Vanilla Dream
+    characters: 0
+    liquids: 030000000000000006000000
+    decorations:
+    - hasToBeEmpty: 1
+      validIndexes: 
+    - hasToBeEmpty: 1
+      validIndexes: 
+    - hasToBeEmpty: 1
+      validIndexes: 
+    - hasToBeEmpty: 0
+      validIndexes: 0000000001000000
+    - hasToBeEmpty: 0
+      validIndexes: 04000000
+  - name: Blue Strawberry Normal
+    day: 4
+    description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Blue Strawberry</color>,
+      merci beaucoup! '
+    hint: Le client veut un <color=#E969F0>Blue Strawberry
+    characters: 0
+    liquids: 000000000800000002000000
+    decorations:
+    - hasToBeEmpty: 0
+      validIndexes: 0000000001000000
+    - hasToBeEmpty: 0
+      validIndexes: 000000000100000002000000
+    - hasToBeEmpty: 0
+      validIndexes: 02000000
+    - hasToBeEmpty: 0
+      validIndexes: 0000000001000000
+    - hasToBeEmpty: 0
+      validIndexes: 000000000100000002000000
+  - name: Ice Sky Normal
+    day: 4
+    description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Ice Sky</color>, merci
+      beaucoup! '
+    hint: Le client veut un <color=#E969F0>Ice Sky
+    characters: 0
+    liquids: 000000000500000002000000
+    decorations:
+    - hasToBeEmpty: 0
+      validIndexes: 0000000001000000
+    - hasToBeEmpty: 0
+      validIndexes: 000000000100000002000000
+    - hasToBeEmpty: 0
+      validIndexes: 00000000
+    - hasToBeEmpty: 0
+      validIndexes: 02000000
+    - hasToBeEmpty: 0
+      validIndexes: 000000000100000002000000
+  - name: Melon Soda Normal
+    day: 4
+    description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Melon Soda/color>,
+      merci beaucoup! '
+    hint: Le client veut un <color=#E969F0>Melon Soda
+    characters: 0
+    liquids: 000000000000000007000000
+    decorations:
+    - hasToBeEmpty: 1
+      validIndexes: 
+    - hasToBeEmpty: 0
+      validIndexes: 000000000100000002000000
+    - hasToBeEmpty: 1
+      validIndexes: 
+    - hasToBeEmpty: 0
+      validIndexes: 0000000001000000
+    - hasToBeEmpty: 0
+      validIndexes: 03000000
+  - name: Pink Lemonade Normal
+    day: 4
+    description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Pink Lemonade</color>,
+      merci beaucoup! '
+    hint: Le client veut un <color=#E969F0>Pink Lemonade
+    characters: 0
+    liquids: 000000000800000005000000
+    decorations:
+    - hasToBeEmpty: 0
+      validIndexes: 0000000001000000
+    - hasToBeEmpty: 0
+      validIndexes: 000000000100000002000000
+    - hasToBeEmpty: 0
+      validIndexes: 02000000
+    - hasToBeEmpty: 0
+      validIndexes: 02000000
     - hasToBeEmpty: 0
       validIndexes: 000000000100000002000000
   _liquidScoreMultiplier: 2

@@ -48,7 +48,7 @@ Material:
     - _Height: 0.161
     - _HighLightStrengh: 0.184
     - _HighLightThreshold: -0.499
-    - _HueShift: 0.0033333334
+    - _HueShift: 0.0033333332
     - _LightIntensity: 1
     - _MinHeight: 0
     - _QueueControl: 0
