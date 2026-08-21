@@ -365,7 +365,6 @@ public class BarTendingController : MonoBehaviour
             if (_currentLiquidAmount == _maxLiquids)
             {
                 _completeButton.interactable = true;
-                _uiAnimator.FadeOut(2);
                 _uiAnimator.Fade(3);
             }
             _activeLiquidGroups.Add(index);
@@ -374,9 +373,11 @@ public class BarTendingController : MonoBehaviour
 
     public void Empty(bool force = false)
     {
+        print(_currentGameState);
         if(_currentGameState > 2 && ! force) return;
         _activeLiquidGroups.Clear();
         _uiAnimator.FadeOut(2);
+        _uiAnimator.FadeOut(3);
         _currentLiquidAmount = 0;
         _completeButton.interactable = false;
         _liquidController.Empty();

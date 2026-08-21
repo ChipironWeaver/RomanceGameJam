@@ -9486,84 +9486,84 @@ MonoBehaviour:
   - name: Soda
     usable: 0
     sprite: {fileID: -499814173, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 1, g: 0.9986682, b: 0.627451, a: 1}
-    alpha: 0.8
+    color: {r: 0.70980394, g: 0.7921569, b: 0.8666667, a: 0}
+    alpha: 0.3
     smoothness: 0
     hueShift: 0
-    valueShift: 0
-    saturationShift: 0
+    valueShift: -0.2
+    saturationShift: 0.25
   - name: Jus d'orange
     usable: 0
     sprite: {fileID: -1310347849, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 0.8117921, g: 1, b: 0.627451, a: 1}
-    alpha: 0.8
+    color: {r: 0.85882354, g: 0.5803922, b: 0.16470589, a: 0}
+    alpha: 0.734
     smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
+    hueShift: 0.01
+    valueShift: -0.2
+    saturationShift: 0.25
   - name: Jus de myrtille
     usable: 0
     sprite: {fileID: 674031283, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 0.627451, g: 1, b: 0.8180098, a: 1}
-    alpha: 0.8
+    color: {r: 0.22352941, g: 0.06666667, b: 0.6117647, a: 0}
+    alpha: 0.734
     smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
+    hueShift: 0.01
+    valueShift: -0.2
+    saturationShift: 0.25
   - name: "Th\xE9"
     usable: 0
     sprite: {fileID: 1421352672, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 0.627451, g: 0.87432873, b: 1, a: 1}
-    alpha: 0.8
+    color: {r: 0.83137256, g: 0.7019608, b: 0.5294118, a: 0}
+    alpha: 0.39
     smoothness: 0
     hueShift: 0
-    valueShift: 0
-    saturationShift: 0
+    valueShift: -0.1
+    saturationShift: 0.1
   - name: Jus de cerise
     usable: 0
     sprite: {fileID: -157237273, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 0.63931555, g: 1, b: 0.627451, a: 1}
-    alpha: 0.8
+    color: {r: 0.59607846, g: 0, b: 0.09019608, a: 0}
+    alpha: 0.734
     smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
+    hueShift: 0.01
+    valueShift: -0.2
+    saturationShift: 0.25
   - name: Sirop de citron
     usable: 0
     sprite: {fileID: -2077386008, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 0.627451, g: 0.81305087, b: 1, a: 1}
-    alpha: 0.8
+    color: {r: 1, g: 0.9882353, b: 0.23137255, a: 0}
+    alpha: 0.9
     smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
+    hueShift: 0.02
+    valueShift: -0.3
+    saturationShift: 0.05
   - name: Sirop de canne
     usable: 0
     sprite: {fileID: -1280766264, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 0.627451, g: 1, b: 0.9885887, a: 1}
-    alpha: 0.8
+    color: {r: 0.83137256, g: 0.827451, b: 0.62352943, a: 0}
+    alpha: 0.2
     smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
+    hueShift: 0.02
+    valueShift: -0.3
+    saturationShift: 0.05
   - name: Sirop de Melon
     usable: 0
     sprite: {fileID: 510822141, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 0.6302053, g: 0.627451, b: 1, a: 1}
-    alpha: 0.8
+    color: {r: 1, g: 0.7294118, b: 0.2509804, a: 0}
+    alpha: 0.9
     smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
+    hueShift: 0.02
+    valueShift: -0.3
+    saturationShift: 0.05
   - name: Sirop De Fraise
     usable: 0
     sprite: {fileID: -1911059305, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 0.78325546, g: 0.627451, b: 1, a: 1}
-    alpha: 0.8
+    color: {r: 0.81960785, g: 0.19607843, b: 0.12156863, a: 0}
+    alpha: 0.9
     smoothness: 0
-    hueShift: 0
-    valueShift: 0
-    saturationShift: 0
+    hueShift: 0.01
+    valueShift: -0.3
+    saturationShift: 0.05
   _maxDay: 8
   _unlockedDrinkAmountPerDay: 03000000030000000700000007000000
   _unlockedDecorationAmountPerDay: 030000000300000004000000
