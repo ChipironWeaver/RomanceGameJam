@@ -2566,7 +2566,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   _actions:
-  - state: 0
+  - name: BS Sunday
+    state: 0
     bigText: Dimanche
     smallText: 18h16
     day: 0
@@ -2581,10 +2582,15 @@ MonoBehaviour:
       liquids: 
       decorations: []
     sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - state: 2
+  - name: D Sunday
+    state: 2
     bigText: 
     smallText: 
     day: 0
@@ -2599,10 +2605,15 @@ MonoBehaviour:
       liquids: 
       decorations: []
     sequence: {fileID: 11400000, guid: 6617e84e1fcc6384493c3e73ca107d19, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - state: 0
+  - name: BS
+    state: 0
     bigText: Lundi
     smallText: 8h14
     day: 0
@@ -2617,10 +2628,15 @@ MonoBehaviour:
       liquids: 
       decorations: []
     sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - state: 1
+  - name: GP Monday
+    state: 1
     bigText: Lundi
     smallText: 8h14
     day: 1
@@ -2635,6 +2651,33 @@ MonoBehaviour:
       liquids: 
       decorations: []
     sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    state: 0
+    bigText: 
+    smallText: 
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      characters: 0
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -2884,7 +2927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8459640249049076627, guid: 0cf2f4037455a2a4ebe28238fd1e92fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 488.5
+      value: 490
       objectReference: {fileID: 0}
     - target: {fileID: 8459640249049076627, guid: 0cf2f4037455a2a4ebe28238fd1e92fc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2892,7 +2935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8459640249049076627, guid: 0cf2f4037455a2a4ebe28238fd1e92fc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 94.8
+      value: 94.9
       objectReference: {fileID: 0}
     - target: {fileID: 8459640249049076627, guid: 0cf2f4037455a2a4ebe28238fd1e92fc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5116,6 +5159,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4328052912206182862, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328052912206182862, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5367359521910052953}
@@ -6944,7 +6991,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 40, y: 0}
-  m_SizeDelta: {x: 160, y: 5}
+  m_SizeDelta: {x: 180, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2673480034914971612
 GameObject:
@@ -9567,7 +9614,7 @@ MonoBehaviour:
   _maxDay: 8
   _unlockedDrinkAmountPerDay: 03000000030000000700000007000000
   _unlockedDecorationAmountPerDay: 030000000300000004000000
-  _clientAmountRange: {x: 2, y: 20}
+  _clientAmountRange: {x: 2, y: 6}
   _numberOfCustomerPerDayCurve:
     serializedVersion: 2
     m_Curve: []
@@ -9576,7 +9623,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   _maxLiquids: 3
   _recipes:
-  - name: Test
+  - name: Blueberry Punch Normal
     day: 1
     description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Blueberry Punch </color>,
       merci beaucoup! '
@@ -9650,6 +9697,7 @@ MonoBehaviour:
   _notActivePosition: {x: 490, y: 80, z: 90}
   _moveTime: 0.5
   _easeType: 13
+  latestScore: 0
 --- !u!4 &5390533434065047678
 Transform:
   m_ObjectHideFlags: 0
@@ -12407,7 +12455,7 @@ MonoBehaviour:
   _isOnAuto: 0
   _autoWaitTime: 0.5
   _speedMultiplier: 1
-  _skippingSpeedMultiplier: 10
+  _skippingSpeedMultiplier: 20
   _timeToWaitPerCharacter: 0.025
   _timeToWaitForSpaces: 0.05
   _hiddenCharacters:

@@ -13,6 +13,7 @@ public class GameSequencer : MonoBehaviour
     [SerializeField] private BarTendingController _barTendingController;
 
     public static int CurrentIndex = -1;
+    public static int LatestScore;
 
     //Receive the actions, check the current state + continue on the index
 
@@ -25,6 +26,7 @@ public class GameSequencer : MonoBehaviour
     }
     private void ActionReceiver(TypeOfState state)
     {
+        if(state == TypeOfState.BarTending && _barTendingController.latestScore != 0) LatestScore = _barTendingController.latestScore; 
         if (CurrentIndex == -1) return;
         if (CurrentIndex > _actions.Count) return; 
         if(state == _actions[CurrentIndex-1].state) NextAction();
@@ -50,6 +52,24 @@ public class GameSequencer : MonoBehaviour
                 _blackScreen.ShowBlackScreen(action.bigText, action.smallText);
                 break;
             case TypeOfState.VisualNovel:
+                if (CurrentIndex - 1 >= 0)
+                {
+                    if (_actions[CurrentIndex - 1].state == TypeOfState.BarTending && action.changeBasedOnLastResult)
+                    {
+                        switch (LatestScore)
+                        {
+                            case 1:
+                                _dialogueController.StartDialogue(action.badSequence);
+                                return;
+                            case 2:
+                                _dialogueController.StartDialogue(action.averageSequence);
+                                return;
+                            case 3:
+                                _dialogueController.StartDialogue(action.goodSequence);
+                                return;
+                        }
+                    }
+                }
                 _dialogueController.StartDialogue(action.sequence);
                 break;
             case TypeOfState.BarTending:
@@ -70,6 +90,8 @@ public class GameSequencer : MonoBehaviour
     [Serializable]
     private class GameStateAction
     {
+        public string name;
+        
         public TypeOfState state;
 
         [Header("BlackScreen")] 
@@ -84,6 +106,11 @@ public class GameSequencer : MonoBehaviour
         
         [Header("Visual Novel")]
         public DialogueSequence sequence;
+
+        public bool changeBasedOnLastResult;
+        public DialogueSequence goodSequence;
+        public DialogueSequence averageSequence;
+        public DialogueSequence badSequence;
         
         [Header("Other")]
         public UnityEvent otherEvent;

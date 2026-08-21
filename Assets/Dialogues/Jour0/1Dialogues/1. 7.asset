@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 1. 7
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   dialogueText: "Tu es seul \xE0 ta maison d\u2019enfance jusqu\u2019\xE0 la fin
-    de la semaine, avec rien d\u2019autre de pr\xE9vu qu\u2019un petit job au bar
-    de plage [NOM DU BAR ?]  que tu as miraculeusement d\xE9croch\xE9 gr\xE2ce \xE0
+    de la semaine, \navec rien d\u2019autre de pr\xE9vu qu\u2019un petit job au bar
+    de plage \"HeartShaker\" que tu as miraculeusement d\xE9croch\xE9 gr\xE2ce \xE0
     tes parents, que tout le monde connait en ville. "
   speakingCharacter: 0
   npcName: 

@@ -94,10 +94,12 @@ public class BarTendingController : MonoBehaviour
     private Recipe _currentRecipe;
     private bool _isSpecialRecipe;
 
+    public int latestScore;
+
     [Button]
     public void Test()
     {
-        GameplayStart( _testDay, MainCharacters.None);
+        GameplayStart( _testDay, MainCharacters.Angelina);
     }
     public void Start()
     {
@@ -182,6 +184,8 @@ public class BarTendingController : MonoBehaviour
     public void StartClient()
     {
         _currentCharacterObject = CharacterReference.Instance.GetGameObject(_currentCharacter);
+        Animator characterAnimator = CharacterReference.Instance.GetAnimatorObject(_currentCharacter);
+        if(characterAnimator != null) characterAnimator.SetTrigger("Neutral");
         MoveCharacter(_currentCharacterObject,true);
         if(_currentCharacter == MainCharacters.None) _dialogueSequence.dialogues[0].npcName = _npcNames[Random.Range(0, _npcNames.Count)];
         if(!_isSpecialRecipe)_currentRecipe = _recipes[0]; // Need to randomize the recipes
@@ -210,6 +214,7 @@ public class BarTendingController : MonoBehaviour
                 _uiAnimator.Fade(4);
                 _uiAnimator.Fade(0);
                 _currentGameState++;
+                _completeButton.interactable = true;
                 DoCameraMove(true);
                 break;
             case 2 : //drink to decoration
@@ -220,6 +225,8 @@ public class BarTendingController : MonoBehaviour
                     _uiAnimator.FadeOut(2);
                     _uiAnimator.FadeOut(4);
                     _currentGameState++;
+                    _completeButton.interactable = false;
+                    DOTween.Sequence().AppendInterval(1f).OnComplete((() => {_completeButton.interactable = true;}));
                 }
                 break;
             case 3 : //decoration to review
@@ -229,6 +236,7 @@ public class BarTendingController : MonoBehaviour
                 _uiAnimator.Fade(5);
                 DoCameraMove(false);
                 _currentGameState++;
+                _completeButton.interactable = false;
                 break;
             case 4 : 
                 _uiAnimator.FadeOut(5);
@@ -259,6 +267,7 @@ public class BarTendingController : MonoBehaviour
         float score  = RateRecipe(_activeDecorationGroups,_activeLiquidGroups,_currentRecipe);
 
         _ratingPanel.nameText.text ="<font-weight=\"300\">" + score.ToString("N0") + " %";
+        Animator characterAnimator = CharacterReference.Instance.GetAnimatorObject(_currentCharacter);
         
         if (score > happyScore)
         {
@@ -272,7 +281,9 @@ public class BarTendingController : MonoBehaviour
                 _ratingPanel.image.sprite = null;
                 _ratingPanel.image.color = _happyColor;
             }
+            if(characterAnimator) characterAnimator.SetTrigger("Happy");
             _ratingPanel.nameText.color = _happyColor;
+            latestScore = 3;
         }
         else if (score < angryScore)
         {
@@ -287,6 +298,8 @@ public class BarTendingController : MonoBehaviour
                 _ratingPanel.image.color = _angryColor;
             }
             _ratingPanel.nameText.color = _angryColor;
+            latestScore = 1;
+            if(characterAnimator) characterAnimator.SetTrigger("Sad");
         }
         else
         {
@@ -300,7 +313,9 @@ public class BarTendingController : MonoBehaviour
                 _ratingPanel.image.sprite = null;
                 _ratingPanel.image.color = _neutralColor;
             }
+            if(characterAnimator) characterAnimator.SetTrigger("Neutral");
             _ratingPanel.nameText.color = _neutralColor;
+            latestScore = 2;
         }
     }
     
