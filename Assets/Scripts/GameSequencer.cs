@@ -12,7 +12,7 @@ public class GameSequencer : MonoBehaviour
     [SerializeField] private DialogueController _dialogueController;
     [SerializeField] private BarTendingController _barTendingController;
 
-    public static int CurrentIndex;
+    public static int CurrentIndex = -1;
 
     //Receive the actions, check the current state + continue on the index
 
@@ -25,6 +25,7 @@ public class GameSequencer : MonoBehaviour
     }
     private void ActionReceiver(TypeOfState state)
     {
+        if (CurrentIndex == -1) return;
         if (CurrentIndex > _actions.Count) return; 
         if(state == _actions[CurrentIndex-1].state) NextAction();
     }

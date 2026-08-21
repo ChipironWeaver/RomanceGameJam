@@ -9170,6 +9170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca9d6eee7dd300498ede023872aebaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BarTendingController
+  _testDay: 4
   _liquidController: {fileID: 369738780457353634}
   _drinkParentModel: {fileID: 502041776469245297}
   _drinkPanel: {fileID: 5945413576229515623}
@@ -9564,6 +9565,8 @@ MonoBehaviour:
     valueShift: 0
     saturationShift: 0
   _maxDay: 8
+  _unlockedDrinkAmountPerDay: 03000000030000000700000007000000
+  _unlockedDecorationAmountPerDay: 030000000300000004000000
   _clientAmountRange: {x: 2, y: 20}
   _numberOfCustomerPerDayCurve:
     serializedVersion: 2

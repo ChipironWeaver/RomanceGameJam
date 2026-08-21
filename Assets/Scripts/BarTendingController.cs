@@ -11,6 +11,7 @@ using Random = UnityEngine.Random;
 
 public class BarTendingController : MonoBehaviour
 {
+    [SerializeField] private float _testDay;
     [Header("References")] 
     [SerializeField] private LiquidController _liquidController;
     [SerializeField] private GameObject _drinkParentModel;
@@ -50,6 +51,8 @@ public class BarTendingController : MonoBehaviour
 
     [Header("Gameplay")] 
     [SerializeField] private float _maxDay;
+    [SerializeField] private List<int> _unlockedDrinkAmountPerDay = new List<int>();
+    [SerializeField] private List<int> _unlockedDecorationAmountPerDay = new List<int>();
     [SerializeField,MinMaxSlider(0.0f, 20.0f)] private Vector2 _clientAmountRange;
     [SerializeField,CurveRange(0,0,1,100,EColor.Red)] private AnimationCurve _numberOfCustomerPerDayCurve;
     [SerializeField] private int _maxLiquids = 3;
@@ -90,8 +93,12 @@ public class BarTendingController : MonoBehaviour
     private GameObject _currentCharacterObject;
     private Recipe _currentRecipe;
     private bool _isSpecialRecipe;
-    
 
+    [Button]
+    public void Test()
+    {
+        GameplayStart( _testDay, MainCharacters.None);
+    }
     public void Start()
     {
         //GameplayStart( 1, MainCharacters.Angelina);
@@ -126,6 +133,17 @@ public class BarTendingController : MonoBehaviour
     {
         if(_currentGameState >= 0) return;
         _dialogueSequence.dialogues[0].speakingCharacter = characters;
+        
+        //Check Unlocks
+        int intDay = (int)day;
+        
+        if (intDay >= _unlockedDrinkAmountPerDay.Count) _currentUnlockedDrinkAmount = -1;
+        else _currentUnlockedDrinkAmount = _unlockedDrinkAmountPerDay[intDay];
+        print(_currentUnlockedDrinkAmount);
+        
+        if (intDay >= _unlockedDecorationAmountPerDay.Count) _currentUnlockedDecorationAmount = -1;
+        else _currentUnlockedDecorationAmount = _unlockedDecorationAmountPerDay[intDay];
+        print(_currentUnlockedDecorationAmount);
         
         
         if(characters == MainCharacters.None)
