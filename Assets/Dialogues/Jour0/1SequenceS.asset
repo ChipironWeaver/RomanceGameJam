@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: 1SequenceS
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 8c0b4cac05f9131439f2aa7bb3a31199, type: 2}
+  - {fileID: 11400000, guid: dae03f40a0484554387492401a07edbd, type: 2}
+  - {fileID: 11400000, guid: 05988b49f36c21242b6b231ece7edbed, type: 2}
+  - {fileID: 11400000, guid: f7d9c59d0798ca044a4dc88f0fe9b742, type: 2}
+  - {fileID: 11400000, guid: d73ad3ed035b4914cb86bc332608d38e, type: 2}
+  - {fileID: 11400000, guid: 37a04a80152b78340ab527f14ae08849, type: 2}
+  - {fileID: 11400000, guid: 76e3d024d4b26cf4a91ec229670976fe, type: 2}
+  - {fileID: 11400000, guid: faeb432a2fb38a54584bb2035a8e7f92, type: 2}
+  - {fileID: 11400000, guid: 38838708796570b49b59706e7f7773e5, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: "Attends, tu n'as vraiment jamais \xE9t\xE9 amoureuse ? "
+    linkedDialogueSequence: {fileID: 11400000, guid: 39467b39b3b2e134db8974e77e879427, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "M\xEAme pas une amourette d'\xE9t\xE9 ? "
+    linkedDialogueSequence: {fileID: 11400000, guid: 39467b39b3b2e134db8974e77e879427, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Un truc d\u2019un soir ?"
+    linkedDialogueSequence: {fileID: 11400000, guid: 39467b39b3b2e134db8974e77e879427, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "\xC0 ce stade, on va devoir te trouver quelqu'un nous-m\xEAmes. "
+    linkedDialogueSequence: {fileID: 11400000, guid: 39467b39b3b2e134db8974e77e879427, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

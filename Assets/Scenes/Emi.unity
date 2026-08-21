@@ -579,7 +579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.056826442, g: 0, b: 0.066037714, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -858,10 +858,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 208149757}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 25}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &280292003
 MonoBehaviour:
@@ -1214,9 +1214,6 @@ MonoBehaviour:
   _textColor: {r: 1, g: 0.73333335, b: 0.8980392, a: 1}
   _backgroundColor: {r: 0.05490196, g: 0, b: 0.06666667, a: 1}
   _animationTime: 1
-  onBlackScreen:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &400647170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2510,6 +2507,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003557431}
   m_CullTransparentMesh: 1
+--- !u!1 &1073852463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1073852464}
+  - component: {fileID: 1073852465}
+  - component: {fileID: 1073852466}
+  m_Layer: 0
+  m_Name: GameState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1073852464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073852463}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 558.9482, y: 0, z: 340.92218}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1073852465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073852463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a5738e24cea6c4e9e0e58bf0097bc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameState
+  testPlayerName: TestPlayer
+--- !u!114 &1073852466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073852463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bf50bfb408abbf4dbb4367ff74deb70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  _actions:
+  - state: 0
+    bigText: Dimanche
+    smallText: 18h16
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      characters: 0
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - state: 2
+    bigText: 
+    smallText: 
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      characters: 0
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: 6617e84e1fcc6384493c3e73ca107d19, type: 2}
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - state: 0
+    bigText: Lundi
+    smallText: 8h14
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      characters: 0
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - state: 1
+    bigText: Lundi
+    smallText: 8h14
+    day: 1
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      characters: 0
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  _blackScreen: {fileID: 312514440}
+  _dialogueController: {fileID: 8713159423576416512}
+  _barTendingController: {fileID: 5367359521910052953}
 --- !u!1001 &1086190271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3339,10 +3470,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 208149757}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1599133853
 MonoBehaviour:
@@ -7374,9 +7505,9 @@ MonoBehaviour:
   m_fontSize: 65
   m_fontSizeBase: 65
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 65
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -9580,8 +9711,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 10}
+  m_SizeDelta: {x: -10, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &5450532791872032336
 MeshRenderer:
@@ -10080,8 +10211,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 130}
-  m_SizeDelta: {x: 1300, y: 330}
+  m_AnchoredPosition: {x: 0, y: 170}
+  m_SizeDelta: {x: 1500, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &6329348911343130726
 MeshRenderer:
@@ -12255,8 +12386,8 @@ MonoBehaviour:
     baseScale: {x: 0.8, y: 0}
     differentEase: 1
     easeType: 0
-    inEaseType: 24
-    outEaseType: 23
+    inEaseType: 9
+    outEaseType: 8
     duration: 0.5
     delay: 0
     onAnimationStart:
@@ -12705,8 +12836,9 @@ SceneRoots:
   - {fileID: 258869836}
   - {fileID: 4345581771493336156}
   - {fileID: 5177019908700307222}
+  - {fileID: 312514439}
   - {fileID: 1365523210740177839}
   - {fileID: 400647173}
   - {fileID: 1463007725}
   - {fileID: 190987902}
-  - {fileID: 312514439}
+  - {fileID: 1073852464}

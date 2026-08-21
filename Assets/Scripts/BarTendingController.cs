@@ -89,6 +89,7 @@ public class BarTendingController : MonoBehaviour
     private MainCharacters _currentCharacter = MainCharacters.None;
     private GameObject _currentCharacterObject;
     private Recipe _currentRecipe;
+    private bool _isSpecialRecipe;
     
 
     public void Start()
@@ -121,10 +122,11 @@ public class BarTendingController : MonoBehaviour
         _decorationUiList.Clear();
     }
     
-    public void GameplayStart(float day, MainCharacters characters = MainCharacters.None, bool skipDialogue = false)
+    public void GameplayStart(float day, MainCharacters characters = MainCharacters.None, bool skipDialogue = false,Recipe recipe = null)
     {
         if(_currentGameState >= 0) return;
         _dialogueSequence.dialogues[0].speakingCharacter = characters;
+        
         
         if(characters == MainCharacters.None)
         {
@@ -135,6 +137,15 @@ public class BarTendingController : MonoBehaviour
         {
             _amountOfClientLeft = 1;
         }
+        
+        if (recipe != null)
+        {
+            _isSpecialRecipe = true;
+            _currentRecipe = recipe;
+            _amountOfClientLeft = 1;
+        }
+        else _isSpecialRecipe = false;
+        
         print(_amountOfClientLeft);
         
         _currentDay = day;
@@ -155,7 +166,7 @@ public class BarTendingController : MonoBehaviour
         _currentCharacterObject = CharacterReference.Instance.GetGameObject(_currentCharacter);
         MoveCharacter(_currentCharacterObject,true);
         if(_currentCharacter == MainCharacters.None) _dialogueSequence.dialogues[0].npcName = _npcNames[Random.Range(0, _npcNames.Count)];
-        _currentRecipe = _recipes[0]; // Need to randomize the recipes
+        if(!_isSpecialRecipe)_currentRecipe = _recipes[0]; // Need to randomize the recipes
         _dialogueSequence.dialogues[0].dialogueText = _currentRecipe.description;
         _hintText.text = _currentRecipe.hint;
     }

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
+  m_Name: 1. 7
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  dialogueText: "Tu es seul \xE0 ta maison d\u2019enfance jusqu\u2019\xE0 la fin
+    de la semaine, avec rien d\u2019autre de pr\xE9vu qu\u2019un petit job au bar
+    de plage [NOM DU BAR ?]  que tu as miraculeusement d\xE9croch\xE9 gr\xE2ce \xE0
+    tes parents, que tout le monde connait en ville. "
+  speakingCharacter: 0
+  npcName: 
+  npcIcon: {fileID: 0}
+  triggerAnimation: 0
+  animatedCharacters: 0
+  triggerName: 
+  changeReputation: 0
+  reputationCharacters: 0
+  isSet: 0
+  reputationAmount: 0
+  hasCharacterEvent: 0
+  charactersEvent: 0
+  eventName: 
+  dialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []

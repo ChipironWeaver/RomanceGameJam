@@ -33,6 +33,9 @@ public class BlackScreen : MonoBehaviour
         Color bgColor = new Color(_backgroundColor.r, _backgroundColor.g, _backgroundColor.b, 0);
         Color textColor = new Color(_textColor.r, _textColor.g, _textColor.b, 0);
         
+        _bigText.text = bigText;
+        _smallText.text = smallText;
+        
         _image.color = bgColor;
         _bigText.color = textColor;
         _smallText.color = textColor;
@@ -41,7 +44,7 @@ public class BlackScreen : MonoBehaviour
         _sequence.Append(_image.DOColor(_backgroundColor, _animationTime/2));
         _sequence.Append(_bigText.DOColor(_textColor, _animationTime/2));
         _sequence.Join(_smallText.DOColor(_textColor, _animationTime/2));
-        _sequence.AppendInterval(_animationTime);
+        _sequence.AppendInterval(_animationTime*2);
         _sequence.Append(_bigText.DOColor(textColor, _animationTime/2));
         _sequence.Join(_smallText.DOColor(textColor, _animationTime/2));
         _sequence.Append(_image.DOColor(bgColor, _animationTime/2));
