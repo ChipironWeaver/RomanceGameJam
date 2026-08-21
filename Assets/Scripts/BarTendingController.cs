@@ -11,8 +11,6 @@ using Random = UnityEngine.Random;
 
 public class BarTendingController : MonoBehaviour
 {
-    public UnityEvent endShiftEvent = new UnityEvent(); 
-    
     [Header("References")] 
     [SerializeField] private LiquidController _liquidController;
     [SerializeField] private GameObject _drinkParentModel;
@@ -95,7 +93,7 @@ public class BarTendingController : MonoBehaviour
 
     public void Start()
     {
-        GameplayStart( 1, MainCharacters.Angelina);
+        //GameplayStart( 1, MainCharacters.Angelina);
         _dialogueSequence.endEvent.AddListener(NextGameplayPhase);
     }
 
@@ -211,6 +209,7 @@ public class BarTendingController : MonoBehaviour
                 if (_amountOfClientLeft == 0)
                 {
                     DeleteUI();
+                    Actions.EndOfGameplayPhase?.Invoke();
                     _currentGameState = -1;
                 }
                 else

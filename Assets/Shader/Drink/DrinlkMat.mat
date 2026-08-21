@@ -42,10 +42,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.8
+    - _Alpha: 0
     - _BubbleThreeshold: 0.5
     - _Bubble_Strengh: 1
-    - _Height: 0.161
+    - _Height: 0.04
     - _HighLightStrengh: 0.308
     - _HighLightThreshold: -0.499
     - _HueShift: 0
@@ -63,7 +63,7 @@ Material:
     - _WaveStrenght: 0
     - _XRMotionVectorsPass: 1
     m_Colors:
-    - _BaseColor: {r: 0.751634, g: 0.99955606, b: 0.7544902, a: 1}
+    - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
     - _LightColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

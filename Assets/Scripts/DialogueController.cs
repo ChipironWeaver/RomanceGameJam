@@ -316,7 +316,11 @@ public class DialogueController : MonoBehaviour
             _endBranchShown = false;
             _currentDialogueSequence.endEvent?.Invoke();
             if (_currentDialogueSequence.hasEndBranch) StartDialogue(_currentDialogueSequence.GetEndDialogueSequence());
-            else SetActivation(false);
+            else
+            {
+                SetActivation(false);
+                Actions.EndOfVisualNovelPhase?.Invoke();
+            }
         }
         else _endBranchShown = true;
     }
