@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: 1.3 Sequence
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 53f3b0538ebd21948bd793ec2a289827, type: 2}
+  - {fileID: 11400000, guid: f1b5fedd22dbc7b4d8a6546dd7328118, type: 2}
+  - {fileID: 11400000, guid: 8c317f62126ad7c4db42c7861eafabf7, type: 2}
+  - {fileID: 11400000, guid: eac4718da0824454bbf1a4ff8bafe372, type: 2}
+  - {fileID: 11400000, guid: 4800646504c214d4ab30aaac2a63d6fd, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 847565d9d37989744b705b63e1b0f631, type: 2}

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: 1. Sequence Angelina D1 post
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 70d23f80b0669c5448b9b174b6d14e0e, type: 2}
+  - {fileID: 11400000, guid: 451f5d445736e684d96ff127baba7bc1, type: 2}
+  - {fileID: 11400000, guid: 7a5ddd31534c1c64285fdd6e68e037e9, type: 2}
+  - {fileID: 11400000, guid: 0068380e8f87c9c409e384d18bc5e806, type: 2}
+  - {fileID: 11400000, guid: 97c584be1ca43ca43aba49f28b142971, type: 2}
+  - {fileID: 11400000, guid: 94da591f0676dcc47935bb005ec31eb6, type: 2}
+  - {fileID: 11400000, guid: 4dc47eadc3768544d96d9bd85728e6c3, type: 2}
+  - {fileID: 11400000, guid: 4392b7679e0171c409f4692ba0f8b7ff, type: 2}
+  - {fileID: 11400000, guid: 83e7ed05e8738534694e0884559e0d37, type: 2}
+  - {fileID: 11400000, guid: 0dfb863593abf454aa612a6a3c9772ef, type: 2}
+  - {fileID: 11400000, guid: 2142a3a077131fc46a8a082d5ba5740c, type: 2}
+  - {fileID: 11400000, guid: ff6b4fde1efdd6141b90d4822786db65, type: 2}
+  - {fileID: 11400000, guid: 6b1dff0c97fdd1a40ac44ba22f43f297, type: 2}
+  - {fileID: 11400000, guid: ca6520c765ca4334c91d4b099bee9fe5, type: 2}
+  - {fileID: 11400000, guid: 43a7e8b017cd39045923565553d35005, type: 2}
+  - {fileID: 11400000, guid: 233380ed7f3c4e1459806b430eae2061, type: 2}
+  - {fileID: 11400000, guid: 902efdad31f817748aba04f15389096c, type: 2}
+  - {fileID: 11400000, guid: feec12d82d79e5447a354fb2ea9521ea, type: 2}
+  - {fileID: 11400000, guid: 949d4d76677eee5438cde1eb42b61a90, type: 2}
+  - {fileID: 11400000, guid: 14ffb80206e49f4479e9afc2199402ed, type: 2}
+  - {fileID: 11400000, guid: f5134792271094d4b8274e773d43439b, type: 2}
+  - {fileID: 11400000, guid: 62d67b9c15cc89e408e7039f40991bbb, type: 2}
+  - {fileID: 11400000, guid: f1a06c8dd13c4d040a79aab6d3dad4c1, type: 2}
+  - {fileID: 11400000, guid: 9bcb0995afe4b8d498da5bb4d24826a0, type: 2}
+  - {fileID: 11400000, guid: 40864fc82413e7e43bdba8cdd36232cc, type: 2}
+  - {fileID: 11400000, guid: 11b5d73a455be334991161b28a77760b, type: 2}
+  - {fileID: 11400000, guid: ac5a822da011b1a44a47c2318a7ddd5f, type: 2}
+  - {fileID: 11400000, guid: dc30604a87f632a4cb7f2b3a85c5149a, type: 2}
+  - {fileID: 11400000, guid: d3a6f3b95bd06954daec6cc05b6c82fd, type: 2}
+  - {fileID: 11400000, guid: 2d2f8fa22b48ce643a9ec8958aa3b9ad, type: 2}
+  - {fileID: 11400000, guid: f1fe04d9a100d8c459c5f9f26d716c83, type: 2}
+  - {fileID: 11400000, guid: 948a613b479fab9458597a81a9518272, type: 2}
+  - {fileID: 11400000, guid: 3f7b617f480a0a64e86bcde6aeef895b, type: 2}
+  - {fileID: 11400000, guid: 509c8b2b0d60e3d42b7f76c0ba788e53, type: 2}
+  - {fileID: 11400000, guid: c0307f54c9594c74a9be814d57e2a07a, type: 2}
+  - {fileID: 11400000, guid: 12fca3377660d9c43967b38c273b9f85, type: 2}
+  - {fileID: 11400000, guid: 70ec8fa94c36df84fbade8e2794adc8f, type: 2}
+  - {fileID: 11400000, guid: 9c5660e50944340458242e76c6057a67, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 0
+  endBranches: []

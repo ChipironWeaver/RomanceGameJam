@@ -3467,7 +3467,7 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: GP Monday
+  - name: GP Monday 1
     state: 1
     bigText: 
     smallText: 
@@ -3602,10 +3602,10 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: BS Angelina
     state: 0
-    bigText: 
-    smallText: 
+    bigText: Lundi
+    smallText: 13h26
     day: 0
     mainCharacters: 0
     isSpecial: 0
@@ -3627,8 +3627,8 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
-    state: 0
+  - name: D Angelina Pre
+    state: 2
     bigText: 
     smallText: 
     day: 0
@@ -3641,6 +3641,41 @@ MonoBehaviour:
       hint: 
       liquids: 
       decorations: []
+    sequence: {fileID: 11400000, guid: 14241c18af3fc724d88366b96d1cced3, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 14 GP Angelina Day 1
+    state: 2
+    bigText: 
+    smallText: 
+    day: 1
+    mainCharacters: 3
+    isSpecial: 1
+    datableRecipe:
+      name: Orange Juice
+      day: 1
+      description: SHOULDN'T SEE THIS
+      hint: "Une boisson sucr\xE9, probablement tr\xE9s frais avec des fruits"
+      liquids: 
+      decorations:
+      - hasToBeEmpty: 0
+        validIndexes: 
+      - hasToBeEmpty: 0
+        validIndexes: 000000000100000002000000
+      - hasToBeEmpty: 0
+        validIndexes: 0000000001000000020000000300000004000000
+      - hasToBeEmpty: 0
+        validIndexes: 
+      - hasToBeEmpty: 0
+        validIndexes: 
     sequence: {fileID: 0}
     changeBasedOnLastResult: 0
     goodSequence: {fileID: 0}
@@ -3652,8 +3687,8 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
-    state: 0
+  - name: D Angelina Post
+    state: 2
     bigText: 
     smallText: 
     day: 0
@@ -3666,7 +3701,7 @@ MonoBehaviour:
       hint: 
       liquids: 
       decorations: []
-    sequence: {fileID: 0}
+    sequence: {fileID: 11400000, guid: e29272a8960f9334e821b3020e4e4ddd, type: 2}
     changeBasedOnLastResult: 0
     goodSequence: {fileID: 0}
     averageSequence: {fileID: 0}

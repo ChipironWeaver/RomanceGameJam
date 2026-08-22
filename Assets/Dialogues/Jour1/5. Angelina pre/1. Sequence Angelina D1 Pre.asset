@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: 1. Sequence Angelina D1 Pre
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 3bbb64856292c8e409281f0ccc92c42c, type: 2}
+  - {fileID: 11400000, guid: 1347c74d2c50a3c419eb72904a989e4b, type: 2}
+  - {fileID: 11400000, guid: 85c00a72e80e7174f918c8196e7bb247, type: 2}
+  - {fileID: 11400000, guid: 49098af1b650b6449a5b07fc08ad9e99, type: 2}
+  - {fileID: 11400000, guid: 934b7549b4fd0e249a93e9b47ca89200, type: 2}
+  - {fileID: 11400000, guid: 1a08d6c6bc29cb5458646cb83d96049f, type: 2}
+  - {fileID: 11400000, guid: 79c91fc59f3c4ea4db81c80ee11c1515, type: 2}
+  - {fileID: 11400000, guid: 39df3dbf4b564b940b8db5f9ab4f0046, type: 2}
+  - {fileID: 11400000, guid: 63e8e942477760c4886947f1c0e1b00d, type: 2}
+  - {fileID: 11400000, guid: a2066e5104a7b304b92ed51857fd1248, type: 2}
+  - {fileID: 11400000, guid: d8b116969e98fdc4c89d888f6707095a, type: 2}
+  - {fileID: 11400000, guid: f31aac22928165c4184ade1c99ba45c3, type: 2}
+  - {fileID: 11400000, guid: bf056ec760dcd05449b7b055719e2479, type: 2}
+  - {fileID: 11400000, guid: c150c173086e2a8468cdc02edcfbaa15, type: 2}
+  - {fileID: 11400000, guid: 2091dde3dd4fb2d488d455c8fe243de5, type: 2}
+  - {fileID: 11400000, guid: a86eab436ecdef845912c39d930994d4, type: 2}
+  - {fileID: 11400000, guid: a4f5ac388d415704eb055031c35d863e, type: 2}
+  - {fileID: 11400000, guid: 06ba303e76632c84cb4e463538d7124d, type: 2}
+  - {fileID: 11400000, guid: 7914d06e004ff8c42ac186a407d41aed, type: 2}
+  - {fileID: 11400000, guid: e68549428a407814d99ed77efe157641, type: 2}
+  - {fileID: 11400000, guid: e722a67fce0779b4ab5de0989bc84e64, type: 2}
+  - {fileID: 11400000, guid: f4c435d6a8065c34f818f272cd456903, type: 2}
+  - {fileID: 11400000, guid: 8f8caa26877f03f459d1913fa244008f, type: 2}
+  - {fileID: 11400000, guid: 811cc868780564c4e976372433c13dee, type: 2}
+  - {fileID: 11400000, guid: 61356c8bc4fd4d04b8b7a042aca70a08, type: 2}
+  - {fileID: 11400000, guid: 490cb20e1be1d4941b0dc993eb677a0b, type: 2}
+  - {fileID: 11400000, guid: 84080185dc0697c4da01ad943d9ebe56, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: "D\u2019accord, mais c\u2019est bien parce que c\u2019est toi,
+      Angie."
+    linkedDialogueSequence: {fileID: 11400000, guid: ff3d1db26703cc54999c6f1d515f120d, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu veux une preuve ?
+    linkedDialogueSequence: {fileID: 11400000, guid: 61be12928e0fba74087383cc9d6b1d6d, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Je peux repartir si tu veux.
+    linkedDialogueSequence: {fileID: 11400000, guid: b18b5ca52bba7e84287afa8c41ad9bf1, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

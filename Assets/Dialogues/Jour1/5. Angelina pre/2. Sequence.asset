@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: 2. Sequence
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: beacceb1a4d3e83468caa1a522be57f2, type: 2}
+  - {fileID: 11400000, guid: 661361b71c3c8db4782b2d5bb5009145, type: 2}
+  - {fileID: 11400000, guid: 0534074a1c8e8aa449a48c378d2819dc, type: 2}
+  - {fileID: 11400000, guid: 38f4a3effd83bf94991955381300b5f6, type: 2}
+  - {fileID: 11400000, guid: c464bbd3e72c830478f9a49adfa83ed2, type: 2}
+  - {fileID: 11400000, guid: 378ee7bd2bb466d49b43a6e0726a803f, type: 2}
+  - {fileID: 11400000, guid: 95b0e7e10ae8d754ba0405453201077e, type: 2}
+  - {fileID: 11400000, guid: a8964fe97d4025a4fb01e19846493c02, type: 2}
+  - {fileID: 11400000, guid: e10a7e5e3b009a446b85de1847de3fcf, type: 2}
+  - {fileID: 11400000, guid: 5bb5b5b7784b374408f89f5c1fe7fdbc, type: 2}
+  - {fileID: 11400000, guid: aef0dbdc36bc649478aec169df2799e8, type: 2}
+  - {fileID: 11400000, guid: 2954bf13ec1e7e74aa984d05b81f0d5b, type: 2}
+  - {fileID: 11400000, guid: 8e6cacafb61ce0a4f88cb3adaf17801e, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Un truc qui te ressemble, quoi.
+    linkedDialogueSequence: {fileID: 11400000, guid: d4b3a5df5e6b7324abe391e3b3374619, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu es toujours aussi exigeante.
+    linkedDialogueSequence: {fileID: 11400000, guid: 3315f79c163e04542858e4385396ce1d, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Je peux faire \xE7a."
+    linkedDialogueSequence: {fileID: 11400000, guid: 7f622412befda834f89277989a5d44da, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []
