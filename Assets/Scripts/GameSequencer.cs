@@ -7,10 +7,12 @@ using UnityEngine.Events;
 public class GameSequencer : MonoBehaviour
 {
     [SerializeField] private List<GameStateAction> _actions;
+    [SerializeField] private bool _autostart;
     [Header("References")]
     [SerializeField] private BlackScreen _blackScreen;
     [SerializeField] private DialogueController _dialogueController;
     [SerializeField] private BarTendingController _barTendingController;
+    [SerializeField] private CharacterReference _characterReference;
 
     public static int CurrentIndex = -1;
     public static int LatestScore;
@@ -23,6 +25,7 @@ public class GameSequencer : MonoBehaviour
         Actions.EndOfVisualNovelPhase += () => { ActionReceiver(TypeOfState.VisualNovel); };
         Actions.EndOfGameplayPhase += () => { ActionReceiver(TypeOfState.BarTending); };
         Actions.EndOtherActionPhase += () => { ActionReceiver(TypeOfState.Other); };
+        Actions.CharacterMoved += () => { ActionReceiver(TypeOfState.CharacterMoved); };
     }
     private void ActionReceiver(TypeOfState state)
     {
@@ -31,7 +34,12 @@ public class GameSequencer : MonoBehaviour
         if (CurrentIndex > _actions.Count) return; 
         if(state == _actions[CurrentIndex-1].state) NextAction();
     }
-    
+
+    public void Start()
+    {
+        if(_autostart) StartGame();
+    }
+
     public void StartGame(int index = 0)
     {
         CurrentIndex = index;
@@ -75,6 +83,9 @@ public class GameSequencer : MonoBehaviour
             case TypeOfState.BarTending:
                 _barTendingController.GameplayStart(action.day, action.mainCharacters,false,action.isSpecial ? action.datableRecipe : null);
                 break;
+            case TypeOfState.CharacterMoved:
+                _characterReference.SetActivation(action.mainCharacters, action.activation,action.instantMove);
+                break;
             case TypeOfState.Other:
                 action.otherEvent.Invoke();
                 break;
@@ -111,6 +122,12 @@ public class GameSequencer : MonoBehaviour
         public DialogueSequence goodSequence;
         public DialogueSequence averageSequence;
         public DialogueSequence badSequence;
+
+        [Header("Character Moved")]
+        public MainCharacters moveMainCharacters;
+
+        public bool activation;
+        public bool instantMove;
         
         [Header("Other")]
         public UnityEvent otherEvent;
@@ -121,6 +138,8 @@ public class GameSequencer : MonoBehaviour
         BlackScreen,
         BarTending,
         VisualNovel,
+        ImageShown,
+        CharacterMoved,
         Other,
     }
 }

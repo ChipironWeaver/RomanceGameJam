@@ -22,7 +22,7 @@ public class BarTendingController : MonoBehaviour
     [SerializeField] private Button _emptyButton;
     [SerializeField] private Button _completeButton;
     [SerializeField] private UIAnimator _uiAnimator;
-    [SerializeField] private RecipeBook _recipeBool;
+    [SerializeField] private RecipeBook _recipeBook;
     
     [Header("Dialogue")]
     [SerializeField] private DialogueController _dialogueController;
@@ -93,7 +93,7 @@ public class BarTendingController : MonoBehaviour
     private int _amountOfClientLeft = 0;
     public float currentDay = 1;
     private MainCharacters _currentCharacter = MainCharacters.None;
-    private GameObject _currentCharacterObject;
+    //private GameObject _currentCharacterObject;
     private Recipe _currentRecipe;
     private bool _isSpecialRecipe;
 
@@ -107,7 +107,7 @@ public class BarTendingController : MonoBehaviour
     public void Start()
     {
         //GameplayStart( 1, MainCharacters.Angelina);
-        Test();
+        //Test();
         _dialogueSequence.endEvent.AddListener(NextGameplayPhase);
     }
     
@@ -189,21 +189,15 @@ public class BarTendingController : MonoBehaviour
 
     public void StartClient()
     {
-        _currentCharacterObject = CharacterReference.Instance.GetGameObject(_currentCharacter);
         Animator characterAnimator = CharacterReference.Instance.GetAnimatorObject(_currentCharacter);
         if(characterAnimator != null) characterAnimator.SetTrigger("Neutral");
-        MoveCharacter(_currentCharacterObject,true);
+        CharacterReference.Instance.SetActivation(_currentCharacter,true);
         if(_currentCharacter == MainCharacters.None) _dialogueSequence.dialogues[0].npcName = _npcNames[Random.Range(0, _npcNames.Count)];
         if(!_isSpecialRecipe)_currentRecipe = _usableRecipes[Random.Range(0,_usableRecipes.Count)]; // Need to randomize the recipes
         _dialogueSequence.dialogues[0].dialogueText = _currentRecipe.description;
         _hintText.text = _currentRecipe.hint;
     }
     
-    private void MoveCharacter(GameObject character,bool active, bool instant = false)
-    {
-        if (instant) character.transform.position = active ? _activePosition : _notActivePosition;
-        else character.transform.DOMove(active ? _activePosition : _notActivePosition, 0.5f).SetEase(_easeType);
-    }
 
     [Button]
     public void NextGameplayPhase()
@@ -240,7 +234,7 @@ public class BarTendingController : MonoBehaviour
                 _uiAnimator.FadeOut(1);
                 _uiAnimator.FadeOut(3);
                 _uiAnimator.FadeOut(6);
-                _recipeBool.SetActive(false);
+                _recipeBook.SetActive(false);
                 Rate();
                 _uiAnimator.Fade(5);
                 DoCameraMove(false);
@@ -250,7 +244,8 @@ public class BarTendingController : MonoBehaviour
             case 4 : 
                 _uiAnimator.FadeOut(5);
                 _amountOfClientLeft--;
-                MoveCharacter(_currentCharacterObject,false);
+                CharacterReference.Instance.SetActivation(_currentCharacter,false);
+                
                 ResetDrink();
                 if (_amountOfClientLeft == 0)
                 {

@@ -558,6 +558,10 @@ MonoBehaviour:
   - {fileID: 79005038}
   - {fileID: 1328906245}
   - {fileID: 507564808}
+  _activePosition: {x: 525, y: 80, z: 90}
+  _notActivePosition: {x: 490, y: 80, z: 90}
+  _moveTime: 1.5
+  _easeType: 4
 --- !u!1001 &198021590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1708,6 +1712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pnj3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ba876e1f31a020e4895ba26653c6a51e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1781,6 +1789,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: aa745c13bac2edf4a9c1a837002bbf66, type: 3}
       propertyPath: m_Name
       value: pnj4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa745c13bac2edf4a9c1a837002bbf66, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2475,6 +2487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pnj2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0addeef4aa377749aee9bc3065cf762, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2625,7 +2641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6621846383023336264, guid: f8351be1c4715fa4696c96251a89b43f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2775,6 +2791,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa3944bfc16cc444db2d8426d65c621b, type: 3}
       propertyPath: m_Name
       value: pnj
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fa3944bfc16cc444db2d8426d65c621b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3291,6 +3311,9 @@ MonoBehaviour:
     goodSequence: {fileID: 0}
     averageSequence: {fileID: 0}
     badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -3313,10 +3336,13 @@ MonoBehaviour:
     goodSequence: {fileID: 0}
     averageSequence: {fileID: 0}
     badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: BS
+  - name: BS Monday
     state: 0
     bigText: Lundi
     smallText: 8h14
@@ -3335,6 +3361,9 @@ MonoBehaviour:
     goodSequence: {fileID: 0}
     averageSequence: {fileID: 0}
     badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -3357,6 +3386,9 @@ MonoBehaviour:
     goodSequence: {fileID: 0}
     averageSequence: {fileID: 0}
     badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -3379,12 +3411,17 @@ MonoBehaviour:
     goodSequence: {fileID: 0}
     averageSequence: {fileID: 0}
     badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
+  _autostart: 0
   _blackScreen: {fileID: 312514440}
   _dialogueController: {fileID: 8713159423576416512}
   _barTendingController: {fileID: 5367359521910052953}
+  _characterReference: {fileID: 0}
 --- !u!1001 &1086190271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3754,7 +3791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4801903207651448207, guid: 0cf2f4037455a2a4ebe28238fd1e92fc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8459640249049076627, guid: 0cf2f4037455a2a4ebe28238fd1e92fc, type: 3}
       propertyPath: m_LocalScale.x
@@ -4712,7 +4749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6233174508646415816, guid: 12e7352ff5577a14f9144ae7ed2c5af1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11010,6 +11047,7 @@ MonoBehaviour:
   _emptyButton: {fileID: 734051140519927955}
   _completeButton: {fileID: 2051004088}
   _uiAnimator: {fileID: 7845942912200224551}
+  _recipeBook: {fileID: 1226934568}
   _dialogueController: {fileID: 8713159423576416512}
   _dialogueSequence: {fileID: 11400000, guid: 2d540233bcb3b604ba12ee5b5289ab94, type: 2}
   _npcNames:
