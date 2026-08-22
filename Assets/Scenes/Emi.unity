@@ -2578,7 +2578,6 @@ MonoBehaviour:
       day: 0
       description: 
       hint: 
-      characters: 0
       liquids: 
       decorations: []
     sequence: {fileID: 0}
@@ -2601,7 +2600,6 @@ MonoBehaviour:
       day: 0
       description: 
       hint: 
-      characters: 0
       liquids: 
       decorations: []
     sequence: {fileID: 11400000, guid: 6617e84e1fcc6384493c3e73ca107d19, type: 2}
@@ -2624,7 +2622,6 @@ MonoBehaviour:
       day: 0
       description: 
       hint: 
-      characters: 0
       liquids: 
       decorations: []
     sequence: {fileID: 0}
@@ -2647,7 +2644,6 @@ MonoBehaviour:
       day: 0
       description: 
       hint: 
-      characters: 0
       liquids: 
       decorations: []
     sequence: {fileID: 0}
@@ -2670,7 +2666,6 @@ MonoBehaviour:
       day: 0
       description: 
       hint: 
-      characters: 0
       liquids: 
       decorations: []
     sequence: {fileID: 0}
@@ -4803,7 +4798,88 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LiquidController
   _material: {fileID: 2100000, guid: dfbb099867eaa6242852df476f68cdf5, type: 2}
-  liquids: []
+  liquids:
+  - name: Soda
+    usable: 0
+    sprite: {fileID: -499814173, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
+    color: {r: 0.764685, g: 0.8386971, b: 0.9056604, a: 0}
+    alpha: 0.3
+    smoothness: 0
+    hueShift: 0
+    valueShift: -0.2
+    saturationShift: 0.25
+  - name: Jus d'orange
+    usable: 0
+    sprite: {fileID: -1310347849, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
+    color: {r: 0.9339623, g: 0.5453524, b: 0.013216423, a: 0}
+    alpha: 0.734
+    smoothness: 0
+    hueShift: 0.01
+    valueShift: -0.2
+    saturationShift: 0.25
+  - name: Jus de myrtille
+    usable: 0
+    sprite: {fileID: 674031283, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
+    color: {r: 0.20385192, g: 0.08317016, b: 0.8396226, a: 0}
+    alpha: 0.734
+    smoothness: 0
+    hueShift: 0.01
+    valueShift: -0.2
+    saturationShift: 0.25
+  - name: "Th\xE9"
+    usable: 0
+    sprite: {fileID: 1421352672, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
+    color: {r: 0.83137256, g: 0.7019608, b: 0.5294118, a: 0}
+    alpha: 0.39
+    smoothness: 0
+    hueShift: 0
+    valueShift: -0.1
+    saturationShift: 0.1
+  - name: Jus de cerise
+    usable: 0
+    sprite: {fileID: -157237273, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
+    color: {r: 0.8867924, g: 0, b: 0.13418582, a: 0}
+    alpha: 0.734
+    smoothness: 0
+    hueShift: 0.01
+    valueShift: -0.2
+    saturationShift: 0.25
+  - name: Sirop de citron
+    usable: 0
+    sprite: {fileID: -2077386008, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
+    color: {r: 1, g: 0.9882353, b: 0.23137255, a: 0}
+    alpha: 0.9
+    smoothness: 0
+    hueShift: 0.02
+    valueShift: -0.3
+    saturationShift: 0.05
+  - name: Sirop de canne
+    usable: 0
+    sprite: {fileID: -1280766264, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
+    color: {r: 0.83137256, g: 0.827451, b: 0.62352943, a: 0}
+    alpha: 0.2
+    smoothness: 0
+    hueShift: 0.02
+    valueShift: -0.3
+    saturationShift: 0.05
+  - name: Sirop de Melon
+    usable: 0
+    sprite: {fileID: 510822141, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
+    color: {r: 0.4587913, g: 1, b: 0.25098038, a: 0}
+    alpha: 0.9
+    smoothness: 0
+    hueShift: 0.02
+    valueShift: -0.3
+    saturationShift: 0.05
+  - name: Sirop De Fraise
+    usable: 0
+    sprite: {fileID: -1911059305, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
+    color: {r: 0.9528302, g: 0.1017066, b: 0, a: 0}
+    alpha: 0.9
+    smoothness: 0
+    hueShift: 0.01
+    valueShift: -0.3
+    saturationShift: 0.05
   _waveStrengthRange: {x: 0, y: 0}
   _liquidMinMaxHeight: {x: 0.04, y: 0.161}
   _waveStrengthCurve:
@@ -4873,7 +4949,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _animationDuration: 0.5
-  sizePerLiquid: 0
+  sizePerLiquid: 0.33333334
 --- !u!4 &444780548011138864
 Transform:
   m_ObjectHideFlags: 0
@@ -5516,14 +5592,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 803713324, guid: 458b1abce8636344c9340e85f6616004, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5837,7 +5913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &1345428250003969964
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7522,7 +7598,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'Bonjour! J''aimerais avoir un <color=#E969F0>Ice Sky</color>, merci beaucoup! '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f49d1a4b50e93b44a24f50efeebee51, type: 2}
   m_sharedMaterial: {fileID: -4793551250725166852, guid: 0f49d1a4b50e93b44a24f50efeebee51, type: 2}
@@ -8182,7 +8258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -9533,7 +9609,7 @@ MonoBehaviour:
   - name: Soda
     usable: 0
     sprite: {fileID: -499814173, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 0.70980394, g: 0.7921569, b: 0.8666667, a: 0}
+    color: {r: 0.764685, g: 0.8386971, b: 0.9056604, a: 0}
     alpha: 0.3
     smoothness: 0
     hueShift: 0
@@ -9542,7 +9618,7 @@ MonoBehaviour:
   - name: Jus d'orange
     usable: 0
     sprite: {fileID: -1310347849, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 0.85882354, g: 0.5803922, b: 0.16470589, a: 0}
+    color: {r: 0.9339623, g: 0.5453524, b: 0.013216423, a: 0}
     alpha: 0.734
     smoothness: 0
     hueShift: 0.01
@@ -9551,7 +9627,7 @@ MonoBehaviour:
   - name: Jus de myrtille
     usable: 0
     sprite: {fileID: 674031283, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 0.22352941, g: 0.06666667, b: 0.6117647, a: 0}
+    color: {r: 0.20385192, g: 0.08317016, b: 0.8396226, a: 0}
     alpha: 0.734
     smoothness: 0
     hueShift: 0.01
@@ -9569,7 +9645,7 @@ MonoBehaviour:
   - name: Jus de cerise
     usable: 0
     sprite: {fileID: -157237273, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 0.59607846, g: 0, b: 0.09019608, a: 0}
+    color: {r: 0.8867924, g: 0, b: 0.13418582, a: 0}
     alpha: 0.734
     smoothness: 0
     hueShift: 0.01
@@ -9596,7 +9672,7 @@ MonoBehaviour:
   - name: Sirop de Melon
     usable: 0
     sprite: {fileID: 510822141, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 1, g: 0.7294118, b: 0.2509804, a: 0}
+    color: {r: 0.4587913, g: 1, b: 0.25098038, a: 0}
     alpha: 0.9
     smoothness: 0
     hueShift: 0.02
@@ -9605,7 +9681,7 @@ MonoBehaviour:
   - name: Sirop De Fraise
     usable: 0
     sprite: {fileID: -1911059305, guid: cc671757a30d75e4392c6a6beb176b0e, type: 3}
-    color: {r: 0.81960785, g: 0.19607843, b: 0.12156863, a: 0}
+    color: {r: 0.9528302, g: 0.1017066, b: 0, a: 0}
     alpha: 0.9
     smoothness: 0
     hueShift: 0.01
@@ -9624,11 +9700,10 @@ MonoBehaviour:
   _maxLiquids: 3
   _recipes:
   - name: Blueberry Punch Normal
-    day: 1
+    day: 0
     description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Blueberry Punch </color>,
       merci beaucoup! '
     hint: Le client veut un <color=#E969F0>Blueberry Punch
-    characters: 0
     liquids: 000000000000000002000000
     decorations:
     - hasToBeEmpty: 0
@@ -9636,11 +9711,10 @@ MonoBehaviour:
     - hasToBeEmpty: 0
       validIndexes: 000000000100000002000000
   - name: Orange Blossom Fizz Normal
-    day: 1
+    day: 0
     description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Orange Blossom Fizz</color>,
       merci beaucoup! '
     hint: Le client veut un <color=#E969F0>Orange Blossom Fizz
-    characters: 0
     liquids: 000000000000000001000000
     decorations:
     - hasToBeEmpty: 0
@@ -9658,7 +9732,6 @@ MonoBehaviour:
     description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Cherry Fizz</color>,
       merci beaucoup! '
     hint: Le client veut un <color=#E969F0>Cherry Fizz
-    characters: 0
     liquids: 000000000000000004000000
     decorations:
     - hasToBeEmpty: 0
@@ -9676,7 +9749,6 @@ MonoBehaviour:
     description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Ice Lemon Tea</color>,
       merci beaucoup! '
     hint: Le client veut un <color=#E969F0>Ice Lemon Tea
-    characters: 0
     liquids: 030000000600000005000000
     decorations:
     - hasToBeEmpty: 0
@@ -9694,7 +9766,6 @@ MonoBehaviour:
     description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Fresh Lime</color>,
       merci beaucoup! '
     hint: Le client veut un <color=#E969F0>Fresh Lime
-    characters: 0
     liquids: 030000000300000005000000
     decorations:
     - hasToBeEmpty: 0
@@ -9712,7 +9783,6 @@ MonoBehaviour:
     description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Blue Melba</color>,
       merci beaucoup! '
     hint: Le client veut un <color=#E969F0>Blue Melba
-    characters: 0
     liquids: 030000000300000002000000
     decorations:
     - hasToBeEmpty: 1
@@ -9730,7 +9800,6 @@ MonoBehaviour:
     description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Vanilla Dream</color>,
       merci beaucoup! '
     hint: Le client veut un <color=#E969F0>Vanilla Dream
-    characters: 0
     liquids: 030000000000000006000000
     decorations:
     - hasToBeEmpty: 1
@@ -9748,7 +9817,6 @@ MonoBehaviour:
     description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Blue Strawberry</color>,
       merci beaucoup! '
     hint: Le client veut un <color=#E969F0>Blue Strawberry
-    characters: 0
     liquids: 000000000800000002000000
     decorations:
     - hasToBeEmpty: 0
@@ -9766,7 +9834,6 @@ MonoBehaviour:
     description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Ice Sky</color>, merci
       beaucoup! '
     hint: Le client veut un <color=#E969F0>Ice Sky
-    characters: 0
     liquids: 000000000500000002000000
     decorations:
     - hasToBeEmpty: 0
@@ -9784,7 +9851,6 @@ MonoBehaviour:
     description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Melon Soda/color>,
       merci beaucoup! '
     hint: Le client veut un <color=#E969F0>Melon Soda
-    characters: 0
     liquids: 000000000000000007000000
     decorations:
     - hasToBeEmpty: 1
@@ -9802,7 +9868,6 @@ MonoBehaviour:
     description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Pink Lemonade</color>,
       merci beaucoup! '
     hint: Le client veut un <color=#E969F0>Pink Lemonade
-    characters: 0
     liquids: 000000000800000005000000
     decorations:
     - hasToBeEmpty: 0
@@ -9815,14 +9880,14 @@ MonoBehaviour:
       validIndexes: 02000000
     - hasToBeEmpty: 0
       validIndexes: 000000000100000002000000
-  _liquidScoreMultiplier: 2
+  _liquidScoreMultiplier: 3
   _decorationScoreMultiplier: 1
   _angryThreshold:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 19.076176
+      value: 33.838078
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -9831,7 +9896,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 49.964287
+      value: 54.964287
       inSlope: 2
       outSlope: 2
       tangentMode: 0
@@ -9845,8 +9910,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.00000045855995
-      value: 49.047623
+      time: 0
+      value: 58.571426
       inSlope: 0
       outSlope: 0
       tangentMode: 136
@@ -9855,7 +9920,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 82.38096
+      value: 90.952385
       inSlope: 0
       outSlope: 0
       tangentMode: 136
@@ -10328,7 +10393,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Angelina
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10433,7 +10498,7 @@ RectTransform:
   m_GameObject: {fileID: 3755983176457331173}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2605961679197918489}
@@ -10442,7 +10507,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 170}
+  m_AnchoredPosition: {x: 0, y: 150}
   m_SizeDelta: {x: 1500, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &6329348911343130726
@@ -12284,7 +12349,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Indice
+  m_text: Le client veut un <color=#E969F0>Ice Sky
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f49d1a4b50e93b44a24f50efeebee51, type: 2}
   m_sharedMaterial: {fileID: -4793551250725166852, guid: 0f49d1a4b50e93b44a24f50efeebee51, type: 2}

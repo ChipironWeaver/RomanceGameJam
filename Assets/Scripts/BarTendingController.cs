@@ -87,6 +87,8 @@ public class BarTendingController : MonoBehaviour
     private List<GameObject> _drinkUiList = new List<GameObject>();
     private List<GameObject> _decorationUiList = new List<GameObject>();
 
+    private List<Recipe> _usableRecipes = new List<Recipe>();
+    
     private int _amountOfClientLeft = 0;
     private float _currentDay = 1;
     private MainCharacters _currentCharacter = MainCharacters.None;
@@ -104,9 +106,10 @@ public class BarTendingController : MonoBehaviour
     public void Start()
     {
         //GameplayStart( 1, MainCharacters.Angelina);
+        Test();
         _dialogueSequence.endEvent.AddListener(NextGameplayPhase);
     }
-
+    
     [Button]
     public void CreateUI()
     {
@@ -136,6 +139,8 @@ public class BarTendingController : MonoBehaviour
         if(_currentGameState >= 0) return;
         _dialogueSequence.dialogues[0].speakingCharacter = characters;
         
+        _usableRecipes.Clear();
+        foreach(Recipe recipes in _recipes) if(recipes.day <= day) _usableRecipes.Add(recipes);
         //Check Unlocks
         int intDay = (int)day;
         
@@ -188,7 +193,7 @@ public class BarTendingController : MonoBehaviour
         if(characterAnimator != null) characterAnimator.SetTrigger("Neutral");
         MoveCharacter(_currentCharacterObject,true);
         if(_currentCharacter == MainCharacters.None) _dialogueSequence.dialogues[0].npcName = _npcNames[Random.Range(0, _npcNames.Count)];
-        if(!_isSpecialRecipe)_currentRecipe = _recipes[0]; // Need to randomize the recipes
+        if(!_isSpecialRecipe)_currentRecipe = _usableRecipes[Random.Range(0,_usableRecipes.Count)]; // Need to randomize the recipes
         _dialogueSequence.dialogues[0].dialogueText = _currentRecipe.description;
         _hintText.text = _currentRecipe.hint;
     }
@@ -602,7 +607,6 @@ public class Recipe
     public int day;
     public string description;
     public string hint;
-    public MainCharacters characters;
     public List<int> liquids;
     public List<RecipeComponent> decorations; 
 }
