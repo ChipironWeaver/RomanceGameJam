@@ -22,6 +22,7 @@ public class BarTendingController : MonoBehaviour
     [SerializeField] private Button _emptyButton;
     [SerializeField] private Button _completeButton;
     [SerializeField] private UIAnimator _uiAnimator;
+    [SerializeField] private RecipeBook _recipeBool;
     
     [Header("Dialogue")]
     [SerializeField] private DialogueController _dialogueController;
@@ -90,7 +91,7 @@ public class BarTendingController : MonoBehaviour
     private List<Recipe> _usableRecipes = new List<Recipe>();
     
     private int _amountOfClientLeft = 0;
-    private float _currentDay = 1;
+    public float currentDay = 1;
     private MainCharacters _currentCharacter = MainCharacters.None;
     private GameObject _currentCharacterObject;
     private Recipe _currentRecipe;
@@ -173,7 +174,7 @@ public class BarTendingController : MonoBehaviour
         
         print(_amountOfClientLeft);
         
-        _currentDay = day;
+        currentDay = day;
         _currentCharacter = characters;
         CreateUI();
         ResetDrink();
@@ -217,6 +218,7 @@ public class BarTendingController : MonoBehaviour
                 break;
             case 1 : //null to drink
                 _uiAnimator.Fade(4);
+                _uiAnimator.Fade(6);
                 _uiAnimator.Fade(0);
                 _currentGameState++;
                 _completeButton.interactable = true;
@@ -237,6 +239,8 @@ public class BarTendingController : MonoBehaviour
             case 3 : //decoration to review
                 _uiAnimator.FadeOut(1);
                 _uiAnimator.FadeOut(3);
+                _uiAnimator.FadeOut(6);
+                _recipeBool.SetActive(false);
                 Rate();
                 _uiAnimator.Fade(5);
                 DoCameraMove(false);
@@ -265,8 +269,8 @@ public class BarTendingController : MonoBehaviour
 
     private void Rate()
     {
-        float happyScore =  _happyThreshold.Evaluate(_currentDay/_maxDay);
-        float angryScore = _angryThreshold.Evaluate(_currentDay/_maxDay);
+        float happyScore =  _happyThreshold.Evaluate(currentDay/_maxDay);
+        float angryScore = _angryThreshold.Evaluate(currentDay/_maxDay);
         print(happyScore + " > " + angryScore);
 
         float score  = RateRecipe(_activeDecorationGroups,_activeLiquidGroups,_currentRecipe);
