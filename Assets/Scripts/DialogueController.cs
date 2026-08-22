@@ -166,29 +166,39 @@ public class DialogueController : MonoBehaviour
             GameState.CharacterEvent.Add(dialogue.eventName, dialogue.charactersEvent);
         }
 
-        Sprite icon = null;
+        if (dialogue.showCharacter)
+        {
+            CharacterReference.Instance.SetActivation(dialogue.shownCharacters,true);
+        }
+        if (dialogue.hideCharacter)
+        {
+            CharacterReference.Instance.SetActivation(dialogue.hiddenCharacters,false);
+        }
 
+        Sprite icon = null;
+        _characterNameText.text = dialogue.npcName;
+        
         switch (dialogue.speakingCharacter)
         {
             case MainCharacters.None:
                 icon = dialogue.npcIcon;
-                _characterNameText.text = dialogue.npcName;
+                
                 break;
             case MainCharacters.Player:
                 icon = _playerIcon;
-                _characterNameText.text = GameState.PlayerName;
+                if(_characterNameText.text == "") _characterNameText.text = GameState.PlayerName;
                 break;
             case MainCharacters.Karin:
                 icon = _karinIcon;
-                _characterNameText.text = "Karin";
+                if(_characterNameText.text == "") _characterNameText.text = "Karin";
                 break;
             case MainCharacters.Daria:
                 icon = _dariaIcon;
-                _characterNameText.text = "Daria";
+                if(_characterNameText.text == "") _characterNameText.text = "Daria";
                 break;
             case MainCharacters.Angelina:
                 icon = _angelinaIcon;
-                _characterNameText.text = "Angelina";
+                if(_characterNameText.text == "") _characterNameText.text = "Angelina";
                 break;
             case MainCharacters.CubeChan:
                 icon = _cubeChanIcon;

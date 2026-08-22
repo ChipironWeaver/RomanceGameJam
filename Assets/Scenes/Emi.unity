@@ -3278,7 +3278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59a5738e24cea6c4e9e0e58bf0097bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameState
-  testPlayerName: TestPlayer
+  testPlayerName: Toi
 --- !u!114 &1073852466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3342,7 +3342,7 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: BS Monday
+  - name: BS Monday Morning
     state: 0
     bigText: Lundi
     smallText: 8h14
@@ -3367,11 +3367,246 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
+  - name: D Monday Morning
+    state: 2
+    bigText: 
+    smallText: 
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: 4e63955337637c34db08479e4b579466, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS Monday Morning Work
+    state: 0
+    bigText: Lundi
+    smallText: 9h03
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D Collegue
+    state: 2
+    bigText: 
+    smallText: 
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: 7554674a5f9fba448bd664a2387f3adb, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS Monday Morning Work
+    state: 0
+    bigText: Quelque minutes plus tard
+    smallText: 
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - name: GP Monday
     state: 1
-    bigText: Lundi
-    smallText: 8h14
+    bigText: 
+    smallText: 
     day: 1
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS Daria 1
+    state: 0
+    bigText: Lundi
+    smallText: 10h47
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: aa1bcb1ad03ddef4ca8bbfa30eafbe91, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D Daria 1 Pre
+    state: 2
+    bigText: Lundi
+    smallText: 10h47
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: aa1bcb1ad03ddef4ca8bbfa30eafbe91, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 10 GP Daria Day 1
+    state: 2
+    bigText: 
+    smallText: 
+    day: 1
+    mainCharacters: 2
+    isSpecial: 1
+    datableRecipe:
+      name: Orange Juice
+      day: 1
+      description: SHOULDN'T SEE THIS
+      hint: "Que du jus d\u2019orange, peux-\xEAtres un fruit pour d\xE9cor\xE9?"
+      liquids: 010000000100000001000000
+      decorations:
+      - hasToBeEmpty: 0
+        validIndexes: 
+      - hasToBeEmpty: 0
+        validIndexes: 
+      - hasToBeEmpty: 0
+        validIndexes: 0000000001000000020000000300000004000000
+      - hasToBeEmpty: 0
+        validIndexes: 
+      - hasToBeEmpty: 0
+        validIndexes: 
+    sequence: {fileID: 11400000, guid: 2703ff8792d801d4ba726d6b695c4c06, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D Daria 1 Post
+    state: 2
+    bigText: 
+    smallText: 
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: 2703ff8792d801d4ba726d6b695c4c06, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    state: 0
+    bigText: 
+    smallText: 
+    day: 0
     mainCharacters: 0
     isSpecial: 0
     datableRecipe:
@@ -3417,11 +3652,162 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  _autostart: 0
+  - name: 
+    state: 0
+    bigText: 
+    smallText: 
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    state: 0
+    bigText: 
+    smallText: 
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    state: 0
+    bigText: 
+    smallText: 
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    state: 0
+    bigText: 
+    smallText: 
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    state: 0
+    bigText: 
+    smallText: 
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    state: 0
+    bigText: 
+    smallText: 
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  _autostart: 1
+  _autoIndex: 10
   _blackScreen: {fileID: 312514440}
   _dialogueController: {fileID: 8713159423576416512}
   _barTendingController: {fileID: 5367359521910052953}
-  _characterReference: {fileID: 0}
+  _characterReference: {fileID: 190987903}
 --- !u!1001 &1086190271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3497,7 +3883,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1126559402389121870, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
       propertyPath: m_text
-      value: Recipes
+      value: Recettes
       objectReference: {fileID: 0}
     - target: {fileID: 3845872990437366989, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
       propertyPath: m_Pivot.x
@@ -3525,7 +3911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3845872990437366989, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 3845872990437366989, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
       propertyPath: m_SizeDelta.y
@@ -3573,7 +3959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3845872990437366989, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 55
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 3845872990437366989, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3609,6 +3995,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328052912206182862, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7928401330607492547, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8104778877603990331, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
@@ -5729,7 +6119,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1126559402389121870, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
       propertyPath: m_text
-      value: Complete
+      value: Suite
       objectReference: {fileID: 0}
     - target: {fileID: 3845872990437366989, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
       propertyPath: m_Pivot.x
@@ -6896,6 +7286,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5177019908700307222}
     m_Modifications:
+    - target: {fileID: 1126559402389121870, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
+      propertyPath: m_text
+      value: Vider la boisson
+      objectReference: {fileID: 0}
     - target: {fileID: 3845872990437366989, guid: 993431c716a1a774988a7f9d41030d73, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9789,7 +10183,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 75, y: 75}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 140, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &4054828294325309815
 Transform:
@@ -11625,7 +12019,7 @@ MonoBehaviour:
       validIndexes: 02000000
     - hasToBeEmpty: 0
       validIndexes: 000000000100000002000000
-  _liquidScoreMultiplier: 3
+  _liquidScoreMultiplier: 2
   _decorationScoreMultiplier: 1
   _angryThreshold:
     serializedVersion: 2
@@ -11656,7 +12050,7 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 58.571426
+      value: 67.85713
       inSlope: 0
       outSlope: 0
       tangentMode: 136

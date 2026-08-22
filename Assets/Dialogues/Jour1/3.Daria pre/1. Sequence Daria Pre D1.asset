@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: 1. Sequence Daria Pre D1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: ff6c3c6b9874a16469aa644f5de08aa5, type: 2}
+  - {fileID: 11400000, guid: 841fa85dc7f7cf64ebac3e572930cf7f, type: 2}
+  - {fileID: 11400000, guid: b1e452c8aafaa6d48a2cc240e6d6beaf, type: 2}
+  - {fileID: 11400000, guid: 39b266bc96b1e8b4f8e5507893d2dfa8, type: 2}
+  - {fileID: 11400000, guid: 45ae13a4f104abe4ebe68569e6bccc18, type: 2}
+  - {fileID: 11400000, guid: 5c65422497657cb4e84833fb35af4b98, type: 2}
+  - {fileID: 11400000, guid: 5b0b21fc5bbc79c4f85c0720e064102e, type: 2}
+  - {fileID: 11400000, guid: 6c9d5f5c35930624dafbbda5be9d972f, type: 2}
+  - {fileID: 11400000, guid: a543c8cc31dbc1d4abafe5114ff2c677, type: 2}
+  - {fileID: 11400000, guid: cf55911027eab604a94afe2b83979322, type: 2}
+  - {fileID: 11400000, guid: 1bf2f1f6ed7ea7847a0942abce9842bd, type: 2}
+  - {fileID: 11400000, guid: 0ba2234aeda2a014f9d65cd33cdedc5e, type: 2}
+  - {fileID: 11400000, guid: 109e01cf2a7bebe4aac6bb2916bc5c06, type: 2}
+  - {fileID: 11400000, guid: 337b9eb2aa8b38e439ba5a2312706ea9, type: 2}
+  - {fileID: 11400000, guid: a2ce27a6dbe080a44b5dbe4d97030a4b, type: 2}
+  - {fileID: 11400000, guid: 7f1241b94ce4cda43b545072aeb99346, type: 2}
+  - {fileID: 11400000, guid: 915fdced9ebead347b464f7cde07b975, type: 2}
+  - {fileID: 11400000, guid: 69166ad516f551447a52c4ac433f2652, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: "On se conna\xEEt ?"
+    linkedDialogueSequence: {fileID: 11400000, guid: 32f5b97ec4adf2746b752d6907107363, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "D\xE9sol\xE9e, mais tu me dis quelque chose."
+    linkedDialogueSequence: {fileID: 11400000, guid: de4133a7944d0a743a57e9b8e37b65d3, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: ...Daria ?
+    linkedDialogueSequence: {fileID: 11400000, guid: 00c6b17690b21bc41bc12b7549af9af1, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

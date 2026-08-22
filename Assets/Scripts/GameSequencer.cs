@@ -8,6 +8,7 @@ public class GameSequencer : MonoBehaviour
 {
     [SerializeField] private List<GameStateAction> _actions;
     [SerializeField] private bool _autostart;
+    [SerializeField] private int _autoIndex;
     [Header("References")]
     [SerializeField] private BlackScreen _blackScreen;
     [SerializeField] private DialogueController _dialogueController;
@@ -29,6 +30,7 @@ public class GameSequencer : MonoBehaviour
     }
     private void ActionReceiver(TypeOfState state)
     {
+        if(state == TypeOfState.CharacterMoved) print("Character Moved");
         if(state == TypeOfState.BarTending && _barTendingController.latestScore != 0) LatestScore = _barTendingController.latestScore; 
         if (CurrentIndex == -1) return;
         if (CurrentIndex > _actions.Count) return; 
@@ -37,7 +39,7 @@ public class GameSequencer : MonoBehaviour
 
     public void Start()
     {
-        if(_autostart) StartGame();
+        if(_autostart) StartGame(_autoIndex);
     }
 
     public void StartGame(int index = 0)
@@ -81,7 +83,7 @@ public class GameSequencer : MonoBehaviour
                 _dialogueController.StartDialogue(action.sequence);
                 break;
             case TypeOfState.BarTending:
-                _barTendingController.GameplayStart(action.day, action.mainCharacters,false,action.isSpecial ? action.datableRecipe : null);
+                _barTendingController.GameplayStart(action.day, action.mainCharacters,action.isSpecial,action.isSpecial ? action.datableRecipe : null);
                 break;
             case TypeOfState.CharacterMoved:
                 _characterReference.SetActivation(action.mainCharacters, action.activation,action.instantMove);

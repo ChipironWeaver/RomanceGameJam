@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: 1. Sequence Daria Post
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: c319dcecf34692c418382e88bbefb3e2, type: 2}
+  - {fileID: 11400000, guid: 4a4010781d1670744b02dfaf2fca6431, type: 2}
+  - {fileID: 11400000, guid: 86a768faf5c1bfd438094c5521507fbe, type: 2}
+  - {fileID: 11400000, guid: 88d6efb0900795d4ba04ab972ee10845, type: 2}
+  - {fileID: 11400000, guid: 31cb31c42d648e84ca6ec699a2b4e528, type: 2}
+  - {fileID: 11400000, guid: b7e9475593df5be458d38a3f9aae793f, type: 2}
+  - {fileID: 11400000, guid: e98df93d6df08e1439fe9ae18f43e7b9, type: 2}
+  - {fileID: 11400000, guid: d4e5e95de2b3fd148aadebf75257f252, type: 2}
+  - {fileID: 11400000, guid: 50c40331ae76141429d401729814a8b8, type: 2}
+  - {fileID: 11400000, guid: 7211dc1018edbcf4680dc445db21dc8b, type: 2}
+  - {fileID: 11400000, guid: 43ede8b1f9626714d8502d39d0a67a75, type: 2}
+  - {fileID: 11400000, guid: a6cf4c0e758f20e49a0abf9d0d88bfad, type: 2}
+  - {fileID: 11400000, guid: aa7158f848030654d9895e701a5b0c54, type: 2}
+  - {fileID: 11400000, guid: d7a282fe2e11d1d4aa115b46d80620d6, type: 2}
+  - {fileID: 11400000, guid: d743caa172c499d4da584042d8f1d08a, type: 2}
+  - {fileID: 11400000, guid: c10b3a6efd5b00a4a94f28b8eda062db, type: 2}
+  - {fileID: 11400000, guid: 3895f0bdb6947e049b0753cff758570f, type: 2}
+  - {fileID: 11400000, guid: a6be3c3d4d23cc84ca2eeaec471498a7, type: 2}
+  - {fileID: 11400000, guid: 29db105f3d6cb104f8da7198f5d39291, type: 2}
+  - {fileID: 11400000, guid: 5cb31be04b276ce4ca966b4e75aa28dd, type: 2}
+  - {fileID: 11400000, guid: dc799707368201b40a5e3f77064975e5, type: 2}
+  - {fileID: 11400000, guid: 5e675a972c99599458e675f9cb314a75, type: 2}
+  - {fileID: 11400000, guid: 1e1623dfcd2da244dbf227514eeb4844, type: 2}
+  - {fileID: 11400000, guid: 0bd4d0ade1353bd41bca9041e4dd39cf, type: 2}
+  - {fileID: 11400000, guid: e167d61872b820047b450add77c1f306, type: 2}
+  - {fileID: 11400000, guid: 2143930a3d3dfeb4694d731038d5955d, type: 2}
+  - {fileID: 11400000, guid: e51a18c5dbad6a64cae9710e66d65ab9, type: 2}
+  - {fileID: 11400000, guid: eccc0be60a3d11c48922c58dd26a67bf, type: 2}
+  - {fileID: 11400000, guid: 65b88897e5c6e3c4d9a5d20894842af8, type: 2}
+  - {fileID: 11400000, guid: d75b8c9b3228a2149a7afe4f8ae1f31c, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 0
+  endBranches: []

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: 2. Sequence
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 12acc24a9b1ff6d48b0dfb7dfd302510, type: 2}
+  - {fileID: 11400000, guid: 63d2665066a22ff468de05079f8639a9, type: 2}
+  - {fileID: 11400000, guid: 95bf59344d8fcf442a3a08f4288d136f, type: 2}
+  - {fileID: 11400000, guid: 11b1f445b63b03a4dbbfc2accce0e745, type: 2}
+  - {fileID: 11400000, guid: 8b831c00ae9871346a8f524f5713bab6, type: 2}
+  - {fileID: 11400000, guid: 9ea60cbb4d3f34e4e90fec1dbfe2001d, type: 2}
+  - {fileID: 11400000, guid: c65e4a12f281f6d4db8a12bd9fecc5eb, type: 2}
+  - {fileID: 11400000, guid: eaf7cddbad32dd24d9eb860a5fdaa9b0, type: 2}
+  - {fileID: 11400000, guid: 42b61ba123ae18f4590d2dd3c95c1fd2, type: 2}
+  - {fileID: 11400000, guid: 904e74e769dec8348b7dda50732c8014, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Le tablier ?
+    linkedDialogueSequence: {fileID: 11400000, guid: d61da2aa92308b2469bf4b2acbb816be, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Le travail ?
+    linkedDialogueSequence: {fileID: 11400000, guid: 0682b82be4f67c14789c409cab706b12, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Je ne sais pas si je dois prendre \xE7a comme un compliment."
+    linkedDialogueSequence: {fileID: 11400000, guid: 4ddca3b44844b764e8095d192201c3c7, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

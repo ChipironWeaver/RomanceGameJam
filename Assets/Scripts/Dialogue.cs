@@ -19,6 +19,12 @@ public class Dialogue : ScriptableObject
     [ShowIf("triggerAnimation")] public MainCharacters animatedCharacters;
     [ShowIf("triggerAnimation")] public string triggerName;
     
+    [Header("Show or Hide Character")]
+    public bool showCharacter;
+    public bool hideCharacter;
+    [ShowIf("showCharacter")] public MainCharacters shownCharacters;
+    [ShowIf("hideCharacter")] public MainCharacters hiddenCharacters;
+    
     [Header("Reputation")]
     public bool changeReputation;
     [ShowIf("changeReputation")] public MainCharacters reputationCharacters;

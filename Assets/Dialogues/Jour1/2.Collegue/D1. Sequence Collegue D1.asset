@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: D1. Sequence Collegue D1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 1f36836880f55884c829978b4c40ae54, type: 2}
+  - {fileID: 11400000, guid: c469223db317c104ea920523c459465c, type: 2}
+  - {fileID: 11400000, guid: 483375f883c396b47bacdac200be0d8f, type: 2}
+  - {fileID: 11400000, guid: dc72329aafecd3b498db89784ea4d8f5, type: 2}
+  - {fileID: 11400000, guid: a37a2f5068bcef448bce1e537bca98db, type: 2}
+  - {fileID: 11400000, guid: 67305c0b089fa534da451f5746fbb261, type: 2}
+  - {fileID: 11400000, guid: 717c419450434454a8d02ebbd3f24a82, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: "\xC7a se voit tant que \xE7a ?"
+    linkedDialogueSequence: {fileID: 11400000, guid: fbf2aa0f32910f24eaf5cd7c0b9bf290, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Je pensais que j'avais l'air professionnelle.
+    linkedDialogueSequence: {fileID: 11400000, guid: d9998ef7c1cbd3a4db2fab3b81db646c, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "\xC7a se voit tant que \xE7a ?"
+    linkedDialogueSequence: {fileID: 11400000, guid: 7b9c30589fd7b43489cdd809ae36c2e5, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

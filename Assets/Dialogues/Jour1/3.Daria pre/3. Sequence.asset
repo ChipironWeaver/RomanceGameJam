@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: 3. Sequence
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: f213782be533da845a29bcd0eb2b7415, type: 2}
+  - {fileID: 11400000, guid: c06c46be2db64ab429835c7182cf473e, type: 2}
+  - {fileID: 11400000, guid: 33ab24116be8b0f4194c9ad5196168aa, type: 2}
+  - {fileID: 11400000, guid: 1b98833223ee4cc43abb89c779905a98, type: 2}
+  - {fileID: 11400000, guid: f32792c341ee3644baa1df88dda6169b, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: "Un jus d\u2019orange ?"
+    linkedDialogueSequence: {fileID: 11400000, guid: f25daf2c5bb45e241b0af6702e44bc51, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Quelque chose de frais, mais pas trop sucr\xE9."
+    linkedDialogueSequence: {fileID: 11400000, guid: 16635d8a4d5d78f47b611c907768528d, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Je vais devoir avoir un indice.
+    linkedDialogueSequence: {fileID: 11400000, guid: ef7624a2101fa3945a513add57d93904, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

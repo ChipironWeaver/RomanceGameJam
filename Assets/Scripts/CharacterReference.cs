@@ -61,12 +61,18 @@ public class CharacterReference : MonoBehaviour
         {
             character.transform.position = active ? _activePosition : _notActivePosition;
             if(!active) character.SetActive(false);
+            Actions.CharacterMoved?.Invoke();
         }
         else character.transform.DOMove(active ? _activePosition : _notActivePosition, 0.5f).SetEase(_easeType).OnComplete(()=>
         {
-            if(!active)character.SetActive(false);
+            Actions.CharacterMoved?.Invoke();
+            if(!active)
+            {
+                character.SetActive(false);
+                if (characters == MainCharacters.None) _currentNpcObject = null;
+            }
         });
-        Actions.CharacterMoved?.Invoke();
+        
     }
     
     public GameObject GetGameObject(MainCharacters characters)
