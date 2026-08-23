@@ -17,20 +17,15 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource _musicAudioSource;
     
     [SerializeField] private bool _playMusicOnAwake;
-
-    void Start()
-    {
-        if(_playMusicOnAwake)PlayMusic();
-    }
-
+    
     void OnEnable()
     {
         Singleton();
     }
     
-    public void PlayMusic()
+    public void PlayMusic(int index)
     {
-        _musicAudioSource.clip = _music[Random.Range(0, _music.Count)];
+        _musicAudioSource.clip = _music[index];
         _musicAudioSource.Play();
     }
 

@@ -13,9 +13,15 @@ public class Dialogue : ScriptableObject
     public string npcName;
     public Sprite npcIcon;
 
+    [Header("Audio")] 
+    public bool playMusic;
+    [ShowIf("playMusic")]public int musicIndex;
+    public bool playSFX;
+    [ShowIf("playSFX")]public SfxType sfxType;
+
+    
     [Header("Animation")]
     public bool triggerAnimation;
-    
     [ShowIf("triggerAnimation")] public MainCharacters animatedCharacters;
     [ShowIf("triggerAnimation")] public string triggerName;
     

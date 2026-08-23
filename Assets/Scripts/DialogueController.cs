@@ -144,6 +144,16 @@ public class DialogueController : MonoBehaviour
 
     private void DisplayDialogue(Dialogue dialogue, bool skipAnimation = false, bool isSingular = false)
     {
+        if (dialogue.playSFX)
+        {
+            AudioManager.Instance.PlaySfx(dialogue.sfxType);
+        }
+        
+        if (dialogue.playMusic)
+        {
+            AudioManager.Instance.PlayMusic(dialogue.musicIndex);
+        }
+        
         if (dialogue.changeReputation)
         {
             if (dialogue.isSet)
