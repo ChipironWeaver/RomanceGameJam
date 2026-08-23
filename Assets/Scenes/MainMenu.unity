@@ -310,7 +310,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <font-weight="600">Back >
+  m_text: <font-weight="600">Retour
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f49d1a4b50e93b44a24f50efeebee51, type: 2}
   m_sharedMaterial: {fileID: -4793551250725166852, guid: 0f49d1a4b50e93b44a24f50efeebee51, type: 2}
@@ -579,8 +579,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 734627764}
         m_TargetAssemblyTypeName: UISaveButtonManager, Assembly-CSharp
-        m_MethodName: Move
-        m_Mode: 6
+        m_MethodName: ShowCreate
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1187,6 +1187,7 @@ GameObject:
   - component: {fileID: 734627763}
   - component: {fileID: 734627762}
   - component: {fileID: 734627764}
+  - component: {fileID: 734627765}
   m_Layer: 5
   m_Name: RightPanel
   m_TagString: Untagged
@@ -1265,11 +1266,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 127c5317dfee3054e806bc1062f9f1ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  buttons: []
+  buttons:
+  - {fileID: 1174794225}
+  - {fileID: 1435270797}
+  - {fileID: 1640662804}
   bigPanel: {fileID: 830469135}
   moveDistance: 600
   panelMoveTime: 0.5
   panelMoveEase: 7
+--- !u!114 &734627765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734627760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4111f9ae774ff94419d99b80cb00dd7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameStateLoader
+  gameStateScene: {fileID: 0}
+  loadOnStart: 0
 --- !u!1 &781552047
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,6 +2123,11 @@ MonoBehaviour:
   currentIndex: 1
   stateScene: {fileID: 11400000, guid: a0da90a42ea1b984a934db622c967b75, type: 2}
   inFileCreation: 0
+  saveExists: 0
+  bigText: {fileID: 1566251002}
+  smallText: {fileID: 1911430738}
+  saveButton: {fileID: 1174794224}
+  day: 0
 --- !u!1 &1178222444
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,6 +2501,11 @@ MonoBehaviour:
   currentIndex: 2
   stateScene: {fileID: 11400000, guid: a0da90a42ea1b984a934db622c967b75, type: 2}
   inFileCreation: 0
+  saveExists: 0
+  bigText: {fileID: 583895471}
+  smallText: {fileID: 957310853}
+  saveButton: {fileID: 1435270798}
+  day: 0
 --- !u!114 &1435270798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3591,6 +3619,11 @@ MonoBehaviour:
   currentIndex: 3
   stateScene: {fileID: 11400000, guid: a0da90a42ea1b984a934db622c967b75, type: 2}
   inFileCreation: 0
+  saveExists: 0
+  bigText: {fileID: 2107431089}
+  smallText: {fileID: 1641494875}
+  saveButton: {fileID: 1640662805}
+  day: 0
 --- !u!114 &1640662805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4345,7 +4378,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1275578719}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 734627764}
+        m_TargetAssemblyTypeName: UISaveButtonManager, Assembly-CSharp
+        m_MethodName: ShowLoad
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1973322547
 MonoBehaviour:
   m_ObjectHideFlags: 0

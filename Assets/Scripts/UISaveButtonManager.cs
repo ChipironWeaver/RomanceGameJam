@@ -12,6 +12,24 @@ public class UISaveButtonManager : MonoBehaviour
 
 
     private bool _isAnimating;
+
+    public void ShowLoad()
+    {
+        foreach (UISaveCreatorLoader loader in buttons)
+        {
+            loader.SetFileCreation(false);
+        }
+        Move(true);
+    }
+
+    public void ShowCreate()
+    {foreach (UISaveCreatorLoader loader in buttons)
+        {
+            loader.SetFileCreation(true);
+        }
+        Move(true);
+    }
+    
     public void Move(bool setActive)
     {
         if (_isAnimating) return;

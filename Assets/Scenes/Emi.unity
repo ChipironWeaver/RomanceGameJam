@@ -3294,6 +3294,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   _actions:
   - name: BS Sunday
+    setDay: 0
+    setDayIndex: 0
     state: 0
     bigText: Dimanche
     smallText: 18h16
@@ -3319,6 +3321,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: D Sunday
+    setDay: 0
+    setDayIndex: 0
     state: 2
     bigText: 
     smallText: 
@@ -3344,6 +3348,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: BS Monday Morning
+    setDay: 0
+    setDayIndex: 0
     state: 0
     bigText: Lundi
     smallText: 8h14
@@ -3369,6 +3375,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: D Monday Morning
+    setDay: 0
+    setDayIndex: 0
     state: 2
     bigText: 
     smallText: 
@@ -3394,6 +3402,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: BS Monday Morning Work
+    setDay: 0
+    setDayIndex: 0
     state: 0
     bigText: Lundi
     smallText: 9h03
@@ -3419,6 +3429,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: D Collegue
+    setDay: 0
+    setDayIndex: 0
     state: 2
     bigText: 
     smallText: 
@@ -3444,6 +3456,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: BS Monday Morning Work
+    setDay: 0
+    setDayIndex: 0
     state: 0
     bigText: 
     smallText: Quelques minutes plus tard
@@ -3469,6 +3483,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: GP Monday 1
+    setDay: 0
+    setDayIndex: 0
     state: 1
     bigText: 
     smallText: 
@@ -3494,6 +3510,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: BS Daria 1
+    setDay: 0
+    setDayIndex: 0
     state: 0
     bigText: Lundi
     smallText: 10h47
@@ -3519,6 +3537,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: D Daria 1 Pre
+    setDay: 0
+    setDayIndex: 0
     state: 2
     bigText: Lundi
     smallText: 10h47
@@ -3544,6 +3564,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: 10 GP Daria Day 1
+    setDay: 0
+    setDayIndex: 0
     state: 2
     bigText: 
     smallText: 
@@ -3579,6 +3601,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: D Daria 1 Post
+    setDay: 0
+    setDayIndex: 0
     state: 2
     bigText: 
     smallText: 
@@ -3604,6 +3628,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: BS Angelina
+    setDay: 0
+    setDayIndex: 0
     state: 0
     bigText: Lundi
     smallText: 13h26
@@ -3629,6 +3655,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: D Angelina Pre
+    setDay: 0
+    setDayIndex: 0
     state: 2
     bigText: 
     smallText: 
@@ -3654,6 +3682,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: 14 GP Angelina Day 1
+    setDay: 0
+    setDayIndex: 0
     state: 2
     bigText: 
     smallText: 
@@ -3689,6 +3719,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: D Angelina Post
+    setDay: 0
+    setDayIndex: 0
     state: 2
     bigText: 
     smallText: 
@@ -3714,6 +3746,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: BS Karin 1
+    setDay: 0
+    setDayIndex: 0
     state: 0
     bigText: 18h41
     smallText: 
@@ -3739,6 +3773,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: D Karin Pre
+    setDay: 0
+    setDayIndex: 0
     state: 2
     bigText: 
     smallText: 
@@ -3764,6 +3800,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: GP Karin Day 1
+    setDay: 0
+    setDayIndex: 0
     state: 1
     bigText: 
     smallText: 
@@ -3799,6 +3837,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: D Karin Post
+    setDay: 0
+    setDayIndex: 0
     state: 0
     bigText: 
     smallText: 
@@ -3824,6 +3864,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: End
+    setDay: 0
+    setDayIndex: 0
     state: 0
     bigText: Fin du jour 1
     smallText: (pas plus de contenu actuellement
@@ -3849,6 +3891,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: 
+    setDay: 0
+    setDayIndex: 0
     state: 0
     bigText: 
     smallText: 
@@ -3892,6 +3936,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   gameStateScene: {fileID: 11400000, guid: a0da90a42ea1b984a934db622c967b75, type: 2}
+  loadOnStart: 1
+  startOnStart: 1
 --- !u!1001 &1086190271
 PrefabInstance:
   m_ObjectHideFlags: 0

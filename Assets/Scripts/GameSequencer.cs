@@ -19,9 +19,22 @@ public class GameSequencer : MonoBehaviour
     public static int LatestScore;
 
     //Receive the actions, check the current state + continue on the index
+    public static GameSequencer Instance;
+    void Singleton()
+    {
+        if (Instance !=null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
 
     private void OnEnable()
     {
+        Singleton();
         Actions.EndOfBlackScreenPhase += () => { ActionReceiver(TypeOfState.BlackScreen); };
         Actions.EndOfVisualNovelPhase += () => { ActionReceiver(TypeOfState.VisualNovel); };
         Actions.EndOfGameplayPhase += () => { ActionReceiver(TypeOfState.BarTending); };
@@ -55,6 +68,7 @@ public class GameSequencer : MonoBehaviour
             print("End Of Game");
             return;
         }
+        print(CurrentIndex);
         GameStateAction action = _actions[CurrentIndex];
         if(action.setDay) GameState.Day = action.setDayIndex;
         
@@ -95,6 +109,7 @@ public class GameSequencer : MonoBehaviour
                 break;
         }
         CurrentIndex++;
+        GameStateLoader.Instance.Save();
     }
 [Button]
     public void Test()
