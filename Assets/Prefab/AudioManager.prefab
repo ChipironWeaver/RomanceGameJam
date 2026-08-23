@@ -330,6 +330,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8c2f762d9a886ce47a027a25438711fd, type: 3}
   - {fileID: 8300000, guid: 6e47361f5e441b046841b407ed56e536, type: 3}
   - {fileID: 8300000, guid: ca86d2447555809469763d05287d2863, type: 3}
+  _autoMusicPlay: -1
+  _musicTransitionTime: 2
   _sfxAudioSource: {fileID: 1885240041906619415}
   _musicAudioSource: {fileID: 4168860535513036526}
-  _playMusicOnAwake: 0
+  _playMusicOnAwake: 1
