@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogues:
   - {fileID: 11400000, guid: a3536a6698f825926d7fb1a9f013c256, type: 2}
-  - {fileID: 11400000, guid: a0a5de117a6f0a3ad6fe28ba96f318ae, type: 2}
   - {fileID: 11400000, guid: cead0b94f63379963e14cf79652a8236, type: 2}
   - {fileID: 11400000, guid: 0873feb0a19927bfbe9915724d878bb1, type: 2}
   - {fileID: 11400000, guid: 1a6db32cb1e249b147433f87161a80a6, type: 2}
@@ -23,7 +22,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hasEndChoices: 0
-  choices:
+  choices: []
   hasEndBranch: 1
   endBranches:
   - branching:

@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: A5_1_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Angelina arrive plus tard que les autres. Cette fois, tu ne fais même plus semblant de ne pas l’avoir attendue.
+  dialogueText: "Angelina arrive plus tard que les autres. Cette fois, tu ne fais
+    m\xEAme plus semblant de ne pas l\u2019avoir attendue."
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
-  triggerAnimation: 0
-  animatedCharacters: 0
-  triggerName: 
-  showCharacter: 0
+  triggerAnimation: 1
+  animatedCharacters: 3
+  triggerName: Neutral
+  showCharacter: 1
   hideCharacter: 0
-  shownCharacters: 0
+  shownCharacters: 3
   hiddenCharacters: 0
   changeReputation: 0
   reputationCharacters: 0

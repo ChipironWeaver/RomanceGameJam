@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: A5_2_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Après hier soir en plus...
+  dialogueText: "Apr\xE8s hier soir en plus..."
   speakingCharacter: 3
   npcName: 
   npcIcon: {fileID: 0}
-  triggerAnimation: 0
-  animatedCharacters: 0
-  triggerName: 
+  triggerAnimation: 1
+  animatedCharacters: 3
+  triggerName: Neutral
   showCharacter: 0
   hideCharacter: 0
   shownCharacters: 0
