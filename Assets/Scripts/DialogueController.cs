@@ -20,7 +20,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private Sprite _cubeChanIcon;
 
     [Header("AutoWaitTimer")] [SerializeField]
-    private bool _isOnAuto;
+    public bool isOnAuto;
 
     [SerializeField] private float _autoWaitTime = 0.5f;
 
@@ -88,13 +88,13 @@ public class DialogueController : MonoBehaviour
                     if (_dialogueSequenceIndex >= _currentDialogueSequence.dialogues.Count)
                     {
                         EndOfSequence();
-                        if(_endBranchShown && _isOnAuto) _autoTimer = 0f;
+                        if(_endBranchShown && isOnAuto) _autoTimer = 0f;
                     }
-                    else if (_isOnAuto) _autoTimer = 0f;
+                    else if (isOnAuto) _autoTimer = 0f;
                 }
             }
         }
-        else if (_autoTimer >= 0f && _isOnAuto)
+        else if (_autoTimer >= 0f && isOnAuto)
         {
             _autoTimer += Time.deltaTime;
             if (_autoTimer >= _autoWaitTime)

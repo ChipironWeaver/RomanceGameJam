@@ -18,9 +18,8 @@ public class SettingManager : MonoBehaviour
     public AudioMixerGroup musicGroup;
     public Slider musicSlider;
     
-    public Material ditherMat;
-    public RawImage ditherImage;
-    public Toggle ditherToggle;
+    public DialogueController dialogueController;
+    public Toggle autoTextToggle;
     
     public Toggle fullscreenToggle;
         
@@ -41,10 +40,10 @@ public class SettingManager : MonoBehaviour
             SetVolume(musicSlider.value, musicGroup);
             currentSettingPreset.musicVolume = musicSlider.value;
         });
-        if(ditherToggle) ditherToggle.onValueChanged.AddListener(arg =>
+        if(autoTextToggle) autoTextToggle.onValueChanged.AddListener(arg =>
         {
-            currentSettingPreset.dither = ditherToggle.isOn;
-            ditherImage.material = currentSettingPreset.dither ? ditherMat : null;
+            currentSettingPreset.autoText = autoTextToggle.isOn;
+            if(dialogueController) dialogueController.isOnAuto = currentSettingPreset.autoText;
         });
         if(fullscreenToggle) fullscreenToggle.onValueChanged.AddListener(arg =>
         {
@@ -70,10 +69,10 @@ public class SettingManager : MonoBehaviour
             SetVolume(musicSlider.value, musicGroup);
             currentSettingPreset.musicVolume = musicSlider.value;
         });
-        if(ditherToggle) ditherToggle.onValueChanged.RemoveListener(arg =>
+        if(autoTextToggle) autoTextToggle.onValueChanged.RemoveListener(arg =>
         {
-            currentSettingPreset.dither = ditherToggle.isOn;
-            ditherImage.material = currentSettingPreset.dither ? ditherMat : null;
+            currentSettingPreset.autoText = autoTextToggle.isOn;
+            if(dialogueController) dialogueController.isOnAuto = currentSettingPreset.autoText;
         });
         if(fullscreenToggle) fullscreenToggle.onValueChanged.RemoveListener(arg =>
         {
@@ -82,10 +81,10 @@ public class SettingManager : MonoBehaviour
         });
     }
 
-    public void SetDither(bool value)
+    public void SetAutoText(bool value)
     {
-        ditherImage.material = value ? ditherMat : null;
-        currentSettingPreset.dither = value;
+        currentSettingPreset.autoText = autoTextToggle.isOn;
+        if(dialogueController)  dialogueController.isOnAuto = currentSettingPreset.autoText;
     }
     
     public void SetFullscreen(bool value)
@@ -121,29 +120,22 @@ public class SettingManager : MonoBehaviour
         SetVolume(currentSettingPreset.musicVolume,musicGroup);
         if(musicSlider) musicSlider.value = currentSettingPreset.musicVolume;
 
-        ditherImage.material = currentSettingPreset.dither ? ditherMat : null;
-        if(ditherToggle)
+        if(dialogueController) dialogueController.isOnAuto = currentSettingPreset.autoText;
+        if(autoTextToggle)
         {
-            ditherToggle.isOn = currentSettingPreset.dither;
-            ditherToggle.onValueChanged?.Invoke(ditherToggle.isOn);
+            autoTextToggle.isOn = currentSettingPreset.autoText;
+            autoTextToggle.onValueChanged?.Invoke(autoTextToggle.isOn);
         }
         
         Screen.SetResolution(Screen.width, Screen.height, currentSettingPreset.fullscreen);
         if(fullscreenToggle)
         {
-            fullscreenToggle.isOn = currentSettingPreset.dither;
+            fullscreenToggle.isOn = currentSettingPreset.fullscreen;
             fullscreenToggle.onValueChanged?.Invoke(fullscreenToggle.isOn);
         }
     }
     public void SetVolume(float volume, AudioMixerGroup group)
     {
         group.audioMixer.SetFloat(group.name , volumeCurve.Evaluate(volume) * 90 - 80);
-    }
-
-    [Button]
-    public void UpdateToggles()
-    {
-        //if(ditherToggle) ditherToggle.graphic. ;
-        if(fullscreenToggle) fullscreenToggle.isOn = currentSettingPreset.dither;
     }
 }

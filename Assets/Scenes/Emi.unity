@@ -10802,7 +10802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3999965043428747542
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15589,7 +15589,7 @@ MonoBehaviour:
   _angelinaIcon: {fileID: 803713324, guid: 458b1abce8636344c9340e85f6616004, type: 3}
   _karinIcon: {fileID: 1064030828, guid: 458b1abce8636344c9340e85f6616004, type: 3}
   _cubeChanIcon: {fileID: -397859370, guid: 2dd11f81404146048b9435b9ca5f41cd, type: 3}
-  _isOnAuto: 0
+  isOnAuto: 0
   _autoWaitTime: 0.5
   _speedMultiplier: 1
   _skippingSpeedMultiplier: 20

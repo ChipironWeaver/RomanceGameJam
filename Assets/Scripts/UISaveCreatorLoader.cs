@@ -33,12 +33,12 @@ public class UISaveCreatorLoader : MonoBehaviour
         if (inFileCreation)
         {
             saveButton.interactable = true;
-            bigText.text = "<font-weight=\"600\"> " + (saveExists ? "Supprimer et créer" : "Créer") ;
+            bigText.text = "<font-weight=\"600\"> " + (saveExists ? "Ecraser la sauvegarde" : "Créer") ;
         }
         else
         {
             saveButton.interactable = saveExists;
-            bigText.text = "<font-weight=\"600\"> " + (saveExists ? "Charger" : "Sauvegarde Vide") ;
+            bigText.text = "<font-weight=\"600\"> " + (saveExists ? "Charger" : "Sauvegarde vide") ;
         }
     }
     
