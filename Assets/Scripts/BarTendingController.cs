@@ -448,8 +448,6 @@ public class BarTendingController : MonoBehaviour
 
     public void RemoveDecorationGroup(int index,List<int> blackList = null)
     {
-        if (_currentUnlockedDecorationAmount != -1 && index < _currentUnlockedDecorationAmount) return;
-        
         if (_decorationGroups.Count > index)
         {
             foreach (Decoration decoration in _decorationGroups[index].decorations)
@@ -471,6 +469,7 @@ public class BarTendingController : MonoBehaviour
             _activeDecorationGroups[index] = -1;
             foreach (int y in _decorationGroups[index].noDecorationState.optionToDisable)
             {
+                print("trying to disable " + y);
                 if(y < _decorationUiList.Count)
                 {
                     _decorationUiList[y].SetActive(false);
