@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K3_11
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: eeb94115f4c76da15fe9b736176cece6, type: 2}
+  - {fileID: 11400000, guid: 7f7cbc5d3a5c78faeafd080d718a37ab, type: 2}
+  - {fileID: 11400000, guid: 02bf6204ab8180ce4dae1163e662effb, type: 2}
+  - {fileID: 11400000, guid: 02fffa914f66a04535dd9292d361b4bb, type: 2}
+  - {fileID: 11400000, guid: 25500f734f422f1b4a35009aa937fabb, type: 2}
+  - {fileID: 11400000, guid: 6060ee75d9624c6737db177e28f0d6c1, type: 2}
+  - {fileID: 11400000, guid: a5273454d68dd11dc7d8bbbc5417b9cc, type: 2}
+  - {fileID: 11400000, guid: 99da60694d7f7a185bfc7eebfe19401a, type: 2}
+  - {fileID: 11400000, guid: 4392f586fe9545e331a6c7821c8f049e, type: 2}
+  - {fileID: 11400000, guid: be2567172ac985b222f94be53fcef58b, type: 2}
+  - {fileID: 11400000, guid: 4da5b618a48b200c543a59d285c9a599, type: 2}
+  - {fileID: 11400000, guid: 67b0b527f5b48d90922ec3cbebee042d, type: 2}
+  - {fileID: 11400000, guid: b3df827ab91e28366b4b9f7c1868a155, type: 2}
+  - {fileID: 11400000, guid: e7f0cb56f8bd55e791da7f11a0872464, type: 2}
+  - {fileID: 11400000, guid: 4cc14157ff93653fd7067e17a12b2a5e, type: 2}
+  - {fileID: 11400000, guid: b12a3d5f23728fad4e2fb1ddb7bdb534, type: 2}
+  - {fileID: 11400000, guid: eced5a0bdf4d704e15e5951a621eae95, type: 2}
+  - {fileID: 11400000, guid: c800cbc88e5f5a38ddfb649c657bfd1e, type: 2}
+  - {fileID: 11400000, guid: 37ca5b71bb7701aa2c87d2b45c9a3941, type: 2}
+  - {fileID: 11400000, guid: 0dc2b4ec1cacce9e439c16e3e1f9dfb9, type: 2}
+  - {fileID: 11400000, guid: 8b7c9d0901945eae9cd39aee80c16b6e, type: 2}
+  - {fileID: 11400000, guid: de95569a07d57818ffe9a08831b90770, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Peut-être parce que tu es devenue vraiment jolie.
+    linkedDialogueSequence: {fileID: 11400000, guid: 419c1933506811a2c3d1002a1458b91e, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Ça fait longtemps. C’est normal qu’on se redécouvre.
+    linkedDialogueSequence: {fileID: 11400000, guid: 7b0f9bb7ad67d5fed686f440028688cb, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu analyses beaucoup trop la manière dont je te regarde.
+    linkedDialogueSequence: {fileID: 11400000, guid: 718a70300cd492dca506a96deb60ad2b, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

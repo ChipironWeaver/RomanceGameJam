@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: REJOINDRE KARIN_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 4438e3a8b14c22d8ab9b96099c175269, type: 2}
+  - {fileID: 11400000, guid: ddc25c04220cfa5a05072d03a67bc4d7, type: 2}
+  - {fileID: 11400000, guid: 4ecb0b69454fdcdadbca6d02fcb32cb1, type: 2}
+  - {fileID: 11400000, guid: 892d39b0496eaabe229b3800569bc379, type: 2}
+  - {fileID: 11400000, guid: f341c9c9722023ebd80d0bb119768d0b, type: 2}
+  - {fileID: 11400000, guid: fb56be35d570e1e802b1b130d138be97, type: 2}
+  - {fileID: 11400000, guid: cbe497811211151fd1b708af9e149ff6, type: 2}
+  - {fileID: 11400000, guid: f25e2fa24786284b2241f68d1e033463, type: 2}
+  - {fileID: 11400000, guid: afe4102233940ee93ab9ea03578b2022, type: 2}
+  - {fileID: 11400000, guid: 59739eed74ad9b323959e90ce4ced38c, type: 2}
+  - {fileID: 11400000, guid: b4c08d200adf21908181062c3eaa7c81, type: 2}
+  - {fileID: 11400000, guid: 148ba68e57b866f6f40b4674ac47a50d, type: 2}
+  - {fileID: 11400000, guid: 72cb49b83000897511c7318f48dabf7b, type: 2}
+  - {fileID: 11400000, guid: 9d9da81459221f2ddc48370e61e73a93, type: 2}
+  - {fileID: 11400000, guid: 45720878494138fecbb37c5115316622, type: 2}
+  - {fileID: 11400000, guid: 481f4ed5a1e912134542c143da1af4c0, type: 2}
+  - {fileID: 11400000, guid: c5d55c17a9f7277050410bc34a8880e1, type: 2}
+  - {fileID: 11400000, guid: 846c5db6bcfecb6d1a3b75e3150af61b, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 0
+  endBranches: []

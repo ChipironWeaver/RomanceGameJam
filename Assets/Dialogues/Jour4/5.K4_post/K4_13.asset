@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K4_13
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 4b83e03861186ebd61be6620b883e9b0, type: 2}
+  - {fileID: 11400000, guid: 87aa0b84162f7a9450c5887676b5fc57, type: 2}
+  - {fileID: 11400000, guid: e8dae4c6b928f22947e2e8a5da30d2a7, type: 2}
+  - {fileID: 11400000, guid: 2aefcf0d029654eed4c36d6d84192303, type: 2}
+  - {fileID: 11400000, guid: 4cb5363271629fcce3e049a11e3730c0, type: 2}
+  - {fileID: 11400000, guid: 825708eb61a7d33c68804d257b982169, type: 2}
+  - {fileID: 11400000, guid: 491ec209760c7f621ac4ab2edff117ca, type: 2}
+  - {fileID: 11400000, guid: 157a6cbbb2c73ce54eedadacbd5065ae, type: 2}
+  - {fileID: 11400000, guid: 8739fda1f5eb970c4809f4f9f7205908, type: 2}
+  - {fileID: 11400000, guid: ce2c9e841f5959db3d72cec9a6b9c774, type: 2}
+  - {fileID: 11400000, guid: c02065a79f75b86d81afc7ef8f239ec7, type: 2}
+  - {fileID: 11400000, guid: bf927c513ccea7435ac2cc5d90ab17a3, type: 2}
+  - {fileID: 11400000, guid: 271f66b0d6d055189a875b7b18c931e5, type: 2}
+  - {fileID: 11400000, guid: 42b9ed11a3cc5c7d1a13a917acd64bb6, type: 2}
+  - {fileID: 11400000, guid: bdc6cd7bed494d0cfcfb2d9914aad9be, type: 2}
+  - {fileID: 11400000, guid: de0bb70e918f289ca2220c40b14baae7, type: 2}
+  - {fileID: 11400000, guid: 190af000c548663b7ea15f44bd9836e7, type: 2}
+  - {fileID: 11400000, guid: dc256e04cd3acf18caaea685958b5de4, type: 2}
+  - {fileID: 11400000, guid: b53fee81f5752e9d7dfca98e008a5c10, type: 2}
+  - {fileID: 11400000, guid: a99466e05c178827c5dbb23e521981d7, type: 2}
+  - {fileID: 11400000, guid: 3afda29603f1a08928c3cb919e0474d7, type: 2}
+  - {fileID: 11400000, guid: afcc9a8d9a6833dce8716ad5684d2352, type: 2}
+  - {fileID: 11400000, guid: 3c174f70ef9a63c7a8b5ba5d6e6d7f8c, type: 2}
+  - {fileID: 11400000, guid: eff8ed4a179fcf2012a03e9f7a33c7b8, type: 2}
+  - {fileID: 11400000, guid: 938e4659c7290516c10f400937ba18a7, type: 2}
+  - {fileID: 11400000, guid: 5943e2cae5e43c375cdcfef41627a40d, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Un peu de jalousie, c'est presque mignon.
+    linkedDialogueSequence: {fileID: 11400000, guid: 0707b74bd911b9e26f753fcf3cdab3f9, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tant que tu ne cherches pas à contrôler ce que je fais, non.
+    linkedDialogueSequence: {fileID: 11400000, guid: 9b10eedd9b5750c736acad23d123dc54, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Oui. Je trouve ça vraiment étouffant.
+    linkedDialogueSequence: {fileID: 11400000, guid: 0ee58c005783a6c2a9510421bd9e4494, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

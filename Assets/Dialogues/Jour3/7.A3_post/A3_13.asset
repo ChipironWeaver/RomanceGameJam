@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: A3_13
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: cdf8597a014db772ba645c351cc1edd7, type: 2}
+  - {fileID: 11400000, guid: 28f410392b47f0c162b0935d9dd64301, type: 2}
+  - {fileID: 11400000, guid: b5dc7f1965f6a1be87f2824c8a593582, type: 2}
+  - {fileID: 11400000, guid: a06df7cac4433ccdd9527477231e759a, type: 2}
+  - {fileID: 11400000, guid: b07415ede997f0dba626a0eed68083f0, type: 2}
+  - {fileID: 11400000, guid: fee7be5f15f3aa0713aba3a38b53f7d9, type: 2}
+  - {fileID: 11400000, guid: 80bd69911cd180bf51cff537f668d991, type: 2}
+  - {fileID: 11400000, guid: 4ef6572d5782fded6ceb6eb64dfb78f3, type: 2}
+  - {fileID: 11400000, guid: 1180a51d92307051b1e8b0d4d05dfc80, type: 2}
+  - {fileID: 11400000, guid: 175284e97a921dbee0004fff5733c2f2, type: 2}
+  - {fileID: 11400000, guid: 1c524818cf8e2f705b9c8bc3b622f15e, type: 2}
+  - {fileID: 11400000, guid: 6ce8032dfc82f10f9dae023461df5f81, type: 2}
+  - {fileID: 11400000, guid: a6c5877dffd5cbe8acfbe27be023b191, type: 2}
+  - {fileID: 11400000, guid: 57e6610c8251b5b193f15a678cc77fd5, type: 2}
+  - {fileID: 11400000, guid: 11678e9578bdc70aa2db8c52b5e0c331, type: 2}
+  - {fileID: 11400000, guid: 00670f5dcdcd9b6a886f8182d746d911, type: 2}
+  - {fileID: 11400000, guid: 18245c59217268391bb1ef49ce1d0df7, type: 2}
+  - {fileID: 11400000, guid: 8ed26f34463c6c318759a7a7c8fe785a, type: 2}
+  - {fileID: 11400000, guid: ca806d9d2cc45f56aa300e8eda732821, type: 2}
+  - {fileID: 11400000, guid: d17253392d5737257b568e26ae2e9d33, type: 2}
+  - {fileID: 11400000, guid: 1f2f0021bde0e25ff6025bb48bc7012c, type: 2}
+  - {fileID: 11400000, guid: aaca1951f138b0048a6f9c1908298a42, type: 2}
+  - {fileID: 11400000, guid: e55f3af9eb7950e264f401bc3cea1dbb, type: 2}
+  - {fileID: 11400000, guid: 0926ab3851e0f8b6d582c8d87a095eb1, type: 2}
+  - {fileID: 11400000, guid: 21d9d6731d895f2abcce8f2b7ab54b4c, type: 2}
+  - {fileID: 11400000, guid: 3a87c00562878b76e4f6a829f0737abe, type: 2}
+  - {fileID: 11400000, guid: 4280c6e63f29ece9bea473721c86caee, type: 2}
+  - {fileID: 11400000, guid: 4adc466f308daf9c8a5c6148db13b1ec, type: 2}
+  - {fileID: 11400000, guid: 426f7a403dc3f16ef4e34d1070d5f493, type: 2}
+  - {fileID: 11400000, guid: 4772d44c3b91ec5adf3c9af80017e6a3, type: 2}
+  - {fileID: 11400000, guid: 98d0e77b75a5c5ea44cb318201ff68d9, type: 2}
+  - {fileID: 11400000, guid: 22883fddcdbef61a713799d29416ba30, type: 2}
+  - {fileID: 11400000, guid: b40e8963a7a5ce53ebd99a2e8511f930, type: 2}
+  - {fileID: 11400000, guid: 8d29667b2ac7b02a3e726230f3ee28fa, type: 2}
+  - {fileID: 11400000, guid: fddfe91414ef69d646d3072bde3aa3ce, type: 2}
+  - {fileID: 11400000, guid: 3a6340de2d8466ea05f1b4d2cd01fac3, type: 2}
+  - {fileID: 11400000, guid: 5142c431a56a03569654fe7642131435, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: "Tu n\u2019as pas besoin de m\u2019impressionner pour que j\u2019aie
+      envie de te voir."
+    linkedDialogueSequence: {fileID: 11400000, guid: 8bd409219cceac02be00e0c50edcd410, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Tu me fais rire, mais ce n\u2019est pas la seule chose que j\u2019aime
+      chez toi."
+    linkedDialogueSequence: {fileID: 11400000, guid: d8038bda9685226102834515b1397002, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Tu r\xE9fl\xE9chis peut-\xEAtre un peu trop \xE0 tout \xE7a."
+    linkedDialogueSequence: {fileID: 11400000, guid: 43ce8fd4de617ed4e0f32506f099b497, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: REJOINDRE DARIA_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 5d6334c170842c519dd63c266ba6f1fd, type: 2}
+  - {fileID: 11400000, guid: a70cf9e912598ca91f13d28f8d567064, type: 2}
+  - {fileID: 11400000, guid: b9e0ba0ea20a38f136c8ee2971acedad, type: 2}
+  - {fileID: 11400000, guid: 33089b051f049d3de456a9a6b890b607, type: 2}
+  - {fileID: 11400000, guid: b2fabde017ba3f2c2526a263f9b47467, type: 2}
+  - {fileID: 11400000, guid: 43c1607bcfc28b630cbb6803ca5fd47b, type: 2}
+  - {fileID: 11400000, guid: d89ac3256ba5cf9a51ec11ecaff0de8f, type: 2}
+  - {fileID: 11400000, guid: a494be89a617c0e2567afa79c896961c, type: 2}
+  - {fileID: 11400000, guid: 83344167f74495a5993f8d356b757daa, type: 2}
+  - {fileID: 11400000, guid: 029460a5b44b41062606aa477b134aef, type: 2}
+  - {fileID: 11400000, guid: 0e7166e2f6a5917d2a6327d720d0099f, type: 2}
+  - {fileID: 11400000, guid: 26e3fd2a5a25a59b5d685753a3bb3873, type: 2}
+  - {fileID: 11400000, guid: 5c256ec43ea1fc9cd12f05da3364b975, type: 2}
+  - {fileID: 11400000, guid: 17ac08b546bb1d25bfb85a4b78c790d6, type: 2}
+  - {fileID: 11400000, guid: 9793d04d298bf1d5a1b196135e971ca4, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 0
+  endBranches: []

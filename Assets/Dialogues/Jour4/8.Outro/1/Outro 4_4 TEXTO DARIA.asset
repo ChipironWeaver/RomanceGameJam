@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: Outro 4_4 TEXTO DARIA
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 37611b7139d29f4df71da23e5679f647, type: 2}
+  - {fileID: 11400000, guid: 59d12671c933ca9daba54510e2790072, type: 2}
+  - {fileID: 11400000, guid: d466a13e95f4a8ee24006124662400b7, type: 2}
+  - {fileID: 11400000, guid: 9cd89837345f9e5f212b6e82296edab2, type: 2}
+  - {fileID: 11400000, guid: a33e775bdf0f3558f8c06101f2d4a579, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: 
+  hasEndBranch: 0
+  endBranches: 

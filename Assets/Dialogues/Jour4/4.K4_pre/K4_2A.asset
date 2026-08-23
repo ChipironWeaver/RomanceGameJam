@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K4_2A
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 6cc5c3d540d432ac77624b863fdf498e, type: 2}
+  - {fileID: 11400000, guid: 78dc92a0e96a7b9a50cb69e720d9e0b0, type: 2}
+  - {fileID: 11400000, guid: 611b9558a08c274f2947561da77f02f9, type: 2}
+  - {fileID: 11400000, guid: 91aa23f603a08a82731a84a5a70ce9d9, type: 2}
+  - {fileID: 11400000, guid: fbf65a8f3251149e7d0836c60c69d6e1, type: 2}
+  - {fileID: 11400000, guid: 1590259aa3a8816e911a8997d7be4c57, type: 2}
+  - {fileID: 11400000, guid: 445de4c8bb626e5123b96b415407d8d2, type: 2}
+  - {fileID: 11400000, guid: 867c68acb39d6c598f686de67554fd21, type: 2}
+  - {fileID: 11400000, guid: 028a629f00420fdf58e9d33fcf31921b, type: 2}
+  - {fileID: 11400000, guid: 34b20f81d2204e9185c321005c62ebd7, type: 2}
+  - {fileID: 11400000, guid: 258c14881b4e7e2db6d31c33bb76c1cc, type: 2}
+  - {fileID: 11400000, guid: ec8819a3cb6811d711a70d44e2b0d852, type: 2}
+  - {fileID: 11400000, guid: 50a9bf0b5fb61612146ec17eb2fd28d6, type: 2}
+  - {fileID: 11400000, guid: 86ce714bf7369f098c5e285c3393a239, type: 2}
+  - {fileID: 11400000, guid: 62b2ae9d27eb7b1ae5ac64758d9728cb, type: 2}
+  - {fileID: 11400000, guid: ece0aec75f597a3ebf39da7ed8537b59, type: 2}
+  - {fileID: 11400000, guid: 2e6023406caf5f6d5e9dbe00868e61d3, type: 2}
+  - {fileID: 11400000, guid: 3e4e43b9f1b608eab5db89b465c7033f, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices:
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 7832b34a5503667ae7e89a3c51c93084, type: 2}

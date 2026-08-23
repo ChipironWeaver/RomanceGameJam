@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
+  m_Name: A1. 8
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  dialogueText: "Angelina arrive avec un \xE9norme sac de plage sur l\u2019\xE9paule,
+    des lunettes de soleil beaucoup trop grandes et une feuille compl\xE8tement froiss\xE9e
+    \xE0 la main. Elle s\u2019arr\xEAte devant le comptoir."
+  speakingCharacter: 0
+  npcName: 
+  npcIcon: {fileID: 0}
+  triggerAnimation: 0
+  animatedCharacters: 0
+  triggerName: 
+  showCharacter: 0
+  hideCharacter: 0
+  shownCharacters: 0
+  hiddenCharacters: 0
+  changeReputation: 0
+  reputationCharacters: 0
+  isSet: 0
+  reputationAmount: 0
+  hasCharacterEvent: 0
+  charactersEvent: 0
+  eventName: 
+  dialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []

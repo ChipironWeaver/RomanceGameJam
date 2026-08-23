@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: REJOINDRE ANGELINA_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 58ff9f1a35b7470c825ac13103ac466a, type: 2}
+  - {fileID: 11400000, guid: 4d2051cb529dd5376b350e7f07009c52, type: 2}
+  - {fileID: 11400000, guid: 1362ab3e65bc972df877fd0893136d60, type: 2}
+  - {fileID: 11400000, guid: 88e2bab9964eaffe584c05e97b47a2d0, type: 2}
+  - {fileID: 11400000, guid: 5ab1b993319a4f21282ea7d27a4fa6fc, type: 2}
+  - {fileID: 11400000, guid: 069b20cf928beb2c10adec920152f423, type: 2}
+  - {fileID: 11400000, guid: cc1a62e0b1d6ca29cee91ea2f11e6aca, type: 2}
+  - {fileID: 11400000, guid: c284dc74602378b0eeec3d25c2413db9, type: 2}
+  - {fileID: 11400000, guid: e5490f77edc71bc5eb18c07c6a87786e, type: 2}
+  - {fileID: 11400000, guid: 779aab5fa8aab23a1eb9f6b061745c6d, type: 2}
+  - {fileID: 11400000, guid: 989623a6ceeed62b0bdc874a537ba1dd, type: 2}
+  - {fileID: 11400000, guid: 1dc3d78d9a29cf120f7ee63b52eb2be1, type: 2}
+  - {fileID: 11400000, guid: cb763394f305f9ede5fc42f462c0755f, type: 2}
+  - {fileID: 11400000, guid: a695fc1a3118e18dd7ee65983f72cf12, type: 2}
+  - {fileID: 11400000, guid: 685f9ffa4e9e22b41958286fb61ff162, type: 2}
+  - {fileID: 11400000, guid: cdac2f5d0655a17ebff2acbbb681086b, type: 2}
+  - {fileID: 11400000, guid: f0fe9a7a51c7df7269a8aba73f100d35, type: 2}
+  - {fileID: 11400000, guid: 2770d02da9e8a57f82fe82c4a1865d7e, type: 2}
+  - {fileID: 11400000, guid: bdbcdd081239d9b0e2f7a841646e64f4, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 0
+  endBranches: []

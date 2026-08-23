@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: A3_15
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 96499a80fd8af9e76babfed9bca0205c, type: 2}
+  - {fileID: 11400000, guid: 8b980bafb563fa3f33c9be40c4b8a2a1, type: 2}
+  - {fileID: 11400000, guid: 3c5161212b4f4e32b68fffae8bd4b44c, type: 2}
+  - {fileID: 11400000, guid: 6f2c2c7074fd7add544cb4f2260eb81b, type: 2}
+  - {fileID: 11400000, guid: 414f057bc34b33f2044d5a75486b8996, type: 2}
+  - {fileID: 11400000, guid: f0fbe7c067367031c29f8a47d30bf2c6, type: 2}
+  - {fileID: 11400000, guid: da78b4942cb76af4427636192405bba0, type: 2}
+  - {fileID: 11400000, guid: 89a2187506047b96f52433de4cc4182a, type: 2}
+  - {fileID: 11400000, guid: 501b42713f95b6fa237e2e05d3a22276, type: 2}
+  - {fileID: 11400000, guid: f8c7290e9c374da76155865489adce86, type: 2}
+  - {fileID: 11400000, guid: 26e47239741c3b8ed4d83703d9e50d4e, type: 2}
+  - {fileID: 11400000, guid: 7936a1ffa01363619f97cbe365cb51d8, type: 2}
+  - {fileID: 11400000, guid: b07eef17ccd22651e63b681be7fc5e73, type: 2}
+  - {fileID: 11400000, guid: e1af1ea95865e1a594246d99686716a6, type: 2}
+  - {fileID: 11400000, guid: ea5ada8ee4668186639af95458e8724e, type: 2}
+  - {fileID: 11400000, guid: 2b1a4d6adf8956909e38a9d69898da65, type: 2}
+  - {fileID: 11400000, guid: 5eb7f1fa074cae10d7641610d9e830ee, type: 2}
+  - {fileID: 11400000, guid: e4799fac9e9defb437e9e3ecd8dd013e, type: 2}
+  - {fileID: 11400000, guid: 1dee1a8f8ea7790bf42f951dac8919ff, type: 2}
+  - {fileID: 11400000, guid: eab6b00f11fa400c09417f378b18987f, type: 2}
+  - {fileID: 11400000, guid: caca11032a8cb267d78bc2a12fa8d16a, type: 2}
+  - {fileID: 11400000, guid: 631749ed64899883722a588ab9bc8fd7, type: 2}
+  - {fileID: 11400000, guid: dde357cff6eb009a5d9fe66a5719e190, type: 2}
+  - {fileID: 11400000, guid: 6dbea919b2250edfac5123f54c0a379a, type: 2}
+  - {fileID: 11400000, guid: b59941a775ee1e4aa4193afc4da2f4c0, type: 2}
+  - {fileID: 11400000, guid: a0e477c66c41abcd272dab7d5c98ba84, type: 2}
+  - {fileID: 11400000, guid: a1e8d39641e6e10a3cb69566f97bbdd0, type: 2}
+  - {fileID: 11400000, guid: 30d12478bb52184c15f4bb55ff210042, type: 2}
+  - {fileID: 11400000, guid: 01a78aa641a823d25803e1d2e8b32401, type: 2}
+  - {fileID: 11400000, guid: 8c624254a677a04118793285a28482a5, type: 2}
+  - {fileID: 11400000, guid: 135abce7ae488996e01adbc8a64a703b, type: 2}
+  - {fileID: 11400000, guid: d0082bb26423ab283cc8b239782347bf, type: 2}
+  - {fileID: 11400000, guid: e5f54454722c69c998d7cf46d0c23046, type: 2}
+  - {fileID: 11400000, guid: 7702153c9303f0ef4cd04ca6b22cdc14, type: 2}
+  - {fileID: 11400000, guid: 6019151e8f6f9c9408960d586c9af86b, type: 2}
+  - {fileID: 11400000, guid: 304353487e1ba72c4027acf1259aed88, type: 2}
+  - {fileID: 11400000, guid: 45533b2314b25364016a20375fceece2, type: 2}
+  - {fileID: 11400000, guid: 4a981b5cbfdb0dc5875d11995618b462, type: 2}
+  - {fileID: 11400000, guid: 5a294461029f739f4abf2904a73c677c, type: 2}
+  - {fileID: 11400000, guid: 887e13a050fae746c8b3ca4052c513a9, type: 2}
+  - {fileID: 11400000, guid: a9ef8fe522fffea4ef992c4515dbd109, type: 2}
+  - {fileID: 11400000, guid: 5dd2e87beae4b6eee79a531db8dce5ce, type: 2}
+  - {fileID: 11400000, guid: e5718ad80bf663f7a8d91479ec8c2dc0, type: 2}
+  - {fileID: 11400000, guid: 3a13bc56a68f5c14567a1e7dd09dce99, type: 2}
+  - {fileID: 11400000, guid: 9bf9b748a1842d6aefd502a75256dbec, type: 2}
+  - {fileID: 11400000, guid: b703e5f5cc4a2adce883a6ee489020f9, type: 2}
+  - {fileID: 11400000, guid: 2d0b87fabe63e4a3789a53715477050b, type: 2}
+  - {fileID: 11400000, guid: e74a278a87967576c4fb7691508143bc, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices:
+  hasEndBranch: 0
+  endBranches:

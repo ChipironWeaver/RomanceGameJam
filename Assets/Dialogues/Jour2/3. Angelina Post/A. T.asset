@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: A. T
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: a3c6a05464b3f0248a140be0882d4349, type: 2}
+  - {fileID: 11400000, guid: 6baa30a7057c6124a9f0ff49fb67c3ef, type: 2}
+  - {fileID: 11400000, guid: bb1456038c076844ba7e74d628b9c253, type: 2}
+  - {fileID: 11400000, guid: b77391f832371474ba081da3adc07af8, type: 2}
+  - {fileID: 11400000, guid: b691f8581c2005a4b858cd982e3ea8b5, type: 2}
+  - {fileID: 11400000, guid: 5f07d4b09e33d0a4ca016692cf048f7b, type: 2}
+  - {fileID: 11400000, guid: 94d56ab711116db47bac7d7a8dace07d, type: 2}
+  - {fileID: 11400000, guid: 8f1962e87ec9c0c49a5ad40ba34ab014, type: 2}
+  - {fileID: 11400000, guid: a76024d4478b70d4ab039b3e3d4c76fe, type: 2}
+  - {fileID: 11400000, guid: ad74d1cd2504f5a47aa93fd7122a6411, type: 2}
+  - {fileID: 11400000, guid: 4e4ada0bd6ce1de418cd7144a314bb10, type: 2}
+  - {fileID: 11400000, guid: 537500af906c95244a1df4c2515edb31, type: 2}
+  - {fileID: 11400000, guid: ce3e40dead8690447bfa91297f1cee29, type: 2}
+  - {fileID: 11400000, guid: e5a8fae81a5153a4e80b3832c48df523, type: 2}
+  - {fileID: 11400000, guid: 710a862934de88743bc8e58b53fdb047, type: 2}
+  - {fileID: 11400000, guid: 261d74a87ec96b147bcecdee48e957f6, type: 2}
+  - {fileID: 11400000, guid: ab6ca4f3a8ba8044f950db1ab47ca475, type: 2}
+  - {fileID: 11400000, guid: 7021136937bb1c945ba21f8dfa7fb81e, type: 2}
+  - {fileID: 11400000, guid: 64b407bd58e5a6e43abc7276ff1d1eb9, type: 2}
+  - {fileID: 11400000, guid: 6ef46c5c5a481bc469d1b5c47d14138c, type: 2}
+  - {fileID: 11400000, guid: 0d752d4b19ea44445b7522f6fce7c8bf, type: 2}
+  - {fileID: 11400000, guid: 877e4fabafb1596479e7de5a58494d96, type: 2}
+  - {fileID: 11400000, guid: ea09cef6101ec6b40a6bc0455d1f5eb4, type: 2}
+  - {fileID: 11400000, guid: c575be374a16f264b9d3027e529db4fd, type: 2}
+  - {fileID: 11400000, guid: 9a33e32a2794ec348b14be203881c199, type: 2}
+  - {fileID: 11400000, guid: 722f2e6299dd4c841a8cc89815584e0a, type: 2}
+  - {fileID: 11400000, guid: 96966fefc31b21646beea5ff9b43d14b, type: 2}
+  - {fileID: 11400000, guid: f2110cd37bfe904479bd71eba1738d11, type: 2}
+  - {fileID: 11400000, guid: a89895998c6b09f479e336474e39b562, type: 2}
+  - {fileID: 11400000, guid: ac30fdc2046a40449b6f35174e3001d9, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Oui Angie, tu me fais vraiment rire.
+    linkedDialogueSequence: {fileID: 11400000, guid: a600db5d2e802a647a892e46c27c5492, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Je crois surtout que tu essaies beaucoup trop d\u2019\xEAtre dr\xF4le."
+    linkedDialogueSequence: {fileID: 11400000, guid: b7be7c2e712a81a4296ccba58f8469cd, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Pas toujours. Mais je pr\xE9f\xE8re \xE7a aux faux rires."
+    linkedDialogueSequence: {fileID: 11400000, guid: 1658f74fc5e0c454b99e5ab329bb61cb, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

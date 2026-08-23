@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K4_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: b335a0e58a85245c5556fdda5e796bae, type: 2}
+  - {fileID: 11400000, guid: c26b85769100dda51ce980b70a223d45, type: 2}
+  - {fileID: 11400000, guid: c27128e5df42a57253b969687f26ac47, type: 2}
+  - {fileID: 11400000, guid: 2dcdf56ce73245cfe426a54f28b775ca, type: 2}
+  - {fileID: 11400000, guid: 43362c62b235c98b5ec19e012eb46d4c, type: 2}
+  - {fileID: 11400000, guid: d10b580aa20558dbadcf8afe0a57d932, type: 2}
+  - {fileID: 11400000, guid: 9ec82776f21fa3512920c968675dc556, type: 2}
+  - {fileID: 11400000, guid: 17b0659818bfdf44f145625e98b77caa, type: 2}
+  - {fileID: 11400000, guid: ce9c8d2ba0813ee94b0cca3c9badfb72, type: 2}
+  - {fileID: 11400000, guid: 40ebf4a630ec04c5fc14117bfefb4379, type: 2}
+  - {fileID: 11400000, guid: 10451e9cbce5d63004e732ae2d368501, type: 2}
+  - {fileID: 11400000, guid: 605c536e4318f7cfe9765508e223b9e7, type: 2}
+  - {fileID: 11400000, guid: 4a62a2d5e6b4465279013ff82e347b75, type: 2}
+  - {fileID: 11400000, guid: 4d435f06ca6f6689aeb9884c19d6edb1, type: 2}
+  - {fileID: 11400000, guid: 30590bed58b647a39c2e674047d5ca59, type: 2}
+  - {fileID: 11400000, guid: c6255919cbeffce6c6355294af1196b8, type: 2}
+  - {fileID: 11400000, guid: 012e12c7610db0bf21164dcbe8df9e34, type: 2}
+  - {fileID: 11400000, guid: 26796341dd311c3651fb7476ac5fa923, type: 2}
+  - {fileID: 11400000, guid: 482a00d32b4bb5981fefe033a3ccca4d, type: 2}
+  - {fileID: 11400000, guid: 5a627fb23a2dbab4000a81bd01a6f25b, type: 2}
+  - {fileID: 11400000, guid: 439726b8523796bd30aa5326c20ff7ad, type: 2}
+  - {fileID: 11400000, guid: 776426cbad01a6150ce5a58d771fa334, type: 2}
+  - {fileID: 11400000, guid: 5b8d3c2c9e45bfd7e102a3c51ea21992, type: 2}
+  - {fileID: 11400000, guid: ef2d7275ce65c32e7537dc490ca0ebf2, type: 2}
+  - {fileID: 11400000, guid: d7f8d544519c5e9a8719d4939f18c463, type: 2}
+  - {fileID: 11400000, guid: 92eb4ab9e5257ec235f8ea14a0a16178, type: 2}
+  - {fileID: 11400000, guid: f17c3eacee1679fa13dd6184c58299d3, type: 2}
+  - {fileID: 11400000, guid: 7f03040e705b57699b5616247b4cbbbe, type: 2}
+  - {fileID: 11400000, guid: f88a0a4481356d872ddfc1c0a7e73ea9, type: 2}
+  - {fileID: 11400000, guid: fe613617be033ad5aae40ed265d4b8fe, type: 2}
+  - {fileID: 11400000, guid: 06fdfd10a4a7be55bc7b4365b7e55653, type: 2}
+  - {fileID: 11400000, guid: b37b3b4625f1496a96e9e8aadfbb153f, type: 2}
+  - {fileID: 11400000, guid: fc11e2395afcc34cb8232a20f6d89424, type: 2}
+  - {fileID: 11400000, guid: 2c5e722fcbda9926b171bd13ec144e25, type: 2}
+  - {fileID: 11400000, guid: 9aadf53462a8ab74a1e125e8c8b9cc4f, type: 2}
+  - {fileID: 11400000, guid: 0aa67e2385ec462ef77ba031a06a8f39, type: 2}
+  - {fileID: 11400000, guid: a19b031ae3e427e94b1420e438ab7623, type: 2}
+  - {fileID: 11400000, guid: 7385fbe9dc9b410334d4d3672119c263, type: 2}
+  - {fileID: 11400000, guid: 0a949d61759ecd528766adfbec042066, type: 2}
+  - {fileID: 11400000, guid: 1c2ac4f84985524e8cc9bb7a0d814d92, type: 2}
+  - {fileID: 11400000, guid: 6686036ef96fb134995f0976c9fc0cf8, type: 2}
+  - {fileID: 11400000, guid: b0caf2dce023b9fbb4db3edd6ae2f393, type: 2}
+  - {fileID: 11400000, guid: 81c2727544cfaad911972246c7aeedc3, type: 2}
+  - {fileID: 11400000, guid: a377cfd8092372789a3468369482bd55, type: 2}
+  - {fileID: 11400000, guid: 13c7e3f0f68bf45255d2828e00134bbc, type: 2}
+  - {fileID: 11400000, guid: bcd280dd47948ec36e87403bc75b36af, type: 2}
+  - {fileID: 11400000, guid: ec5c73ce69fb97c88e527d3a11dca423, type: 2}
+  - {fileID: 11400000, guid: 96835fb710d484d8bc4087ac654b9039, type: 2}
+  - {fileID: 11400000, guid: 05a7a25d61a3456adbcd595f4d817fbb, type: 2}
+  - {fileID: 11400000, guid: 475e5b52c94a0dd0f5c330ff9d87f8a2, type: 2}
+  - {fileID: 11400000, guid: a84ed05b02b6e6184b6f7eb10dd0afe1, type: 2}
+  - {fileID: 11400000, guid: 0a67e5756e25279a59f3f3d257d6f7f9, type: 2}
+  - {fileID: 11400000, guid: 1f20b7dd1dd958c235bef5fc860fabc9, type: 2}
+  - {fileID: 11400000, guid: a749d46c1053f4de46878aec230ac3d2, type: 2}
+  - {fileID: 11400000, guid: 80ea5b15443e1467553de9f93f782dc1, type: 2}
+  - {fileID: 11400000, guid: 042b19a567773f0f5f53ea8b1414a85b, type: 2}
+  - {fileID: 11400000, guid: f3f0f7e07e2dabffd185d74562b37eef, type: 2}
+  - {fileID: 11400000, guid: 1e6c6d0e71f14285b276d0f0b5eb94ba, type: 2}
+  - {fileID: 11400000, guid: c327d5e3ac11771d15229b257fc1c874, type: 2}
+  - {fileID: 11400000, guid: 21103d9d45fc5b15341fb5a32cbb811b, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Tu es jalouse ?
+    linkedDialogueSequence: {fileID: 11400000, guid: 370907bf593472424d56c897922e7b8a, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Oui, mais ton coquillage est toujours juste là.
+    linkedDialogueSequence: {fileID: 11400000, guid: 45042bb00de6737e7f1820ff1b354a5d, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Ce n'est pas très important qui m'offre quoi.
+    linkedDialogueSequence: {fileID: 11400000, guid: 446524ccc92dbe171674a8ad630b0be4, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

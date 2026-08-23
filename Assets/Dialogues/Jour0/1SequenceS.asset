@@ -22,12 +22,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 76e3d024d4b26cf4a91ec229670976fe, type: 2}
   - {fileID: 11400000, guid: faeb432a2fb38a54584bb2035a8e7f92, type: 2}
   - {fileID: 11400000, guid: 38838708796570b49b59706e7f7773e5, type: 2}
+  - {fileID: 11400000, guid: eaf3e6f17a6f00242b8a8440055dfb5d, type: 2}
+  - {fileID: 11400000, guid: cb18a4d8a67a1294abbfb577699e9cae, type: 2}
+  - {fileID: 11400000, guid: f69e31a74bf2079469a89d6c96760b9f, type: 2}
+  - {fileID: 11400000, guid: d443aba9135991a41a134fea7a922e07, type: 2}
   endEvent:
     m_PersistentCalls:
       m_Calls: []
-  hasEndChoices: 1
+  hasEndChoices: 0
   choices:
-  - choiceString: "Attends, tu n'as vraiment jamais \xE9t\xE9 amoureuse ? "
+  - choiceString: 
     linkedDialogueSequence: {fileID: 11400000, guid: 39467b39b3b2e134db8974e77e879427, type: 2}
     onDialogueChoice:
       m_PersistentCalls:
@@ -71,5 +75,12 @@ MonoBehaviour:
       _conditionType: 0
       _conditionNumber: 0
       _conditionPercentage: 0
-  hasEndBranch: 0
-  endBranches: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 39467b39b3b2e134db8974e77e879427, type: 2}

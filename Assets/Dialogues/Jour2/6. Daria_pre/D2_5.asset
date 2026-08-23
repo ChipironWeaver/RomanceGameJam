@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: D2_5
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 777123d88a988eea0e66ed2a5473e3e6, type: 2}
+  - {fileID: 11400000, guid: 8a285322f234a04b35ee26fae86ac6f0, type: 2}
+  - {fileID: 11400000, guid: d04537293dafff0227dca7cd90b4b44d, type: 2}
+  - {fileID: 11400000, guid: ad1b90d8cb1cb4620394de3f34cc9e9d, type: 2}
+  - {fileID: 11400000, guid: d1d37cd6199c59c4b2d448e5dac75c94, type: 2}
+  - {fileID: 11400000, guid: 16c3625d46feea73b7de7c3b1dec9eac, type: 2}
+  - {fileID: 11400000, guid: 82af5840fa09dfeb3fe576ba53785ce1, type: 2}
+  - {fileID: 11400000, guid: 32b5115fc2309ecc3612b246f73c7c4f, type: 2}
+  - {fileID: 11400000, guid: 95ca673a1a8e31c035bb50be64bf778f, type: 2}
+  - {fileID: 11400000, guid: a6b2f694841d9745112abe30886c3657, type: 2}
+  - {fileID: 11400000, guid: ca1f4f25b01ddc2a23e7c150718f486e, type: 2}
+  - {fileID: 11400000, guid: 3524b9e3944192cf5263bce9fa83a82c, type: 2}
+  - {fileID: 11400000, guid: a8e2543005c77e04dc4792a8e780f3fb, type: 2}
+  - {fileID: 11400000, guid: c93ec49ed3160078a5bf8be106d62e25, type: 2}
+  - {fileID: 11400000, guid: c2eeb3e8e6a19c187c79aed7e0b40c31, type: 2}
+  - {fileID: 11400000, guid: ec2f02b6ca6ce44f58fec89bee1771b2, type: 2}
+  - {fileID: 11400000, guid: cce617c463e78514de3eecd80bdad88e, type: 2}
+  - {fileID: 11400000, guid: cfcf4f7088c5a7859ed98a37821bcd7e, type: 2}
+  - {fileID: 11400000, guid: 3f3251d7e86edc6ac651e3b7ddf03d08, type: 2}
+  - {fileID: 11400000, guid: a57f716f3e6a6d74c11d5879c1e9bfbe, type: 2}
+  - {fileID: 11400000, guid: a2494e2e546e142d6bd34ce36d6def4a, type: 2}
+  - {fileID: 11400000, guid: 682b2aa8f6ed889f17d2a7c9843d4d26, type: 2}
+  - {fileID: 11400000, guid: a1fdb7088321519de41a078a254b8687, type: 2}
+  - {fileID: 11400000, guid: f5248db997bf35a9d91e1f62663e5e4d, type: 2}
+  - {fileID: 11400000, guid: 15fed1ea9c59e85de74102ab52584858, type: 2}
+  - {fileID: 11400000, guid: 19cf57933e3e7eefce7a334ca8b14f30, type: 2}
+  - {fileID: 11400000, guid: 191d88b8d488da3cded83063224460bb, type: 2}
+  - {fileID: 11400000, guid: a0840692591a0374d9e3826589517fa1, type: 2}
+  - {fileID: 11400000, guid: fb3c6774dfc50d2b0a294ca617473946, type: 2}
+  - {fileID: 11400000, guid: 80a70469c94b1a9f739ea67b650ae17b, type: 2}
+  - {fileID: 11400000, guid: 16c67fd867fb07ee0ebe1cad5cda0b92, type: 2}
+  - {fileID: 11400000, guid: 769cc573a077211ab62e2df04ae98417, type: 2}
+  - {fileID: 11400000, guid: 120bd8587e91f757e6818ee783a4dc3d, type: 2}
+  - {fileID: 11400000, guid: cb40dd880a85d0448a7de5b3bb7bc3e1, type: 2}
+  - {fileID: 11400000, guid: e7e6d889eaabc6e6ab22dd85d5d327e0, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: J’aime t’entendre parler.
+    linkedDialogueSequence: {fileID: 11400000, guid: fa20586fbe20b93eb0f0b45c732461a8, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu réfléchis toujours comme ça ?
+    linkedDialogueSequence: {fileID: 11400000, guid: 215ab41f24f733177e189bce2e9c1129, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu pouvais juste dire que les touristes t’agacent.
+    linkedDialogueSequence: {fileID: 11400000, guid: a9d013417c12ca82f8a6107463d55eee, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

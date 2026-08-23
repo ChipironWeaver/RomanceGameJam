@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: D3_5
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 0d9bc9565bb9550a9b4ad7b8d8f6dd70, type: 2}
+  - {fileID: 11400000, guid: 7022bfb2a51b6fa2cc41b93569f2fb79, type: 2}
+  - {fileID: 11400000, guid: 5ca729331156f7c8681ea1465856759e, type: 2}
+  - {fileID: 11400000, guid: 2e77187f99a6589a00cc087f2f097935, type: 2}
+  - {fileID: 11400000, guid: 3fa3434ae6123073ddc8611698acf113, type: 2}
+  - {fileID: 11400000, guid: 0473b2a2bd359d2773d067ec36200098, type: 2}
+  - {fileID: 11400000, guid: 2fbcf5fcc21f1ae4df7fc2a34eeb5506, type: 2}
+  - {fileID: 11400000, guid: f2351e0b77fbe3038ac4b01439b729f9, type: 2}
+  - {fileID: 11400000, guid: 3500f18e6a36b4d772b4ab33f4d5e7fd, type: 2}
+  - {fileID: 11400000, guid: 4cdf1084e86b09c38aee18507092b27e, type: 2}
+  - {fileID: 11400000, guid: d85601cea2fac163a02803620a818103, type: 2}
+  - {fileID: 11400000, guid: 886a3cb5586917dc1dc68154d6c7e082, type: 2}
+  - {fileID: 11400000, guid: 60c48cd872602c88dbc4d091f4e89aaa, type: 2}
+  - {fileID: 11400000, guid: fd77ef15b2e25a2d880c2e192cf5f95f, type: 2}
+  - {fileID: 11400000, guid: daf5f0c2bcaa91e510b8b00360240dd0, type: 2}
+  - {fileID: 11400000, guid: 6185783806d04806ed01e4226926af8e, type: 2}
+  - {fileID: 11400000, guid: addeb4e1a026f751862b9bace66bfefe, type: 2}
+  - {fileID: 11400000, guid: 978bd25755184728d95a6866bf055fa7, type: 2}
+  - {fileID: 11400000, guid: b932326b93c258c80213d55a3541556f, type: 2}
+  - {fileID: 11400000, guid: 4d4630c948c662cd49938224a96f1bb1, type: 2}
+  - {fileID: 11400000, guid: 19d21ac160ed2fa8739b7b3040696b6e, type: 2}
+  - {fileID: 11400000, guid: 4e96582ef4afe82d077c71faa5e214e6, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Tu es jalouse de mon coquillage ?
+    linkedDialogueSequence: {fileID: 11400000, guid: 49966404d7bb871e5a2c7a7575dca9b8, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Karin aime offrir les choses qu’elle trouve intéressantes.
+    linkedDialogueSequence: {fileID: 11400000, guid: 26c933e0c5d90dcfbff50543f6463c63, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu n’as pas besoin de tout analyser.
+    linkedDialogueSequence: {fileID: 11400000, guid: e0f38297fc4ace94d40e430dda6a75da, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

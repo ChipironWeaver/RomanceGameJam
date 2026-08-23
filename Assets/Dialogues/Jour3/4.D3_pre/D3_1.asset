@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: D3_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 15ed5e0cdb908d642d718cd1e80bcecd, type: 2}
+  - {fileID: 11400000, guid: 89fe3ebad2d7ffe65944c5a24adb150f, type: 2}
+  - {fileID: 11400000, guid: 8d5ba3d61c777dd7b5d620758a76e435, type: 2}
+  - {fileID: 11400000, guid: 15b71b1ec888e4e6e6b3d669d722f7b7, type: 2}
+  - {fileID: 11400000, guid: 611c8731c6c8cbf25e455c8d32164502, type: 2}
+  - {fileID: 11400000, guid: 524741bfe43e69dc104e17dfe20f75d6, type: 2}
+  - {fileID: 11400000, guid: 49665d4a974642634976e5fe79bcf3b0, type: 2}
+  - {fileID: 11400000, guid: 0a72f46899b1d1208495c3ea3c149fd1, type: 2}
+  - {fileID: 11400000, guid: 45aec586bb794966fdf3a4354f57d44a, type: 2}
+  - {fileID: 11400000, guid: 2dd15263283848e19af31659f1f5f41d, type: 2}
+  - {fileID: 11400000, guid: 8e6e2fd432c0bcfade55f40fe732a21e, type: 2}
+  - {fileID: 11400000, guid: 7a02248c71510bde86cc1c385c476701, type: 2}
+  - {fileID: 11400000, guid: b722c4e6142e39c0cc76faf99b0f13f3, type: 2}
+  - {fileID: 11400000, guid: fbd023c920ac95bf6eebe49286826966, type: 2}
+  - {fileID: 11400000, guid: 725e95a8123f31e612a72f98ee0fe33b, type: 2}
+  - {fileID: 11400000, guid: 92fd287b3b021ed50248bebd44fcb608, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions:
+      - eventName: Sortie_daria
+        eventCharacter: 0
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 1bf51621a8fb17b3a69ee911481df0ff, type: 2}
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 21a61d2895ea12d744b8ee30625505ea, type: 2}

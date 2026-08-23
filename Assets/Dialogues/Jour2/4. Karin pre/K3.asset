@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: afce0660c39f4434ea76bd0bbc354304, type: 2}
+  - {fileID: 11400000, guid: b308e5853e0db3841937866853081735, type: 2}
+  - {fileID: 11400000, guid: 3df399c75dbba734e844d8c16c8daacc, type: 2}
+  - {fileID: 11400000, guid: 276cc6e1743ed56479b2bc37b54a2b02, type: 2}
+  - {fileID: 11400000, guid: 3612b2cda114c884ea67235c20189a0c, type: 2}
+  - {fileID: 11400000, guid: 6c8beb2f6d52c4a4dafcd2df3792b799, type: 2}
+  - {fileID: 11400000, guid: 352dc1d126e46e54b9fc5a37d9a860d7, type: 2}
+  - {fileID: 11400000, guid: d6c7048379898fc4b98d5389bf458cdd, type: 2}
+  - {fileID: 11400000, guid: bb5ced1507279844badd129915b9cef3, type: 2}
+  - {fileID: 11400000, guid: d851169f6c3200e448f8232561def726, type: 2}
+  - {fileID: 11400000, guid: 07a02569cfe49f440b419a5262aaeceb, type: 2}
+  - {fileID: 11400000, guid: b682ccb6766faef448595355daea2f19, type: 2}
+  - {fileID: 11400000, guid: 761dcbc67df03594fb36b47cf6e42bb7, type: 2}
+  - {fileID: 11400000, guid: c035423b81559644ea00b0281e64ae09, type: 2}
+  - {fileID: 11400000, guid: b1efecd610e5ca5449942373f5412330, type: 2}
+  - {fileID: 11400000, guid: a5bafc1cba8941b4e99655d55b2b25a5, type: 2}
+  - {fileID: 11400000, guid: d8c8420e3a5163d4dbfdc79f874a0c58, type: 2}
+  - {fileID: 11400000, guid: dc43126990127e248bd57c508dddd690, type: 2}
+  - {fileID: 11400000, guid: 9ebb12b303cb54d4f96bf59676593637, type: 2}
+  - {fileID: 11400000, guid: 00e47847a86dad64d8f60584519fc3a3, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 0
+  endBranches: []

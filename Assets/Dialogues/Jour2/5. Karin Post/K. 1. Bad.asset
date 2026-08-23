@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K. 1. Bad
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: a3412f4b3a154df40a78c4b8085f08ef, type: 2}
+  - {fileID: 11400000, guid: c13c9ae03db508d4fb3cae0b535e44ce, type: 2}
+  - {fileID: 11400000, guid: d1e7fb28ed525e047a40744d921ddd76, type: 2}
+  - {fileID: 11400000, guid: 9b2c1e0c410d96741ac4d70fcad20a69, type: 2}
+  - {fileID: 11400000, guid: 0f30d28748b7b5544a27baf3e603012b, type: 2}
+  - {fileID: 11400000, guid: afabc1f839cdbdc46b634a94bd6012c2, type: 2}
+  - {fileID: 11400000, guid: 7fa52059230ecf14cb368d4c1ca3a89a, type: 2}
+  - {fileID: 11400000, guid: e252061a3b1d3d5428417d8b3acd24b6, type: 2}
+  - {fileID: 11400000, guid: a975baf33270856468863d2a3f88f0d8, type: 2}
+  - {fileID: 11400000, guid: d82a3e3546b5a54439e4cca74d066fd3, type: 2}
+  - {fileID: 11400000, guid: 60b00be2e1f22b5408cf7fbc3b8968a3, type: 2}
+  - {fileID: 11400000, guid: 8427251474d45974591dbd19ee1f8790, type: 2}
+  - {fileID: 11400000, guid: 535895570a9f60f489ecef83b690c1c5, type: 2}
+  - {fileID: 11400000, guid: 7a5c03c6c02658d449aae474b6b9ad5a, type: 2}
+  - {fileID: 11400000, guid: 31b75087c97dbae45adbaab36555ea95, type: 2}
+  - {fileID: 11400000, guid: c70b5caf02092434f944a424a7326c8b, type: 2}
+  - {fileID: 11400000, guid: ca30ebfd925405a41b0b9814b011478e, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: f4d6626d6c775ad42be79bc5ad1395c4, type: 2}
