@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: K3_11_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: "Après quelques secondes, elle reprend la parole :"
+  dialogueText: "Apr\xE8s quelques secondes, elle reprend la parole :"
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
-  triggerAnimation: 0
-  animatedCharacters: 0
-  triggerName: 
+  triggerAnimation: 1
+  animatedCharacters: 4
+  triggerName: Neutral
   showCharacter: 0
   hideCharacter: 0
   shownCharacters: 0

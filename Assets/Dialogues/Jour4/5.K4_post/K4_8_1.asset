@@ -16,9 +16,9 @@ MonoBehaviour:
   speakingCharacter: 4
   npcName: 
   npcIcon: {fileID: 0}
-  triggerAnimation: 0
-  animatedCharacters: 0
-  triggerName: 
+  triggerAnimation: 1
+  animatedCharacters: 4
+  triggerName: Neutral
   showCharacter: 0
   hideCharacter: 0
   shownCharacters: 0

@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: D2_1_12
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Tu comptes le polir jusqu’à demain ?
+  dialogueText: "Tu comptes le polir jusqu\u2019\xE0 demain ?"
   speakingCharacter: 0
   npcName: Marie
   npcIcon: {fileID: 0}
   triggerAnimation: 0
   animatedCharacters: 0
   triggerName: 
-  showCharacter: 0
+  showCharacter: 1
   hideCharacter: 0
   shownCharacters: 0
   hiddenCharacters: 0

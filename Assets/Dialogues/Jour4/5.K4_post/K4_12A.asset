@@ -17,7 +17,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2096712f6e143c8826ff35a326179001, type: 2}
   - {fileID: 11400000, guid: f58e7474d0654b1c5e23709c43a34c6d, type: 2}
   - {fileID: 11400000, guid: 34926736fe313bedec20a9de5cfd68ac, type: 2}
-  - {fileID: 11400000, guid: 43044c67008fa3168034ec3597fbd8c3, type: 2}
   - {fileID: 11400000, guid: 08d7752e84b12ed461ad322215714d97, type: 2}
   - {fileID: 11400000, guid: 8dbfd808985c826d023bc75c34091734, type: 2}
   - {fileID: 11400000, guid: 825c8f6f1aef2cd03882925cfa49ddc5, type: 2}
@@ -29,7 +28,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hasEndChoices: 0
-  choices:
+  choices: []
   hasEndBranch: 1
   endBranches:
   - branching:

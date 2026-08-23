@@ -39,17 +39,17 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 782dc6c758270e495ccbae9cb1b09ec6, type: 2}
   - {fileID: 11400000, guid: 7c8fe5a661e6e599dba7645d4e458371, type: 2}
   - {fileID: 11400000, guid: 620ab4d1739ba550d5b735b815966337, type: 2}
-  - {fileID: 11400000, guid: 2aa2bd32cc1588fa370b99bf24f34286, type: 2}
-  - {fileID: 11400000, guid: c86919d781ea2ad128c07960a694310b, type: 2}
-  - {fileID: 11400000, guid: 61ac32cbc1d4d38c3dda20a065efd6c9, type: 2}
-  - {fileID: 11400000, guid: 9fc1a601a95b2043234f2dafc3474ece, type: 2}
-  - {fileID: 11400000, guid: bb40c517a7699e2a0bf6ce4c6fb57a9a, type: 2}
-  - {fileID: 11400000, guid: d5236adee9e64e2d889852aaf68f5c78, type: 2}
-  - {fileID: 11400000, guid: fce4977ae8c1fe5106588bee6a880444, type: 2}
   endEvent:
     m_PersistentCalls:
       m_Calls: []
   hasEndChoices: 0
-  choices:
-  hasEndBranch: 0
+  choices: []
+  hasEndBranch: 1
   endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 04528367bc219af41a858f7f5d9546ad, type: 2}

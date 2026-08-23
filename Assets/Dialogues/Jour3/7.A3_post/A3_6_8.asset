@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: A3_6_8
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: C’est encore mieux qu’hier.
+  dialogueText: "C\u2019est encore mieux qu\u2019hier."
   speakingCharacter: 3
   npcName: 
   npcIcon: {fileID: 0}
-  triggerAnimation: 1
+  triggerAnimation: 0
   animatedCharacters: 3
   triggerName: Happy
   showCharacter: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
   changeReputation: 1
   reputationCharacters: 3
   isSet: 0
-  reputationAmount: 2.0
+  reputationAmount: 2
   hasCharacterEvent: 0
   charactersEvent: 0
   eventName: 

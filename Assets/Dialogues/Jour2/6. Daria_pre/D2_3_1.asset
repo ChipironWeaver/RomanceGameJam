@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: D2_3_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: À peine s’est-elle éloignée qu’une silhouette apparaît devant le bar.
+  dialogueText: "\xC0 peine s\u2019est-elle \xE9loign\xE9e qu\u2019une silhouette
+    appara\xEEt devant le bar."
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
@@ -20,7 +21,7 @@ MonoBehaviour:
   animatedCharacters: 0
   triggerName: 
   showCharacter: 0
-  hideCharacter: 0
+  hideCharacter: 1
   shownCharacters: 0
   hiddenCharacters: 0
   changeReputation: 0

@@ -16,9 +16,9 @@ MonoBehaviour:
   speakingCharacter: 2
   npcName: 
   npcIcon: {fileID: 0}
-  triggerAnimation: 0
-  animatedCharacters: 0
-  triggerName: 
+  triggerAnimation: 1
+  animatedCharacters: 2
+  triggerName: Sad
   showCharacter: 0
   hideCharacter: 0
   shownCharacters: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
   changeReputation: 1
   reputationCharacters: 2
   isSet: 0
-  reputationAmount: -1.0
+  reputationAmount: -1
   hasCharacterEvent: 0
   charactersEvent: 0
   eventName: 
