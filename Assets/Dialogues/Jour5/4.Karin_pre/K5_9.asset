@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K5_9
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 1a0d56b0eaacc837afc67f1d1ad0df53, type: 2}
+  - {fileID: 11400000, guid: 96841cff847090b872ddedf88440327f, type: 2}
+  - {fileID: 11400000, guid: 218b3001af4ee3097b8964c23b3aab17, type: 2}
+  - {fileID: 11400000, guid: 4f7f6f2159bfc84c08222da669e08aa9, type: 2}
+  - {fileID: 11400000, guid: 92bd7a3caa106f5ad4b1034ab8313108, type: 2}
+  - {fileID: 11400000, guid: 66e694e45f3629de731f9f7f093a2c7c, type: 2}
+  - {fileID: 11400000, guid: 9c61007071344d3925c8d89fd5ae376c, type: 2}
+  - {fileID: 11400000, guid: 82baf6cf97445955039118bd3e52c049, type: 2}
+  - {fileID: 11400000, guid: 3a24434a2db66180f67dca1a71d815c9, type: 2}
+  - {fileID: 11400000, guid: 7ddc62e19f8aa17d97cff5a27709d69d, type: 2}
+  - {fileID: 11400000, guid: a26fc2b91e905b9c71de3b187a84fb36, type: 2}
+  - {fileID: 11400000, guid: 7543347fe7724210a0d25b4a830d46a3, type: 2}
+  - {fileID: 11400000, guid: be13258b7e646ca2bd6409cfa757f5a1, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: f54039a664d5f6f41436d98fd2c5836d, type: 2}
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 89ba56ed066bb8ac7d9238ce2c27b400, type: 2}

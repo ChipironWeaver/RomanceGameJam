@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: A6_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 480ca477414450f323b8d691eefb40b1, type: 2}
+  - {fileID: 11400000, guid: f587d95301ae99d6a901a157744cd3f6, type: 2}
+  - {fileID: 11400000, guid: 6b7969ccac5763fcea131d72f4ac1a6e, type: 2}
+  - {fileID: 11400000, guid: 8c2e14f616cabc81a5fa848e3b56e7f1, type: 2}
+  - {fileID: 11400000, guid: f03897212cd404059e85059ca803e7f6, type: 2}
+  - {fileID: 11400000, guid: 42b554ca27af8d74dc5ecbbc25097d0c, type: 2}
+  - {fileID: 11400000, guid: 156f65d2d592e7830ffebe57dad92909, type: 2}
+  - {fileID: 11400000, guid: ed23cdd96d443e32b9120dca9c730137, type: 2}
+  - {fileID: 11400000, guid: 57cbde54083adb01d57cead9371e75ba, type: 2}
+  - {fileID: 11400000, guid: 6b03c5f78b846151308d0083512e02c4, type: 2}
+  - {fileID: 11400000, guid: 6d67a4c05a9c9e4f4f106240b9bee3c7, type: 2}
+  - {fileID: 11400000, guid: c43af82a35f6dbd0290caccc7adb1924, type: 2}
+  - {fileID: 11400000, guid: 7df1bcd43fc0d59f3fb4aa985b03ad8f, type: 2}
+  - {fileID: 11400000, guid: 10a2afc3f0beef3fcfb33f80a15d66ec, type: 2}
+  - {fileID: 11400000, guid: 6b7bcf0cc4efe8096a5f3ef8d5b482ca, type: 2}
+  - {fileID: 11400000, guid: f592f3783364731b444e919d62b3a036, type: 2}
+  - {fileID: 11400000, guid: faf99fcf7fa4a33dd9ba777510435f3f, type: 2}
+  - {fileID: 11400000, guid: 988571005f39b09944c30c4b2d40f4a4, type: 2}
+  - {fileID: 11400000, guid: 23b238bf68301113a8ec999bcb4672d0, type: 2}
+  - {fileID: 11400000, guid: 52489a544a117931df3933e080183f4f, type: 2}
+  - {fileID: 11400000, guid: 416104f7f15a4795db6719d9b3c20e6f, type: 2}
+  - {fileID: 11400000, guid: b9efa08539b15f7cdeca1f9f9966a502, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: cae31e421fcbfa58765044a4ccd9575c, type: 2}
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 46d68550b82600f3849e5ef2acb01630, type: 2}
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 3681a61e356cb75e9233543bae042451, type: 2}

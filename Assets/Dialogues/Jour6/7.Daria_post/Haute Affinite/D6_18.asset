@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: D6_18
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: d2ab05f979ff63ac2785138d874cb0b2, type: 2}
+  - {fileID: 11400000, guid: a0455189f17b1e0f5b6199bfb7706835, type: 2}
+  - {fileID: 11400000, guid: 37d3ccb8768ffe71edb407d804de5b18, type: 2}
+  - {fileID: 11400000, guid: 89441eabfd42d4a339f21704c71a8778, type: 2}
+  - {fileID: 11400000, guid: c0db8e379e5f9fc914d6a86c72a8edd0, type: 2}
+  - {fileID: 11400000, guid: f1caa8ff5b8eb513be750d1c9d80e835, type: 2}
+  - {fileID: 11400000, guid: c41bc906ac07b83fb5fdc9b6deb71529, type: 2}
+  - {fileID: 11400000, guid: c56d99e369e5336adcc8aa6329b15fdf, type: 2}
+  - {fileID: 11400000, guid: 75eb788d727bc3cd645609474b1b3a57, type: 2}
+  - {fileID: 11400000, guid: 5f3ffe6b387866090009fa32926766ea, type: 2}
+  - {fileID: 11400000, guid: 15db4a210338ec197f1eee8c7592be1f, type: 2}
+  - {fileID: 11400000, guid: df4bb44856c3263cc0b7359c1bff9b2b, type: 2}
+  - {fileID: 11400000, guid: 0fd56da67ee92aa6887bb1bd7a699ca6, type: 2}
+  - {fileID: 11400000, guid: 8fd6d29c5d3f9362577b19be465d7151, type: 2}
+  - {fileID: 11400000, guid: b889d03a2006ae0ffc72acb9c1817f77, type: 2}
+  - {fileID: 11400000, guid: 4ccbf8f92f70ab493ea7a743a26fb9cc, type: 2}
+  - {fileID: 11400000, guid: 54259a88aa753cd3d0bfee57607a4d0f, type: 2}
+  - {fileID: 11400000, guid: b33609b8d86cff53a375443e6e694b2c, type: 2}
+  - {fileID: 11400000, guid: b52783e2e753df7619a88f9052af6b38, type: 2}
+  - {fileID: 11400000, guid: 15b6f76e6552f63b6e384202de04e711, type: 2}
+  - {fileID: 11400000, guid: 461c748ff06bccfcb4761337c5539fd1, type: 2}
+  - {fileID: 11400000, guid: f87c096d1a92296b69d2692e3c9c67cc, type: 2}
+  - {fileID: 11400000, guid: a3842bd9e3fb2f9d2fbfd23565ef7caa, type: 2}
+  - {fileID: 11400000, guid: 863f272082b712e2fd7dbafcd63b0416, type: 2}
+  - {fileID: 11400000, guid: e84919f59dab066c6a952f6e0705c410, type: 2}
+  - {fileID: 11400000, guid: e0eebe6f8ede5938b0d8d174ee5f0e63, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Je suis désolée de ne pas avoir vu à quel point je te manquais.
+    linkedDialogueSequence: {fileID: 11400000, guid: 6492621491c8faf719bbfcc1ac7d3732, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: J’ai pensé à toi aussi. Je ne savais juste plus comment revenir vers toi.
+    linkedDialogueSequence: {fileID: 11400000, guid: d94d682fdfa17fab252614914acb3276, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu ne peux pas faire de mon départ quelque chose que j’ai fait contre toi.**
+    linkedDialogueSequence: {fileID: 11400000, guid: a528ffd000264e4242f5437a7f7aa5f8, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

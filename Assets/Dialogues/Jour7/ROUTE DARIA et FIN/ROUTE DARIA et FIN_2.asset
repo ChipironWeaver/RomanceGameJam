@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: ROUTE DARIA et FIN_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: ffa30b134272b1ae33e4c2f1e2397ca9, type: 2}
+  - {fileID: 11400000, guid: 820342f9c6336b6a45321c0a970f5fbc, type: 2}
+  - {fileID: 11400000, guid: 89d1dd57a1d6bc83618a5a976166ac0b, type: 2}
+  - {fileID: 11400000, guid: 1fb3161e941d06273c08b1b3d8dcefd4, type: 2}
+  - {fileID: 11400000, guid: ebd1846982b169df95632383fc5de7df, type: 2}
+  - {fileID: 11400000, guid: 4ff11f5abbf7ab892140dbfce03ad0a2, type: 2}
+  - {fileID: 11400000, guid: ab469f223b6f6596aca8aef5389a7122, type: 2}
+  - {fileID: 11400000, guid: e68054683a3ecfef4c48e401ae925142, type: 2}
+  - {fileID: 11400000, guid: 0748dae7d509a43483ce29281672c7cd, type: 2}
+  - {fileID: 11400000, guid: 14e658a75a98705e196ab0d55b37b8fe, type: 2}
+  - {fileID: 11400000, guid: 04ab96ed2271c823178456a0a2e913ac, type: 2}
+  - {fileID: 11400000, guid: c19284488d6edf9a6d9bad4de486c84d, type: 2}
+  - {fileID: 11400000, guid: 07fe50cf55183379cdffb830abc8a635, type: 2}
+  - {fileID: 11400000, guid: 21ce1b585de57e4b1ce2b2acbe87db09, type: 2}
+  - {fileID: 11400000, guid: 20950c0be6766b7f2e6b15417d4a85e2, type: 2}
+  - {fileID: 11400000, guid: a7a844e5ffbdf134d651fbd505194cda, type: 2}
+  - {fileID: 11400000, guid: 51d6f9ec35f57eb8b467c13902514fe8, type: 2}
+  - {fileID: 11400000, guid: 1c617cc610fd596e70ec2fdbecab6244, type: 2}
+  - {fileID: 11400000, guid: 16bf4009282be78dcb532ad2d9b5f28c, type: 2}
+  - {fileID: 11400000, guid: b7d05279b2d9fba9dadec6a80e8b87e5, type: 2}
+  - {fileID: 11400000, guid: f7cc50fc27557b877a42a73a2014c52d, type: 2}
+  - {fileID: 11400000, guid: a9294bdceedc827f71b0fd57e9061437, type: 2}
+  - {fileID: 11400000, guid: eda0a039f8f329e8cecd824bf9c10212, type: 2}
+  - {fileID: 11400000, guid: 89c6165c5988adbaab470ab529a1f735, type: 2}
+  - {fileID: 11400000, guid: a5c33185582a779ff985a78fc679510d, type: 2}
+  - {fileID: 11400000, guid: fd56c445c8af0ae737c22fee591a1a02, type: 2}
+  - {fileID: 11400000, guid: eaa1203f7b59ed17d59c85c49058e7de, type: 2}
+  - {fileID: 11400000, guid: 3d1af7b9606f2b5963b5feaf578098e1, type: 2}
+  - {fileID: 11400000, guid: 62f45b28fa81fb90cdcbf609f5709187, type: 2}
+  - {fileID: 11400000, guid: b23ea0bb57f34e28cbe1dc9176775fb5, type: 2}
+  - {fileID: 11400000, guid: 5369cc6a9b46eda1b24080193c2e58ed, type: 2}
+  - {fileID: 11400000, guid: a8a8a9a5ef3d2413bf2d1af8f037fbf4, type: 2}
+  - {fileID: 11400000, guid: 1b98af1159566742de795345a9afa3f6, type: 2}
+  - {fileID: 11400000, guid: 38441aed3012d9d9cedd58506f4da83c, type: 2}
+  - {fileID: 11400000, guid: 534a65b58f13e74e025e6a2d23019c34, type: 2}
+  - {fileID: 11400000, guid: fb6de0814f7e48240af45534b404c2fb, type: 2}
+  - {fileID: 11400000, guid: a9569295fa9ea509941235399867b06b, type: 2}
+  - {fileID: 11400000, guid: 812de0c0f252a8cdf1724cf6853cabc3, type: 2}
+  - {fileID: 11400000, guid: f9d92e71708902e4cee83b85aad12437, type: 2}
+  - {fileID: 11400000, guid: fbfef5b5bf56b3719c97d7a866309f40, type: 2}
+  - {fileID: 11400000, guid: c23a72db66df411ca56f3eebe4911953, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 22dcebb6b9d3cfbdfe5aba37caf095ef, type: 2}

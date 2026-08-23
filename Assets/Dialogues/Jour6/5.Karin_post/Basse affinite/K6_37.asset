@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K6_37
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: c808076f7155b8ba87fa8bf2a79411f9, type: 2}
+  - {fileID: 11400000, guid: 881eaf7fd393d5ab197be71a5b61cf61, type: 2}
+  - {fileID: 11400000, guid: e97df68fb67fc8822386119500440cea, type: 2}
+  - {fileID: 11400000, guid: f71acf38223e6d75fc9277639242391e, type: 2}
+  - {fileID: 11400000, guid: bfdc70702c2cac014e36cf5d800e8b17, type: 2}
+  - {fileID: 11400000, guid: ab8c2dbf74fb6bdbca0b8d3c666e6ead, type: 2}
+  - {fileID: 11400000, guid: f72be2865d49afbe8826be94c7b5bb8a, type: 2}
+  - {fileID: 11400000, guid: 1785f8f641b44fb2a72a9456160dcf9c, type: 2}
+  - {fileID: 11400000, guid: d2e229e9faa42662e42aec9a8ae5e316, type: 2}
+  - {fileID: 11400000, guid: 82afbcef36b9728b4380fd9926ec1a4f, type: 2}
+  - {fileID: 11400000, guid: ed00a4c2e6c723576bfd6516ba2ae756, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: "Promis. Cette fois on reste dans la vie l\u2019une de l\u2019autre."
+    linkedDialogueSequence: {fileID: 11400000, guid: 6eb94972375b14df8c0094c666439df6, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Je ferai de mon mieux.
+    linkedDialogueSequence: {fileID: 11400000, guid: 6eb94972375b14df8c0094c666439df6, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Je pr\xE9f\xE8re ne pas promettre quelque chose dont je ne suis
+      pas s\xFBre.**"
+    linkedDialogueSequence: {fileID: 11400000, guid: 6eb94972375b14df8c0094c666439df6, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

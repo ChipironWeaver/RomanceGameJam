@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K5_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: a91bf61b9ef1040c0f3e5577f7d7e71a, type: 2}
+  - {fileID: 11400000, guid: 148005c8450cfa004c4d840606c49e34, type: 2}
+  - {fileID: 11400000, guid: 0bf639a501954044c8d7819979b51381, type: 2}
+  - {fileID: 11400000, guid: 0003c4df33a71313c2f30b95754deb3b, type: 2}
+  - {fileID: 11400000, guid: 9b22f3d6d81a5f6ace822256deedc2e1, type: 2}
+  - {fileID: 11400000, guid: dfc7b9b4f14f4a74b867277fede4af0f, type: 2}
+  - {fileID: 11400000, guid: 56b43b9ecd4be176b4529823a72d8409, type: 2}
+  - {fileID: 11400000, guid: a477866be179c7a131b88dc467692662, type: 2}
+  - {fileID: 11400000, guid: a0a1303c30b675559b08a401be52cbad, type: 2}
+  - {fileID: 11400000, guid: 05f0476f0bde4672213dd8adf21fa53e, type: 2}
+  - {fileID: 11400000, guid: 4d9e2ae6d25bd3396d0b279ae2253c8e, type: 2}
+  - {fileID: 11400000, guid: b7538004d6ee6c81639bd3b143ba3379, type: 2}
+  - {fileID: 11400000, guid: 9936135df89a6ec4180e1156db06aa3e, type: 2}
+  - {fileID: 11400000, guid: 7878e36ee6e26c68275adfc02f6bb9c4, type: 2}
+  - {fileID: 11400000, guid: 9599d0323f864df0cb4bc748b3f7a5e8, type: 2}
+  - {fileID: 11400000, guid: 9bb677c89cbe27172bc78fe509f88f0e, type: 2}
+  - {fileID: 11400000, guid: 20de6a7d7fd4c76ecbb7b850f79a2ab2, type: 2}
+  - {fileID: 11400000, guid: c57908516a226b3654d7ad67f30dbb54, type: 2}
+  - {fileID: 11400000, guid: ea99c41dfa87e2dd84410185671e7eb2, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 4b055161cce326b7bdaa9071d3a90752, type: 2}

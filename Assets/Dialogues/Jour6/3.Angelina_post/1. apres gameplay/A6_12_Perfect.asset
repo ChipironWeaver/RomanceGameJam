@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: A6_12_Perfect
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: c2bf316de49ba45cf761fc4330563e2a, type: 2}
+  - {fileID: 11400000, guid: dd4e41499e31e34d1fc36c31965e9488, type: 2}
+  - {fileID: 11400000, guid: 640cbd836c03a3a7fd4e4c6f0f6c88fb, type: 2}
+  - {fileID: 11400000, guid: b564472f0ef0aaec9e4fcd5aefbbab25, type: 2}
+  - {fileID: 11400000, guid: 03fa200f3e1780f7757577f0945d8d8a, type: 2}
+  - {fileID: 11400000, guid: 7adcf1ee95673b2335aab3a424ae9754, type: 2}
+  - {fileID: 11400000, guid: 12d470a1a5ba43a4e3568ac386e7c8ab, type: 2}
+  - {fileID: 11400000, guid: 754f87092b2b9661cc9ab4c2712e99b3, type: 2}
+  - {fileID: 11400000, guid: c51a7830e61c6681b9def5bcdc82711a, type: 2}
+  - {fileID: 11400000, guid: 731a9b570776006634a75ab6768499de, type: 2}
+  - {fileID: 11400000, guid: 9eba99b36939cecc4cad478f828fb21f, type: 2}
+  - {fileID: 11400000, guid: 23c7d435baed7544b63cda0f247f1373, type: 2}
+  - {fileID: 11400000, guid: 4cc47bdbccea5afac346ef416ac70535, type: 2}
+  - {fileID: 11400000, guid: 85d26fac54b694c652c6bd5b8fa76e4a, type: 2}
+  - {fileID: 11400000, guid: 2d92985c9bf7f5e63ad72557602725e7, type: 2}
+  - {fileID: 11400000, guid: 103beac683ac75e12aaad653a484af40, type: 2}
+  - {fileID: 11400000, guid: 01e48a743522087dc96c5d9d03bbd1c2, type: 2}
+  - {fileID: 11400000, guid: fadc3980defaa69c38ac623276d87c90, type: 2}
+  - {fileID: 11400000, guid: 1e9161a1ef6d3703d67545fcc695f4c2, type: 2}
+  - {fileID: 11400000, guid: e7e2776c2949643e97e48eb6ca6f9fa9, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: a11e2c4d6fc0a1c4445df3d9883a6f4c, type: 2}

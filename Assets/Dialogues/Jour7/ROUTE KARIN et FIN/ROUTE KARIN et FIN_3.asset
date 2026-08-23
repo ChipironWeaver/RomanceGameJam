@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: ROUTE KARIN et FIN_3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 5b5d5d8bd8ac4fdbba65c03acbc221df, type: 2}
+  - {fileID: 11400000, guid: 8c26ce09b2e3a3d1fd307c9016d2dfe7, type: 2}
+  - {fileID: 11400000, guid: 6cb5a11281b29789c5be7ab311af5d15, type: 2}
+  - {fileID: 11400000, guid: 363abe563d9cfa31ddb336c0547e3bb2, type: 2}
+  - {fileID: 11400000, guid: 0b2c072ce71c9bd9909d74695bbc5bfb, type: 2}
+  - {fileID: 11400000, guid: fd044af1c9667cba1f5d5f4e2b858c0e, type: 2}
+  - {fileID: 11400000, guid: 8de1c5f75b5af1d21f9a5415c8a8e966, type: 2}
+  - {fileID: 11400000, guid: ab118d29fd2937f4198cedec39e6a08c, type: 2}
+  - {fileID: 11400000, guid: 2b8eeac14efd53884fa3721765d20899, type: 2}
+  - {fileID: 11400000, guid: cc4c6cef7e54f76969fe5b777f971223, type: 2}
+  - {fileID: 11400000, guid: 1bed7da77a8d91bf8d350b9f130f2119, type: 2}
+  - {fileID: 11400000, guid: 9df3dc91bcd345e75681e3a3c58b042a, type: 2}
+  - {fileID: 11400000, guid: d9d7f0acd62f0a9c1f6cf1da17f00d1d, type: 2}
+  - {fileID: 11400000, guid: 3f98c9740a3eb1fab049f1a9f6de0d0e, type: 2}
+  - {fileID: 11400000, guid: 09dbd69d69519f906c58b35419525ae8, type: 2}
+  - {fileID: 11400000, guid: 3833135a8a1ebfde36bbe82e03806c05, type: 2}
+  - {fileID: 11400000, guid: fd8b58fdba164ebdf498736b484bd612, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 56b4ff9cb6187557e982e669b9210c32, type: 2}

@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: Outro 6_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 0423d995dab59a22bbac9be01d1df8e3, type: 2}
+  - {fileID: 11400000, guid: dd21374c94ee3eb7c2ef4ad849d4bbfc, type: 2}
+  - {fileID: 11400000, guid: 95b595f2a6b53fc1a829d620428af1dd, type: 2}
+  - {fileID: 11400000, guid: b287ef5f9c805fae7c5c31dc4b8a1c1a, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions:
+      - eventName: ROUTE_AVAILABLE_ANGELINA
+        eventCharacter: 3
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 4b259feb4a032915ad71651f75910e1a, type: 2}
+  - branching:
+      _eventConditions:
+      - eventName: ROUTE_AVAILABLE_KARIN
+        eventCharacter: 4
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 4e8a192f45619f3ebf92f58722073876, type: 2}
+  - branching:
+      _eventConditions:
+      - eventName: ROUTE_AVAILABLE_DARIA
+        eventCharacter: 2
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 0ed40bb6cf02a6b3fac7a626ff979f90, type: 2}

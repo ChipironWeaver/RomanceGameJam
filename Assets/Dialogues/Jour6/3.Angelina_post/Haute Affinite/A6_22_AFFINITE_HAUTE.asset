@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: A6_22_AFFINITE_HAUTE
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 5ac3e5482ebf59d7eb7ada8d98735951, type: 2}
+  - {fileID: 11400000, guid: ada2a93c367740e4ed08ae90f8713608, type: 2}
+  - {fileID: 11400000, guid: 7b31fd2344dbd51d0019d117b0c37c5c, type: 2}
+  - {fileID: 11400000, guid: 0817ce2889859cafee999c6c5e9f27cf, type: 2}
+  - {fileID: 11400000, guid: 75176efb1345d63452e51e23c7ab4495, type: 2}
+  - {fileID: 11400000, guid: 73e905444d8a95d75759f975c0a864c9, type: 2}
+  - {fileID: 11400000, guid: fbd8501b6ad0848e7f82849b8b2dd60b, type: 2}
+  - {fileID: 11400000, guid: 042430218ae3ad1ceb7643e50dfe596d, type: 2}
+  - {fileID: 11400000, guid: d078ae0f9f719cd7abb42cf07b9e7068, type: 2}
+  - {fileID: 11400000, guid: 43a8b6961644140cefc8549f7c8daff1, type: 2}
+  - {fileID: 11400000, guid: bc8db48ea89933454f54c6db6862226e, type: 2}
+  - {fileID: 11400000, guid: 2ba65da3e13c72905f5ee953a0aa5e06, type: 2}
+  - {fileID: 11400000, guid: 60ab079b6e08d34d7755e13a77a35286, type: 2}
+  - {fileID: 11400000, guid: 6f58c1dedfd58ab09ec751f8655b866b, type: 2}
+  - {fileID: 11400000, guid: d712e68382d91b05d8e7e677364599b1, type: 2}
+  - {fileID: 11400000, guid: 8033cc4ea4d4267d6d3ba97095c04079, type: 2}
+  - {fileID: 11400000, guid: 841ad4193878b9e9521aeaa89aa5ec39, type: 2}
+  - {fileID: 11400000, guid: fa92ff67addd5601608e7958b325ddc1, type: 2}
+  - {fileID: 11400000, guid: d5854cd040e94dce599ce51d78b77277, type: 2}
+  - {fileID: 11400000, guid: b0931c7881bdfadf0eab2c4639d09e4b, type: 2}
+  - {fileID: 11400000, guid: 138f9f17a8069753ac2ba57ba134741b, type: 2}
+  - {fileID: 11400000, guid: 80e7d9a024ff230652afc318af0d0b7e, type: 2}
+  - {fileID: 11400000, guid: 097f27c6bbc86cb34ab393d00ab06117, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Je crois que notre relation n’est plus très amicale non plus.
+    linkedDialogueSequence: {fileID: 11400000, guid: 66f01fdca77f6661baeb18e7df139960, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Je me suis posé la même question.
+    linkedDialogueSequence: {fileID: 11400000, guid: 9ce5448d360e5e2a4c5c33a3bbf2cc61, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu devrais peut-être arrêter avant de dire quelque chose que
+      tu regretteras.**
+    linkedDialogueSequence: {fileID: 11400000, guid: e03bce7fb55d3cec72ecfdf5a8db6bfa, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: 

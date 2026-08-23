@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: ROUTE DARIA et FIN_10
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 53093b189437041658e6e167bd5c02c2, type: 2}
+  - {fileID: 11400000, guid: 1cc03dcd9294fff827523918efbd4aba, type: 2}
+  - {fileID: 11400000, guid: 9c4fd0fc4615032a06492847a739b7cf, type: 2}
+  - {fileID: 11400000, guid: 0e0875c551c9d8c3fdbdaa965cb44127, type: 2}
+  - {fileID: 11400000, guid: 6c5765d2524ffaaec18797a547a0aaf8, type: 2}
+  - {fileID: 11400000, guid: 844802aa56a5e79cb0e095f5ba3d33fb, type: 2}
+  - {fileID: 11400000, guid: 0f07d517ab49a98dfde1f571bf5f4876, type: 2}
+  - {fileID: 11400000, guid: 276387666aafdc369be0535f3e8aa59b, type: 2}
+  - {fileID: 11400000, guid: eb06037e2e2b0918efc4d75135f7827f, type: 2}
+  - {fileID: 11400000, guid: 15fa5c63af0c9dc717659ebb67dcf596, type: 2}
+  - {fileID: 11400000, guid: b6114662030b4565f4f7f301f289da0f, type: 2}
+  - {fileID: 11400000, guid: ef040b62b2328c5ad96ef9cf490ccc25, type: 2}
+  - {fileID: 11400000, guid: 0af09e5568cf645d99b3b764ce9a2f9e, type: 2}
+  - {fileID: 11400000, guid: 369ddeb6db5209438e2fe1f174e7bd71, type: 2}
+  - {fileID: 11400000, guid: cecca1095a55dfabbba649889608d29e, type: 2}
+  - {fileID: 11400000, guid: ae5ed5ca170960b0f3a2b71ac1756846, type: 2}
+  - {fileID: 11400000, guid: 6ce36aff3199f720c6db651c185e4601, type: 2}
+  - {fileID: 11400000, guid: b346ec2bc18048825031a35cfd7823f3, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices:
+  hasEndBranch: 0
+  endBranches:

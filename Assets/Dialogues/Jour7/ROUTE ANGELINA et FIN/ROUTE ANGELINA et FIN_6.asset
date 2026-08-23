@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: ROUTE ANGELINA et FIN_6
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 382c2650ee8fbc7ebac137e5e7a245a1, type: 2}
+  - {fileID: 11400000, guid: 2be354354b059bb5315d7e8666187367, type: 2}
+  - {fileID: 11400000, guid: e4767d240746ce51b7aa9a1c90bd97cc, type: 2}
+  - {fileID: 11400000, guid: 1226f59ddad5627af91b81cba0c95f0a, type: 2}
+  - {fileID: 11400000, guid: 82a391013fee38a2f5ba221a5d8777a2, type: 2}
+  - {fileID: 11400000, guid: dbe6e2c620d921a1f4d910778e7f1bb7, type: 2}
+  - {fileID: 11400000, guid: 14030475ecc93c062e8a82e55e4bbc1c, type: 2}
+  - {fileID: 11400000, guid: e52b0f44817d9dd6c69a45f15667210b, type: 2}
+  - {fileID: 11400000, guid: 5a4f2b4a2724be2acc87b68668300d45, type: 2}
+  - {fileID: 11400000, guid: c7fda4d1dfb1124e3f8f5e8d4b866e9d, type: 2}
+  - {fileID: 11400000, guid: 6c1b6d13b57fcd5c3c58f0f79d595d91, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices:
+  hasEndBranch: 0
+  endBranches:

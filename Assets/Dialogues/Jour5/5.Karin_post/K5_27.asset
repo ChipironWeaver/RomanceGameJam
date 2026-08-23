@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K5_27
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 10cefe8dd2165278f1645489d1c53bf2, type: 2}
+  - {fileID: 11400000, guid: dfc65c8dd7ae1cc00d3f21a35a6a123b, type: 2}
+  - {fileID: 11400000, guid: f32c2e337138c8f178fb81bb746c1104, type: 2}
+  - {fileID: 11400000, guid: 4b75ba11099bc0d720fe8a9b26bf2038, type: 2}
+  - {fileID: 11400000, guid: 687038819e2e30e9fe6dddb5959c6d67, type: 2}
+  - {fileID: 11400000, guid: 5fdca8bb72eaa937c13780ff6efb09df, type: 2}
+  - {fileID: 11400000, guid: a6bd383747499e1c00cf4d383f7de40a, type: 2}
+  - {fileID: 11400000, guid: 8083fffe12f34bac7828552e63e37acf, type: 2}
+  - {fileID: 11400000, guid: 608d3d5656a755a6fd959f700be05c11, type: 2}
+  - {fileID: 11400000, guid: 2b88320192360c38e82526b0f68606b7, type: 2}
+  - {fileID: 11400000, guid: ef3c25b4769c4bf2b5ab69166400f122, type: 2}
+  - {fileID: 11400000, guid: e237897e697c555244af5bb978dd9bdf, type: 2}
+  - {fileID: 11400000, guid: e2410ea4544fd49f02b8efc7d859a1d4, type: 2}
+  - {fileID: 11400000, guid: 25c6aa2438d261faf8fe08df4436b8f5, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Tu es déjà très importante pour moi.
+    linkedDialogueSequence: {fileID: 11400000, guid: b35be383baacaeba9f1c6658f73575b5, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Si quelque chose change, je serai honnête avec toi.
+    linkedDialogueSequence: {fileID: 11400000, guid: 87100833add3b51ea3c6464b981f2162, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Je ne peux pas constamment te rassurer sur les autres filles.
+    linkedDialogueSequence: {fileID: 11400000, guid: 00bd154b3ea445a22877d19437f26073, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:
