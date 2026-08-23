@@ -19,7 +19,7 @@ MonoBehaviour:
   hasEndChoices: 1
   choices:
   - choiceString: Rejoindre Daria.
-    linkedDialogueSequence: {fileID: 0}
+    linkedDialogueSequence: {fileID: 11400000, guid: e02de6550f99bf1fd08a14303ba3f979, type: 2}
     onDialogueChoice:
       m_PersistentCalls:
         m_Calls: []
@@ -30,7 +30,7 @@ MonoBehaviour:
       _conditionNumber: 0
       _conditionPercentage: 0
   - choiceString: Rejoindre Karin.
-    linkedDialogueSequence: {fileID: 0}
+    linkedDialogueSequence: {fileID: 11400000, guid: 7cfccbfb652bf016a90d7044a6e92ff0, type: 2}
     onDialogueChoice:
       m_PersistentCalls:
         m_Calls: []
@@ -41,7 +41,7 @@ MonoBehaviour:
       _conditionNumber: 0
       _conditionPercentage: 0
   - choiceString: Rejoindre Angelina.
-    linkedDialogueSequence: {fileID: 0}
+    linkedDialogueSequence: {fileID: 11400000, guid: 1079390c7ee7beb1abe4016abdc4707b, type: 2}
     onDialogueChoice:
       m_PersistentCalls:
         m_Calls: []
@@ -52,7 +52,7 @@ MonoBehaviour:
       _conditionNumber: 0
       _conditionPercentage: 0
   - choiceString: Rentrer seule.
-    linkedDialogueSequence: {fileID: 0}
+    linkedDialogueSequence: {fileID: 11400000, guid: f32d73277a6c478221e9159342042c70, type: 2}
     onDialogueChoice:
       m_PersistentCalls:
         m_Calls: []

@@ -10,19 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
-  m_Name: D5_2
+  m_Name: D5_5 JEUDI SOLO
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogues:
-  - {fileID: 11400000, guid: e5a8540d652443d92bce8627baa0c9e9, type: 2}
-  - {fileID: 11400000, guid: a17a0b9d2d665f1e581560e5ae5f5eed, type: 2}
-  - {fileID: 11400000, guid: a6636d365ab6be203be0980dc9ad8fda, type: 2}
-  - {fileID: 11400000, guid: 74fe3b103ec217a7d2ff4887c086059a, type: 2}
-  - {fileID: 11400000, guid: 5d936670d80bb31586ec25c739b0de1c, type: 2}
-  - {fileID: 11400000, guid: c2ba16d6455fce5eaabec7a8575db2f6, type: 2}
-  - {fileID: 11400000, guid: 30da69fb4b688a6b6cd700c9efa9b290, type: 2}
-  - {fileID: 11400000, guid: b644d232e7b5338451778b5ea105fa02, type: 2}
-  - {fileID: 11400000, guid: e7ca8d0ed04d2bb807eb89289cb024d3, type: 2}
-  - {fileID: 11400000, guid: 1d7824f03223fb16728635c8075024e3, type: 2}
+  - {fileID: 11400000, guid: e43f94c1a01eb69f74fa1be694a3258e, type: 2}
+  - {fileID: 11400000, guid: 040da11156f4358346c89c76ff7a8de8, type: 2}
+  - {fileID: 11400000, guid: 5897c1d01d00dc43bb484d8174f9b1a1, type: 2}
+  - {fileID: 11400000, guid: 0313235d04905c23be1f82a252027e26, type: 2}
+  - {fileID: 11400000, guid: be61e9b669e5678dc71ef31d24b1352d, type: 2}
+  - {fileID: 11400000, guid: 42a8973398d6168ffeff98bbc1e2efa7, type: 2}
+  - {fileID: 11400000, guid: e271e9d60c69c5b5346e300391e04cff, type: 2}
+  - {fileID: 11400000, guid: d8be2a2bc4a38eda90428597f5fb5cff, type: 2}
   endEvent:
     m_PersistentCalls:
       m_Calls: []
