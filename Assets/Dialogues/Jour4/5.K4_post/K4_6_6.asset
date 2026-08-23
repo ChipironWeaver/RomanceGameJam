@@ -16,7 +16,7 @@ MonoBehaviour:
   speakingCharacter: 4
   npcName: 
   npcIcon: {fileID: 0}
-  triggerAnimation: 1
+  triggerAnimation: 0
   animatedCharacters: 4
   triggerName: Happy
   showCharacter: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
   changeReputation: 1
   reputationCharacters: 4
   isSet: 0
-  reputationAmount: 2.0
+  reputationAmount: 2
   hasCharacterEvent: 0
   charactersEvent: 0
   eventName: 

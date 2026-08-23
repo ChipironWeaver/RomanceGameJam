@@ -16,12 +16,12 @@ MonoBehaviour:
   speakingCharacter: 4
   npcName: 
   npcIcon: {fileID: 0}
-  triggerAnimation: 0
-  animatedCharacters: 0
-  triggerName: 
-  showCharacter: 0
+  triggerAnimation: 1
+  animatedCharacters: 4
+  triggerName: Neutral
+  showCharacter: 1
   hideCharacter: 0
-  shownCharacters: 0
+  shownCharacters: 4
   hiddenCharacters: 0
   changeReputation: 0
   reputationCharacters: 0

@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: A3_12C_3
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Beaucoup plus, même.
+  dialogueText: "Beaucoup plus, m\xEAme."
   speakingCharacter: 3
   npcName: 
   npcIcon: {fileID: 0}
   triggerAnimation: 1
   animatedCharacters: 3
-  triggerName: BadChoice
+  triggerName: Sad
   showCharacter: 0
   hideCharacter: 0
   shownCharacters: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
   changeReputation: 1
   reputationCharacters: 3
   isSet: 0
-  reputationAmount: -2.0
+  reputationAmount: -2
   hasCharacterEvent: 0
   charactersEvent: 0
   eventName: 

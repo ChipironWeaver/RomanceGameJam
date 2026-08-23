@@ -16,7 +16,7 @@ MonoBehaviour:
   speakingCharacter: 1
   npcName: 
   npcIcon: {fileID: 0}
-  triggerAnimation: 1
+  triggerAnimation: 0
   animatedCharacters: 3
   triggerName: Shy
   showCharacter: 0

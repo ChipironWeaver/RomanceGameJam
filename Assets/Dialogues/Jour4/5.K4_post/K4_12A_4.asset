@@ -16,17 +16,17 @@ MonoBehaviour:
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
-  triggerAnimation: 0
-  animatedCharacters: 0
-  triggerName: 
+  triggerAnimation: 1
+  animatedCharacters: 4
+  triggerName: Shy
   showCharacter: 0
   hideCharacter: 0
   shownCharacters: 0
   hiddenCharacters: 0
-  changeReputation: 0
-  reputationCharacters: 0
+  changeReputation: 1
+  reputationCharacters: 4
   isSet: 0
-  reputationAmount: 0
+  reputationAmount: 2
   hasCharacterEvent: 0
   charactersEvent: 0
   eventName: 

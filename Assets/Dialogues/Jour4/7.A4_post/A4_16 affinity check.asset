@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
-  m_Name: A4_16
+  m_Name: A4_16 affinity check
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogues:
   - {fileID: 11400000, guid: d32fb70a58b5a605e396c6ac15608fed, type: 2}
@@ -29,6 +29,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hasEndChoices: 0
-  choices:
+  choices: 
   hasEndBranch: 0
-  endBranches:
+  endBranches: 

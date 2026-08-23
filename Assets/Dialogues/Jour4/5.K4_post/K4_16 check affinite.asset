@@ -10,13 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
-  m_Name: A4_17
+  m_Name: K4_16 check affinite
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogues:
+  - {fileID: 11400000, guid: c86919d781ea2ad128c07960a694310b, type: 2}
+  - {fileID: 11400000, guid: 61ac32cbc1d4d38c3dda20a065efd6c9, type: 2}
+  - {fileID: 11400000, guid: 9fc1a601a95b2043234f2dafc3474ece, type: 2}
+  - {fileID: 11400000, guid: bb40c517a7699e2a0bf6ce4c6fb57a9a, type: 2}
+  - {fileID: 11400000, guid: d5236adee9e64e2d889852aaf68f5c78, type: 2}
+  - {fileID: 11400000, guid: fce4977ae8c1fe5106588bee6a880444, type: 2}
   endEvent:
     m_PersistentCalls:
       m_Calls: []
   hasEndChoices: 0
-  choices:
+  choices: []
   hasEndBranch: 0
-  endBranches:
+  endBranches: []
