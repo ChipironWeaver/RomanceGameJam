@@ -27,9 +27,9 @@ MonoBehaviour:
   reputationCharacters: 3
   isSet: 0
   reputationAmount: 3
-  hasCharacterEvent: 0
-  charactersEvent: 0
-  eventName: 
+  hasCharacterEvent: 1
+  charactersEvent: 3
+  eventName: JEUDI
   dialogueEvent:
     m_PersistentCalls:
       m_Calls: []

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
-  m_Name: D5_4
+  m_Name: D5_4 JEUDI K OU A
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogues:
   - {fileID: 11400000, guid: 9d29deb0762532e539289cf0ba72e51d, type: 2}

@@ -18,7 +18,7 @@ MonoBehaviour:
   npcIcon: {fileID: 0}
   triggerAnimation: 1
   animatedCharacters: 2
-  triggerName: BadChoice
+  triggerName: Sad
   showCharacter: 0
   hideCharacter: 0
   shownCharacters: 0

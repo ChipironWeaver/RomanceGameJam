@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: RENTRER SEULE_1_2
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Tu regardes les trois messages. Puis tu verrouilles ton téléphone.
+  dialogueText: "Tu regardes les trois messages. Puis tu verrouilles ton t\xE9l\xE9phone."
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
@@ -27,9 +27,9 @@ MonoBehaviour:
   reputationCharacters: 0
   isSet: 0
   reputationAmount: 0
-  hasCharacterEvent: 0
-  charactersEvent: 0
-  eventName: 
+  hasCharacterEvent: 1
+  charactersEvent: 1
+  eventName: JEUDI
   dialogueEvent:
     m_PersistentCalls:
       m_Calls: []
