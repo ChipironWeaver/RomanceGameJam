@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: D6_2_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Ton tour pour l’examen final ?
+  dialogueText: "Ton tour pour l\u2019examen final ?"
   speakingCharacter: 1
   npcName: 
   npcIcon: {fileID: 0}
-  triggerAnimation: 0
-  animatedCharacters: 0
-  triggerName: 
+  triggerAnimation: 1
+  animatedCharacters: 2
+  triggerName: Neutral
   showCharacter: 0
   hideCharacter: 0
   shownCharacters: 0

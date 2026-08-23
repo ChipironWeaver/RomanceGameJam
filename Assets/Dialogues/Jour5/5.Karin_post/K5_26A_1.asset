@@ -12,21 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: K5_26A_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Karin serre très légèrement tes doigts.
+  dialogueText: "Karin serre tr\xE8s l\xE9g\xE8rement tes doigts."
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
-  triggerAnimation: 0
-  animatedCharacters: 0
-  triggerName: 
+  triggerAnimation: 1
+  animatedCharacters: 4
+  triggerName: Shy
   showCharacter: 0
   hideCharacter: 0
   shownCharacters: 0
   hiddenCharacters: 0
-  changeReputation: 0
-  reputationCharacters: 0
+  changeReputation: 1
+  reputationCharacters: 4
   isSet: 0
-  reputationAmount: 0
+  reputationAmount: 2
   hasCharacterEvent: 0
   charactersEvent: 0
   eventName: 

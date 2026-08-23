@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: Intro 6_1_19
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Cette phrase te suit alors qu’elle disparaît vers l’arrière du bar.
+  dialogueText: "Cette phrase te suit alors qu\u2019elle dispara\xEEt vers l\u2019arri\xE8re
+    du bar."
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
@@ -20,7 +21,7 @@ MonoBehaviour:
   animatedCharacters: 0
   triggerName: 
   showCharacter: 0
-  hideCharacter: 0
+  hideCharacter: 1
   shownCharacters: 0
   hiddenCharacters: 0
   changeReputation: 0

@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: A6_1_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Aujourd’hui, Angelina est la première à apparaître.
+  dialogueText: "Aujourd\u2019hui, Angelina est la premi\xE8re \xE0 appara\xEEtre."
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
-  triggerAnimation: 0
-  animatedCharacters: 0
-  triggerName: 
-  showCharacter: 0
+  triggerAnimation: 1
+  animatedCharacters: 3
+  triggerName: Neutral
+  showCharacter: 1
   hideCharacter: 0
-  shownCharacters: 0
+  shownCharacters: 3
   hiddenCharacters: 0
   changeReputation: 0
   reputationCharacters: 0

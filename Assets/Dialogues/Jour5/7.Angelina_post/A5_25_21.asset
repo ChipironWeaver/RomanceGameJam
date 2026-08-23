@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: A5_25_21
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Elle disparaît dans la foule.
+  dialogueText: "Elle dispara\xEEt dans la foule."
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
@@ -20,9 +20,9 @@ MonoBehaviour:
   animatedCharacters: 0
   triggerName: 
   showCharacter: 0
-  hideCharacter: 0
+  hideCharacter: 1
   shownCharacters: 0
-  hiddenCharacters: 0
+  hiddenCharacters: 3
   changeReputation: 0
   reputationCharacters: 0
   isSet: 0
