@@ -5156,12 +5156,12 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
+  - name: BS D3 morning
+    setDay: 1
+    setDayIndex: 3
     state: 0
-    bigText: 
-    smallText: 
+    bigText: Mercredi
+    smallText: 8h54
     backgroundImage: {fileID: 0}
     day: 0
     mainCharacters: 0
@@ -5184,12 +5184,40 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: D D3 WakingUp
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: e4a53d145136bac41beb456ac4fef6c4, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS D3 Karin
     setDay: 0
     setDayIndex: 0
     state: 0
-    bigText: 
-    smallText: 
+    bigText: Mercredi
+    smallText: 9h16
     backgroundImage: {fileID: 0}
     day: 0
     mainCharacters: 0
@@ -5212,12 +5240,106 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: D D3 Karin Pre
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: 7215b974c64f255fd5a0c1808612f3ea, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: GP D3 Karin
+    setDay: 0
+    setDayIndex: 0
+    state: 1
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 3
+    mainCharacters: 4
+    isSpecial: 1
+    datableRecipe:
+      name: blue melba
+      day: 0
+      description: 
+      hint: Une boisson avec de la chantilly!
+      liquids: 030000000300000002000000
+      decorations:
+      - hasToBeEmpty: 1
+        validIndexes: 
+      - hasToBeEmpty: 1
+        validIndexes: 
+      - hasToBeEmpty: 1
+        validIndexes: 
+      - hasToBeEmpty: 0
+        validIndexes: 0000000001000000
+      - hasToBeEmpty: 0
+        validIndexes: 04000000
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D D3 Karin Post
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 1
+    goodSequence: {fileID: 11400000, guid: 83d8f912c4332dd9786312a5e078c387, type: 2}
+    averageSequence: {fileID: 11400000, guid: acaeeb1966c513cb5b22b5e3a107b051, type: 2}
+    badSequence: {fileID: 11400000, guid: b1a7e857b933af19879c4b541fb20892, type: 2}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS D3 Daria
     setDay: 0
     setDayIndex: 0
     state: 0
-    bigText: 
-    smallText: 
+    bigText: Mercredi
+    smallText: 12h32
     backgroundImage: {fileID: 0}
     day: 0
     mainCharacters: 0
@@ -5240,12 +5362,100 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: D D3 Daria Pre
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: 3581b0671e8c4006ed2e61de9c54b82d, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: GP D3 Daria
+    setDay: 0
+    setDayIndex: 0
+    state: 1
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 3
+    mainCharacters: 2
+    isSpecial: 1
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: "Daria a bien aim\xE9 la boisson de hier."
+      liquids: 000000000000000002000000
+      decorations:
+      - hasToBeEmpty: 0
+        validIndexes: 0000000001000000
+      - hasToBeEmpty: 0
+        validIndexes: 000000000100000002000000
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D D3 Daria post
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 1
+    goodSequence: {fileID: 11400000, guid: 106a9c6bdb4bc30d0edec4a3cea94b3e, type: 2}
+    averageSequence: {fileID: 11400000, guid: 5db4a4e8ed75c9d9e127f3860ca163fe, type: 2}
+    badSequence: {fileID: 11400000, guid: 64f93709ef009a6f5dc681a637877a59, type: 2}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS D3 Normal
     setDay: 0
     setDayIndex: 0
     state: 0
-    bigText: 
-    smallText: 
+    bigText: Mercredi
+    smallText: 15h49
     backgroundImage: {fileID: 0}
     day: 0
     mainCharacters: 0
@@ -5268,12 +5478,40 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: GP D3 Normal
+    setDay: 0
+    setDayIndex: 0
+    state: 1
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 3
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS D3 Angelina
     setDay: 0
     setDayIndex: 0
     state: 0
-    bigText: 
-    smallText: 
+    bigText: Mercredi
+    smallText: 18h37
     backgroundImage: {fileID: 0}
     day: 0
     mainCharacters: 0
@@ -5296,10 +5534,10 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: D D3 Angelina Pre
     setDay: 0
     setDayIndex: 0
-    state: 0
+    state: 2
     bigText: 
     smallText: 
     backgroundImage: {fileID: 0}
@@ -5313,6 +5551,45 @@ MonoBehaviour:
       hint: 
       liquids: 
       decorations: []
+    sequence: {fileID: 11400000, guid: 0576b58b954e19365475da6987286374, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: GP D3 Angelina
+    setDay: 0
+    setDayIndex: 0
+    state: 1
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 3
+    mainCharacters: 3
+    isSpecial: 1
+    datableRecipe:
+      name: cherry fizz
+      day: 0
+      description: 
+      hint: "Angelina a bien aim\xE9 la boisson de hier, peut-\xEAtres avec de la
+        glace."
+      liquids: 000000000000000004000000
+      decorations:
+      - hasToBeEmpty: 0
+        validIndexes: 
+      - hasToBeEmpty: 0
+        validIndexes: 000000000100000002000000
+      - hasToBeEmpty: 0
+        validIndexes: 
+      - hasToBeEmpty: 0
+        validIndexes: 02000000
+      - hasToBeEmpty: 0
+        validIndexes: 000000000100000002000000
     sequence: {fileID: 0}
     changeBasedOnLastResult: 0
     goodSequence: {fileID: 0}
@@ -5324,10 +5601,10 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: D D3 Angelina Post
     setDay: 0
     setDayIndex: 0
-    state: 0
+    state: 2
     bigText: 
     smallText: 
     backgroundImage: {fileID: 0}
@@ -5342,262 +5619,10 @@ MonoBehaviour:
       liquids: 
       decorations: []
     sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
+    changeBasedOnLastResult: 1
+    goodSequence: {fileID: 11400000, guid: d41b15798e05d215307f61bb4ef8b537, type: 2}
+    averageSequence: {fileID: 11400000, guid: 49e46343c624b95588c8e485f981c09e, type: 2}
+    badSequence: {fileID: 11400000, guid: 45d671deb0cafd28748cf199ccd6c224, type: 2}
     moveMainCharacters: 0
     activation: 0
     instantMove: 0
