@@ -3444,8 +3444,8 @@ MonoBehaviour:
         m_Calls: []
   - name: BS Monday Morning Work
     state: 0
-    bigText: Quelques minutes plus tard
-    smallText: 
+    bigText: 
+    smallText: Quelques minutes plus tard
     day: 0
     mainCharacters: 0
     isSpecial: 0
@@ -3873,7 +3873,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   _autostart: 1
-  _autoIndex: 5
+  _autoIndex: 6
   _blackScreen: {fileID: 312514440}
   _dialogueController: {fileID: 8713159423576416512}
   _barTendingController: {fileID: 5367359521910052953}

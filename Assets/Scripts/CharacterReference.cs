@@ -33,7 +33,7 @@ public class CharacterReference : MonoBehaviour
     }
     public void SetActivation(MainCharacters characters,bool active,bool instant = false)
     {
-        print("trying to move : " + GetGameObject(characters).name + active);
+        //print("trying to move : " + GetGameObject(characters).name + active);
         GameObject character = null;
         if (characters == MainCharacters.None)
         {
@@ -77,16 +77,19 @@ public class CharacterReference : MonoBehaviour
             if(!active) character.SetActive(false);
             Actions.CharacterMoved?.Invoke();
         }
-        else character.transform.DOMove(active ? _activePosition : _notActivePosition, 0.5f).SetEase(_easeType).OnComplete(()=>
+        else
         {
-            print(character.name + " has been moved");
-            Actions.CharacterMoved?.Invoke();
-            if(!active)
-            {
-                character.SetActive(false);
-                if (characters == MainCharacters.None) _currentNpcObject = null;
-            }
-        });
+            
+            character.transform.DOMove(active ? _activePosition : _notActivePosition, 0.5f).SetEase(_easeType).OnComplete(() =>
+                {
+                    Actions.CharacterMoved?.Invoke();
+                    if (!active)
+                    {
+                        character.SetActive(false);
+                    }
+                });
+            if (characters == MainCharacters.None && !active) _currentNpcObject = null;
+        }
         
     }
     
