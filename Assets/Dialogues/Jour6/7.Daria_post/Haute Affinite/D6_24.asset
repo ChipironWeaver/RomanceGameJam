@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: D6_24
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: ad49a52b0f9a2ce0e532d2e0d12a5a8f, type: 2}
+  - {fileID: 11400000, guid: 5e16a80b44cfd92c63bbd0de456d1d5b, type: 2}
+  - {fileID: 11400000, guid: 70f9843f9ec8f85f93a353bbd50cbc02, type: 2}
+  - {fileID: 11400000, guid: d71ca3893402427d7a95aa3873ea620d, type: 2}
+  - {fileID: 11400000, guid: 741afdc2c446251583273ed654c27914, type: 2}
+  - {fileID: 11400000, guid: 44dbe20854eca9104a4bd3fadb07f5a1, type: 2}
+  - {fileID: 11400000, guid: 01798c18395bf676357cffbfd1266496, type: 2}
+  - {fileID: 11400000, guid: 17fdcf428cf29d0911e6d2ca912b236c, type: 2}
+  - {fileID: 11400000, guid: 83a0a15d7a155db05bf7d1a2191e9ae4, type: 2}
+  - {fileID: 11400000, guid: bd4af0383e6c2609262c48b8965425c4, type: 2}
+  - {fileID: 11400000, guid: dedffe24d8d5f359623e85efed8b67d5, type: 2}
+  - {fileID: 11400000, guid: c097f1a2920441d36e6f1b068a9d9537, type: 2}
+  - {fileID: 11400000, guid: c2a82f53292af4240c0abded23bd13d4, type: 2}
+  - {fileID: 11400000, guid: f36ff655f3bdb6f7c6b0ea71d100e997, type: 2}
+  - {fileID: 11400000, guid: a646ecdf94791e44d4c8e4db0480d1ed, type: 2}
+  - {fileID: 11400000, guid: 027a8e15cd6a08636f45de2252a9ce85, type: 2}
+  - {fileID: 11400000, guid: 9768debc55247f827ac6a4ed8da34dcd, type: 2}
+  - {fileID: 11400000, guid: 93c25fc769d8a0127b303e7ff0f02d14, type: 2}
+  - {fileID: 11400000, guid: 5d1ba9717d1fd0ccb8c1584e5734d14e, type: 2}
+  - {fileID: 11400000, guid: d61a49637b09238f54e4b7f7d80fc805, type: 2}
+  - {fileID: 11400000, guid: 6562e91c0e2439d491233c11d13a0b28, type: 2}
+  - {fileID: 11400000, guid: fa9210320cbd6265ecfb3bd0c65273c7, type: 2}
+  - {fileID: 11400000, guid: 3256153853d218dc3b68d0e250441625, type: 2}
+  - {fileID: 11400000, guid: 507b3bd436039f6e5ee5aa4d09294aa1, type: 2}
+  - {fileID: 11400000, guid: b7f2767c45c321c1b67fe6ceeea0793d, type: 2}
+  - {fileID: 11400000, guid: 1f0af135a764ee972eaa11bd991dd92f, type: 2}
+  - {fileID: 11400000, guid: 1309c8916a559f0c1c450b447751005b, type: 2}
+  - {fileID: 11400000, guid: ef643096507d061c09423bb5f123322c, type: 2}
+  - {fileID: 11400000, guid: fab98a852cc8ecca19c2b237a2888efe, type: 2}
+  - {fileID: 11400000, guid: de1b2a16225e3682d5b096ba5ba2e730, type: 2}
+  - {fileID: 11400000, guid: 4e6c57582b7e29d98d149575728c88d4, type: 2}
+  - {fileID: 11400000, guid: f13e467194d5c911d39dcb74ce202366, type: 2}
+  - {fileID: 11400000, guid: 8dd79f3ceb51ff71db4178ca4f56555b, type: 2}
+  - {fileID: 11400000, guid: f9350330eeb6825d16e787f98888ba82, type: 2}
+  - {fileID: 11400000, guid: db2ce924a96b746c91b28cf6035768fa, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: a5f780391ee3dbd4699b58ea3be1b9f0, type: 2}
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: ad1d2e23f80f5c55f002f5d5e125bee7, type: 2}

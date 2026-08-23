@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: A5_17
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 357b1f7a9ce88f6e594ad9c289c7f7c3, type: 2}
+  - {fileID: 11400000, guid: 31eb86245273da7c3e9cb0fc388f5a42, type: 2}
+  - {fileID: 11400000, guid: fb739f1ac0cc5650075c216a8acdc625, type: 2}
+  - {fileID: 11400000, guid: c174c442564f293c9d9bf2682e5102b4, type: 2}
+  - {fileID: 11400000, guid: 026a9e6c3c735d4982f688e417efbc55, type: 2}
+  - {fileID: 11400000, guid: 53541810597b6b5fd968cfea1bb64530, type: 2}
+  - {fileID: 11400000, guid: 7879ceb0ed0da279aa7997ebcbe7c7cd, type: 2}
+  - {fileID: 11400000, guid: 697a6a7df49f0f245e0dce905a018130, type: 2}
+  - {fileID: 11400000, guid: cf65ab0f0a1ca5dc5d10e6c403ed82f3, type: 2}
+  - {fileID: 11400000, guid: 35397ae11c6596db3b88222051948a2a, type: 2}
+  - {fileID: 11400000, guid: baa22891bc39e20a51cc1affc7ae4b5c, type: 2}
+  - {fileID: 11400000, guid: 615be9efe124ac14714865ac18b80e19, type: 2}
+  - {fileID: 11400000, guid: ecf316c22bc0db1b27567f9b705398cf, type: 2}
+  - {fileID: 11400000, guid: dd1f847bf746e0165c5bbd13543ba788, type: 2}
+  - {fileID: 11400000, guid: 1651b443f5cdbfa69b6eb801256d8de3, type: 2}
+  - {fileID: 11400000, guid: d0512066da5d2d33bf6273339bfb6af8, type: 2}
+  - {fileID: 11400000, guid: beeec399f6748d8e111154859e24f673, type: 2}
+  - {fileID: 11400000, guid: aa952ddfb762e4b66301713cd22f1cb3, type: 2}
+  - {fileID: 11400000, guid: e9b46d1b01ce37dfc7b00da7a98c5fbe, type: 2}
+  - {fileID: 11400000, guid: efe06669212b793d45273d73a2973372, type: 2}
+  - {fileID: 11400000, guid: a3524a1e8991efd64395a24e841aec0c, type: 2}
+  - {fileID: 11400000, guid: 46eba4230a94f967636c7ff7ac8becab, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Peut-être que oui.
+    linkedDialogueSequence: {fileID: 11400000, guid: 61a89cd2f75c53d5435ebc0bf59a1db6, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: J’étais seulement curieuse.
+    linkedDialogueSequence: {fileID: 11400000, guid: fea8b79f0ae0c5d3e959e8ed39a61c56, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Non. Tu peux dire ce que tu veux à tes amis.
+    linkedDialogueSequence: {fileID: 11400000, guid: 4c954d23139172932bcb830a05884889, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

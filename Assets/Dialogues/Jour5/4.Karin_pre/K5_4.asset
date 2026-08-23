@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K5_4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 9da5352c95b1930a7f5f96f099b50ee6, type: 2}
+  - {fileID: 11400000, guid: ea57dec5b84afc1dffda70a2905b82fd, type: 2}
+  - {fileID: 11400000, guid: b4065527953a6e34476e2ed87147b04e, type: 2}
+  - {fileID: 11400000, guid: 1b5acb81aaf18e7593d23271e282ab86, type: 2}
+  - {fileID: 11400000, guid: 0fb5220740e2d59f4200c90c8653ad61, type: 2}
+  - {fileID: 11400000, guid: e8508b65f3f35589dcd96904e56440fa, type: 2}
+  - {fileID: 11400000, guid: 1f750510940bf61a58ae76e42e0f098e, type: 2}
+  - {fileID: 11400000, guid: b937dd02c21bd052b6a4e3845ff49c80, type: 2}
+  - {fileID: 11400000, guid: 3b17246cffbd56e9906f38f532e8d0a5, type: 2}
+  - {fileID: 11400000, guid: d46650d9316420c3ebe4419dea0771af, type: 2}
+  - {fileID: 11400000, guid: e809ac57fffbcb4a2c2706f98e5698b9, type: 2}
+  - {fileID: 11400000, guid: 8d6a187ec6dca872f02475fcdc295bf6, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Si tu veux, on pourra faire quelque chose toutes les deux une autre
+      fois.
+    linkedDialogueSequence: {fileID: 11400000, guid: 1b71a0e446a6c5f1dac1fdb9a9f1511c, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "D\xE9sol\xE9e si tu as \xE9t\xE9 d\xE9\xE7ue hier."
+    linkedDialogueSequence: {fileID: 11400000, guid: f93b6590ebf3271854732205b51612e3, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Je n\u2019allais pas changer mes plans juste pour voir un morceau
+      de verre."
+    linkedDialogueSequence: {fileID: 11400000, guid: 0589455cfefc07107cc74fb6d1836477, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

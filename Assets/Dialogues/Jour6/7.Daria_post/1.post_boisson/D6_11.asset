@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: D6_11
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 9a26e97381e8940588532a9fd389f043, type: 2}
+  - {fileID: 11400000, guid: c78bd2b7f4f3faff17b68bebaf17c9e3, type: 2}
+  - {fileID: 11400000, guid: 620ed5476abb814bea7fa644fae8624e, type: 2}
+  - {fileID: 11400000, guid: 01cb02e87f54aff17594b2bdc07644c5, type: 2}
+  - {fileID: 11400000, guid: 70a21112e75c904ba992638267127f28, type: 2}
+  - {fileID: 11400000, guid: a7ded4d27bfaf87224fc2e05dac02d96, type: 2}
+  - {fileID: 11400000, guid: d31f97c12ff21748307ce364e4491fcb, type: 2}
+  - {fileID: 11400000, guid: 91702353214d02abee2c78c2b3bbb0c8, type: 2}
+  - {fileID: 11400000, guid: 9e9db1ff5bb49dd3470e7c0a7f03dda2, type: 2}
+  - {fileID: 11400000, guid: 8c422764959dae13b2bfeeb2b351c4c5, type: 2}
+  - {fileID: 11400000, guid: 8a34e6447ac39ffb3d7520298fe606d9, type: 2}
+  - {fileID: 11400000, guid: 7de8a023918cc5a80e8aade80aae6114, type: 2}
+  - {fileID: 11400000, guid: 306438b5b05094b43bd5e607dfe51995, type: 2}
+  - {fileID: 11400000, guid: 034f205c3ac8918428f59249ff57c330, type: 2}
+  - {fileID: 11400000, guid: 762bab74183379a3d2228b8da1c9cf3b, type: 2}
+  - {fileID: 11400000, guid: 3cd11b63c619b70c9e3158094f9223c9, type: 2}
+  - {fileID: 11400000, guid: ec66db841f2975d03e723d7f3c24c973, type: 2}
+  - {fileID: 11400000, guid: bff99b97e27fcf1f176298a230b5315a, type: 2}
+  - {fileID: 11400000, guid: f1fbc0c6b6510303d7b0d2272471c585, type: 2}
+  - {fileID: 11400000, guid: f4cc8a76322fdd74b9c6d0be476653a5, type: 2}
+  - {fileID: 11400000, guid: 67324a04e7a00b3babbaf61ce97f4927, type: 2}
+  - {fileID: 11400000, guid: 739b4be82f9714446241b97e569a4d32, type: 2}
+  - {fileID: 11400000, guid: 1b7feb740897b31e0863000e8a3ff2b1, type: 2}
+  - {fileID: 11400000, guid: be0dc9b3d0eb88a26ae2bcde2de2375a, type: 2}
+  - {fileID: 11400000, guid: e500f4a96580334a26b392444220ce5f, type: 2}
+  - {fileID: 11400000, guid: 04f04303c6beb34d73da601d5885cd92, type: 2}
+  - {fileID: 11400000, guid: 5cb0c186d38d4be9058427e25b99b43b, type: 2}
+  - {fileID: 11400000, guid: e3ad423797b5c286931d02265465a5db, type: 2}
+  - {fileID: 11400000, guid: 2765d6a58b133b31355e5797cb63724d, type: 2}
+  - {fileID: 11400000, guid: 8602459e1c50b8c610405ce689574fa5, type: 2}
+  - {fileID: 11400000, guid: fe77a53777fe4f06d22f1d689815b7b4, type: 2}
+  - {fileID: 11400000, guid: c16862c5bea0a4a1a2363099a89e7dd3, type: 2}
+  - {fileID: 11400000, guid: 163364e604d0b2064b4c2159efd53b16, type: 2}
+  - {fileID: 11400000, guid: 412afc0a36a86330fede9f42b8587078, type: 2}
+  - {fileID: 11400000, guid: 543183a73d5a7ab9ce14613e99419528, type: 2}
+  - {fileID: 11400000, guid: 2e113c3f64f723ce87244c1573aa78af, type: 2}
+  - {fileID: 11400000, guid: 30b88230b1e454e8462ad9246e062a3a, type: 2}
+  - {fileID: 11400000, guid: a9bcbe4b73f484bc6b8d091423cfe29f, type: 2}
+  - {fileID: 11400000, guid: 02c5c3d1f787def7a308c39fd7929082, type: 2}
+  - {fileID: 11400000, guid: db43c72460a9d4efc7a6573c5a320633, type: 2}
+  - {fileID: 11400000, guid: 54b71ad4cdfc28ae361de39a85c3f4d5, type: 2}
+  - {fileID: 11400000, guid: ba7c3be8a2f2ddff17e8e26649a1a192, type: 2}
+  - {fileID: 11400000, guid: f5916b6ea875ebcf0634fc2afc0fae58, type: 2}
+  - {fileID: 11400000, guid: a820f43a0dacf60634653cbb81f2b7e5, type: 2}
+  - {fileID: 11400000, guid: cfd921a65157bacd5ebd7be3076db317, type: 2}
+  - {fileID: 11400000, guid: 08020fdeff4466dae8ff2c5f96c36ed3, type: 2}
+  - {fileID: 11400000, guid: 8cb47eecbe41bea98adcc6827d0182e1, type: 2}
+  - {fileID: 11400000, guid: 55b654f20390a232abbb6879d6152849, type: 2}
+  - {fileID: 11400000, guid: 4b7a5a954d13cd3b0c7f3a784e7eb77d, type: 2}
+  - {fileID: 11400000, guid: 9a72f9fe844cbd1c1076c379b9619a0f, type: 2}
+  - {fileID: 11400000, guid: c1c54f0ad0a198ee9d67f0195d75c3b9, type: 2}
+  - {fileID: 11400000, guid: c6f42b06e509e9b221cec8319924784f, type: 2}
+  - {fileID: 11400000, guid: 0efd1ba0bf91edf45d8c32cf08f8dcdf, type: 2}
+  - {fileID: 11400000, guid: c89bba53af7164f59f64a7be64e8f843, type: 2}
+  - {fileID: 11400000, guid: 14172521463e6149db2fbce9539eeed1, type: 2}
+  - {fileID: 11400000, guid: f943fb344c6738e8ba9f861f0d75a012, type: 2}
+  - {fileID: 11400000, guid: c7069f5af18119e5b784522dd284b9db, type: 2}
+  - {fileID: 11400000, guid: 41cfbfc4098f192814406f001b4482d6, type: 2}
+  - {fileID: 11400000, guid: ff14d68f545bfc502064096eae39404e, type: 2}
+  - {fileID: 11400000, guid: b405316bc2772d2853c5579928c73bf3, type: 2}
+  - {fileID: 11400000, guid: 06498634f91ef74f7a33fae1a11abe17, type: 2}
+  - {fileID: 11400000, guid: d193f7919cc4a2c021f5d0d3008b270e, type: 2}
+  - {fileID: 11400000, guid: 62359258868b5fcfe250e00b8657cc1e, type: 2}
+  - {fileID: 11400000, guid: f65d8a9503f6557db643ab04387ef4ea, type: 2}
+  - {fileID: 11400000, guid: c82a2b6feafb2c59735897afd39a67ef, type: 2}
+  - {fileID: 11400000, guid: 650406aa77c1a686f41a675d50b8bf10, type: 2}
+  - {fileID: 11400000, guid: 3ae73db6c96d74e11ee92ecf74500216, type: 2}
+  - {fileID: 11400000, guid: cf1ce618183c0944874b0b4f8b5c242f, type: 2}
+  - {fileID: 11400000, guid: 472abe18b8319a0e86fe3cf8be75d817, type: 2}
+  - {fileID: 11400000, guid: 2cba0d218e4dca25af417c0b4ede4d94, type: 2}
+  - {fileID: 11400000, guid: 93a89973418454d80784b029d615720c, type: 2}
+  - {fileID: 11400000, guid: 95a107fb307625bc5b34e578a333f760, type: 2}
+  - {fileID: 11400000, guid: d85df4eee3ccfb2e0d9c1483be77ebe3, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: J’aurais aimé comprendre ce que tu ressentais.
+    linkedDialogueSequence: {fileID: 11400000, guid: 89a0116b8b55c09cfd906f4ab7bb6d6c, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: On était toutes les deux enfants. Je crois qu’on ne savait simplement pas quoi faire.
+    linkedDialogueSequence: {fileID: 11400000, guid: 2312e741a820da3842f0154bbee1631d, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: C’était quand même injuste de m’en vouloir pour avoir eu d’autres amies.**
+    linkedDialogueSequence: {fileID: 11400000, guid: 67dccef431f9592d0e7fde2ea805bfb8, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

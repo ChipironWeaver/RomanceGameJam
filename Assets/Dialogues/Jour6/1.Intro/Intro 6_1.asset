@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: Intro 6_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: a2b1e7abf44eabc2ee5965aae45a5c0e, type: 2}
+  - {fileID: 11400000, guid: 86ad80f479b6c5820f89f45eb555cfe3, type: 2}
+  - {fileID: 11400000, guid: 1e9691e00027a0fe5db3820e3a6205ce, type: 2}
+  - {fileID: 11400000, guid: e51566918fd24c9dc8571433c7278198, type: 2}
+  - {fileID: 11400000, guid: c7af007600ef0f34119cb1e033c3a555, type: 2}
+  - {fileID: 11400000, guid: d5b301891f2fc58fff465bfc271845d6, type: 2}
+  - {fileID: 11400000, guid: db3382524a471d79a4db7f4b502f4da6, type: 2}
+  - {fileID: 11400000, guid: 02199d592f65e3e48b5e46c42db884df, type: 2}
+  - {fileID: 11400000, guid: 05f1760bea487f4df3b23d82991efeec, type: 2}
+  - {fileID: 11400000, guid: 0ab6137f72fa0563800c8bf4ac0e2221, type: 2}
+  - {fileID: 11400000, guid: 8528d3473db0e63ffc906efcf4eef409, type: 2}
+  - {fileID: 11400000, guid: 1bef5d090a6e474138b05d349558f3de, type: 2}
+  - {fileID: 11400000, guid: 427b28eaf41d8896244065eff718c192, type: 2}
+  - {fileID: 11400000, guid: 10b783da65fd929b88be206093690ffd, type: 2}
+  - {fileID: 11400000, guid: 78f48c1ba946ae6b6828517907f01256, type: 2}
+  - {fileID: 11400000, guid: f340cf68a68b0499b79e552fffd628f6, type: 2}
+  - {fileID: 11400000, guid: ff041a8ff8e470247630318e1d217775, type: 2}
+  - {fileID: 11400000, guid: 66c4adfec57953d81704750aaf5de81e, type: 2}
+  - {fileID: 11400000, guid: b86b80a93a4dc6f7d04a27fc84e5e39d, type: 2}
+  - {fileID: 11400000, guid: 6150eaed7ae5b9db32067dd2372368fa, type: 2}
+  - {fileID: 11400000, guid: a5b1761048c767c4bde91f615a3877fe, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices:
+  hasEndBranch: 0
+  endBranches:

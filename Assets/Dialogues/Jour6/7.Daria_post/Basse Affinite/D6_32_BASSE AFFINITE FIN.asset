@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: D6_32_BASSE AFFINITE FIN
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: cda5e0438e8a2d7339cb473bf6b8a7a2, type: 2}
+  - {fileID: 11400000, guid: 6770d8233569380111a141b78a75fe0a, type: 2}
+  - {fileID: 11400000, guid: 61e355ad49ff15e4b72a0404212e896f, type: 2}
+  - {fileID: 11400000, guid: 77ddba231a4be14098a55de3748d4069, type: 2}
+  - {fileID: 11400000, guid: 7e8e91f5ad4add1910e4b07fdbd5d130, type: 2}
+  - {fileID: 11400000, guid: 0fdcb82024f480029673d6e647c45482, type: 2}
+  - {fileID: 11400000, guid: 86272c8c29854138ed7d78cd83b174dd, type: 2}
+  - {fileID: 11400000, guid: 5668125ead91fb0f79bc9f09500ae333, type: 2}
+  - {fileID: 11400000, guid: 3fd665425f57ef9b5c1e06ab6a872b35, type: 2}
+  - {fileID: 11400000, guid: e6ed5bf49d42ad8f3db01f912f3fe6d5, type: 2}
+  - {fileID: 11400000, guid: 2f0591e75e977c83f322c065c3462c30, type: 2}
+  - {fileID: 11400000, guid: b203a2aa690a2f5225796956487401e1, type: 2}
+  - {fileID: 11400000, guid: f2a8e05f66051814929a7f3dddad4d1e, type: 2}
+  - {fileID: 11400000, guid: 0da24214657bd549dde833be111a0ea9, type: 2}
+  - {fileID: 11400000, guid: 4aef7cd1d167f389191f513253cbd6f2, type: 2}
+  - {fileID: 11400000, guid: 2fa5ae1866b1f8849675e1f341d628ca, type: 2}
+  - {fileID: 11400000, guid: b3e8d883ff5649d7e0993fe02cc40c92, type: 2}
+  - {fileID: 11400000, guid: 3dc19fbb07c3e1ad1c0af3ea41043281, type: 2}
+  - {fileID: 11400000, guid: 4677441f5036d8577a1a96ad91df518c, type: 2}
+  - {fileID: 11400000, guid: 06f2911f99abdca6e47d29f93bdfb65d, type: 2}
+  - {fileID: 11400000, guid: da5529c291004f4932b92736096ae313, type: 2}
+  - {fileID: 11400000, guid: fbd1a531fce6fd18534db4d509d8bb9a, type: 2}
+  - {fileID: 11400000, guid: 255980328569425cc36fd3d9433dee7b, type: 2}
+  - {fileID: 11400000, guid: 709a95f472f69a02891b72730482f76d, type: 2}
+  - {fileID: 11400000, guid: b4f91cdec5fa81500b2ab9500ba089c1, type: 2}
+  - {fileID: 11400000, guid: 755b432c7a2e16d254f528b2ab5560de, type: 2}
+  - {fileID: 11400000, guid: 40441e9b4c09e9086f670ff22677545b, type: 2}
+  - {fileID: 11400000, guid: 6661d89466c1c9e7ae64d9e13a8c6ecd, type: 2}
+  - {fileID: 11400000, guid: 6881aa89bd22d03a657633a498929b2f, type: 2}
+  - {fileID: 11400000, guid: 1a1c6742c98f3984268a6d554d7efcf0, type: 2}
+  - {fileID: 11400000, guid: 24bbf03027cbf9edbcaab0d0c50aa06a, type: 2}
+  - {fileID: 11400000, guid: aca282f069311e9b6ec1702003f3f045, type: 2}
+  - {fileID: 11400000, guid: 344900c9066abc60c2e47526a948b5c7, type: 2}
+  - {fileID: 11400000, guid: f1b377466dd583a675a5c6732c7355fa, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: "J\u2019aimerais quand m\xEAme qu\u2019on reste proches."
+    linkedDialogueSequence: {fileID: 11400000, guid: 072b213dd32f68dca39e1706bf06b745, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "J\u2019aimerais qu\u2019on se laisse simplement voir ce qui se
+      passe."
+    linkedDialogueSequence: {fileID: 11400000, guid: 072b213dd32f68dca39e1706bf06b745, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Peut-\xEAtre qu\u2019il vaut mieux laisser le pass\xE9 derri\xE8re
+      nous.**"
+    linkedDialogueSequence: {fileID: 11400000, guid: 072b213dd32f68dca39e1706bf06b745, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

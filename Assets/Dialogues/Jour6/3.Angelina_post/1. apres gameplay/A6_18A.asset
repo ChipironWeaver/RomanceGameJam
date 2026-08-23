@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: A6_18A
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 069ef0c1a06c5567ea7ad24c7cc0c2b9, type: 2}
+  - {fileID: 11400000, guid: 20b0d09d427cb7b63490f4bc2352abb8, type: 2}
+  - {fileID: 11400000, guid: aa1e5e3aa7b76aabd71a9025b1c146ce, type: 2}
+  - {fileID: 11400000, guid: 2e0749cdf5774310c9a1ad95c44a7559, type: 2}
+  - {fileID: 11400000, guid: 8bd33a942c0f42b20eb1e2d613bdab7e, type: 2}
+  - {fileID: 11400000, guid: dbcd3b4f654d87c5385ba479551813f3, type: 2}
+  - {fileID: 11400000, guid: da2cdf92e36df8df993358ec1fec991d, type: 2}
+  - {fileID: 11400000, guid: a2a4ac744ea01dd213c77c256e361d21, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: f239c8f16bee1e57d5fe0e8a4f3ad72a, type: 2}

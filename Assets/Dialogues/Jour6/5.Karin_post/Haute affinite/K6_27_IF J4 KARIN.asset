@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K6_27_IF J4 KARIN
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: bf5a6e9a13d4cecf6e094a56f9cfcfff, type: 2}
+  - {fileID: 11400000, guid: b25a028cf8ba96ae1a2414ba5040792d, type: 2}
+  - {fileID: 11400000, guid: 9b81e9962651d443992430c97b7689b9, type: 2}
+  - {fileID: 11400000, guid: 005d6ad497b10f4bc5b66aef7d84e85f, type: 2}
+  - {fileID: 11400000, guid: 4d22e771b373d6da1397c200ce157899, type: 2}
+  - {fileID: 11400000, guid: 49ed0850ec741f4aa7d97927278c476d, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices:
+  - choiceString: "J\u2019esp\xE8re que ma r\xE9ponse sera oui."
+    linkedDialogueSequence: {fileID: 0}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Je te r\xE9pondrai ce soir."
+    linkedDialogueSequence: {fileID: 0}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Je pr\xE9f\xE9rerais qu\u2019on garde notre relation comme elle
+      est."
+    linkedDialogueSequence: {fileID: 0}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 1
+  endBranches: []

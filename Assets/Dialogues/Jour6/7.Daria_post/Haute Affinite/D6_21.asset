@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: D6_21
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: b957acc1a581fb251b2482029342301b, type: 2}
+  - {fileID: 11400000, guid: 4ab82021bc81c49cff20a98d9036e918, type: 2}
+  - {fileID: 11400000, guid: 926133226ca89ccf88ae81273edb0d9c, type: 2}
+  - {fileID: 11400000, guid: 7f5eb032710cf1cf5ae35db3911166c0, type: 2}
+  - {fileID: 11400000, guid: f092af5f8afd70eb475064cae2346235, type: 2}
+  - {fileID: 11400000, guid: 49cbdf8f5702ce48be86522423130ed9, type: 2}
+  - {fileID: 11400000, guid: 4f5c72a5716ad4efca6a95f28dbff853, type: 2}
+  - {fileID: 11400000, guid: 54fb324337fbd4f3165da34415d24617, type: 2}
+  - {fileID: 11400000, guid: 6469ab5ce6cba134a0aacbe87baf4836, type: 2}
+  - {fileID: 11400000, guid: ea150d4165f5b0e2ff2cc09ba72d9be5, type: 2}
+  - {fileID: 11400000, guid: 24afb122f2ee4477668a432e8f5b4934, type: 2}
+  - {fileID: 11400000, guid: 33ecef15de50aed901a5ad45e39bb6ee, type: 2}
+  - {fileID: 11400000, guid: 0443c5f41eb1ec439bef2d7fe011e84c, type: 2}
+  - {fileID: 11400000, guid: 247e852f4cf3140649527de3eba53d2a, type: 2}
+  - {fileID: 11400000, guid: 5aea3da78babe1c7ab95e9181c051f68, type: 2}
+  - {fileID: 11400000, guid: 15c9a6ce37bf20bc84f0ceb3696823b0, type: 2}
+  - {fileID: 11400000, guid: c9dea465dfb0ebf988f16e31987e6bb0, type: 2}
+  - {fileID: 11400000, guid: 1b1226a55a1f3a0b0068f12b61df5e31, type: 2}
+  - {fileID: 11400000, guid: 59fe2efaafd3b409004e01c7dbd612d3, type: 2}
+  - {fileID: 11400000, guid: 3ca3d62089c0e5e38834fbd5042953b1, type: 2}
+  - {fileID: 11400000, guid: 7dc17d0d169551e3a3dc1a56a0c41cc1, type: 2}
+  - {fileID: 11400000, guid: a8b9bb8d3ffee4e990975813a0290690, type: 2}
+  - {fileID: 11400000, guid: 75445eef93d8fd06564f7c4db8825ff1, type: 2}
+  - {fileID: 11400000, guid: 09b1eb82adc66c051a181dd8dab2f358, type: 2}
+  - {fileID: 11400000, guid: 64c7378d8869ccff0b641efddaf9ea7f, type: 2}
+  - {fileID: 11400000, guid: f68ec1ba06b31f2d4f76bcb2f1b02cdf, type: 2}
+  - {fileID: 11400000, guid: 04204ab764962da15dd7502c935eb2bd, type: 2}
+  - {fileID: 11400000, guid: 7a4046870cf9fe1b2a28db302c4693da, type: 2}
+  - {fileID: 11400000, guid: 5c3c89f08730971f58a9d4ecb198c927, type: 2}
+  - {fileID: 11400000, guid: 1cd1f174985eecc59bd7ef93f8fc22e5, type: 2}
+  - {fileID: 11400000, guid: 8677f9dced006604ce859a44b4ed8e9a, type: 2}
+  - {fileID: 11400000, guid: dc2a3270ce41aa8b9b307954ac22fb4f, type: 2}
+  - {fileID: 11400000, guid: f63736affedf0734f7bb6d6ca866ee9d, type: 2}
+  - {fileID: 11400000, guid: 66b7dd28001d59a9a92ea9bf642ddcc0, type: 2}
+  - {fileID: 11400000, guid: 844212198f509ff436e35e15f96166d7, type: 2}
+  - {fileID: 11400000, guid: 1ee9494390643725a3ebff8a85eac74a, type: 2}
+  - {fileID: 11400000, guid: 36e3d5930235e75229b20e8562815c14, type: 2}
+  - {fileID: 11400000, guid: 7a3e3f43e22cf543f6316ac4a78910b5, type: 2}
+  - {fileID: 11400000, guid: 4790df800c03dbf9caf92cfd0bf2856a, type: 2}
+  - {fileID: 11400000, guid: 69469d3471343172a311ef9e482b57de, type: 2}
+  - {fileID: 11400000, guid: 6cf1518f37148531b6f6440f8dc070d8, type: 2}
+  - {fileID: 11400000, guid: 0fc399c8e54546103ddcbe3c64ffcbd8, type: 2}
+  - {fileID: 11400000, guid: c27481b6d56463330cdf7fa0b49293e1, type: 2}
+  - {fileID: 11400000, guid: f369eba2ad332c838bbae1ff70decb1f, type: 2}
+  - {fileID: 11400000, guid: 4270bc6b694a3f85f4688be35ee721dc, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Alors arrête d’essayer de me dépasser.
+    linkedDialogueSequence: {fileID: 11400000, guid: c7a8d5f81a0639fe51fd3f7c2d6f3525, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Je ne sais pas encore ce que ça signifie, mais je suis heureuse de t’avoir retrouvée.
+    linkedDialogueSequence: {fileID: 11400000, guid: 7c69247facb389bc30c890093dd0a0bd, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Peut-être que tu es surtout attachée à la version de moi que tu connaissais avant.**
+    linkedDialogueSequence: {fileID: 11400000, guid: 2d464da21a06369499fcc56ce596e364, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: Outro 6_15_ROUTE LOCK SOLO
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 0e257523aedacd24484312e39fd02703, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices:
+  - choiceString: Choisir Angelina.
+    linkedDialogueSequence: {fileID: 11400000, guid: 36314f62d551df0dabd864332f233ff9, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions:
+      - eventName: ROUTE_AVAILABLE_ANGELINA
+        eventCharacter: 3
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Choisir Karin.
+    linkedDialogueSequence: {fileID: 11400000, guid: f0d48e44e7c0dc6a6e2bb55e163f0620, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions:
+      - eventName: ROUTE_AVAILABLE_KARIN
+        eventCharacter: 3
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Choisir Daria
+    linkedDialogueSequence: {fileID: 11400000, guid: 2c70a2a9670bae498abb193bf1c64e36, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions:
+      - eventName: ROUTE_AVAILABLE_DARIA
+        eventCharacter: 3
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Ne choisir personne.
+    linkedDialogueSequence: {fileID: 0}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions:
+      - eventName: ROUTE_AVAILABLE_DARIA
+        eventCharacter: 3
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions:
+      - eventName: ROUTE_AVAILABLE_ANGELINA
+        eventCharacter: 3
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 8f8fab2db1e3efc4e8a5b44c6c2f5150, type: 2}
+  - branching:
+      _eventConditions:
+      - eventName: ROUTE_AVAILABLE_KARIN
+        eventCharacter: 4
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: a868e0d79eed10e4098da65946725781, type: 2}
+  - branching:
+      _eventConditions:
+      - eventName: ROUTE_AVAILABLE_DARIA
+        eventCharacter: 2
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 008ccda8318dd7603f317fc24b2b22c8, type: 2}
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 5c233f1e5b0b0524afb4976011653061, type: 2}

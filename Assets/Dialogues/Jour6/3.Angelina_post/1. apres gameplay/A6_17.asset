@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: A6_17
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 29aceecb1c789347ab85ac17a2db601a, type: 2}
+  - {fileID: 11400000, guid: 621a828a0b37b1caf6cc13e6fe2aaba8, type: 2}
+  - {fileID: 11400000, guid: f9bc732d2847b019abd66e15c66c4feb, type: 2}
+  - {fileID: 11400000, guid: a150456da3639b38f6aa76fc8cb101c9, type: 2}
+  - {fileID: 11400000, guid: c883329061cc6de13fbc4b80ef5f4266, type: 2}
+  - {fileID: 11400000, guid: a76432eafbf42076cd8fd9da460e147e, type: 2}
+  - {fileID: 11400000, guid: 2f062cb3862866566779b136ba8bfd56, type: 2}
+  - {fileID: 11400000, guid: 8453946d4861c3dd079a5afdfe9d56ba, type: 2}
+  - {fileID: 11400000, guid: 1213105bb744beb82100d7469d0f7dfc, type: 2}
+  - {fileID: 11400000, guid: 5bf6025a1106af54907a00553c9fb495, type: 2}
+  - {fileID: 11400000, guid: ba1e6ed3edd68b2438550aa672a2d751, type: 2}
+  - {fileID: 11400000, guid: 87b6f2cfc3069adbbb04fdb93f83779f, type: 2}
+  - {fileID: 11400000, guid: 19bf3b39de0ca084beb97876d497f055, type: 2}
+  - {fileID: 11400000, guid: 0d638939f5f266087f70cbffd903a222, type: 2}
+  - {fileID: 11400000, guid: 477e8762f97c1440a024975f3fbd23f1, type: 2}
+  - {fileID: 11400000, guid: 6e1fbef3d5ee9bbe428c4fdab8f27d4c, type: 2}
+  - {fileID: 11400000, guid: 217d989ffb0d886008f3a2c208ff76ee, type: 2}
+  - {fileID: 11400000, guid: dc6116571ce38bbe907c0542523ddd4b, type: 2}
+  - {fileID: 11400000, guid: e3a1a4ef5db5211fbe9d6685f4c7448c, type: 2}
+  - {fileID: 11400000, guid: b909720b4186651c08af5e9378a1ad9c, type: 2}
+  - {fileID: 11400000, guid: 4944e215fff34c278783c674e0931137, type: 2}
+  - {fileID: 11400000, guid: 73f5847f6895b0784ee797a19b83b376, type: 2}
+  - {fileID: 11400000, guid: 4ecf34c7e8f00c49fac428939fe55c65, type: 2}
+  - {fileID: 11400000, guid: abe78b74210484700776dbbad0b49d4a, type: 2}
+  - {fileID: 11400000, guid: b8e049c404d26fa10e2eb3be822cb0ac, type: 2}
+  - {fileID: 11400000, guid: 9f5c8dd7459c0ba5d85cf0d8520a8cf8, type: 2}
+  - {fileID: 11400000, guid: ed3b50bd15851648db9be6640b720595, type: 2}
+  - {fileID: 11400000, guid: f0e1b012a45e7fcd5a7ce1d4fc56197b, type: 2}
+  - {fileID: 11400000, guid: 3fa10b75702bad2d35ed7bb8c30b9811, type: 2}
+  - {fileID: 11400000, guid: 6ca0ce5974afab1b8e8d45d701e28da1, type: 2}
+  - {fileID: 11400000, guid: bbbb300965bcff3e38a745e0c3075322, type: 2}
+  - {fileID: 11400000, guid: f6b04596b2b11c9669b1ace92f30ed98, type: 2}
+  - {fileID: 11400000, guid: 92180a5f06279d7d35642e8aa80b22ae, type: 2}
+  - {fileID: 11400000, guid: 694cbbe6b85cf0b0e5b8257d816ff22b, type: 2}
+  - {fileID: 11400000, guid: 731ca0c2570883868d1dd12c49c155e6, type: 2}
+  - {fileID: 11400000, guid: 00ab4d90a351ab6043858f725eaa8fb8, type: 2}
+  - {fileID: 11400000, guid: 1733644eca8aff3fdd3d446df58339a5, type: 2}
+  - {fileID: 11400000, guid: ed3f7f57a994667cf8243e1d5d6b5d07, type: 2}
+  - {fileID: 11400000, guid: 8f6f4fa141ba76919b68daa9bdadffdc, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Avec moi, tu n’as pas besoin de faire le clown pour que j’aie envie que tu sois là.
+    linkedDialogueSequence: {fileID: 11400000, guid: fe88801c7a8297e6649bb4f81ea6db26, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: J’aime ton énergie, mais je sais bien que ce n’est pas tout ce que tu es.
+    linkedDialogueSequence: {fileID: 11400000, guid: dee000dbcbd35f5f3803ecb03e719bff, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Peut-être que les gens comptent simplement sur toi parce que tu es naturellement comme ça.**
+    linkedDialogueSequence: {fileID: 11400000, guid: 9641a21bbf48c0a5c849d9793120540c, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

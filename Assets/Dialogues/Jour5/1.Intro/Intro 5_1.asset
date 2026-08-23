@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: Intro 5_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 9e94a636dc5d2c92b8d6344b1f91fac7, type: 2}
+  - {fileID: 11400000, guid: 6ca23ca6083fecd77ab18fdb716d8d5e, type: 2}
+  - {fileID: 11400000, guid: 14e85163d8f68ee69a5ecb35992f07ab, type: 2}
+  - {fileID: 11400000, guid: 03ac60a35583e9241e24b1290890c19e, type: 2}
+  - {fileID: 11400000, guid: c481a8d24e97129d4298175bf73d0787, type: 2}
+  - {fileID: 11400000, guid: 44045f82b2d9c3e95f291f163fd6488a, type: 2}
+  - {fileID: 11400000, guid: 2ae4d2a9a822dce0f3f40f0ea2808ed8, type: 2}
+  - {fileID: 11400000, guid: a1992e12675c9e8923ac32ac12bb8651, type: 2}
+  - {fileID: 11400000, guid: 8fd81dc10508e82a836fe3ff5888b1db, type: 2}
+  - {fileID: 11400000, guid: fe1d67deb2599b87469148b8dce211a8, type: 2}
+  - {fileID: 11400000, guid: b825dd4161332d065a234bd7f5edb7df, type: 2}
+  - {fileID: 11400000, guid: 5b889ec323eca6d4873308f6d384a9b4, type: 2}
+  - {fileID: 11400000, guid: a0e6f5b0cd2d14b22f65bae1310f2af9, type: 2}
+  - {fileID: 11400000, guid: 7eeb5417d8235c28e0be07a033920d4a, type: 2}
+  - {fileID: 11400000, guid: 431f63b82b2ad9d9e1cf17910fcd15eb, type: 2}
+  - {fileID: 11400000, guid: 960a35ae12de12e7e7636d180830d27b, type: 2}
+  - {fileID: 11400000, guid: ce14b17f56966f80a4edc425edd06841, type: 2}
+  - {fileID: 11400000, guid: 073d6f28c42a7f375dd96d91789e264b, type: 2}
+  - {fileID: 11400000, guid: 09ed54bd66042a509969b988579c999a, type: 2}
+  - {fileID: 11400000, guid: 01cd262ccf890c468e4ff69219ab22c2, type: 2}
+  - {fileID: 11400000, guid: f4e1ea1ed4330f32e897c973606786ef, type: 2}
+  - {fileID: 11400000, guid: ca1f4d3dc7797872ea3b0b4e91a60370, type: 2}
+  - {fileID: 11400000, guid: cf56d74348d4c67c1af8fdb37c9c3536, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices:
+  hasEndBranch: 0
+  endBranches:

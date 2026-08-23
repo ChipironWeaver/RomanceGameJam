@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K6_34_AFFINITE INSUFISANTE
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 0c28cf12147c832cc3585744fca04d8e, type: 2}
+  - {fileID: 11400000, guid: 3143d5e4ffe455801f204e241fd1ab72, type: 2}
+  - {fileID: 11400000, guid: 244f4d1260b270abbb60977af5f0619e, type: 2}
+  - {fileID: 11400000, guid: c5db5f475d547d47fa8a3d39ed6e4f66, type: 2}
+  - {fileID: 11400000, guid: a869cc8dfd71185dcdc5d18525ecc469, type: 2}
+  - {fileID: 11400000, guid: 8679cf8a0d673ea0f75efe47dac576e0, type: 2}
+  - {fileID: 11400000, guid: 7ecb78c8bb0ad22580f3fff397fb35bd, type: 2}
+  - {fileID: 11400000, guid: 6505434cbaa8c89672452f1984a3bb7f, type: 2}
+  - {fileID: 11400000, guid: b9a4bd6cddd08cdb30b2afe47c916298, type: 2}
+  - {fileID: 11400000, guid: eaec6f032145c1acfdfaa7a8b55ab343, type: 2}
+  - {fileID: 11400000, guid: f69b93d94266763440b48e89f2c79d3e, type: 2}
+  - {fileID: 11400000, guid: bb12c2cf2dd974139a6276cb65abe13b, type: 2}
+  - {fileID: 11400000, guid: 70914300497ad08beeb565427a14c8f1, type: 2}
+  - {fileID: 11400000, guid: 7269b8de3ee3999b5aa35391f4dcb879, type: 2}
+  - {fileID: 11400000, guid: 29638595ee178bb58f7e57ed460b8f0a, type: 2}
+  - {fileID: 11400000, guid: 43b6fe728d4ad42b69e528fc221ac5c3, type: 2}
+  - {fileID: 11400000, guid: ea73f480a3bfe7efa7da28e5ca05cf9c, type: 2}
+  - {fileID: 11400000, guid: 40cd7d08aa97703018cda69a466ebfca, type: 2}
+  - {fileID: 11400000, guid: 5ed03cc2d29b59aad083bbdcc2a0c660, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Je tiens quand même énormément à toi.
+    linkedDialogueSequence: {fileID: 11400000, guid: c2a0568451d302cff8ea64095af280e8, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Je suis désolée si j’ai été ambiguë.
+    linkedDialogueSequence: {fileID: 11400000, guid: 8bc62a602a9c4fa1566fa1a36e4a04f2, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Je crois que tu t’étais surtout fait des idées.**
+    linkedDialogueSequence: {fileID: 11400000, guid: ecc336a288713d754699bcd9c03e7b7f, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: 

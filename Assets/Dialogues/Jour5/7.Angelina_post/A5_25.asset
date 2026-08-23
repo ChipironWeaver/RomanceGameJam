@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: A5_25
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 6c7e2e6b12a9b7ece961bc77de03a046, type: 2}
+  - {fileID: 11400000, guid: 631f67fd00dc70f3179c66d6c0aa191d, type: 2}
+  - {fileID: 11400000, guid: e801f43b575160171f96b74c8f6a418b, type: 2}
+  - {fileID: 11400000, guid: 416a9ab1ad9f946232ebd531b3306688, type: 2}
+  - {fileID: 11400000, guid: 2af8a3505377eca6b18c221530850882, type: 2}
+  - {fileID: 11400000, guid: 257d59c42eced800bf470f8cc7d793f0, type: 2}
+  - {fileID: 11400000, guid: 164af416dffd798eb3de9e07b11c2358, type: 2}
+  - {fileID: 11400000, guid: 0fe3b6c42987691dabae05a0fad817b4, type: 2}
+  - {fileID: 11400000, guid: 578847b7cf02c21191ec208cec0dde90, type: 2}
+  - {fileID: 11400000, guid: b8f9d2c1f096dec50c077f1a5656deb2, type: 2}
+  - {fileID: 11400000, guid: 7a65af0c1228e7296bb49c8e115897bb, type: 2}
+  - {fileID: 11400000, guid: cd7ba73d44517c7e7ddbd73d5b5abd6a, type: 2}
+  - {fileID: 11400000, guid: 8991ab87167d35ddee33ae22088d0183, type: 2}
+  - {fileID: 11400000, guid: 1d1d88210fca93c398f2dfeda54be2a4, type: 2}
+  - {fileID: 11400000, guid: d4276a3fb021fc45a579f16e08fa9182, type: 2}
+  - {fileID: 11400000, guid: dd695a26d35f404c85d978b5c7b288f5, type: 2}
+  - {fileID: 11400000, guid: a43ebb7dd1b179dc63726f83b80e162a, type: 2}
+  - {fileID: 11400000, guid: 16dcefced23166009a54b3f8422cee60, type: 2}
+  - {fileID: 11400000, guid: 86badc3aea77e03ac7c5285968b1bea0, type: 2}
+  - {fileID: 11400000, guid: a6683c9f12e956ca3622b98326071b9d, type: 2}
+  - {fileID: 11400000, guid: d2f519bad0680b7fd515a821cbbbdbc1, type: 2}
+  - {fileID: 11400000, guid: e5b54fbb05ea89d18ebe59d453d2ebbb, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices:
+  hasEndBranch: 0
+  endBranches:

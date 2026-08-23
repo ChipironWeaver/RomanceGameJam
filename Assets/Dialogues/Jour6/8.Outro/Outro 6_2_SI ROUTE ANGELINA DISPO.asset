@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: Outro 6_2_SI ROUTE ANGELINA DISPO
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 09625a22598f802a0c78d2c6c8edebd9, type: 2}
+  - {fileID: 11400000, guid: b419f3d39990dd451beaa489be14bcf0, type: 2}
+  - {fileID: 11400000, guid: 3ff34260cb910d7ffdf70df39f07313b, type: 2}
+  - {fileID: 11400000, guid: 475cad4a8a5b7d1e4bda33260ca33e74, type: 2}
+  - {fileID: 11400000, guid: c783b8e6f4a037b9bc2cdafe25c177de, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: 
+  hasEndBranch: 0
+  endBranches: 

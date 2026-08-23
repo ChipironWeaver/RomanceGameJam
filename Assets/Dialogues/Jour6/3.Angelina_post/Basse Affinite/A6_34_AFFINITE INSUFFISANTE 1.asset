@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: A6_34_AFFINITE INSUFFISANTE 1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: a7e80590d6c6f555170e8fcda2caf9c8, type: 2}
+  - {fileID: 11400000, guid: b16ba99a57e58e29cd046dc627093241, type: 2}
+  - {fileID: 11400000, guid: 2ac1fdd4222715fa7e7ce81e110ed0e0, type: 2}
+  - {fileID: 11400000, guid: 25f03c171954b657d65049f5cf40d971, type: 2}
+  - {fileID: 11400000, guid: 2e773907cb9f97184b10a930245f7754, type: 2}
+  - {fileID: 11400000, guid: 18457f688d65e3db2de8d3bb305d090a, type: 2}
+  - {fileID: 11400000, guid: 310368cb57b445c058fa34601df63cdc, type: 2}
+  - {fileID: 11400000, guid: f57f6161a03cc9286efe26b2d58dc58d, type: 2}
+  - {fileID: 11400000, guid: bf9ebf2219615886d920987cc244c7b1, type: 2}
+  - {fileID: 11400000, guid: 006eece58d2dda81630ca2e30b470aeb, type: 2}
+  - {fileID: 11400000, guid: 06db5306dfdf45863b22557a1b00bd7f, type: 2}
+  - {fileID: 11400000, guid: 85ed009dd0fa403d64325549e1ace617, type: 2}
+  - {fileID: 11400000, guid: 6db67077e54de4f6a4936dcf9c1e3ed0, type: 2}
+  - {fileID: 11400000, guid: b63ca593f69e4eb12caeacb1caaef4b0, type: 2}
+  - {fileID: 11400000, guid: e6f9e53fe0e96bffb0af24d534849305, type: 2}
+  - {fileID: 11400000, guid: 0068d0824c83ae165e709301cd86a387, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Je suis désolée si je t’ai donné de faux espoirs.
+    linkedDialogueSequence: {fileID: 11400000, guid: 036261421409d3d911a87491a1a886cf, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Je tiens quand même beaucoup à toi.
+    linkedDialogueSequence: {fileID: 11400000, guid: 76005d640621e212369c9675adc4322a, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu te fais probablement beaucoup trop de films.**
+    linkedDialogueSequence: {fileID: 11400000, guid: d532724ef0979a4e95704ed0babca522, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: 

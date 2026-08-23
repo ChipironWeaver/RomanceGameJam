@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K6_23
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: cfff621fe2e9c49d0a5cf10e7f7b5c97, type: 2}
+  - {fileID: 11400000, guid: 9512af81d0f237f86e268abf722ab3d7, type: 2}
+  - {fileID: 11400000, guid: 910d83a02c7c3af05ee52242916b0b8b, type: 2}
+  - {fileID: 11400000, guid: 0ede0bc5295d37914dd6136e6da6a603, type: 2}
+  - {fileID: 11400000, guid: 2b7876808c82c13796bbcfae38352fa3, type: 2}
+  - {fileID: 11400000, guid: 767be6f59bfd5b44d9fcf589eab35097, type: 2}
+  - {fileID: 11400000, guid: bcc54ab8fa75bbcce1e57b9dfae44fef, type: 2}
+  - {fileID: 11400000, guid: 0921da4cbf3832160c428a0c805998bb, type: 2}
+  - {fileID: 11400000, guid: c4a46c6ec945cb45c9c2ee224a7fa7dd, type: 2}
+  - {fileID: 11400000, guid: 32065d6069c7716363ea802efb2dc037, type: 2}
+  - {fileID: 11400000, guid: a6417fce85a8cdd1b958d9708d860fc1, type: 2}
+  - {fileID: 11400000, guid: 5d2a577b61add393ca0541f295884d23, type: 2}
+  - {fileID: 11400000, guid: c94075beb64cba2edd2f778565ffdac4, type: 2}
+  - {fileID: 11400000, guid: cbb50b9c91b679643291940cfe914dcb, type: 2}
+  - {fileID: 11400000, guid: 2519a9461276c1ce9c037b0436bb43f1, type: 2}
+  - {fileID: 11400000, guid: f84580552a392ea0e557334fd17722b2, type: 2}
+  - {fileID: 11400000, guid: a04676043e92fa7035081f143cefd138, type: 2}
+  - {fileID: 11400000, guid: a287571e4a05b63c0b8aba0b1d16fb99, type: 2}
+  - {fileID: 11400000, guid: 99ce6b09af3c763d020f12e96ef2cda9, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Oui. Je ne veux plus qu’on redevienne des étrangères.
+    linkedDialogueSequence: {fileID: 11400000, guid: e9ee4a19c75762ab315e3186ef565fd6, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Je ne sais pas ce qui arrivera après l’été, mais je ne veux pas disparaître.
+    linkedDialogueSequence: {fileID: 11400000, guid: 528737c59e3fab81ddfc3ac51b7c15da, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Ça ne fait qu’une semaine, on va peut-être un peu loin.**
+    linkedDialogueSequence: {fileID: 11400000, guid: 0a7c016d4a90d0c81a3821e647385d87, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

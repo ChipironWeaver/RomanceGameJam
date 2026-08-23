@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: D5_6
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 0d2e88e43db744744954c5341f5357a9, type: 2}
+  - {fileID: 11400000, guid: f74184be4a774fb1ffdb303a3446c7df, type: 2}
+  - {fileID: 11400000, guid: ffd8d81cb9b7c0c6fd4af019bf4bdc69, type: 2}
+  - {fileID: 11400000, guid: d59239da68e5fcbcce19cb8ada39c0d8, type: 2}
+  - {fileID: 11400000, guid: 75a1d2ae73bb7b3188fe9926896d15d8, type: 2}
+  - {fileID: 11400000, guid: 0d593fa48bd7bae423e2ed32dcc8a1cd, type: 2}
+  - {fileID: 11400000, guid: 384ca3cc620a73d5d74b91b2305b83ec, type: 2}
+  - {fileID: 11400000, guid: 00e465cdc8334a6312361d6afda01c92, type: 2}
+  - {fileID: 11400000, guid: 76eaa3ee6197122b69011d87661abcca, type: 2}
+  - {fileID: 11400000, guid: 12714a389e5043add52253173f57f2b9, type: 2}
+  - {fileID: 11400000, guid: 34239b85950be052e94dcd64b8c3a4e5, type: 2}
+  - {fileID: 11400000, guid: c47991434bfe3da6504992a4fd68c498, type: 2}
+  - {fileID: 11400000, guid: 333aa86d7633feec85acccb9d4915684, type: 2}
+  - {fileID: 11400000, guid: 1550bf190490ca38d035699f652c9dee, type: 2}
+  - {fileID: 11400000, guid: 62f02b07589764a77a659a275d8ad42b, type: 2}
+  - {fileID: 11400000, guid: 3eea03a52f3888992c61c2e13d2060d9, type: 2}
+  - {fileID: 11400000, guid: e25ad142272df000eab7ef7d87cfcb51, type: 2}
+  - {fileID: 11400000, guid: b362142d9fa2dd597c8f9c53b57b7f20, type: 2}
+  - {fileID: 11400000, guid: b81485806598d4dae73c5a5deff50b23, type: 2}
+  - {fileID: 11400000, guid: 41111eb9f7036e1b70f2c66a849e9679, type: 2}
+  - {fileID: 11400000, guid: 9aa71e954b53d7e95843ab02fb100319, type: 2}
+  - {fileID: 11400000, guid: 1b3d4372e0c2018127011d9fb5b5f97b, type: 2}
+  - {fileID: 11400000, guid: 66536d207eea660af9630ae99ec8e8e3, type: 2}
+  - {fileID: 11400000, guid: a7d87f3f132814cb8e4aa82b7a6d4e53, type: 2}
+  - {fileID: 11400000, guid: dfe43da3363b75822767be108ed11c8f, type: 2}
+  - {fileID: 11400000, guid: 1d202fc5ab2004cb9ef904e73feebf2b, type: 2}
+  - {fileID: 11400000, guid: df5c2f996de79859ea3bc3266d4a36dc, type: 2}
+  - {fileID: 11400000, guid: 7f284449064f591b022a43e4306d3b6e, type: 2}
+  - {fileID: 11400000, guid: 9b4789ecc6233c2a3ef4800cdc490902, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: "J\u2019esp\xE8re que tu accepterais d\u2019en perdre encore un
+      peu avec moi."
+    linkedDialogueSequence: {fileID: 11400000, guid: 3b369b89de968ee426c0d5cfd6595f19, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Je trouve \xE7a joli, comme fa\xE7on de voir les choses."
+    linkedDialogueSequence: {fileID: 11400000, guid: 08b94f2e7e68f87425ff8686444b9e2d, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "\xC7a reste beaucoup d\u2019efforts pour pas grand-chose."
+    linkedDialogueSequence: {fileID: 11400000, guid: 6382b6492672dbcb839e6526567b53f8, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []
