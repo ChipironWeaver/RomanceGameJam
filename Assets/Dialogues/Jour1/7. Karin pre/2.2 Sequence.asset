@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: 2.2 Sequence
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 7e5ace145ca4b50489781be7220618ba, type: 2}
+  - {fileID: 11400000, guid: 2d7d1f3cabc1c0a469ae7fafe58a06f5, type: 2}
+  - {fileID: 11400000, guid: 866c67b6e00e61247b8cb79d2c9082cd, type: 2}
+  - {fileID: 11400000, guid: 9d8537e4414e0f244ab2507ccd96ace6, type: 2}
+  - {fileID: 11400000, guid: 289f0afab9a06f24f82f72f225619b19, type: 2}
+  - {fileID: 11400000, guid: e3e12caf80e5c9e4a8b706be50b07397, type: 2}
+  - {fileID: 11400000, guid: 907eb4ffa78fa13479617cac475e4448, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 0
+  endBranches: []

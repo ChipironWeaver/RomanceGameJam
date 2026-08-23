@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: 1. Sequence
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 771d5e4979fa69140a4193cb306d2e2b, type: 2}
+  - {fileID: 11400000, guid: ea06a86066849bb40b1490c51e8569ff, type: 2}
+  - {fileID: 11400000, guid: 22f7436f2cd35fb478f82d7711c90b11, type: 2}
+  - {fileID: 11400000, guid: a56d7da828b75ea4bb6ae2eb27f082ca, type: 2}
+  - {fileID: 11400000, guid: 834fbbb58b07a0e4aaf7d45030ea7af5, type: 2}
+  - {fileID: 11400000, guid: 7c8f1da967271bf49a5c2181098ef56e, type: 2}
+  - {fileID: 11400000, guid: 8351f4b7d09317c42af30e22d00f37e3, type: 2}
+  - {fileID: 11400000, guid: cc65cf91a2539424cb11661158215947, type: 2}
+  - {fileID: 11400000, guid: 241cc1b6c8b3db9428e1ffd33c05483e, type: 2}
+  - {fileID: 11400000, guid: 5b74b4fb47b8f5d4a803fe4757cf50c7, type: 2}
+  - {fileID: 11400000, guid: 01e22516e33508e48b4004432f94b31a, type: 2}
+  - {fileID: 11400000, guid: f9fcc7ac83cbf704198dfbd867f5e3cf, type: 2}
+  - {fileID: 11400000, guid: 88100066f9dcefe46bef4be53728bbde, type: 2}
+  - {fileID: 11400000, guid: 0dcaa02f99612f64db6e6fee2b60046d, type: 2}
+  - {fileID: 11400000, guid: 0de90b3c9c66dc0488a6f60cd01aba2f, type: 2}
+  - {fileID: 11400000, guid: 88970f9d5cf14814ca8ace2ad29460e9, type: 2}
+  - {fileID: 11400000, guid: d8c45a2b8e6ad2745a22fefff617bdd3, type: 2}
+  - {fileID: 11400000, guid: f8f13a34fab90db4c9825428f0d9b276, type: 2}
+  - {fileID: 11400000, guid: e54ffb140a3888649a4b4ea7c0b7d80c, type: 2}
+  - {fileID: 11400000, guid: e52ee184a4366be469c6ead8b0f84287, type: 2}
+  - {fileID: 11400000, guid: c46a320828295fa49a1b686b4df4279d, type: 2}
+  - {fileID: 11400000, guid: 97673cd923cee7f4688b5d6b6319b2f7, type: 2}
+  - {fileID: 11400000, guid: 0a69cfd9a2f6a954baf813f9cc3e3b10, type: 2}
+  - {fileID: 11400000, guid: ea8531179f8449248a583ec780cb5068, type: 2}
+  - {fileID: 11400000, guid: d36da4126b581b847b0e9b658cf30e76, type: 2}
+  - {fileID: 11400000, guid: e27c7e76fa0d77d49bef0e10397bee76, type: 2}
+  - {fileID: 11400000, guid: 6d57d75437cd3e446827bd9a67ff4678, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Ah bon ?
+    linkedDialogueSequence: {fileID: 11400000, guid: 42383abe6b6f53a45868944840cc5214, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "J'esp\xE8re que c'est en bien."
+    linkedDialogueSequence: {fileID: 11400000, guid: 4fd8f9946e0a6ac4f86381254916c711, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Toi aussi.
+    linkedDialogueSequence: {fileID: 11400000, guid: 0f7c9b8a4dd9d22458d6c3e0b3836000, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 0}

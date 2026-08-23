@@ -3838,7 +3838,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   _autostart: 1
-  _autoIndex: 10
+  _autoIndex: 0
   _blackScreen: {fileID: 312514440}
   _dialogueController: {fileID: 8713159423576416512}
   _barTendingController: {fileID: 5367359521910052953}
