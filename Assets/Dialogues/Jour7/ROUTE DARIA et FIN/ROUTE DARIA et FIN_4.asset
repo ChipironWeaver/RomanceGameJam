@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: ROUTE DARIA et FIN_4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: a70c1f80be12ccca6d1e0b3da40f2324, type: 2}
+  - {fileID: 11400000, guid: 72145dbd135cbc2031a13bbbf3bccab3, type: 2}
+  - {fileID: 11400000, guid: f35b8fec204c43a9c1123ac4549ec990, type: 2}
+  - {fileID: 11400000, guid: 0eac9a9b5e07eacc373212bc1edff55e, type: 2}
+  - {fileID: 11400000, guid: 533dc9f6707f851bc6ba863ac33638c5, type: 2}
+  - {fileID: 11400000, guid: edc08449f67b791c568358a3d2aed223, type: 2}
+  - {fileID: 11400000, guid: 1e7ab4bc40b9dba4e97fa87848b777c5, type: 2}
+  - {fileID: 11400000, guid: 75dd25ef2403d68aa74bda02cf0c47f2, type: 2}
+  - {fileID: 11400000, guid: 16fdb1a5c133acf01da0df1e11b69c3f, type: 2}
+  - {fileID: 11400000, guid: 590af8aa8084ea55441a87c429604ffd, type: 2}
+  - {fileID: 11400000, guid: 4bc417b073b5ea5c38c3d709b01c8adc, type: 2}
+  - {fileID: 11400000, guid: ced7f9d7fbff1890e7484d56f1e6b41d, type: 2}
+  - {fileID: 11400000, guid: 901e931b388ca335125105fc4425faeb, type: 2}
+  - {fileID: 11400000, guid: b02db9fab885d52b7a1cf3321fa7255a, type: 2}
+  - {fileID: 11400000, guid: f8ccb5b8e378007bd030da2d44f3c948, type: 2}
+  - {fileID: 11400000, guid: 98326b6cdae339160b78fc2c6266fcd9, type: 2}
+  - {fileID: 11400000, guid: 6747b2643a6bcc4cfe5804db858ceff1, type: 2}
+  - {fileID: 11400000, guid: ffdb7d98cc9f8064e2c8f5393a18a42e, type: 2}
+  - {fileID: 11400000, guid: fd11d276c0276807893aed4a6966ad47, type: 2}
+  - {fileID: 11400000, guid: d09cc4996a6be17605d2c7edf74b890e, type: 2}
+  - {fileID: 11400000, guid: 50e24aa12f867787fb0509792adb3491, type: 2}
+  - {fileID: 11400000, guid: 649f866b2c9a845c21e4e48ea62970dd, type: 2}
+  - {fileID: 11400000, guid: 08f666e4da8f86ffd43ebd608098d203, type: 2}
+  - {fileID: 11400000, guid: aa5b043701c32b45dff2809b97f7632c, type: 2}
+  - {fileID: 11400000, guid: c31d77d7e4d56e3a54f549a6976ab2ed, type: 2}
+  - {fileID: 11400000, guid: 1ee5d4f6ab329f9a3670c1ee9a79fea9, type: 2}
+  - {fileID: 11400000, guid: 38604e800cd5f695c69aaa064cfb6cf9, type: 2}
+  - {fileID: 11400000, guid: dda138c27f8ba15673c9acb5ebaa077b, type: 2}
+  - {fileID: 11400000, guid: 0c60cc08794ffe9e154ddd574e5be31d, type: 2}
+  - {fileID: 11400000, guid: 9082d601646b6b059e4694e473e0c7aa, type: 2}
+  - {fileID: 11400000, guid: 04722df4f72815fecf333e2bf88f7bd5, type: 2}
+  - {fileID: 11400000, guid: 833cc3ce5894d01cc1a37d977861372b, type: 2}
+  - {fileID: 11400000, guid: bf3118e3c6e06c914609938fb87fb786, type: 2}
+  - {fileID: 11400000, guid: 961dd20e7e10a905be5b165a4dea0899, type: 2}
+  - {fileID: 11400000, guid: 8726fd78bbdbd27930a28489fe97ad4e, type: 2}
+  - {fileID: 11400000, guid: be6794b474c642dc3903ba5378a53364, type: 2}
+  - {fileID: 11400000, guid: ad7d9003a206838a6d01619cc066db90, type: 2}
+  - {fileID: 11400000, guid: 9dec628563539a3c28706f95abe99761, type: 2}
+  - {fileID: 11400000, guid: c99db95f5796a137b3138637d1f8aaa1, type: 2}
+  - {fileID: 11400000, guid: 6b8e5cf347473a4a3d12e465151af574, type: 2}
+  - {fileID: 11400000, guid: ada17947ae8be74aaa497d21cb0673f6, type: 2}
+  - {fileID: 11400000, guid: 83a78f6366e97a1ba23fdebfd5d9e4a9, type: 2}
+  - {fileID: 11400000, guid: f905459026c286f63bc869a8df4ee90d, type: 2}
+  - {fileID: 11400000, guid: 2832936e765eac2add354f1796241042, type: 2}
+  - {fileID: 11400000, guid: fadcbd773958f5d9f2f6e9749b61a20b, type: 2}
+  - {fileID: 11400000, guid: 10874cb74466fabf53515c42513c0475, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: b4a58d5f73cd5814ebf51192ebdf772a, type: 2}

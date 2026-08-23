@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: ROUTE KARIN et FIN_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 6a2d2c2b4205be6b79157107fdb8db95, type: 2}
+  - {fileID: 11400000, guid: 8b6b9be9e1f9c93a96725938dee64389, type: 2}
+  - {fileID: 11400000, guid: 05ae6fffc11b93149b026b1b8c382598, type: 2}
+  - {fileID: 11400000, guid: 89491cb728170a8ee5c74744a3ddaa53, type: 2}
+  - {fileID: 11400000, guid: 2dfce6cce5aa1e1507313feb1de1bd57, type: 2}
+  - {fileID: 11400000, guid: 9b1be32531e52cce425e87e96c487ada, type: 2}
+  - {fileID: 11400000, guid: 73f35da229f8e7950c206a5f3a64c01d, type: 2}
+  - {fileID: 11400000, guid: 6b489c1d2043457619aa835866c4e0a9, type: 2}
+  - {fileID: 11400000, guid: f6656d6116967b58235f8a9076e65280, type: 2}
+  - {fileID: 11400000, guid: d1275dc438ed8f5b508894fc1439d931, type: 2}
+  - {fileID: 11400000, guid: da8148a1f53276701d435f69df7a3faa, type: 2}
+  - {fileID: 11400000, guid: 709179e7478109f35016732075d27cf3, type: 2}
+  - {fileID: 11400000, guid: 8360a407663418d8d273aa58019a12ff, type: 2}
+  - {fileID: 11400000, guid: 29a942225cb287adaa6b5471f6186d64, type: 2}
+  - {fileID: 11400000, guid: 79f49f511dd0256348da2c967a8ac93b, type: 2}
+  - {fileID: 11400000, guid: 33f77c31267d9a7529716506acaaf526, type: 2}
+  - {fileID: 11400000, guid: 4a47599e031df277bb47476223b1f811, type: 2}
+  - {fileID: 11400000, guid: 2585ae151f17694dbec9ac2485e8d92c, type: 2}
+  - {fileID: 11400000, guid: 38a2f43c306237d081dd658b3f0e0552, type: 2}
+  - {fileID: 11400000, guid: 3a0cbd66815ad3de33bedd8617950d38, type: 2}
+  - {fileID: 11400000, guid: da253b1bfedec33541bfab038515a76a, type: 2}
+  - {fileID: 11400000, guid: c4703bcd8c0268a73faf1df800674840, type: 2}
+  - {fileID: 11400000, guid: c762396491a10aad35eed3113e6649aa, type: 2}
+  - {fileID: 11400000, guid: 63cdd57fba6b5a40166e64cf3e2afeb2, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 39a7ceee7abf1549eb5b54341e614151, type: 2}
