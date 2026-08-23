@@ -3331,7 +3331,7 @@ MonoBehaviour:
       hint: 
       liquids: 
       decorations: []
-    sequence: {fileID: 11400000, guid: 6617e84e1fcc6384493c3e73ca107d19, type: 2}
+    sequence: {fileID: 11400000, guid: e4a53d145136bac41beb456ac4fef6c4, type: 2}
     changeBasedOnLastResult: 0
     goodSequence: {fileID: 0}
     averageSequence: {fileID: 0}
@@ -3873,7 +3873,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   _autostart: 1
-  _autoIndex: 7
+  _autoIndex: 0
   _blackScreen: {fileID: 312514440}
   _dialogueController: {fileID: 8713159423576416512}
   _barTendingController: {fileID: 5367359521910052953}
