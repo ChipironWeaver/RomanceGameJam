@@ -20,9 +20,9 @@ MonoBehaviour:
   animatedCharacters: 0
   triggerName: 
   showCharacter: 0
-  hideCharacter: 0
+  hideCharacter: 1
   shownCharacters: 0
-  hiddenCharacters: 0
+  hiddenCharacters: 3
   changeReputation: 0
   reputationCharacters: 0
   isSet: 0
