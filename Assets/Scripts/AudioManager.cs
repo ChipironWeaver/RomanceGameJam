@@ -5,11 +5,12 @@ using Random = UnityEngine.Random;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] private List<AudioClip> _deathSfx = new List<AudioClip>();
-    [SerializeField] private List<AudioClip> _enemyDeathSfx = new List<AudioClip>();
-    [SerializeField] private List<AudioClip> _eggPickupSfx = new List<AudioClip>();
-    [SerializeField] private List<AudioClip> _jumpSfx = new List<AudioClip>();
+    [SerializeField] private List<AudioClip> _iceCubeSfx = new List<AudioClip>();
+    [SerializeField] private List<AudioClip> _waterSfx = new List<AudioClip>();
+    [SerializeField] private List<AudioClip> _dropSfx = new List<AudioClip>();
+    [SerializeField] private List<AudioClip> _blingSfx = new List<AudioClip>();
     [SerializeField] private List<AudioClip> _uiClickSfx = new List<AudioClip>();
+    [SerializeField] private List<AudioClip> _chattingSfx = new List<AudioClip>();
     [SerializeField] private List<AudioClip> _music = new List<AudioClip>();
     
     [SerializeField] private AudioSource _sfxAudioSource;
@@ -37,20 +38,23 @@ public class AudioManager : MonoBehaviour
     {
         switch (type)
         {
-            case SfxType.Death:
-                _sfxAudioSource.PlayOneShot(_deathSfx[Random.Range(0, _deathSfx.Count)]);
+            case SfxType.IceCube:
+                _sfxAudioSource.PlayOneShot(_iceCubeSfx[Random.Range(0, _iceCubeSfx.Count)]);
                 break;
-            case SfxType.Jump:
-                _sfxAudioSource.PlayOneShot(_jumpSfx[Random.Range(0, _jumpSfx.Count)]);
+            case SfxType.Bling:
+                _sfxAudioSource.PlayOneShot(_blingSfx[Random.Range(0, _blingSfx.Count)]);
                 break;
-            case SfxType.EnemyDeath:
-                _sfxAudioSource.PlayOneShot(_enemyDeathSfx[Random.Range(0, _enemyDeathSfx.Count)]);
+            case SfxType.Water:
+                _sfxAudioSource.PlayOneShot(_waterSfx[Random.Range(0, _waterSfx.Count)]);
                 break;
-            case SfxType.EggPickup:
-                _sfxAudioSource.PlayOneShot(_eggPickupSfx[Random.Range(0, _eggPickupSfx.Count)]);
+            case SfxType.Drop:
+                _sfxAudioSource.PlayOneShot(_dropSfx[Random.Range(0, _dropSfx.Count)]);
                 break;
             case SfxType.UiClick:
                 _sfxAudioSource.PlayOneShot(_uiClickSfx[Random.Range(0, _uiClickSfx.Count)]);
+                break;
+            case SfxType.Chatting:
+                _sfxAudioSource.PlayOneShot(_chattingSfx[Random.Range(0, _chattingSfx.Count)]);
                 break;
         }
     }
@@ -77,9 +81,11 @@ public class AudioManager : MonoBehaviour
 [Serializable]
 public enum SfxType
 {
-    Death,
-    EnemyDeath,
-    EggPickup,
-    Jump,
-    UiClick
+    None,
+    IceCube,
+    Bling,
+    Water,
+    Drop,
+    UiClick,
+    Chatting
 }
