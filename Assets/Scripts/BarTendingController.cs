@@ -275,6 +275,7 @@ public class BarTendingController : MonoBehaviour
         
         if (score > happyScore)
         {
+            AudioManager.Instance.PlaySfx(SfxType.Bling);
             if(_happySprite)
             {
                 _ratingPanel.image.sprite = _happySprite;
@@ -368,6 +369,7 @@ public class BarTendingController : MonoBehaviour
 
             int y1 = y;
             uiDecoReference.button.onClick.AddListener(() => ShowDecoration(FindGroupCount(index) + y1));
+            uiDecoReference.button.onClick.AddListener(() => AudioManager.Instance.PlaySfx(_decorationGroups[index].sfxType));
             _decorationUiList.Add(decoration);
         }
     }
@@ -380,6 +382,7 @@ public class BarTendingController : MonoBehaviour
         bool result = _liquidController.AddLiquidFromIndex(index);
         if (result)
         {
+            AudioManager.Instance.PlaySfx(SfxType.Water);
             _currentLiquidAmount++;
             if (_currentLiquidAmount == _maxLiquids)
             {
@@ -581,6 +584,7 @@ public class DecorationGroup
 {
     public string name;
     public Sprite sprite;
+    public SfxType sfxType;
     public Decoration noDecorationState;
     public List<Decoration> decorations = new List<Decoration>();
 }

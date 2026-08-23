@@ -80,6 +80,7 @@ public class DialogueController : MonoBehaviour
                 _typeWriterIndex++;
                 _typeWriterTimer = 0;
                 _dialogueText.maxVisibleCharacters++;
+                if(((float)_typeWriterIndex)/3 == ((int)_typeWriterIndex / 3)) AudioManager.Instance.PlaySfx(SfxType.Chatting);
                 if (_typeWriterIndex >= _typeWriterWaitTimes.Count)
                 {
                     _dialogueText.maxVisibleCharacters = _typeWriterWaitTimes.Count;
@@ -113,6 +114,7 @@ public class DialogueController : MonoBehaviour
 
         if (_typeWriterState == 0 || force)
         {
+            AudioManager.Instance.PlaySfx(SfxType.UiClick);
             if (_dialogueSequenceIndex >= _currentDialogueSequence.dialogues.Count)
             {
                 EndOfSequence();
@@ -123,6 +125,7 @@ public class DialogueController : MonoBehaviour
         }
         else
         {
+            AudioManager.Instance.PlaySfx(SfxType.UiClick);
             _typeWriterState++;
             _timeSinceLastDialogue = Time.time;
         }

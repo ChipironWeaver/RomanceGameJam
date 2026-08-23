@@ -31,6 +31,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySfx(SfxType type)
     {
+        _sfxAudioSource.pitch = Random.Range(0.95f, 1.05f);
         switch (type)
         {
             case SfxType.IceCube:
