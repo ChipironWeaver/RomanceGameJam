@@ -14,6 +14,9 @@ public class BlackScreen : MonoBehaviour
     [SerializeField] private string _smallTextTag;
     [SerializeField] private Image _image;
     
+    [SerializeField] private Image _backgroundImage;
+    [SerializeField] private Canvas _backgroundCanvas;
+    
     [Header("Setting")]
     [SerializeField] private Color _textColor;
     [SerializeField] private Color _backgroundColor;
@@ -21,20 +24,14 @@ public class BlackScreen : MonoBehaviour
 
     private Sequence _sequence;
     
-
-    [Button]
-    public void Test()
-    {
-        ShowBlackScreen("Jour 1", "16h29");
-    }
-    
-    public void ShowBlackScreen(string bigText, string smallText)
+    public void ShowBlackScreen(string bigText, string smallText, Sprite _backgroundSprite)
     {
         Color bgColor = new Color(_backgroundColor.r, _backgroundColor.g, _backgroundColor.b, 0);
         Color textColor = new Color(_textColor.r, _textColor.g, _textColor.b, 0);
         
         _bigText.text = bigText;
         _smallText.text = smallText;
+
         
         _image.color = bgColor;
         _bigText.color = textColor;
@@ -45,6 +42,15 @@ public class BlackScreen : MonoBehaviour
         _sequence.Append(_bigText.DOColor(_textColor, _animationTime/2));
         _sequence.Join(_smallText.DOColor(_textColor, _animationTime/2));
         _sequence.AppendInterval(_animationTime*2);
+        _sequence.JoinCallback((() =>
+        {
+            if (_backgroundSprite)
+            {
+                _backgroundImage.sprite = _backgroundSprite;
+                _backgroundCanvas.gameObject.SetActive(true);
+            }
+            else _backgroundCanvas.gameObject.SetActive(false);
+        }));
         _sequence.Append(_bigText.DOColor(textColor, _animationTime/2));
         _sequence.Join(_smallText.DOColor(textColor, _animationTime/2));
         _sequence.Append(_image.DOColor(bgColor, _animationTime/2));

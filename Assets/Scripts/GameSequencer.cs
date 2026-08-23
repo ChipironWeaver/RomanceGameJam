@@ -75,7 +75,7 @@ public class GameSequencer : MonoBehaviour
         switch(action.state)
         {
             case TypeOfState.BlackScreen:
-                _blackScreen.ShowBlackScreen(action.bigText, action.smallText);
+                _blackScreen.ShowBlackScreen(action.bigText, action.smallText,action.backgroundImage);
                 break;
             case TypeOfState.VisualNovel:
                 if (CurrentIndex - 1 >= 0)
@@ -130,6 +130,7 @@ public class GameSequencer : MonoBehaviour
         [Header("BlackScreen")] 
         public String bigText;
         public String smallText;
+        public Sprite backgroundImage;
         
         [Header("BarTending")]
         public float day;
