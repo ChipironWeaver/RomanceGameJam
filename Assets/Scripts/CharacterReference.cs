@@ -33,17 +33,26 @@ public class CharacterReference : MonoBehaviour
     }
     public void SetActivation(MainCharacters characters,bool active,bool instant = false)
     {
-        print("trying to move : " + GetGameObject(characters).name);
+        print("trying to move : " + GetGameObject(characters).name + active);
         GameObject character = null;
         if (characters == MainCharacters.None)
         {
-            if (!active && (_currentNpcObject == null)) return;
-            if (active && _currentNpcObject) return;
+            if (!active && !_currentNpcObject)
+            {
+                print("Deactivated on deactivation Return");
+                return;
+            }
+            if (active && _currentNpcObject)
+            {
+                print(active);
+                print("activated on activation Return");
+                return;
+            }
             if(active)
             {
                 _currentNpcObject = npcs[Random.Range(0, npcs.Count)];
-                character = _currentNpcObject;
             }
+            character = _currentNpcObject;
         }
         else
         {
@@ -55,16 +64,22 @@ public class CharacterReference : MonoBehaviour
             }
         }
         
-        if (!character) return;
+        if (!character)
+        {
+            print("character is null");
+            return;
+        }
         if(active)character.SetActive(true);
         if (instant)
         {
+            print(character.name + " has been instant moved");
             character.transform.position = active ? _activePosition : _notActivePosition;
             if(!active) character.SetActive(false);
             Actions.CharacterMoved?.Invoke();
         }
         else character.transform.DOMove(active ? _activePosition : _notActivePosition, 0.5f).SetEase(_easeType).OnComplete(()=>
         {
+            print(character.name + " has been moved");
             Actions.CharacterMoved?.Invoke();
             if(!active)
             {

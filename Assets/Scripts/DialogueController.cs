@@ -108,7 +108,6 @@ public class DialogueController : MonoBehaviour
     {
         if (!(Time.time > _timeSinceLastDialogue + _dialogueSkipCooldown) && !force)
         {
-            print("Can't");
             return;
         }
 
@@ -119,15 +118,12 @@ public class DialogueController : MonoBehaviour
                 EndOfSequence();
                 return;
             }
-
-            print("Displaying Dialogue " + _dialogueSequenceIndex + " in " + _currentDialogueSequence.name);
             DisplayDialogue(_currentDialogueSequence.dialogues[_dialogueSequenceIndex]);
             _dialogueSequenceIndex++;
         }
         else
         {
             _typeWriterState++;
-            print("Type Writer Start: " + _typeWriterState);
             _timeSinceLastDialogue = Time.time;
         }
     }
@@ -296,7 +292,6 @@ public class DialogueController : MonoBehaviour
         }
         else
         {
-            print("time slot :" + _typeWriterWaitTimes.Count);
             _dialogueText.maxVisibleCharacters = 0;
             _typeWriterState = 1;
             _typeWriterIndex = 0;
@@ -306,7 +301,6 @@ public class DialogueController : MonoBehaviour
 
     public void EndOfSequence()
     {
-        print("End of Sequence");
         if (_currentDialogueSequence.hasEndChoices)
         {
             _currentDialogueSequence.endEvent?.Invoke();
@@ -368,7 +362,6 @@ public class DialogueController : MonoBehaviour
     public void SetActivation(bool active)
     {
         if (_dialoguePanel.gameObject.activeSelf == active) return;
-        print("<color = #FF0000>Set Activation : " + active);
         _panelAnimation.Animate(!active);
         _nextButton.raycastTarget = active;
     }
