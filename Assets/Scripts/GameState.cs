@@ -5,6 +5,7 @@ public class GameState : MonoBehaviour
 {
     public static string PlayerName;
     public string testPlayerName;
+    public static int Day;
     
     public static float DariaReputation{ get; private set; }
     public static float AngelinaReputation{ get; private set; }

@@ -25,6 +25,7 @@ public class UISceneTransitionLoader : MonoBehaviour
     {
         Color color = _fadeColor;
         Sequence fadeOutSequence = DOTween.Sequence();
+        _image.raycastTarget = true;
         fadeOutSequence.SetUpdate(true);
         fadeOutSequence.Append(_image.DOColor(color, _fadeDuration));
         fadeOutSequence.OnComplete(() =>
@@ -48,6 +49,11 @@ public class UISceneTransitionLoader : MonoBehaviour
         );
         fadeInSequence.SetUpdate(true);
         fadeInSequence.Play();
+    }
+
+    public void CloseApp()
+    {
+        Application.Quit();
     }
 
     [Button]

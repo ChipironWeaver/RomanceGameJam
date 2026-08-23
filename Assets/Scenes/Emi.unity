@@ -3244,6 +3244,7 @@ GameObject:
   - component: {fileID: 1073852464}
   - component: {fileID: 1073852465}
   - component: {fileID: 1073852466}
+  - component: {fileID: 1073852467}
   m_Layer: 0
   m_Name: GameState
   m_TagString: Untagged
@@ -3872,12 +3873,25 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  _autostart: 1
-  _autoIndex: 7
+  _autostart: 0
+  _autoIndex: 3
   _blackScreen: {fileID: 312514440}
   _dialogueController: {fileID: 8713159423576416512}
   _barTendingController: {fileID: 5367359521910052953}
   _characterReference: {fileID: 190987903}
+--- !u!114 &1073852467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073852463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4111f9ae774ff94419d99b80cb00dd7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  gameStateScene: {fileID: 11400000, guid: a0da90a42ea1b984a934db622c967b75, type: 2}
 --- !u!1001 &1086190271
 PrefabInstance:
   m_ObjectHideFlags: 0

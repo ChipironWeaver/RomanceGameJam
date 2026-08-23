@@ -56,6 +56,8 @@ public class GameSequencer : MonoBehaviour
             return;
         }
         GameStateAction action = _actions[CurrentIndex];
+        if(action.setDay) GameState.Day = action.setDayIndex;
+        
         switch(action.state)
         {
             case TypeOfState.BlackScreen:
@@ -104,9 +106,12 @@ public class GameSequencer : MonoBehaviour
     private class GameStateAction
     {
         public string name;
+
+        public bool setDay;
+        public int setDayIndex;
         
         public TypeOfState state;
-
+        
         [Header("BlackScreen")] 
         public String bigText;
         public String smallText;
