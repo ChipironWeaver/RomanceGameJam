@@ -3444,7 +3444,7 @@ MonoBehaviour:
         m_Calls: []
   - name: BS Monday Morning Work
     state: 0
-    bigText: Quelque minutes plus tard
+    bigText: Quelques minutes plus tard
     smallText: 
     day: 0
     mainCharacters: 0
