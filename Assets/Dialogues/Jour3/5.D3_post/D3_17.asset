@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: D3_17
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 111ae335bb12cde12eafca20ac4ebf05, type: 2}
+  - {fileID: 11400000, guid: f5e4de2be2788096c3d75c407736aa54, type: 2}
+  - {fileID: 11400000, guid: 4581c229f7d3ccf70e32eaed45f6ad02, type: 2}
+  - {fileID: 11400000, guid: ab1263d9ffc271955093b515d1c30756, type: 2}
+  - {fileID: 11400000, guid: fc728d1bc35d3ad6e32ab0b247b326a8, type: 2}
+  - {fileID: 11400000, guid: e0a8dde5d3cd2f2544ccfc31ca58759a, type: 2}
+  - {fileID: 11400000, guid: 49feef362347470475db2942cacc2d92, type: 2}
+  - {fileID: 11400000, guid: 7aa1ea8f614d5b7032f887d9d8ad0aab, type: 2}
+  - {fileID: 11400000, guid: ce53bda126392c589764754e1b02071c, type: 2}
+  - {fileID: 11400000, guid: b9949eef614cf359c73a374129708028, type: 2}
+  - {fileID: 11400000, guid: 94e87cc034d61c6bc87d7a3f1be48d2e, type: 2}
+  - {fileID: 11400000, guid: 0a64eedd30889b3a50e6793eb732c017, type: 2}
+  - {fileID: 11400000, guid: 7683cb5b1888ae0e0ab5c54d54a76d7f, type: 2}
+  - {fileID: 11400000, guid: d3538b3b5e05e80c0a6a63e2af31567c, type: 2}
+  - {fileID: 11400000, guid: 197860786da54fe8b1d6fb8b4239b43e, type: 2}
+  - {fileID: 11400000, guid: c58fbf7e6ec01a195f895413cc284da8, type: 2}
+  - {fileID: 11400000, guid: b156170826c2baf8c61d645e631b6c70, type: 2}
+  - {fileID: 11400000, guid: af6483f8e84cdab9a488a42d1b4832e5, type: 2}
+  - {fileID: 11400000, guid: b59d3020b800428e989b244cfae1b0c5, type: 2}
+  - {fileID: 11400000, guid: 7edb606ae5201922dd7df223fa6d7494, type: 2}
+  - {fileID: 11400000, guid: abe5bf13225387d0963afb1855f828f6, type: 2}
+  - {fileID: 11400000, guid: 27590c5da02182bb87647e5c6185c3e2, type: 2}
+  - {fileID: 11400000, guid: b2f28a316c30f1c7b3746680f07a2b87, type: 2}
+  - {fileID: 11400000, guid: e8ea15fe70d75e822df30c71b639ffaf, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Personne ne m’a jamais connue exactement comme toi.
+    linkedDialogueSequence: {fileID: 11400000, guid: 1f2a4efb5dc630d28109eae84ea3e364, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: On s’est perdues de vue. Il faut qu’on réapprenne à se connaître. C’est normal, non ?
+    linkedDialogueSequence: {fileID: 11400000, guid: baca25b5ce7711a7055b746ee386a315, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu ne peux pas vraiment t’attendre à avoir encore la même place après autant de temps.
+    linkedDialogueSequence: {fileID: 11400000, guid: 8d6efb4c32d52bd52ebf30711552b6ab, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

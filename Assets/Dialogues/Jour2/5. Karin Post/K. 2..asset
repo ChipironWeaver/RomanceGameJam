@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K. 2.
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 2a40d77ed218ae04e89084d7500bc5ce, type: 2}
+  - {fileID: 11400000, guid: 4fd62b512a2c4684085a222d5df97a7e, type: 2}
+  - {fileID: 11400000, guid: a7996b3f64da73542a7a66b32ede4072, type: 2}
+  - {fileID: 11400000, guid: e4ac9c395bc587446bf3624917e5a05c, type: 2}
+  - {fileID: 11400000, guid: bf45a8d289e9dd2429ed4b347b723145, type: 2}
+  - {fileID: 11400000, guid: a89d0b3cd6da7ee4fb7b83a213b88a82, type: 2}
+  - {fileID: 11400000, guid: b1d58e5712c813c4b996e87fa7141f34, type: 2}
+  - {fileID: 11400000, guid: 7a2dd8b00e224ee4db442ad83950bc12, type: 2}
+  - {fileID: 11400000, guid: a78bf5499a46cd84b8992484da9f5155, type: 2}
+  - {fileID: 11400000, guid: f9b8087af7a960e4ea6ad5595023182b, type: 2}
+  - {fileID: 11400000, guid: 14aedd01b7f2d594babc80b986cabb8a, type: 2}
+  - {fileID: 11400000, guid: 01ea8da90368234479bd35fcab1b5f3d, type: 2}
+  - {fileID: 11400000, guid: e762e163c19806448b5cb4ed090774c3, type: 2}
+  - {fileID: 11400000, guid: 9b8e946282f95c847b558002d17dc0bb, type: 2}
+  - {fileID: 11400000, guid: 6adb6cf607b0336459b8eacbe9de3757, type: 2}
+  - {fileID: 11400000, guid: 9d237f91fe0e55c47877d692b17a1a32, type: 2}
+  - {fileID: 11400000, guid: ecf9f8f720d0d2746902b7fde70d3118, type: 2}
+  - {fileID: 11400000, guid: cc5c1825fe010a34ba5eefb607027ad4, type: 2}
+  - {fileID: 11400000, guid: 504d22692b3bc994bb7c6e8415c82a8c, type: 2}
+  - {fileID: 11400000, guid: d40407407c608b649a680c34111d628a, type: 2}
+  - {fileID: 11400000, guid: 00c7115ddecb8504cb97084d622a8986, type: 2}
+  - {fileID: 11400000, guid: fb89c9fb59f96e04b928ce4c382ee614, type: 2}
+  - {fileID: 11400000, guid: cdd0cb1c8d038b74488b39c66fcbb003, type: 2}
+  - {fileID: 11400000, guid: 5274fb1f14407834fb7a3be7a13d85c3, type: 2}
+  - {fileID: 11400000, guid: beca22e977ca0584cbf69cd8ab389e02, type: 2}
+  - {fileID: 11400000, guid: 13a1dd6f860938141b6eda0561185b77, type: 2}
+  - {fileID: 11400000, guid: b7c43c63f783be9478e521e0be9af218, type: 2}
+  - {fileID: 11400000, guid: 862eb7b1c1cd09040928da5a383da334, type: 2}
+  - {fileID: 11400000, guid: 0219340bba9216342b345394ca5b2369, type: 2}
+  - {fileID: 11400000, guid: 460c870ddf4bcdf4881ae9bb797f17b6, type: 2}
+  - {fileID: 11400000, guid: c1a9b72977640404291bfa7feb5449b4, type: 2}
+  - {fileID: 11400000, guid: a94a3d612641d4c44a9ccefc82418cae, type: 2}
+  - {fileID: 11400000, guid: a98c1317a9f9b1a4b8c2fe5da88828d4, type: 2}
+  - {fileID: 11400000, guid: 14d82036a83b53a4a93200c0fa2e59ca, type: 2}
+  - {fileID: 11400000, guid: 4147720524b58a64582001600132fabb, type: 2}
+  - {fileID: 11400000, guid: d02ca53513914d943978f1a841c348a6, type: 2}
+  - {fileID: 11400000, guid: fc43e7139587aba4eb03d0d89a3b3f26, type: 2}
+  - {fileID: 11400000, guid: 69165a632055bfe4f8cbfbf4e8273f4d, type: 2}
+  - {fileID: 11400000, guid: c6e4ec6f171aa9341928fbcd48721ae7, type: 2}
+  - {fileID: 11400000, guid: 032e32bac26f1b742bf1d2185fc62d25, type: 2}
+  - {fileID: 11400000, guid: b18bfc5c45c9f864bb002f1a080a02d2, type: 2}
+  - {fileID: 11400000, guid: a8d02e3dcb15771468281f66d615500f, type: 2}
+  - {fileID: 11400000, guid: 3029179a726e55d45a1e570870ec7a84, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: "Tu penses souvent aux gens quand ils ne sont pas l\xE0 ?"
+    linkedDialogueSequence: {fileID: 11400000, guid: b63cddc2757184849a6df3a19aa1dd5a, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "\xC7a doit \xEAtre agr\xE9able d'\xEAtre aussi facile \xE0 rendre
+      heureuse."
+    linkedDialogueSequence: {fileID: 11400000, guid: 40126e61585dea9478da41118666e9bc, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Je penserai \xE0 toi si je trouve quelque chose."
+    linkedDialogueSequence: {fileID: 11400000, guid: 0000a565558d5394da67d11d065b2c37, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

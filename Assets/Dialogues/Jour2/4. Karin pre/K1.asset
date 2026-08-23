@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 48a42ff0362a5f9459c626a7ea31eec0, type: 2}
+  - {fileID: 11400000, guid: ca2bbd1535f64914ab669b16ff05cf52, type: 2}
+  - {fileID: 11400000, guid: fc6af4554681b584684ab1de4efdf447, type: 2}
+  - {fileID: 11400000, guid: ff74722be7fc96341ac6dec463ee4fb2, type: 2}
+  - {fileID: 11400000, guid: b75ee3aba4e889f469d50169e7561b9a, type: 2}
+  - {fileID: 11400000, guid: bb5e3e4f0aff03c4bb3d8e0fc71394b4, type: 2}
+  - {fileID: 11400000, guid: a56280660f68f81458d1cc0a82452cff, type: 2}
+  - {fileID: 11400000, guid: 7e3bf6ceefc8a054aa65848e8c6d4b2e, type: 2}
+  - {fileID: 11400000, guid: 9549b44a446aade43a940ba8906698ad, type: 2}
+  - {fileID: 11400000, guid: 7f467574289139a478c7aa31cf26bfd5, type: 2}
+  - {fileID: 11400000, guid: 1aa4cc25408aae3499852a0b52a05916, type: 2}
+  - {fileID: 11400000, guid: c62df284ab720b243b8eeb9bfefac8dc, type: 2}
+  - {fileID: 11400000, guid: 889af3738bd71374f8a01e9b86dacce4, type: 2}
+  - {fileID: 11400000, guid: 431884615fddd5e45a0b7f43a1b3e58a, type: 2}
+  - {fileID: 11400000, guid: 8878aacb47653434999106b26ed6a102, type: 2}
+  - {fileID: 11400000, guid: 1dea0ed23ecdde24daf07a70dff80ce5, type: 2}
+  - {fileID: 11400000, guid: 77bfae276b76f2441a9280fb7b069a7e, type: 2}
+  - {fileID: 11400000, guid: 3d5d0a7fefb65d347842d6d5cc934582, type: 2}
+  - {fileID: 11400000, guid: a3aaf148cd34d8346b774cc7d8875e67, type: 2}
+  - {fileID: 11400000, guid: 0e56b6cb4f05f3643af6b06f94868b9b, type: 2}
+  - {fileID: 11400000, guid: c0328964d77ee4f41a0d8bd09a3541f6, type: 2}
+  - {fileID: 11400000, guid: 2fa69c5277e1f0f4a939f67427a08269, type: 2}
+  - {fileID: 11400000, guid: 3b4bdda69cb317849b6026ae621e09f1, type: 2}
+  - {fileID: 11400000, guid: 4f0fbf59ce0fa5847a7050b755a610dc, type: 2}
+  - {fileID: 11400000, guid: 4ce4fc7161d9dda4c9f0751b569e5b59, type: 2}
+  - {fileID: 11400000, guid: e9cd6df066c445245afd07b6884c6ba1, type: 2}
+  - {fileID: 11400000, guid: 2a51d997bce84a0479c96e78dc7fa9e2, type: 2}
+  - {fileID: 11400000, guid: 2a2c8b513a836d24090aea45c3aa871a, type: 2}
+  - {fileID: 11400000, guid: 4aee07edfef05a044900928dc94f97c0, type: 2}
+  - {fileID: 11400000, guid: 1ded127578a83124c9481be282196a03, type: 2}
+  - {fileID: 11400000, guid: a192d9f1ba5d5944d9f520db32b63bf2, type: 2}
+  - {fileID: 11400000, guid: 23298f6582959c045bf29099ceabc1d4, type: 2}
+  - {fileID: 11400000, guid: 09f7d87b2d9b66f4c8e1d9372eaf659a, type: 2}
+  - {fileID: 11400000, guid: 7fc77044dde8edd40838bfecc35f20d9, type: 2}
+  - {fileID: 11400000, guid: 4a16e9908bad2a34f9299a76a375b15a, type: 2}
+  - {fileID: 11400000, guid: 0b7153936139ae342aac183a06f48613, type: 2}
+  - {fileID: 11400000, guid: 37b6073fca0be7a419d6c8c1c49cd621, type: 2}
+  - {fileID: 11400000, guid: bba6e85dbc666d74cb8ba5543a79bd4b, type: 2}
+  - {fileID: 11400000, guid: 6775f380b72002f49b46dabe89f24b7c, type: 2}
+  - {fileID: 11400000, guid: 47f204e8d492e6d43be7298b6c6d306c, type: 2}
+  - {fileID: 11400000, guid: 002ca843896321844868ce479093f89e, type: 2}
+  - {fileID: 11400000, guid: 3a173f6ac38d62847865e8d807369dc7, type: 2}
+  - {fileID: 11400000, guid: 8abd4954cd2a6c0459c72cffbd45a591, type: 2}
+  - {fileID: 11400000, guid: 9fc3614114a34cb48a2fdac7674a2b2b, type: 2}
+  - {fileID: 11400000, guid: f1db76ef520e120419cc1eb72539bd25, type: 2}
+  - {fileID: 11400000, guid: 3d0f6dec5a51d2d45bc9b2fe69d2880d, type: 2}
+  - {fileID: 11400000, guid: 8358ae5e12ec4b64cbfb4e196a7f862c, type: 2}
+  - {fileID: 11400000, guid: 566f33b718a2a1343b650110f70205da, type: 2}
+  - {fileID: 11400000, guid: 7159c902eafa72d43908a7b4c9f8ba47, type: 2}
+  - {fileID: 11400000, guid: 6ff809f3f3604274c99c419f7b69c87a, type: 2}
+  - {fileID: 11400000, guid: 6121535c6a5a32e459ecd8bfc201ad69, type: 2}
+  - {fileID: 11400000, guid: 57c27a4a256b4a44aaa62345bb75678e, type: 2}
+  - {fileID: 11400000, guid: 1125b684c90641245953539c8e285ef8, type: 2}
+  - {fileID: 11400000, guid: 345a172054434f04da0797f9b531c861, type: 2}
+  - {fileID: 11400000, guid: d4f7443aba258d34da23e1e267ce8698, type: 2}
+  - {fileID: 11400000, guid: e8aa93a5476d44e4b9cad79d5921c1b1, type: 2}
+  - {fileID: 11400000, guid: 4c06c146c336adf429b572c5033aefcf, type: 2}
+  - {fileID: 11400000, guid: 7743036aea9d00748a5d1c7f1b12f298, type: 2}
+  - {fileID: 11400000, guid: b453454420894194f935e6ffd7603d0d, type: 2}
+  - {fileID: 11400000, guid: e8315985ed9c8d6458e59aa7867c4512, type: 2}
+  - {fileID: 11400000, guid: b928ade861a205e419be0068d9ce178f, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Je vais devoir deviner.
+    linkedDialogueSequence: {fileID: 11400000, guid: 3c37bb8748251f547863c0fbccabf72f, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Je me souviens.
+    linkedDialogueSequence: {fileID: 11400000, guid: 44f71a38e83c50149bf48a5cf84d4a08, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu pourrais me donner un indice.
+    linkedDialogueSequence: {fileID: 11400000, guid: c0f8540a49ea1e1478dc8d755aa13837, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

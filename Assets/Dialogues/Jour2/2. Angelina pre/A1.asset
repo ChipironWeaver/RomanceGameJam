@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: A1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: f7a7390c873f9ba478d7050273b23bbf, type: 2}
+  - {fileID: 11400000, guid: 76d3fe70fc5f33447bec04f0114aca9b, type: 2}
+  - {fileID: 11400000, guid: 6eff5e3892bf8f342a89e8da05a37e67, type: 2}
+  - {fileID: 11400000, guid: 16bf1c4e2d75327448271f606ece3a77, type: 2}
+  - {fileID: 11400000, guid: aa1fa949a9b0571438b1387201cd6f30, type: 2}
+  - {fileID: 11400000, guid: d2562c600dade02448639996a42de28b, type: 2}
+  - {fileID: 11400000, guid: 4c6694af85bb8184c97dd60b045de596, type: 2}
+  - {fileID: 11400000, guid: a3ce8c3f6c1aabc49bd71d766394ad42, type: 2}
+  - {fileID: 11400000, guid: 4de560b643c8337429f6e2c84fabf983, type: 2}
+  - {fileID: 11400000, guid: b870965ccbe2a1d48a483c124fbfdc14, type: 2}
+  - {fileID: 11400000, guid: 48739ad7aa86e5443ab27c6b67ad534e, type: 2}
+  - {fileID: 11400000, guid: 73c45e3d5666eb141b557e609f8dbc31, type: 2}
+  - {fileID: 11400000, guid: 166bff9e85ca02545b9d077342ef80e2, type: 2}
+  - {fileID: 11400000, guid: 375a66bfc76c76944879ad7e18ed1efb, type: 2}
+  - {fileID: 11400000, guid: f0688a6d55c9729498cf27063d1c6b7d, type: 2}
+  - {fileID: 11400000, guid: 8bbc4959ee77d5b4086d05c66ba83778, type: 2}
+  - {fileID: 11400000, guid: 4d22ed5c5d3010847bd1589a789f1b83, type: 2}
+  - {fileID: 11400000, guid: 5a4ea8fd9aeb039428372f296b1a104e, type: 2}
+  - {fileID: 11400000, guid: 8f3097aa36bbddc429295b2d39e03a8c, type: 2}
+  - {fileID: 11400000, guid: 3f93a65d591ef9741b79d9d28557b9d6, type: 2}
+  - {fileID: 11400000, guid: f1097a797c0ba9e4a92c1fd3730aa143, type: 2}
+  - {fileID: 11400000, guid: 5cf444a2760b023478ff2c7da7d297fc, type: 2}
+  - {fileID: 11400000, guid: 70f92459e7474ff418fba2c84d072dda, type: 2}
+  - {fileID: 11400000, guid: ae3e7a56b878f2f438ccf0184a47364a, type: 2}
+  - {fileID: 11400000, guid: 2352375602ee7ce4a815d1184d7b8085, type: 2}
+  - {fileID: 11400000, guid: a6d21aa0ba2e818409ef13229c959524, type: 2}
+  - {fileID: 11400000, guid: 2a0da592cc4c7b0428eb68dbb846c5ce, type: 2}
+  - {fileID: 11400000, guid: 2f9ed0271748951458c9b693e7000857, type: 2}
+  - {fileID: 11400000, guid: 7a92769a0917f3c49a8bba67fe0cc621, type: 2}
+  - {fileID: 11400000, guid: a21d10dfa0fe29a44b68087f5e460f49, type: 2}
+  - {fileID: 11400000, guid: f468d6c2c3e37a64b9ad0604e4234dc4, type: 2}
+  - {fileID: 11400000, guid: 6779f17352a864a4db59bce8a33cffe8, type: 2}
+  - {fileID: 11400000, guid: 5294f48ca82235443a2c220b2f949d62, type: 2}
+  - {fileID: 11400000, guid: 308d8da6268d9684aba550f8bd73bc9a, type: 2}
+  - {fileID: 11400000, guid: 307506319343cbb40ad6f9065bcb2eda, type: 2}
+  - {fileID: 11400000, guid: 1ba61d3453a03c847b318d2f6563c0c8, type: 2}
+  - {fileID: 11400000, guid: 758519e5c1c0eeb4893caace91ba0782, type: 2}
+  - {fileID: 11400000, guid: 81d21e0188e032a49a6443dfac64499a, type: 2}
+  - {fileID: 11400000, guid: 0978dbedef8e6cd4db971853c8a34ea1, type: 2}
+  - {fileID: 11400000, guid: 0cbc5f8b701fd86459f9e3ae1cc71cfd, type: 2}
+  - {fileID: 11400000, guid: db9df5c6eab1c1144a20e8f492706e9e, type: 2}
+  - {fileID: 11400000, guid: 60dd6dbff907a9c43ac332c3f5e0849a, type: 2}
+  - {fileID: 11400000, guid: d1024aa11d8273f45a5ac5237d5aa227, type: 2}
+  - {fileID: 11400000, guid: 33705696ecc74664eaef1dc593d88796, type: 2}
+  - {fileID: 11400000, guid: 5792be6a62eb7ac4f9c44ddd08e6350c, type: 2}
+  - {fileID: 11400000, guid: 0a41aebb3e326324b81c1d6e8eb6e77b, type: 2}
+  - {fileID: 11400000, guid: e8414b125184eaa4bbfe1e58f0291df8, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: "Mmh\u2026 \xE7a d\xE9pend. Qu\u2019est-ce que je gagne si je te
+      sauve, \u201Ch\xE9ro\xEFne\u201D ?"
+    linkedDialogueSequence: {fileID: 11400000, guid: fad2247ab0d946e419c70f351614e3aa, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Et tu veux que je r\xE9pare tes erreurs \xE0 chaque fois maintenant
+      ?"
+    linkedDialogueSequence: {fileID: 11400000, guid: f94f6c4a6e425ca479375cb20f997e5b, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Bon. Qu\u2019est-ce qu\u2019il te faut ?"
+    linkedDialogueSequence: {fileID: 11400000, guid: b89e72f4c2273f84094989f7d85016eb, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

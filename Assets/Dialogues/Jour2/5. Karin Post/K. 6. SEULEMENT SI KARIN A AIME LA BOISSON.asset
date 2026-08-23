@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K. 6. SEULEMENT SI KARIN A AIME LA BOISSON
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: a0aba533422d9cd44846b707d79206b0, type: 2}
+  - {fileID: 11400000, guid: 94c8df7d8fefecc419d311841a70aecc, type: 2}
+  - {fileID: 11400000, guid: 6b13b1a817f029145b56b9d02883a8d3, type: 2}
+  - {fileID: 11400000, guid: 09724da891b653942b2702bbf56d86a0, type: 2}
+  - {fileID: 11400000, guid: 01f6f81fc8adf5741b7e506330c9e6f2, type: 2}
+  - {fileID: 11400000, guid: f0cf399f2427f204688f5eaaaba49dc6, type: 2}
+  - {fileID: 11400000, guid: a16a6f2b69e8aa7448d2113f1184716c, type: 2}
+  - {fileID: 11400000, guid: ffc0759a9b4a5f744830c023cac9dcde, type: 2}
+  - {fileID: 11400000, guid: da47eed86d08eff49ab5837d57f8f1f1, type: 2}
+  - {fileID: 11400000, guid: da1af01262435034fb0820753272c50e, type: 2}
+  - {fileID: 11400000, guid: 8073810393c528d4f96e5c0bcee5b50f, type: 2}
+  - {fileID: 11400000, guid: 8f652344b22adba4e9300b1f258b3b30, type: 2}
+  - {fileID: 11400000, guid: 6072ec3cef075e345bdf92898dc3a1e0, type: 2}
+  - {fileID: 11400000, guid: e7b079f55f397584d8503ee843c19825, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 0
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 0}

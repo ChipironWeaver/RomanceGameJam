@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: D4_19
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: a4ef066e9eeb5fe8117e976505403eeb, type: 2}
+  - {fileID: 11400000, guid: 25b38f584700651f46cc179b789b3a0f, type: 2}
+  - {fileID: 11400000, guid: 71a2bf6d5ed1630ba2e7ffa0c278df66, type: 2}
+  - {fileID: 11400000, guid: 7bd167cc3dfeee9f591d77ff96ac4108, type: 2}
+  - {fileID: 11400000, guid: 7d993f2daa709e223437bd63be944d66, type: 2}
+  - {fileID: 11400000, guid: 947b388de895d854600974ff58df17ea, type: 2}
+  - {fileID: 11400000, guid: 7a75c1b10b7035e7091a9990fd1a4c80, type: 2}
+  - {fileID: 11400000, guid: 0805ae630e17d3ec403eea2289af1f33, type: 2}
+  - {fileID: 11400000, guid: bd786c4173b27727dc4200008775dd88, type: 2}
+  - {fileID: 11400000, guid: d864222aaf9912e85651542c25701c00, type: 2}
+  - {fileID: 11400000, guid: f43c922306a31bd889fd0b9c3186462d, type: 2}
+  - {fileID: 11400000, guid: 2e2b5cc6f263802860f2d86c6794fe66, type: 2}
+  - {fileID: 11400000, guid: c1611f0284734ce0756eb5d0907b1d00, type: 2}
+  - {fileID: 11400000, guid: 4e38e6597fa035e78a892463aef2b081, type: 2}
+  - {fileID: 11400000, guid: bfc2215e8f262dd2913b15591aaa3d23, type: 2}
+  - {fileID: 11400000, guid: 56b8e3fd9afaa01d5c71bc9fdeec4fbf, type: 2}
+  - {fileID: 11400000, guid: b7913b0a5f6933a6c5ffa47b22f2b5bc, type: 2}
+  - {fileID: 11400000, guid: e471b0a256cda20a96d402b601301e88, type: 2}
+  - {fileID: 11400000, guid: 96f9af017364ac8d943900f06de93479, type: 2}
+  - {fileID: 11400000, guid: 8b4f233040223059bd12cfd298131a9e, type: 2}
+  - {fileID: 11400000, guid: 134e4feb79c3aac298b2179997c5c344, type: 2}
+  - {fileID: 11400000, guid: 5b127f6eeab2b6b4a79af11d3690997d, type: 2}
+  - {fileID: 11400000, guid: 645ffe57e3d4b5d0858e339d2fb4b496, type: 2}
+  - {fileID: 11400000, guid: b0cb8f90c0480651d71dc9308264f869, type: 2}
+  - {fileID: 11400000, guid: d0f0c96b620485cd51f1d835323b15d5, type: 2}
+  - {fileID: 11400000, guid: 40c63196080a6b63bbf31764d5be6a95, type: 2}
+  - {fileID: 11400000, guid: afd519639ae8d0a8a3eb9bccb4d5885b, type: 2}
+  - {fileID: 11400000, guid: 79cc3082c017108d1a6ee75077f5cd1c, type: 2}
+  - {fileID: 11400000, guid: b5b04c716e079c251dd6179130073281, type: 2}
+  - {fileID: 11400000, guid: fd90a4184eaa88d3d49bbcd8936e7389, type: 2}
+  - {fileID: 11400000, guid: eb7600e0806bb775199385092af4de39, type: 2}
+  - {fileID: 11400000, guid: 44808072d7d70ed4b7b91eab333ec275, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Oui.
+    linkedDialogueSequence: {fileID: 11400000, guid: b2b387f1ffda18119bc2e7d69a2178af, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu peux, si tu veux.
+    linkedDialogueSequence: {fileID: 11400000, guid: 7d7db4ef7129874cffd58914e9a3f02d, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Non, c'était juste une question.
+    linkedDialogueSequence: {fileID: 11400000, guid: 2c9a9668955d4bb028015af537588220, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

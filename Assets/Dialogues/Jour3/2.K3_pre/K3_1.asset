@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K3_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 1d3ca27041e51a9525baa95be42134ff, type: 2}
+  - {fileID: 11400000, guid: 8e1032b3c28a2809e625c2b9eaa3cea5, type: 2}
+  - {fileID: 11400000, guid: 7e0b5bfa4ca06250daa6faa2c4079e1e, type: 2}
+  - {fileID: 11400000, guid: afd413e87a78021c7e0d37f311be41c1, type: 2}
+  - {fileID: 11400000, guid: d6f0bb9f6de61d028864995c23c5d45d, type: 2}
+  - {fileID: 11400000, guid: b1ffa8c99d509cb6ef35bce039231f2a, type: 2}
+  - {fileID: 11400000, guid: 010ee9006b37b2b25d4f93f35af41bae, type: 2}
+  - {fileID: 11400000, guid: 629e20471468ee25a9b6e1f7705fccde, type: 2}
+  - {fileID: 11400000, guid: 9438802e47b91d9da49bcdff0f71966c, type: 2}
+  - {fileID: 11400000, guid: 326080790294732f5f91a156191440b0, type: 2}
+  - {fileID: 11400000, guid: 30b6cdad86eefa259c659f3aa46e6cad, type: 2}
+  - {fileID: 11400000, guid: 6282fc630f5dbdd6d1012307b021e03a, type: 2}
+  - {fileID: 11400000, guid: 32faaab51680e285245df009b8be2df9, type: 2}
+  - {fileID: 11400000, guid: 4ef040e04708bfff92598bbf12d9102e, type: 2}
+  - {fileID: 11400000, guid: 47491dfb0b462a70f9b095fa2de8e2d2, type: 2}
+  - {fileID: 11400000, guid: 847746d24d0ef9adc75003cc6d193a47, type: 2}
+  - {fileID: 11400000, guid: 524a5fd97eb0c7765a030d23eb55115f, type: 2}
+  - {fileID: 11400000, guid: df0f8d7819329c15137a79bab3c7bcd3, type: 2}
+  - {fileID: 11400000, guid: 216e136197bfe22012cc6fbdf4879964, type: 2}
+  - {fileID: 11400000, guid: ff5206bd005ac16c2951da42304eec9c, type: 2}
+  - {fileID: 11400000, guid: 81a2fe768b95f1ddc4eeb9546d2cee8f, type: 2}
+  - {fileID: 11400000, guid: cfc384b1e4ac89353b6da897a7680554, type: 2}
+  - {fileID: 11400000, guid: 490a2f2d37f9cd0e87edbe19c615374a, type: 2}
+  - {fileID: 11400000, guid: a067769663eef8a56a3198b56b494adf, type: 2}
+  - {fileID: 11400000, guid: 83f66f996950dc66ff5afbf92e213089, type: 2}
+  - {fileID: 11400000, guid: 87c51cba3f0a3fe085622c3f16377520, type: 2}
+  - {fileID: 11400000, guid: 44b107caf66ac26916eef495b4e34b73, type: 2}
+  - {fileID: 11400000, guid: 4604909acd1321c6bf22cef9c39c7462, type: 2}
+  - {fileID: 11400000, guid: e1e0a7f9265663ab6c07c0cde3ac1e9f, type: 2}
+  - {fileID: 11400000, guid: 5ac676af7c1d15ea0099f93723a0a7c9, type: 2}
+  - {fileID: 11400000, guid: 22b8c60a323cb5e6fb1667809aba646b, type: 2}
+  - {fileID: 11400000, guid: c7695dfb66ff2d00c8222128afb7c94b, type: 2}
+  - {fileID: 11400000, guid: 452c0cc5f11c96859ac8a9028f9abf78, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: On dirait une étoile, non ?
+    linkedDialogueSequence: {fileID: 11400000, guid: ebc6df5f6d360b92620f0eba797aa65b, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu veux me donner un indice ?
+    linkedDialogueSequence: {fileID: 11400000, guid: 93db7e2d52273bd5e7bc7a7821cd0018, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: J’avoue, je vois pas de quoi tu parles.
+    linkedDialogueSequence: {fileID: 11400000, guid: 541e81176e2d2381a7bf985f9df9b034, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

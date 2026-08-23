@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: Outro 4_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: a5ad62d887cf3093dcb3ab362bdcc8e7, type: 2}
+  - {fileID: 11400000, guid: ad1c57b5ebb72d4e69293f3490710f21, type: 2}
+  - {fileID: 11400000, guid: 415b3c1fb73c9686495bc630b55ef6ce, type: 2}
+  - {fileID: 11400000, guid: 67edf3f4ffb7eda9fda8880d661fcfed, type: 2}
+  - {fileID: 11400000, guid: 0957887e2c2db6c1ff115e118fbdc779, type: 2}
+  - {fileID: 11400000, guid: 024631454f316623c225c6ebd3fde3d0, type: 2}
+  - {fileID: 11400000, guid: f688c1461c2ef52ac1cbba516e77d7a5, type: 2}
+  - {fileID: 11400000, guid: 8b38e9ffb9e42851ad93d09fe2e7a54f, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 116d46fa014c6f85d8087ae33100365d, type: 2}

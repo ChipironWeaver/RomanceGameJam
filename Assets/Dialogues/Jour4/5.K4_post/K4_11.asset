@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K4_11
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 769ebe5c1c73491ab8daebbcc173fadf, type: 2}
+  - {fileID: 11400000, guid: 7ae785d0411ff141fc8dc59716d8cc57, type: 2}
+  - {fileID: 11400000, guid: ba8d1414d092441d0d09023a6c4d1cd4, type: 2}
+  - {fileID: 11400000, guid: 6ee3b4817ff4576f41e1fd194651c2eb, type: 2}
+  - {fileID: 11400000, guid: b90283b67dc8963a215139913a011358, type: 2}
+  - {fileID: 11400000, guid: dfd1ded642b5ee04ddb73a23209e8079, type: 2}
+  - {fileID: 11400000, guid: 5086c7c105bd4ecf6e9ec46bbf2a1811, type: 2}
+  - {fileID: 11400000, guid: 784ca212bb2ee80a73d28993aa4818c7, type: 2}
+  - {fileID: 11400000, guid: 0d38a411751e065e92732e6cff642935, type: 2}
+  - {fileID: 11400000, guid: 264f69a5d4e270a9188806d3c834f5b3, type: 2}
+  - {fileID: 11400000, guid: 7dffdbf5922e1ea48ad3e9ed16b8faec, type: 2}
+  - {fileID: 11400000, guid: 8e2203c9e465ed0b9f7413b651610715, type: 2}
+  - {fileID: 11400000, guid: bc74014e96354f42f68557fb6c3aa3e6, type: 2}
+  - {fileID: 11400000, guid: e8b8a05de26635bb372ab3ce801f9c7b, type: 2}
+  - {fileID: 11400000, guid: 1d07b1828e3945a28db8a969770b9371, type: 2}
+  - {fileID: 11400000, guid: fa8390785dc40f5d93f9cf343a226489, type: 2}
+  - {fileID: 11400000, guid: 7851b3c1fea4a0a8b14fcb5c8aded8cc, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Toi aussi tu es spéciale pour moi. Ne l’oublie pas.
+    linkedDialogueSequence: {fileID: 11400000, guid: cc7cc9db1ad340d5d51949c1e21094a4, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Alors continue, tu te débrouilles bien.
+    linkedDialogueSequence: {fileID: 11400000, guid: 09213726858021bb7d8c912220ef4750, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Je crois que tu devrais arrêter de tester ce genre de trucs sur moi.**
+    linkedDialogueSequence: {fileID: 11400000, guid: 93d638d3a01df2e4af3057307daeb149, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

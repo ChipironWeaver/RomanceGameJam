@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: A. R
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: f004789b42351954484d6e16b3393343, type: 2}
+  - {fileID: 11400000, guid: 08f3750620e357e46bffd78678e259a5, type: 2}
+  - {fileID: 11400000, guid: ed0a197e404fcb74bafe1150c5b326ba, type: 2}
+  - {fileID: 11400000, guid: b83f4a0ff5080ef40a6c23313990e6b7, type: 2}
+  - {fileID: 11400000, guid: 7f33feeb336c06446b70c27137e0debd, type: 2}
+  - {fileID: 11400000, guid: 2dfc06c20a32cb541a2d7b80c5bc938f, type: 2}
+  - {fileID: 11400000, guid: 28df665fb77d1ee429c641dbd350373e, type: 2}
+  - {fileID: 11400000, guid: 8f13692851da87c488f7472bbe1d8776, type: 2}
+  - {fileID: 11400000, guid: edafd6412120bc141ac820f116a4fda2, type: 2}
+  - {fileID: 11400000, guid: 3662a3c443269a44a91065abaf45758f, type: 2}
+  - {fileID: 11400000, guid: 93ba4c28561254345aec6124becef99b, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: "Le truc rose d\u2019Angelina."
+    linkedDialogueSequence: {fileID: 11400000, guid: c3ed33130f5c2f349b657043e25bce93, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Summer Paradise.
+    linkedDialogueSequence: {fileID: 11400000, guid: ba1fca0d977528c4b8325fd8f35acc7c, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Sweet n\u2019 sour Pink!\u2122."
+    linkedDialogueSequence: {fileID: 11400000, guid: e1d91a67914d66644ac63285d6ad25a9, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

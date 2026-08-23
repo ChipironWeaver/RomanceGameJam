@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: D2_7
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 61cbd7c9d09cd04725373e778caa2507, type: 2}
+  - {fileID: 11400000, guid: b650e85e43ec5d1bb39dbf94b0085a05, type: 2}
+  - {fileID: 11400000, guid: c97cd5e0409a01cc4d3252cec9380a8e, type: 2}
+  - {fileID: 11400000, guid: da5d29218bb5c326042dc22f0d13c23b, type: 2}
+  - {fileID: 11400000, guid: 4c55bdbd42c9fbd783b09451b3a6d7c7, type: 2}
+  - {fileID: 11400000, guid: 1bd0a89ff72bd49bd8b8a9d16aaef04e, type: 2}
+  - {fileID: 11400000, guid: 6864189503c019a1f364f7e955de821d, type: 2}
+  - {fileID: 11400000, guid: 2804d7eb3b555a459c7524221559ca36, type: 2}
+  - {fileID: 11400000, guid: e6e01051214593f05ffc247eda9ebe57, type: 2}
+  - {fileID: 11400000, guid: d0aa5dfe3f04a75e24f931601a26d7d6, type: 2}
+  - {fileID: 11400000, guid: add813c433a81e4bc1c0b40b95987d89, type: 2}
+  - {fileID: 11400000, guid: a671e7521b60f4d66b3bd1590f5c5f42, type: 2}
+  - {fileID: 11400000, guid: 7a335e8cc0b37fcd874453fb09ef691e, type: 2}
+  - {fileID: 11400000, guid: 83e3650f988e8a876c51968656067c64, type: 2}
+  - {fileID: 11400000, guid: 6793b063f3c2c9f6350916f922f2f8dd, type: 2}
+  - {fileID: 11400000, guid: ca964f2abcea49ca15b14f61a8e0f914, type: 2}
+  - {fileID: 11400000, guid: 629712a6aaa770587e21471873d8cabc, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: "Tu n\u2019as pas besoin de le faire, du tout."
+    linkedDialogueSequence: {fileID: 11400000, guid: 8341e71cd35c7ff28b939795c8b022bc, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "Je ne savais m\xEAme pas que tu pensais \xE0 \xE7a."
+    linkedDialogueSequence: {fileID: 11400000, guid: bd5a7888350e06ff728b56a23db5008d, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: "\xC7a s\u2019appelle la politesse, tu sais."
+    linkedDialogueSequence: {fileID: 11400000, guid: 560deddd56c09dd43398971982317feb, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches: []

@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: A3_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 86ef30a79b2573f47cc969bb0f7004ec, type: 2}
+  - {fileID: 11400000, guid: c241f64074f97d435c7614c4e42ffa7b, type: 2}
+  - {fileID: 11400000, guid: d10a1f160b5a053a9c5064c166a49b39, type: 2}
+  - {fileID: 11400000, guid: e3999228c95ed662a04f779cc5a77e7f, type: 2}
+  - {fileID: 11400000, guid: c7913a860f10904b9afd790079ea65a7, type: 2}
+  - {fileID: 11400000, guid: 8978804cf486f3674b5e3fdd6545a965, type: 2}
+  - {fileID: 11400000, guid: 3e56c1c4bbf88c78f8b69882bc8f44e8, type: 2}
+  - {fileID: 11400000, guid: 72d8b503679be3686db5917a9e1382e6, type: 2}
+  - {fileID: 11400000, guid: fb3d1180da6110306c7758372de3a316, type: 2}
+  - {fileID: 11400000, guid: bfbdfc11dc426974d2dc43c617ca5bfa, type: 2}
+  - {fileID: 11400000, guid: 05025413a1452f3ac8e2d1dee9c6e687, type: 2}
+  - {fileID: 11400000, guid: c0b43263ecda222676166a42b4debda3, type: 2}
+  - {fileID: 11400000, guid: a030776555eec7a99d3f35caa78f4905, type: 2}
+  - {fileID: 11400000, guid: 274780ee58a0f624ad54460f80f2cd3f, type: 2}
+  - {fileID: 11400000, guid: ee16934e56bf65b692fa5fce807d69f0, type: 2}
+  - {fileID: 11400000, guid: 5bde04744fc183b0e80381449424a021, type: 2}
+  - {fileID: 11400000, guid: 10cc9146775f0b0bcb4e2007221b28e0, type: 2}
+  - {fileID: 11400000, guid: d3b70cb48edc022fa5fd6d5d3222dfba, type: 2}
+  - {fileID: 11400000, guid: 5f033afe658e24c145aec8fdf92b3bc7, type: 2}
+  - {fileID: 11400000, guid: 5cd0d76aa50eee62ba9b136fb5afe38f, type: 2}
+  - {fileID: 11400000, guid: 74261aa977bd65130575a21d69181313, type: 2}
+  - {fileID: 11400000, guid: ce7f9cad83bcbe311efe5776c72bbc92, type: 2}
+  - {fileID: 11400000, guid: 96e9214b35837f04db4ed571dc1c2f0c, type: 2}
+  - {fileID: 11400000, guid: 7b746a69dab04e67692c4dbf6e0759ec, type: 2}
+  - {fileID: 11400000, guid: 4877bf26f35c018ccb750a033fca02f8, type: 2}
+  - {fileID: 11400000, guid: 6af031bac5b8f2a1d22506e9a93d43a9, type: 2}
+  - {fileID: 11400000, guid: 44d88b4ddeec7d4cea75d8bec1b474e4, type: 2}
+  - {fileID: 11400000, guid: 18f85c1d5c41ee4f6aa341d6cde7b189, type: 2}
+  - {fileID: 11400000, guid: d2f858d9689c45691995a7f64f5d492f, type: 2}
+  - {fileID: 11400000, guid: 3f7d1fcef105ef39f377a7a8a9b07b80, type: 2}
+  - {fileID: 11400000, guid: 724db38c3f5e22bd013cfb0139c7fc2c, type: 2}
+  - {fileID: 11400000, guid: ec21f03ab7bd22171914a1673ff8dfc9, type: 2}
+  - {fileID: 11400000, guid: 98fa25ebc736178efbed45254f91013b, type: 2}
+  - {fileID: 11400000, guid: 136f50afb87eb4cbdc6b7348c61a57ba, type: 2}
+  - {fileID: 11400000, guid: 4cd4e8b86248824a3f829c34bc51901d, type: 2}
+  - {fileID: 11400000, guid: be140c3a1deeba8f2017e2ce28cbffa7, type: 2}
+  - {fileID: 11400000, guid: 1a798f5b6ec4d154f39c2c11950d1908, type: 2}
+  - {fileID: 11400000, guid: 07feacad8f5441bd366b456e90b2c817, type: 2}
+  - {fileID: 11400000, guid: 2a824e75a0e11591e0de367842292a3a, type: 2}
+  - {fileID: 11400000, guid: 5b510d7ccc112b9c4ed07280eeb337ab, type: 2}
+  - {fileID: 11400000, guid: c7e9175d874ce12fb0eeade1350394dd, type: 2}
+  - {fileID: 11400000, guid: 5e3570b49b6b17e8abcd9abbf8972f80, type: 2}
+  - {fileID: 11400000, guid: 29b5338b72089ea9083c13125284f411, type: 2}
+  - {fileID: 11400000, guid: d55c25c4a2a32e10330648f8f8b20e66, type: 2}
+  - {fileID: 11400000, guid: bd521aa3b869bea2fd1e76f304dbcea0, type: 2}
+  - {fileID: 11400000, guid: 14af3ac00e5803e08b68a2d4365f9cdb, type: 2}
+  - {fileID: 11400000, guid: 478228fd011744f1741e75dffefcb46d, type: 2}
+  - {fileID: 11400000, guid: 9db0bf85676f9378b3192d46900cbb7b, type: 2}
+  - {fileID: 11400000, guid: 697812e964d914f1c26f50e3f5157a3f, type: 2}
+  - {fileID: 11400000, guid: 3bfdbe60d17b8e3b85c7859d5311b47f, type: 2}
+  - {fileID: 11400000, guid: d977d78a91b212ec6d982b28be1c8efa, type: 2}
+  - {fileID: 11400000, guid: 1573442275815fde527cb44064e19e20, type: 2}
+  - {fileID: 11400000, guid: 305ec484cd150df64d812f7a595a9697, type: 2}
+  - {fileID: 11400000, guid: 6c5a6b8a055bf6fab5e285fb25862e18, type: 2}
+  - {fileID: 11400000, guid: dcb46d7204e7f8417e0cdda7d83b7841, type: 2}
+  - {fileID: 11400000, guid: f0fae27f8584ac15afbdb23dd890394a, type: 2}
+  - {fileID: 11400000, guid: d399dbd57d3ef1e42b48e07660d17d3f, type: 2}
+  - {fileID: 11400000, guid: 8358918848ebb2929d1708ed77116382, type: 2}
+  - {fileID: 11400000, guid: c5c3dd0fafdb40c00ad164998d93e3b5, type: 2}
+  - {fileID: 11400000, guid: 3201beeb18bfc82bc6a8e3c05c8a03cd, type: 2}
+  - {fileID: 11400000, guid: c24a267a6b2ce7b224633f6b82981884, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Je vais le garder précieusement.
+    linkedDialogueSequence: {fileID: 11400000, guid: c48524bec05625bb6768c9db0eafe848, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Non mais en quoi ça te rappelle à mon bon souvenir, ça ?
+    linkedDialogueSequence: {fileID: 11400000, guid: c6917c93cb8368916d80148749c344d0, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu pouvais vraiment garder ton cadeau.
+    linkedDialogueSequence: {fileID: 11400000, guid: 8fce4a06890a4defe38743c86d258b0e, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

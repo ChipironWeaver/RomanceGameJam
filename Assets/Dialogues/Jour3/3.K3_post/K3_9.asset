@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: K3_9
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 29f40526115d2d6aa0fec238be0dc0d5, type: 2}
+  - {fileID: 11400000, guid: 9b17e4fadad2670d2d040b95f53f1abd, type: 2}
+  - {fileID: 11400000, guid: 454e8412fc45e68749418f759f73806a, type: 2}
+  - {fileID: 11400000, guid: f82f11b3bc1471101ce350126787a0a0, type: 2}
+  - {fileID: 11400000, guid: a1fe96f634b7a9b9f5edabb14a92436f, type: 2}
+  - {fileID: 11400000, guid: c6b8b0ab22b0b4dcdb578b67cd1dc8fc, type: 2}
+  - {fileID: 11400000, guid: 965bf806c5af0bd8a8b943a425c0cf57, type: 2}
+  - {fileID: 11400000, guid: 9418c25a42221b2ce4ebb1f22e11c0d6, type: 2}
+  - {fileID: 11400000, guid: 950b1fc39e6607e995dd72032ced2483, type: 2}
+  - {fileID: 11400000, guid: f6797d3472708fa93a448be38e361174, type: 2}
+  - {fileID: 11400000, guid: de12f7bb178b9e4e58d747d2e73ccaf5, type: 2}
+  - {fileID: 11400000, guid: 229ecd6301699a4666c90f58a5d9947f, type: 2}
+  - {fileID: 11400000, guid: 47bb9a2073cb20b77c38aa23f517cb67, type: 2}
+  - {fileID: 11400000, guid: 768057a53103e425a60b5a7cda68bc2b, type: 2}
+  - {fileID: 11400000, guid: 8aed4736aa8ecc4143b09fc8d500d493, type: 2}
+  - {fileID: 11400000, guid: e223e6291908a352869b29da4d3e859a, type: 2}
+  - {fileID: 11400000, guid: df4f8fb0df45ead70e720d2e7e930eea, type: 2}
+  - {fileID: 11400000, guid: 2c5fe87008d1e157522d168461c3264f, type: 2}
+  - {fileID: 11400000, guid: 9a4eaa7b2558e1d0e84df9914b017e6d, type: 2}
+  - {fileID: 11400000, guid: 035530e0bc028e0ccf823e91b477afdd, type: 2}
+  - {fileID: 11400000, guid: e64cf43acd71c80c18883713e368be65, type: 2}
+  - {fileID: 11400000, guid: 7ced5c96b5d922e3808c28939eb73177, type: 2}
+  - {fileID: 11400000, guid: adb5b07d7b1282746d44f1e3d2f61226, type: 2}
+  - {fileID: 11400000, guid: 6ae30b7f346e27cf719c37749bcb1f53, type: 2}
+  - {fileID: 11400000, guid: c8b44e65be6f1532861787a2824edb26, type: 2}
+  - {fileID: 11400000, guid: d5df198a9d66e79040f0679c269f1f52, type: 2}
+  - {fileID: 11400000, guid: ffb44e0382a86af9ce0d7f55e6598e94, type: 2}
+  - {fileID: 11400000, guid: fd9f8b17693943c775a19e35598f0356, type: 2}
+  - {fileID: 11400000, guid: a9c8076138c962c7310ee870c0d7c256, type: 2}
+  - {fileID: 11400000, guid: 58ec4fec7b31f4fbe46d92980aeccaa7, type: 2}
+  - {fileID: 11400000, guid: c73eab6456774d8a1c38f7f2321a4d93, type: 2}
+  - {fileID: 11400000, guid: cc44700c997df96ee3949ab1317fbec4, type: 2}
+  - {fileID: 11400000, guid: f158adbade0fcfc95f5e554995e3938d, type: 2}
+  - {fileID: 11400000, guid: 26c8d0dc010cf923a69b0844de3b113c, type: 2}
+  - {fileID: 11400000, guid: 1be76b1ca3c9cc20446fbe6c672d890d, type: 2}
+  - {fileID: 11400000, guid: 90eafffa895b2ce190e39b56442680da, type: 2}
+  - {fileID: 11400000, guid: b371adc3a5e732b8e28fe81b51cda089, type: 2}
+  - {fileID: 11400000, guid: a5397b20f515271c3be8be1382ba3fb2, type: 2}
+  - {fileID: 11400000, guid: cadadc16ea22a3003d3a8311657a26db, type: 2}
+  - {fileID: 11400000, guid: de63dc40981a8a331e7ac0fe835175a0, type: 2}
+  - {fileID: 11400000, guid: 9e45aa153cade210670f3481f7f76d69, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 1
+  choices:
+  - choiceString: Tu peux parler autant que tu veux avec moi.
+    linkedDialogueSequence: {fileID: 11400000, guid: 0dafd2eb9968d3ca1623f5cfb071163d, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Je te dirai honnêtement si j’ai besoin que tu ralentisses.
+    linkedDialogueSequence: {fileID: 11400000, guid: d8cf5be32b1e5b536997756b10210255, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  - choiceString: Tu peux quand même être assez intense parfois.
+    linkedDialogueSequence: {fileID: 11400000, guid: 027e3b69e9f0b837b6aeddb83023989e, type: 2}
+    onDialogueChoice:
+      m_PersistentCalls:
+        m_Calls: []
+    branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+  hasEndBranch: 0
+  endBranches:

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: REJOINDRE ANGELINA_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 0370201ae4f4f7bc6c740b12542fba79, type: 2}
+  - {fileID: 11400000, guid: 794338004071b05c9ebee39930f90a2c, type: 2}
+  - {fileID: 11400000, guid: 7e07f32be765914f515eb992e94f0d6b, type: 2}
+  - {fileID: 11400000, guid: ff87bf6e6498deff0e588baaaf3091ba, type: 2}
+  - {fileID: 11400000, guid: effc3b50346aa1536c468398af99c69d, type: 2}
+  - {fileID: 11400000, guid: 0704f2735524d595f4c323e190595e5d, type: 2}
+  - {fileID: 11400000, guid: 42af9fe48438d5bfa708cf0226b57a34, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: f247e52501df1bd7e81660ee12d5b677, type: 2}

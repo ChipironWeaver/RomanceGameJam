@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
+  m_Name: Intro 4_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogues:
+  - {fileID: 11400000, guid: 88624f7e0470411a37be245dd70d7ffb, type: 2}
+  - {fileID: 11400000, guid: 38d4dc7e75d395bd8887b00904a5e596, type: 2}
+  - {fileID: 11400000, guid: 679300024e60703eb4ddf2ee8de73c92, type: 2}
+  - {fileID: 11400000, guid: f921fb2bfda1ace7c369f87d1771177a, type: 2}
+  - {fileID: 11400000, guid: 4f35f36c676d78083c0194e98b195303, type: 2}
+  - {fileID: 11400000, guid: 9e4ef388d881127c9383665ababfe49a, type: 2}
+  - {fileID: 11400000, guid: 599d364ce8ff04129d1cdfc14675b7a9, type: 2}
+  - {fileID: 11400000, guid: 2eb74c2afb4fbfa3c528d795777cc99e, type: 2}
+  - {fileID: 11400000, guid: 2382ec974630c99f55e6ac4d586f494f, type: 2}
+  - {fileID: 11400000, guid: 0d6ed9a452e3e714db3a57d3eaca8739, type: 2}
+  - {fileID: 11400000, guid: 79eef13a2174a1a68d2863294eaf9380, type: 2}
+  - {fileID: 11400000, guid: d21c2c27e96a146060be8f0a39923a93, type: 2}
+  - {fileID: 11400000, guid: f9c7014bd9240840c200740623218c23, type: 2}
+  - {fileID: 11400000, guid: 7f7aeccd593449bd4ceabc55e9a6cdcb, type: 2}
+  - {fileID: 11400000, guid: d4d62264d245ccd477f4906ea8376989, type: 2}
+  - {fileID: 11400000, guid: 48a840b7354f62eb7f4860813d6382fc, type: 2}
+  - {fileID: 11400000, guid: 39ffe68fd65ae28bcac9801419deaf17, type: 2}
+  - {fileID: 11400000, guid: e5413cf82f6289254dfa3cb68435efa8, type: 2}
+  - {fileID: 11400000, guid: d4778cf99891d333747039c2bd96a9f4, type: 2}
+  - {fileID: 11400000, guid: 657090e3892992d95b7e263706b0e9a4, type: 2}
+  - {fileID: 11400000, guid: 38059d31dbe8cd7228aad6677415a06d, type: 2}
+  - {fileID: 11400000, guid: 192bb6873ec57ebd9ef761e8d3d3c1a2, type: 2}
+  - {fileID: 11400000, guid: 4340c69d83207b6bc634d155d2c3c1e9, type: 2}
+  - {fileID: 11400000, guid: 5ded7347ce782d56513d9dd68405a0c4, type: 2}
+  - {fileID: 11400000, guid: 93eeb887f7c276ec4b947b3bc98edc78, type: 2}
+  - {fileID: 11400000, guid: 039f734ce68fe3ce8ae7b7aa2a75faec, type: 2}
+  - {fileID: 11400000, guid: fbc4610587ffb1c9089e3299636b9936, type: 2}
+  - {fileID: 11400000, guid: 98e4d8ab7b354b5a8cc713fea175754a, type: 2}
+  - {fileID: 11400000, guid: 7d97ae231e4c69f63df24219b8e3c8c5, type: 2}
+  - {fileID: 11400000, guid: 4afcc23ae38746deadc2a85dd141155e, type: 2}
+  - {fileID: 11400000, guid: 57d99a2981207cc68e946fbd9760f79a, type: 2}
+  - {fileID: 11400000, guid: 0ba2eb23b99ae3388fa135def243d28c, type: 2}
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  hasEndChoices: 0
+  choices:
+  hasEndBranch: 0
+  endBranches:
