@@ -10,6 +10,8 @@ public class Dialogue : ScriptableObject
 
     public bool setBlackScreen;
     [ShowIf("setBlackScreen")] public bool blackScreen;
+    [ShowIf("setBlackScreen")] public bool setImage;
+    [ShowIf("setBlackScreen")] public Sprite imageSprite;
     
     [Header("NameDisplay")]
     public MainCharacters speakingCharacter;

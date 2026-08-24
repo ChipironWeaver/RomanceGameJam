@@ -21,6 +21,36 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hasEndChoices: 0
-  choices:
-  hasEndBranch: 0
+  choices: []
+  hasEndBranch: 1
   endBranches:
+  - branching:
+      _eventConditions:
+      - eventName: ROUTE_LOCK_ANGELINA
+        eventCharacter: 3
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 5
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: b3aa253cbb09c733c221bae308fffbb3, type: 2}
+  - branching:
+      _eventConditions:
+      - eventName: ROUTE_LOCK_DARIA
+        eventCharacter: 2
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 5
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 8b670ac1ef1c266c63fa37467ac7c29d, type: 2}
+  - branching:
+      _eventConditions:
+      - eventName: ROUTE_LOCK_KARIN
+        eventCharacter: 4
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 5
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 78bd53d132bd2f4c9f2ce3ad1cbe66a9, type: 2}

@@ -12,10 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: Outro 6_14_2
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Tu ouvres sa conversation. Tu hésites.
+  dialogueText: "Tu ouvres sa conversation. Tu h\xE9sites."
+  setBlackScreen: 0
+  blackScreen: 0
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
+  playMusic: 0
+  musicIndex: 0
+  playSFX: 0
+  sfxType: 0
   triggerAnimation: 0
   animatedCharacters: 0
   triggerName: 
@@ -27,9 +33,9 @@ MonoBehaviour:
   reputationCharacters: 0
   isSet: 0
   reputationAmount: 0
-  hasCharacterEvent: 0
-  charactersEvent: 0
-  eventName: 
+  hasCharacterEvent: 1
+  charactersEvent: 2
+  eventName: ROUTE_LOCK_DARIA
   dialogueEvent:
     m_PersistentCalls:
       m_Calls: []

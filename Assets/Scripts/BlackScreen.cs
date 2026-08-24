@@ -14,7 +14,7 @@ public class BlackScreen : MonoBehaviour
     [SerializeField] private string _smallTextTag;
     [SerializeField] private Image _image;
     
-    [SerializeField] private Image _backgroundImage;
+    [SerializeField] public Image backgroundImage;
     [SerializeField] private Canvas _backgroundCanvas;
     
     [Header("Setting")]
@@ -24,7 +24,7 @@ public class BlackScreen : MonoBehaviour
 
     private Sequence _sequence;
     
-    public void ShowBlackScreen(string bigText, string smallText, Sprite _backgroundSprite)
+    public void ShowBlackScreen(string bigText, string smallText, Sprite backgroundSprite)
     {
         Color bgColor = new Color(_backgroundColor.r, _backgroundColor.g, _backgroundColor.b, 0);
         Color textColor = new Color(_textColor.r, _textColor.g, _textColor.b, 0);
@@ -44,9 +44,9 @@ public class BlackScreen : MonoBehaviour
         _sequence.AppendInterval(_animationTime*2);
         _sequence.JoinCallback((() =>
         {
-            if (_backgroundSprite)
+            if (backgroundSprite)
             {
-                _backgroundImage.sprite = _backgroundSprite;
+                backgroundImage.sprite = backgroundSprite;
                 _backgroundCanvas.gameObject.SetActive(true);
             }
             else _backgroundCanvas.gameObject.SetActive(false);

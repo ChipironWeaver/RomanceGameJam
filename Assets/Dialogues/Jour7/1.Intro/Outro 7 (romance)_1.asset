@@ -30,10 +30,19 @@ MonoBehaviour:
   hasEndBranch: 1
   endBranches:
   - branching:
-      _eventConditions: []
+      _eventConditions:
+      - eventName: ROUTE_LOCK_DARIA
+        eventCharacter: 2
+        invertCondition: 0
+      - eventName: ROUTE_LOCK_KARIN
+        eventCharacter: 4
+        invertCondition: 0
+      - eventName: ROUTE_LOCK_ANGELINA
+        eventCharacter: 3
+        invertCondition: 0
       _reputationConditions: []
-      _conditionType: 0
-      _conditionNumber: 0
+      _conditionType: 1
+      _conditionNumber: 1
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: cf83d36ef370bff911111da6e6fb9a04, type: 2}
   - branching:

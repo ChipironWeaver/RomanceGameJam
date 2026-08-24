@@ -155,7 +155,11 @@ public class DialogueController : MonoBehaviour
 
         if (dialogue.setBlackScreen)
         {
-            _blackScreen.FadeToBlackScreen(dialogue.blackScreen);
+            if (dialogue.setImage)
+            {
+                _blackScreen.backgroundImage.sprite = dialogue.imageSprite;
+            }
+            else _blackScreen.FadeToBlackScreen(dialogue.blackScreen);
         }
         
         if (dialogue.playMusic)

@@ -30,23 +30,32 @@ MonoBehaviour:
   hasEndBranch: 1
   endBranches:
   - branching:
-      _eventConditions: []
+      _eventConditions:
+      - eventName: ROUTE_LOCK_ANGELINA
+        eventCharacter: 3
+        invertCondition: 0
       _reputationConditions: []
-      _conditionType: 0
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: edd8bd1c2dd0489d250e2cddfa9e2aa6, type: 2}
   - branching:
-      _eventConditions: []
+      _eventConditions:
+      - eventName: ROUTE_LOCK_KARIN
+        eventCharacter: 4
+        invertCondition: 0
       _reputationConditions: []
-      _conditionType: 0
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: fee5eec244dd383862645b5315704d34, type: 2}
   - branching:
-      _eventConditions: []
+      _eventConditions:
+      - eventName: ROUTE_LOCK_DARIA
+        eventCharacter: 2
+        invertCondition: 0
       _reputationConditions: []
-      _conditionType: 0
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: 623219ef087b9c6914a254d2d352c70f, type: 2}

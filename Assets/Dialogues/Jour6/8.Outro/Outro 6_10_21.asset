@@ -12,10 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: Outro 6_10_21
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: *TU L’AIMES (˵◝ ⩊ ◜˵マ*
+  dialogueText: "*TU L\u2019AIMES*"
+  setBlackScreen: 0
+  blackScreen: 0
   speakingCharacter: 3
   npcName: 
   npcIcon: {fileID: 0}
+  playMusic: 0
+  musicIndex: 0
+  playSFX: 0
+  sfxType: 0
   triggerAnimation: 0
   animatedCharacters: 0
   triggerName: 
