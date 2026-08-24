@@ -49,12 +49,12 @@ MonoBehaviour:
   hasEndBranch: 1
   endBranches:
   - branching:
-      _eventConditions:
-      - eventName: 
-        eventCharacter: 3
-        invertCondition: 0
-      _reputationConditions: []
-      _conditionType: 1
-      _conditionNumber: 15
+      _eventConditions: []
+      _reputationConditions:
+      - reputationType: 0
+        reputationCharacter: 2
+        conditionNumber: 24
+      _conditionType: 5
+      _conditionNumber: 1
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: 2d7ff1bc4db3c94f4125d114dc79c95e, type: 2}

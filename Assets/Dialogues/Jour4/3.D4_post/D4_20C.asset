@@ -22,4 +22,11 @@ MonoBehaviour:
   hasEndChoices: 0
   choices: []
   hasEndBranch: 1
-  endBranches: []
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: e147c190389a6354bf6273bb1a84ef21, type: 2}
