@@ -7235,7 +7235,7 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: BS D7 Intro
+  - name: 104 BS D7 Intro
     setDay: 1
     setDayIndex: 7
     state: 0
@@ -7331,8 +7331,8 @@ MonoBehaviour:
             m_StringArgument: MainMenu
             m_BoolArgument: 0
           m_CallState: 2
-  _autostart: 0
-  _autoIndex: 7
+  _autostart: 1
+  _autoIndex: 104
   _blackScreen: {fileID: 312514440}
   _dialogueController: {fileID: 8713159423576416512}
   _barTendingController: {fileID: 5367359521910052953}
@@ -7350,8 +7350,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   gameStateScene: {fileID: 11400000, guid: a0da90a42ea1b984a934db622c967b75, type: 2}
-  loadOnStart: 1
-  startOnStart: 1
+  loadOnStart: 0
+  startOnStart: 0
 --- !u!1001 &1086190271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9930,6 +9930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d7b7c2aa80970447bdae9409006b17f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  mainCharacters: 0
 --- !u!4 &1628243407
 Transform:
   m_ObjectHideFlags: 0
