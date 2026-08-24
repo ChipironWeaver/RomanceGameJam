@@ -6164,8 +6164,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - name: BS D5
-    setDay: 0
-    setDayIndex: 0
+    setDay: 1
+    setDayIndex: 5
     state: 0
     bigText: Vendredi
     smallText: 11h53
@@ -6223,8 +6223,8 @@ MonoBehaviour:
     setDay: 0
     setDayIndex: 0
     state: 0
-    bigText: 
-    smallText: 
+    bigText: Vendredi
+    smallText: 12h28
     backgroundImage: {fileID: 0}
     day: 0
     mainCharacters: 0
@@ -6287,9 +6287,9 @@ MonoBehaviour:
     isSpecial: 1
     datableRecipe:
       name: Ice Sky Normal
-      day: 4
+      day: 5
       description: 
-      hint: "Une boisson un peu sucr\xE9e."
+      hint: "Une boisson un peu sucr\xE9e, avec des citron et myrtilles."
       liquids: 000000000500000002000000
       decorations:
       - hasToBeEmpty: 0
@@ -6313,11 +6313,39 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: D D5 Daria post
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 1
+    goodSequence: {fileID: 11400000, guid: 25cce82eda6388a47b8337e497f460bb, type: 2}
+    averageSequence: {fileID: 11400000, guid: 0132688bfcc15a66aa2168c4798b3d4d, type: 2}
+    badSequence: {fileID: 11400000, guid: 94245e1962700a6af17b0f99d1ab4a3b, type: 2}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS D5 Normal
     setDay: 0
     setDayIndex: 0
     state: 0
-    bigText: 
+    bigText: 14h32
     smallText: 
     backgroundImage: {fileID: 0}
     day: 0
@@ -6341,12 +6369,40 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: GP D5 Normal
+    setDay: 0
+    setDayIndex: 0
+    state: 1
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 5
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS D5 Karin
     setDay: 0
     setDayIndex: 0
     state: 0
-    bigText: 
-    smallText: 
+    bigText: Vendredi
+    smallText: 15h16
     backgroundImage: {fileID: 0}
     day: 0
     mainCharacters: 0
@@ -6369,12 +6425,228 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: D D5 Karin Pre
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: aaf1de9509370df123984d2e2221b316, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: GP D5 Karin
+    setDay: 0
+    setDayIndex: 0
+    state: 1
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 5
+    mainCharacters: 4
+    isSpecial: 1
+    datableRecipe:
+      name: Melon Soda Normal
+      day: 5
+      description: 
+      hint: Une boisson avec de la chantilly et du melon.
+      liquids: 000000000000000007000000
+      decorations:
+      - hasToBeEmpty: 1
+        validIndexes: 
+      - hasToBeEmpty: 0
+        validIndexes: 000000000100000002000000
+      - hasToBeEmpty: 1
+        validIndexes: 
+      - hasToBeEmpty: 0
+        validIndexes: 0000000001000000
+      - hasToBeEmpty: 0
+        validIndexes: 03000000
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D D5 Karin Post
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 1
+    goodSequence: {fileID: 11400000, guid: 84e88404718f44b3d8d74f091c6d9f8f, type: 2}
+    averageSequence: {fileID: 11400000, guid: ee1dd2fe6a2ffaa35af05526be034a39, type: 2}
+    badSequence: {fileID: 11400000, guid: a17cff548f5fbe6563ff5cee970e6fdc, type: 2}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS D5 Angelina
     setDay: 0
     setDayIndex: 0
     state: 0
+    bigText: Vendredi
+    smallText: 18h56
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: 4e839b0db18ee92d24ed5ff7bc6ebb0f, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D D5 Angelina pre
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: Vendred
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: 4e839b0db18ee92d24ed5ff7bc6ebb0f, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: GP D5 Angelina
+    setDay: 0
+    setDayIndex: 0
+    state: 1
     bigText: 
     smallText: 
+    backgroundImage: {fileID: 0}
+    day: 5
+    mainCharacters: 3
+    isSpecial: 1
+    datableRecipe:
+      name: Pink Lemonade Normal
+      day: 5
+      description: 
+      hint: "Une boisson a la base citronn\xE9e et fraise."
+      liquids: 000000000800000005000000
+      decorations:
+      - hasToBeEmpty: 0
+        validIndexes: 0000000001000000
+      - hasToBeEmpty: 0
+        validIndexes: 000000000100000002000000
+      - hasToBeEmpty: 0
+        validIndexes: 02000000
+      - hasToBeEmpty: 0
+        validIndexes: 02000000
+      - hasToBeEmpty: 0
+        validIndexes: 000000000100000002000000
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D D5 Anglina post
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 1
+    goodSequence: {fileID: 11400000, guid: 3344efdd6d0f6de6fabc54ec33c814d2, type: 2}
+    averageSequence: {fileID: 11400000, guid: 28086a78c060990864faadb59bf34b00, type: 2}
+    badSequence: {fileID: 11400000, guid: 45908c2bd9e58bda81191369508587f5, type: 2}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS D5 Outro
+    setDay: 0
+    setDayIndex: 0
+    state: 0
+    bigText: Vendredi
+    smallText: 20h54
     backgroundImage: {fileID: 0}
     day: 0
     mainCharacters: 0
@@ -6397,10 +6669,10 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: D D5 Outro
     setDay: 0
     setDayIndex: 0
-    state: 0
+    state: 2
     bigText: 
     smallText: 
     backgroundImage: {fileID: 0}
@@ -6414,231 +6686,7 @@ MonoBehaviour:
       hint: 
       liquids: 
       decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
+    sequence: {fileID: 11400000, guid: c2562034ec48f4493ab095ae6762bef1, type: 2}
     changeBasedOnLastResult: 0
     goodSequence: {fileID: 0}
     averageSequence: {fileID: 0}

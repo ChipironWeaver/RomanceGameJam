@@ -34,28 +34,25 @@ MonoBehaviour:
         eventCharacter: 4
         invertCondition: 0
       _reputationConditions: []
-      _conditionType: 0
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: aac6010b610b215c4a36a9a9ded04814, type: 2}
   - branching:
       _eventConditions:
       - eventName: JEUDI
-        eventCharacter: 4
+        eventCharacter: 2
         invertCondition: 1
       - eventName: JEUDI
-        eventCharacter: 1
+        eventCharacter: 3
         invertCondition: 1
       _reputationConditions: []
-      _conditionType: 0
-      _conditionNumber: 0
+      _conditionType: 1
+      _conditionNumber: 1
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: f3857928adc3367c5b2c4a2690c343d4, type: 2}
   - branching:
-      _eventConditions:
-      - eventName: JEUDI
-        eventCharacter: 1
-        invertCondition: 0
+      _eventConditions: []
       _reputationConditions: []
       _conditionType: 0
       _conditionNumber: 0
