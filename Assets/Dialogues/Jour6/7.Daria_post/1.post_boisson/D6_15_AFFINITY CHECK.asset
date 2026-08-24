@@ -22,8 +22,11 @@ MonoBehaviour:
   endBranches:
   - branching:
       _eventConditions: []
-      _reputationConditions: []
-      _conditionType: 0
+      _reputationConditions:
+      - reputationType: 0
+        reputationCharacter: 2
+        conditionNumber: 30
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: ed501162aef29b11d447b6bf3343850e, type: 2}

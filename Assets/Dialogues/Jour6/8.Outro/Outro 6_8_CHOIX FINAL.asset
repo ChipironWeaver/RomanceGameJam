@@ -29,7 +29,7 @@ MonoBehaviour:
         eventCharacter: 3
         invertCondition: 0
       _reputationConditions: []
-      _conditionType: 0
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
   - choiceString: Choisir Karin.
@@ -43,7 +43,7 @@ MonoBehaviour:
         eventCharacter: 3
         invertCondition: 0
       _reputationConditions: []
-      _conditionType: 0
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
   - choiceString: Choisir Daria
@@ -57,7 +57,7 @@ MonoBehaviour:
         eventCharacter: 3
         invertCondition: 0
       _reputationConditions: []
-      _conditionType: 0
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
   - choiceString: Ne choisir personne.

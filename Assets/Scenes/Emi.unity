@@ -6697,7 +6697,404 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: BS D6 Intro
+    setDay: 1
+    setDayIndex: 6
+    state: 0
+    bigText: Samedi
+    smallText: 11h46
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D D6 Intro
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: 38a7a33c7cdd1e32e2dd46a443a18436, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS D6 Angelina
+    setDay: 0
+    setDayIndex: 0
+    state: 0
+    bigText: Samedi
+    smallText: 12h24
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D D6 Angelina Pre
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: b2ccc512427a4bd1df247f6bbf93a159, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: GP D6 Angelina
+    setDay: 0
+    setDayIndex: 0
+    state: 1
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 6
+    mainCharacters: 3
+    isSpecial: 1
+    datableRecipe:
+      name: Pink Lemonade Normal
+      day: 4
+      description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Pink Lemonade</color>,
+        merci beaucoup! '
+      hint: Angelina un <color=#E969F0>Pink Lemonade
+      liquids: 000000000800000005000000
+      decorations:
+      - hasToBeEmpty: 0
+        validIndexes: 0000000001000000
+      - hasToBeEmpty: 0
+        validIndexes: 000000000100000002000000
+      - hasToBeEmpty: 0
+        validIndexes: 02000000
+      - hasToBeEmpty: 0
+        validIndexes: 02000000
+      - hasToBeEmpty: 0
+        validIndexes: 000000000100000002000000
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D D6 Angelina Post
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 1
+    goodSequence: {fileID: 11400000, guid: f5bbc8c657e1187a9d67a6d541fa54fe, type: 2}
+    averageSequence: {fileID: 11400000, guid: 005380e8f71bbdd741a83be7052000eb, type: 2}
+    badSequence: {fileID: 11400000, guid: 6b3202f3ec4e2c4bc337b34828b03084, type: 2}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS D6 Karin
+    setDay: 0
+    setDayIndex: 0
+    state: 0
+    bigText: Samedi
+    smallText: 15h13
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D D6 Karin pre
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: 459476c3b060c7b51c6fa388e0419f7a, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: GP D6 Karin
+    setDay: 0
+    setDayIndex: 0
+    state: 1
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 6
+    mainCharacters: 4
+    isSpecial: 1
+    datableRecipe:
+      name: Melon Soda Normal
+      day: 6
+      description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Melon Soda/color>,
+        merci beaucoup! '
+      hint: Karin veut un <color=#E969F0>Melon Soda
+      liquids: 000000000000000007000000
+      decorations:
+      - hasToBeEmpty: 1
+        validIndexes: 
+      - hasToBeEmpty: 0
+        validIndexes: 000000000100000002000000
+      - hasToBeEmpty: 1
+        validIndexes: 
+      - hasToBeEmpty: 0
+        validIndexes: 0000000001000000
+      - hasToBeEmpty: 0
+        validIndexes: 03000000
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D D6 Karin Post
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 1
+    goodSequence: {fileID: 11400000, guid: 933fbc6aed4a84dc8d3a273032bf8598, type: 2}
+    averageSequence: {fileID: 11400000, guid: 83ee98091bfe35164f63545636ce6a53, type: 2}
+    badSequence: {fileID: 11400000, guid: 1067ae6e315034d386a509e21a8d0ae8, type: 2}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS D6 Daria
+    setDay: 0
+    setDayIndex: 0
+    state: 0
+    bigText: Samedi
+    smallText: 18h31
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D D6 Daria pre
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: 535e1e0de4424305a35a262d128ebd88, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: GP D6 Daria
+    setDay: 0
+    setDayIndex: 0
+    state: 1
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 6
+    mainCharacters: 2
+    isSpecial: 1
+    datableRecipe:
+      name: Ice Sky Normal
+      day: 6
+      description: 'Bonjour! J''aimerais avoir un <color=#E969F0>Ice Sky</color>,
+        merci beaucoup! '
+      hint: Daria veut un <color=#E969F0>Ice Sky
+      liquids: 000000000500000002000000
+      decorations:
+      - hasToBeEmpty: 0
+        validIndexes: 0000000001000000
+      - hasToBeEmpty: 0
+        validIndexes: 000000000100000002000000
+      - hasToBeEmpty: 0
+        validIndexes: 00000000
+      - hasToBeEmpty: 0
+        validIndexes: 02000000
+      - hasToBeEmpty: 0
+        validIndexes: 000000000100000002000000
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D D6 Daria post
     setDay: 0
     setDayIndex: 0
     state: 0
@@ -6715,6 +7112,62 @@ MonoBehaviour:
       liquids: 
       decorations: []
     sequence: {fileID: 0}
+    changeBasedOnLastResult: 1
+    goodSequence: {fileID: 11400000, guid: 5d8f21774f204f25ad8dd78fae54d765, type: 2}
+    averageSequence: {fileID: 11400000, guid: 87171f443a5d8c09aa35010e9c684e14, type: 2}
+    badSequence: {fileID: 11400000, guid: e8a258ee4fd5226f7b734249c2d34259, type: 2}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS D6 Outro
+    setDay: 0
+    setDayIndex: 0
+    state: 0
+    bigText: Samedi
+    smallText: 21h09
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D D6 Outro
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: 94baf60f0ed1ff6b2b98d9c024283fac, type: 2}
     changeBasedOnLastResult: 0
     goodSequence: {fileID: 0}
     averageSequence: {fileID: 0}
@@ -7061,8 +7514,64 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  _autostart: 1
-  _autoIndex: 68
+  - name: 
+    setDay: 0
+    setDayIndex: 0
+    state: 0
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: 
+    setDay: 0
+    setDayIndex: 0
+    state: 0
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  _autostart: 0
+  _autoIndex: 0
   _blackScreen: {fileID: 312514440}
   _dialogueController: {fileID: 8713159423576416512}
   _barTendingController: {fileID: 5367359521910052953}
@@ -7080,8 +7589,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   gameStateScene: {fileID: 11400000, guid: a0da90a42ea1b984a934db622c967b75, type: 2}
-  loadOnStart: 0
-  startOnStart: 0
+  loadOnStart: 1
+  startOnStart: 1
 --- !u!1001 &1086190271
 PrefabInstance:
   m_ObjectHideFlags: 0

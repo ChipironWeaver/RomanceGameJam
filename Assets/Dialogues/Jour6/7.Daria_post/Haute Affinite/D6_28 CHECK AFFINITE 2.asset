@@ -22,7 +22,10 @@ MonoBehaviour:
   endBranches:
   - branching:
       _eventConditions: []
-      _reputationConditions: []
+      _reputationConditions:
+      - reputationType: 0
+        reputationCharacter: 2
+        conditionNumber: 32
       _conditionType: 0
       _conditionNumber: 0
       _conditionPercentage: 0

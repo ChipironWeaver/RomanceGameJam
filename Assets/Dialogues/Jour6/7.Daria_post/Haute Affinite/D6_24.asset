@@ -56,9 +56,12 @@ MonoBehaviour:
   hasEndBranch: 1
   endBranches:
   - branching:
-      _eventConditions: []
+      _eventConditions:
+      - eventName: JEUDI
+        eventCharacter: 2
+        invertCondition: 0
       _reputationConditions: []
-      _conditionType: 0
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: a5f780391ee3dbd4699b58ea3be1b9f0, type: 2}

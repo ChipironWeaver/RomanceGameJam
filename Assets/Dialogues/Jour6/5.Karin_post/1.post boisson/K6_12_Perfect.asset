@@ -29,6 +29,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hasEndChoices: 0
-  choices: 
-  hasEndBranch: 0
-  endBranches: 
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 001cf0b9b7fda06c14d96946210bba38, type: 2}

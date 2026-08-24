@@ -61,7 +61,10 @@ MonoBehaviour:
   hasEndBranch: 1
   endBranches:
   - branching:
-      _eventConditions: []
+      _eventConditions:
+      - eventName: JEUDI
+        eventCharacter: 3
+        invertCondition: 0
       _reputationConditions: []
       _conditionType: 0
       _conditionNumber: 0

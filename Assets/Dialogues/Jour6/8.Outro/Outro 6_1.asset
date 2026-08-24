@@ -30,7 +30,7 @@ MonoBehaviour:
         eventCharacter: 3
         invertCondition: 0
       _reputationConditions: []
-      _conditionType: 0
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: 4b259feb4a032915ad71651f75910e1a, type: 2}
@@ -40,7 +40,7 @@ MonoBehaviour:
         eventCharacter: 4
         invertCondition: 0
       _reputationConditions: []
-      _conditionType: 0
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: 4e8a192f45619f3ebf92f58722073876, type: 2}
@@ -50,7 +50,17 @@ MonoBehaviour:
         eventCharacter: 2
         invertCondition: 0
       _reputationConditions: []
-      _conditionType: 0
+      _conditionType: 5
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 0ed40bb6cf02a6b3fac7a626ff979f90, type: 2}
+  - branching:
+      _eventConditions:
+      - eventName: ROUTE_AVAILABLE_DARIA
+        eventCharacter: 2
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: 0ed40bb6cf02a6b3fac7a626ff979f90, type: 2}
