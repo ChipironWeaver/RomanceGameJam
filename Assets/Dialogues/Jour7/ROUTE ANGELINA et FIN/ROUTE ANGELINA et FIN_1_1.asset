@@ -12,10 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: ROUTE ANGELINA et FIN_1_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Angelina t’attend un peu à l’écart du bar.
+  dialogueText: "Angelina t\u2019attend un peu \xE0 l\u2019\xE9cart du bar."
+  setBlackScreen: 1
+  blackScreen: 0
+  setImage: 1
+  imageSprite: {fileID: 21300000, guid: 1090c0f71f039fd4896e3605c096cb7f, type: 3}
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
+  playMusic: 0
+  musicIndex: 0
+  playSFX: 0
+  sfxType: 0
   triggerAnimation: 0
   animatedCharacters: 0
   triggerName: 

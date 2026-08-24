@@ -12,10 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: ROUTE KARIN et FIN_1_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Karin t’attend devant le bar lorsque tu termines.
+  dialogueText: "Karin t\u2019attend devant le bar lorsque tu termines."
+  setBlackScreen: 1
+  blackScreen: 0
+  setImage: 1
+  imageSprite: {fileID: 21300000, guid: 349289f4d87f7e943bd5b4e9fd205e73, type: 3}
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
+  playMusic: 0
+  musicIndex: 0
+  playSFX: 0
+  sfxType: 0
   triggerAnimation: 0
   animatedCharacters: 0
   triggerName: 

@@ -7097,7 +7097,7 @@ MonoBehaviour:
   - name: D D6 Daria post
     setDay: 0
     setDayIndex: 0
-    state: 0
+    state: 2
     bigText: 
     smallText: 
     backgroundImage: {fileID: 0}

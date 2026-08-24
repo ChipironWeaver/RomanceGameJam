@@ -12,10 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: ROUTE DARIA et FIN_1_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Daria n’est pas devant le bar. Tu dois faire quelques pas avant de la repérer près de la rambarde qui longe la promenade.
+  dialogueText: "Daria n\u2019est pas devant le bar. Tu dois faire quelques pas avant
+    de la rep\xE9rer pr\xE8s de la rambarde qui longe la promenade."
+  setBlackScreen: 1
+  blackScreen: 0
+  setImage: 1
+  imageSprite: {fileID: 21300000, guid: 6d15f07457fc33248b8871c3eafbf897, type: 3}
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
+  playMusic: 0
+  musicIndex: 0
+  playSFX: 0
+  sfxType: 0
   triggerAnimation: 0
   animatedCharacters: 0
   triggerName: 
