@@ -7332,7 +7332,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   _autostart: 1
-  _autoIndex: 0
+  _autoIndex: 7
   _blackScreen: {fileID: 312514440}
   _dialogueController: {fileID: 8713159423576416512}
   _barTendingController: {fileID: 5367359521910052953}
@@ -8091,7 +8091,7 @@ MonoBehaviour:
   - {fileID: 413587811}
   - {fileID: 1411745915}
   - {fileID: 1302564906}
-  _recipesPerDay: 03000000030000000600000008000000
+  _recipesPerDay: 02000000020000000500000007000000
   _panelShowTime: 0.25
   _recipeShowTime: 0.1
   _baseColor: {r: 0.9019608, g: 0.19607843, b: 0.40784314, a: 0}
