@@ -14,6 +14,7 @@ public class GameSequencer : MonoBehaviour
     [SerializeField] private DialogueController _dialogueController;
     [SerializeField] private BarTendingController _barTendingController;
     [SerializeField] private CharacterReference _characterReference;
+    [SerializeField] private GameObject _endOfGamePanel;
 
     public static int CurrentIndex = -1;
     public static int LatestScore;
@@ -65,6 +66,7 @@ public class GameSequencer : MonoBehaviour
     {
         if (CurrentIndex >= _actions.Count)
         {
+            _endOfGamePanel.SetActive(true);
             print("End Of Game");
             return;
         }

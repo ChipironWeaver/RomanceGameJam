@@ -47,7 +47,7 @@ MonoBehaviour:
       _conditionType: 0
       _conditionNumber: 0
       _conditionPercentage: 0
-  - choiceString: "\xC7a se voit tant que \xE7a ?"
+  - choiceString: "J'esp\xE9rais que personne ne le remarquerait."
     linkedDialogueSequence: {fileID: 11400000, guid: 7b9c30589fd7b43489cdd809ae36c2e5, type: 2}
     onDialogueChoice:
       m_PersistentCalls:

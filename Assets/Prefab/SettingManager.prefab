@@ -51,9 +51,9 @@ MonoBehaviour:
     autoText: 0
     fullscreen: 1
   defaultSettingPreset:
-    masterVolume: 0.67
-    sfxVolume: 0.67
-    musicVolume: 0.67
+    masterVolume: 0.6
+    sfxVolume: 0.6
+    musicVolume: 0.6
     autoText: 0
     fullscreen: 1
   volumeCurve:

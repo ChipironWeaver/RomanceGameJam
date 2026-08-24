@@ -244,7 +244,7 @@ public class BarTendingController : MonoBehaviour
             case 4 : 
                 _uiAnimator.FadeOut(5);
                 _amountOfClientLeft--;
-                CharacterReference.Instance.SetActivation(_currentCharacter,false);
+                if(!_isSpecialRecipe) CharacterReference.Instance.SetActivation(_currentCharacter,false);
                 
                 ResetDrink();
                 if (_amountOfClientLeft == 0)
@@ -349,7 +349,9 @@ public class BarTendingController : MonoBehaviour
         group.name = "Decoration Panel " + _decorationGroups[index].name + " at " + index;
         UIDrinkReferences uiGroupReferences = group.GetComponent<UIDrinkReferences>();
         uiGroupReferences.nameText.text = _decorationGroups[index].name;
-
+        _decorationUiList.Add(group);
+        
+        
         GameObject removeGroupButton = Instantiate(_decorationPrefab, uiGroupReferences.groupChild.transform);
         removeGroupButton.name = "Remove Decoration Group Button";
         UIDrinkReferences  uiRemoveGroupReference = removeGroupButton.GetComponent<UIDrinkReferences>();
@@ -370,7 +372,7 @@ public class BarTendingController : MonoBehaviour
             int y1 = y;
             uiDecoReference.button.onClick.AddListener(() => ShowDecoration(FindGroupCount(index) + y1));
             uiDecoReference.button.onClick.AddListener(() => AudioManager.Instance.PlaySfx(_decorationGroups[index].sfxType));
-            _decorationUiList.Add(decoration);
+            
         }
     }
     public void AddLiquidIndex(int index)
