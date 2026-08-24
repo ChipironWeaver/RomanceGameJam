@@ -59,4 +59,11 @@ MonoBehaviour:
       _conditionNumber: 0
       _conditionPercentage: 0
   hasEndBranch: 1
-  endBranches: []
+  endBranches:
+  - branching:
+      _eventConditions: []
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: ed7531d7ab9b021b1d5517010a69e655, type: 2}

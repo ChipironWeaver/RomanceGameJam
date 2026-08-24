@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: K6_39
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogues:
-  - {fileID: 11400000, guid: 597c8ded39b74e82bd436f163d25fccd, type: 2}
   - {fileID: 11400000, guid: 07a26b017de8e6b3f81a22a96e72a845, type: 2}
   - {fileID: 11400000, guid: 5bc17e7b2120620276c378ea5e7734dd, type: 2}
   - {fileID: 11400000, guid: de91f1f52a88610687c1eef46e56ef05, type: 2}
@@ -32,12 +31,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 506d74809da08bc8ebbd4b67fc2a6e97, type: 2}
   - {fileID: 11400000, guid: df0faf6970866f23133d899fc715c28a, type: 2}
   - {fileID: 11400000, guid: 44f000160aca7d48aa9f7458814a6c7a, type: 2}
-  - {fileID: 11400000, guid: aca6ace2cde0a113bee394fd7e2fcc48, type: 2}
-  - {fileID: 11400000, guid: 13ddca87798ba7eee8477bc34053efcf, type: 2}
   endEvent:
     m_PersistentCalls:
       m_Calls: []
   hasEndChoices: 0
-  choices:
+  choices: []
   hasEndBranch: 0
-  endBranches:
+  endBranches: []

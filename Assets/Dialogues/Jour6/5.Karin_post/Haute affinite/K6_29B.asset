@@ -28,4 +28,4 @@ MonoBehaviour:
       _conditionType: 0
       _conditionNumber: 0
       _conditionPercentage: 0
-    linkedDialogueSequence: {fileID: 11400000, guid: e7f121fb931d122680073d99af1febf5, type: 2}
+    linkedDialogueSequence: {fileID: 11400000, guid: f22187c79173f0f44a336878aceecd18, type: 2}

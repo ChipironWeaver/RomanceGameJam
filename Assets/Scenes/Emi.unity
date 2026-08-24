@@ -6754,7 +6754,7 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: BS D6 Intro
+  - name: 88 BS D6 Intro
     setDay: 1
     setDayIndex: 6
     state: 0
@@ -6989,7 +6989,7 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: GP D6 Karin
+  - name: 96 GP D6 Karin
     setDay: 0
     setDayIndex: 0
     state: 1
@@ -7331,8 +7331,8 @@ MonoBehaviour:
             m_StringArgument: MainMenu
             m_BoolArgument: 0
           m_CallState: 2
-  _autostart: 1
-  _autoIndex: 104
+  _autostart: 0
+  _autoIndex: 88
   _blackScreen: {fileID: 312514440}
   _dialogueController: {fileID: 8713159423576416512}
   _barTendingController: {fileID: 5367359521910052953}
@@ -7350,8 +7350,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   gameStateScene: {fileID: 11400000, guid: a0da90a42ea1b984a934db622c967b75, type: 2}
-  loadOnStart: 0
-  startOnStart: 0
+  loadOnStart: 1
+  startOnStart: 1
 --- !u!1001 &1086190271
 PrefabInstance:
   m_ObjectHideFlags: 0
