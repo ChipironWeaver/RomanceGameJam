@@ -1550,7 +1550,7 @@ MonoBehaviour:
   _bigTextTag: <font-weight="700">
   _smallTextTag: <font-weight="200">
   _image: {fileID: 208149758}
-  backgroundImage: {fileID: 208149758}
+  backgroundImage: {fileID: 85323178}
   _backgroundCanvas: {fileID: 2030065119}
   _textColor: {r: 1, g: 0.73333335, b: 0.8980392, a: 1}
   _backgroundColor: {r: 0.05490196, g: 0, b: 0.06666667, a: 1}
@@ -7331,8 +7331,8 @@ MonoBehaviour:
             m_StringArgument: MainMenu
             m_BoolArgument: 0
           m_CallState: 2
-  _autostart: 0
-  _autoIndex: 98
+  _autostart: 1
+  _autoIndex: 0
   _blackScreen: {fileID: 312514440}
   _dialogueController: {fileID: 8713159423576416512}
   _barTendingController: {fileID: 5367359521910052953}
