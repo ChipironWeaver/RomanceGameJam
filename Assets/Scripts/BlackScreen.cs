@@ -56,4 +56,10 @@ public class BlackScreen : MonoBehaviour
         _sequence.Append(_image.DOColor(bgColor, _animationTime/2));
         _sequence.AppendCallback(() => {Actions.EndOfBlackScreenPhase?.Invoke();});
     }
+
+    public void FadeToBlackScreen(bool fade)
+    {
+        _image.sprite = null;
+        _image.DOColor(fade ? Color.black : Color.clear, _animationTime);
+    }
 }

@@ -7,6 +7,9 @@ public class Dialogue : ScriptableObject
 {
     [ResizableTextArea]
     public string dialogueText;
+
+    public bool setBlackScreen;
+    [ShowIf("setBlackScreen")] public bool blackScreen;
     
     [Header("NameDisplay")]
     public MainCharacters speakingCharacter;

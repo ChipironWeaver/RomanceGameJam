@@ -6163,7 +6163,7 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: D D4
     setDay: 0
     setDayIndex: 0
     state: 0
@@ -19340,6 +19340,7 @@ MonoBehaviour:
   _dialogueText: {fileID: 3562936546629047470}
   _characterNameText: {fileID: 6039624513974896378}
   _characterIcon: {fileID: 1077885485028247669}
+  _blackScreen: {fileID: 312514440}
   _testDialogueSequence: {fileID: 11400000, guid: 2d540233bcb3b604ba12ee5b5289ab94, type: 2}
 --- !u!1 &8717005715627898906
 GameObject:

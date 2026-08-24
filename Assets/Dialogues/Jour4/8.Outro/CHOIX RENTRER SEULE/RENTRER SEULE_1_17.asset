@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: RENTRER SEULE_1_17
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: C'est que tu commences à comprendre à quel point toi aussi tu tiens à elle(s).
+  dialogueText: "C'est que tu commences \xE0 comprendre \xE0 quel point toi aussi
+    tu tiens \xE0 elle(s)."
+  setBlackScreen: 0
+  blackScreen: 0
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
+  playMusic: 0
+  musicIndex: 0
+  playSFX: 0
+  sfxType: 0
   triggerAnimation: 0
   animatedCharacters: 0
   triggerName: 

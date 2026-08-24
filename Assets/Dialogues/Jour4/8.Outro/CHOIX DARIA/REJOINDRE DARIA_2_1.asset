@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: REJOINDRE DARIA_2_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: La plage est presque complètement plongée dans le bleu du soir lorsque tu la rejoins.
+  dialogueText: "La plage est presque compl\xE8tement plong\xE9e dans le bleu du
+    soir lorsque tu la rejoins."
+  setBlackScreen: 1
+  blackScreen: 1
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
+  playMusic: 0
+  musicIndex: 0
+  playSFX: 0
+  sfxType: 0
   triggerAnimation: 0
   animatedCharacters: 0
   triggerName: 

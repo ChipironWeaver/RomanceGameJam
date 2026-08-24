@@ -12,10 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: REJOINDRE ANGELINA_2_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: Angelina est exactement là où elle l'a dit.
+  dialogueText: "Angelina est exactement l\xE0 o\xF9 elle l'a dit."
+  setBlackScreen: 1
+  blackScreen: 1
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
+  playMusic: 0
+  musicIndex: 0
+  playSFX: 0
+  sfxType: 0
   triggerAnimation: 0
   animatedCharacters: 0
   triggerName: 

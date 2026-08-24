@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: REJOINDRE KARIN_2_1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   dialogueText: Lorsque tu la rejoins, Karin est assise avec son sac sur les genoux.
+  setBlackScreen: 1
+  blackScreen: 1
   speakingCharacter: 0
   npcName: 
   npcIcon: {fileID: 0}
+  playMusic: 0
+  musicIndex: 0
+  playSFX: 0
+  sfxType: 0
   triggerAnimation: 0
   animatedCharacters: 0
   triggerName: 

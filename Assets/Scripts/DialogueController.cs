@@ -41,6 +41,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _dialogueText;
     [SerializeField] private TextMeshProUGUI _characterNameText;
     [SerializeField] private Image _characterIcon;
+    [SerializeField] private BlackScreen _blackScreen;
     
     [Header("Tests")] [SerializeField, Expandable]
     private DialogueSequence _testDialogueSequence;
@@ -150,6 +151,11 @@ public class DialogueController : MonoBehaviour
         if (dialogue.playSFX)
         {
             AudioManager.Instance.PlaySfx(dialogue.sfxType);
+        }
+
+        if (dialogue.setBlackScreen)
+        {
+            _blackScreen.FadeToBlackScreen(dialogue.blackScreen);
         }
         
         if (dialogue.playMusic)

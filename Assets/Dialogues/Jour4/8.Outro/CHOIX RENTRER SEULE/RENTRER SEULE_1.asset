@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: RENTRER SEULE_1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogues:
-  - {fileID: 11400000, guid: fc762c7c6019f67e95a13bcb15175429, type: 2}
   - {fileID: 11400000, guid: 51fbc51fe5828319cf7c6d9a8d509be6, type: 2}
   - {fileID: 11400000, guid: d3a40d002fcfd4418a12be80086201e4, type: 2}
   - {fileID: 11400000, guid: 017c5b50a7de248158454b353876089f, type: 2}
@@ -30,11 +29,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bc2b54dfd0e4daedea9e362bc02ab04a, type: 2}
   - {fileID: 11400000, guid: cb1940cd42173a257eb4eac5a7b6c24e, type: 2}
   - {fileID: 11400000, guid: a477edfbe6fc131c5257b4a0e3601b29, type: 2}
-  - {fileID: 11400000, guid: c1cdc817d962ba0c1a5e0a5a80f6c631, type: 2}
   endEvent:
     m_PersistentCalls:
       m_Calls: []
   hasEndChoices: 0
-  choices:
+  choices: []
   hasEndBranch: 0
-  endBranches:
+  endBranches: []
