@@ -26,7 +26,7 @@ MonoBehaviour:
       - reputationType: 0
         reputationCharacter: 2
         conditionNumber: 32
-      _conditionType: 0
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: 0aae90a26e7327d239df0a7d5cb6ea7f, type: 2}

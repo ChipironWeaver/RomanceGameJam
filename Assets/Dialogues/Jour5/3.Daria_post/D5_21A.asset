@@ -24,7 +24,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hasEndChoices: 0
-  choices:
+  choices: []
   hasEndBranch: 1
   endBranches:
   - branching:
@@ -33,4 +33,4 @@ MonoBehaviour:
       _conditionType: 0
       _conditionNumber: 0
       _conditionPercentage: 0
-    linkedDialogueSequence: {fileID: 11400000, guid: ad32a6567bcc3ad33fd54cc363ebe35e, type: 2}
+    linkedDialogueSequence: {fileID: 11400000, guid: cc91bf1f415bbeee6f59d739df98d9ab, type: 2}
