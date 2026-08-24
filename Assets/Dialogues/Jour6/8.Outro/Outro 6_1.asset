@@ -60,7 +60,7 @@ MonoBehaviour:
         eventCharacter: 2
         invertCondition: 0
       _reputationConditions: []
-      _conditionType: 5
+      _conditionType: 0
       _conditionNumber: 0
       _conditionPercentage: 0
-    linkedDialogueSequence: {fileID: 11400000, guid: 0ed40bb6cf02a6b3fac7a626ff979f90, type: 2}
+    linkedDialogueSequence: {fileID: 11400000, guid: e014ad8505b36982dccd2dccba677b73, type: 2}

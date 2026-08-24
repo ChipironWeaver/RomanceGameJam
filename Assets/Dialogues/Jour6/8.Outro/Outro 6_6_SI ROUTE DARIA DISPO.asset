@@ -20,6 +20,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hasEndChoices: 0
-  choices: 
-  hasEndBranch: 0
-  endBranches: 
+  choices: []
+  hasEndBranch: 1
+  endBranches:
+  - branching:
+      _eventConditions:
+      - eventName: ROUTE_AVAILABLE_DARIA
+        eventCharacter: 2
+        invertCondition: 0
+      _reputationConditions: []
+      _conditionType: 0
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: e014ad8505b36982dccd2dccba677b73, type: 2}
