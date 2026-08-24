@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 1771332279102099644}
   - component: {fileID: 3563084946318882482}
   - component: {fileID: 1697149679199785819}
+  - component: {fileID: 7608966627237182010}
   m_Layer: 5
   m_Name: DrinkUi
   m_TagString: Untagged
@@ -352,3 +353,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7608966627237182010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3888891298634507957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f552af11108b3c445a9ef723cd1f9c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIChangeCursorOnOver
+  onEnterCursor: 2

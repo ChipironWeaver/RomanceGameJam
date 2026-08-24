@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5501462675335887741}
   - component: {fileID: 357606701156962047}
   - component: {fileID: 7065304571474014068}
+  - component: {fileID: -9071402967550493527}
   m_Layer: 5
   m_Name: ChoiceButton
   m_TagString: Untagged
@@ -137,6 +138,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   _choiceButtonText: {fileID: 1528891784064949257}
   _choiceButton: {fileID: 357606701156962047}
+--- !u!114 &-9071402967550493527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437269672531194878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f552af11108b3c445a9ef723cd1f9c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIChangeCursorOnOver
+  onEnterCursor: 2
 --- !u!1 &6127395289667337023
 GameObject:
   m_ObjectHideFlags: 0

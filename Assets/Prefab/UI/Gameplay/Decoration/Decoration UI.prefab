@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4175989636474141368}
   - component: {fileID: 5723683943466032999}
   - component: {fileID: 8690604454655605173}
+  - component: {fileID: -6414219158189533183}
   m_Layer: 5
   m_Name: Decoration UI
   m_TagString: Untagged
@@ -139,6 +140,19 @@ MonoBehaviour:
   groupChild: {fileID: 0}
   nameText: {fileID: 0}
   button: {fileID: 5723683943466032999}
+--- !u!114 &-6414219158189533183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029218397518121308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f552af11108b3c445a9ef723cd1f9c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIChangeCursorOnOver
+  onEnterCursor: 2
 --- !u!1 &4127817896823479338
 GameObject:
   m_ObjectHideFlags: 0

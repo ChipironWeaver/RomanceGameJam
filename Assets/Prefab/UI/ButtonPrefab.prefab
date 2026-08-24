@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 8729228505894197791}
   - component: {fileID: 7985173187366624791}
   - component: {fileID: 4328052912206182862}
+  - component: {fileID: 2418958653037595071}
   m_Layer: 5
   m_Name: ButtonPrefab
   m_TagString: Untagged
@@ -346,3 +347,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2418958653037595071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8104778877603990331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f552af11108b3c445a9ef723cd1f9c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIChangeCursorOnOver
+  onEnterCursor: 2

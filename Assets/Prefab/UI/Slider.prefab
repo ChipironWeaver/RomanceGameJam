@@ -288,6 +288,7 @@ GameObject:
   - component: {fileID: 5176182102155438493}
   - component: {fileID: 1473464791099614991}
   - component: {fileID: 6503614587375896726}
+  - component: {fileID: 2412705197701700066}
   m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
@@ -353,6 +354,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2412705197701700066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6609469122446880842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f552af11108b3c445a9ef723cd1f9c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIChangeCursorOnOver
+  onEnterCursor: 2
 --- !u!1 &7658960803521154077
 GameObject:
   m_ObjectHideFlags: 0

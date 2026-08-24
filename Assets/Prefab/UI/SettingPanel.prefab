@@ -1608,6 +1608,7 @@ GameObject:
   - component: {fileID: 1774651887037968680}
   - component: {fileID: 2847062014853038075}
   - component: {fileID: 7948728685446067440}
+  - component: {fileID: 7512796882401816851}
   m_Layer: 5
   m_Name: Full Screnen
   m_TagString: Untagged
@@ -1692,6 +1693,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4922334884899987373}
   m_CullTransparentMesh: 1
+--- !u!114 &7512796882401816851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4922334884899987373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f552af11108b3c445a9ef723cd1f9c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIChangeCursorOnOver
+  onEnterCursor: 2
 --- !u!1 &5401165076951269861
 GameObject:
   m_ObjectHideFlags: 0
@@ -2129,6 +2143,7 @@ GameObject:
   - component: {fileID: 837249092405802632}
   - component: {fileID: 5483561268402156795}
   - component: {fileID: 6655928177330720668}
+  - component: {fileID: 2191940307356589231}
   m_Layer: 5
   m_Name: CloseSettings
   m_TagString: Untagged
@@ -2263,6 +2278,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2191940307356589231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6826069447439123341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f552af11108b3c445a9ef723cd1f9c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIChangeCursorOnOver
+  onEnterCursor: 2
 --- !u!1 &7329312116910839760
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,6 +2302,7 @@ GameObject:
   - component: {fileID: 2432860161278160516}
   - component: {fileID: 1684273773689715326}
   - component: {fileID: 7654924280443738590}
+  - component: {fileID: 770844005160253327}
   m_Layer: 5
   m_Name: AutoText
   m_TagString: Untagged
@@ -2358,6 +2387,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7329312116910839760}
   m_CullTransparentMesh: 1
+--- !u!114 &770844005160253327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7329312116910839760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f552af11108b3c445a9ef723cd1f9c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIChangeCursorOnOver
+  onEnterCursor: 2
 --- !u!1 &7381281814406723237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2994,13 +3036,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6609469122446880842, guid: a304e2287b905b14898980a1681d5504, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7076915973440185202}
   m_SourcePrefab: {fileID: 100100000, guid: a304e2287b905b14898980a1681d5504, type: 3}
 --- !u!224 &7750525420492047310 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5517011460835899531, guid: a304e2287b905b14898980a1681d5504, type: 3}
   m_PrefabInstance: {fileID: 2819035110319438661}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8982064808877247247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6609469122446880842, guid: a304e2287b905b14898980a1681d5504, type: 3}
+  m_PrefabInstance: {fileID: 2819035110319438661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7076915973440185202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982064808877247247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f552af11108b3c445a9ef723cd1f9c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIChangeCursorOnOver
+  onEnterCursor: 2
 --- !u!1001 &6919056399604472115
 PrefabInstance:
   m_ObjectHideFlags: 0

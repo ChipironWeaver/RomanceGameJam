@@ -4034,6 +4034,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003557431}
   m_CullTransparentMesh: 1
+--- !u!1001 &1029100768
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2387524742437151247, guid: c7ad7bc553c26ec42be0d4aa3b6edfdf, type: 3}
+      propertyPath: m_Name
+      value: CustomCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989952453425713941, guid: c7ad7bc553c26ec42be0d4aa3b6edfdf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 903.47894
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989952453425713941, guid: c7ad7bc553c26ec42be0d4aa3b6edfdf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1151.0225
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989952453425713941, guid: c7ad7bc553c26ec42be0d4aa3b6edfdf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989952453425713941, guid: c7ad7bc553c26ec42be0d4aa3b6edfdf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989952453425713941, guid: c7ad7bc553c26ec42be0d4aa3b6edfdf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989952453425713941, guid: c7ad7bc553c26ec42be0d4aa3b6edfdf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989952453425713941, guid: c7ad7bc553c26ec42be0d4aa3b6edfdf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989952453425713941, guid: c7ad7bc553c26ec42be0d4aa3b6edfdf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989952453425713941, guid: c7ad7bc553c26ec42be0d4aa3b6edfdf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989952453425713941, guid: c7ad7bc553c26ec42be0d4aa3b6edfdf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7ad7bc553c26ec42be0d4aa3b6edfdf, type: 3}
 --- !u!1 &1073852463
 GameObject:
   m_ObjectHideFlags: 0
@@ -7055,7 +7112,7 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: GP D6 Daria
+  - name: 100 GP D6 Daria
     setDay: 0
     setDayIndex: 0
     state: 1
@@ -7234,7 +7291,7 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Go back to main menu
+  - name: 106 Go back to main menu
     setDay: 0
     setDayIndex: 0
     state: 0
@@ -7275,7 +7332,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   _autostart: 0
-  _autoIndex: 0
+  _autoIndex: 98
   _blackScreen: {fileID: 312514440}
   _dialogueController: {fileID: 8713159423576416512}
   _barTendingController: {fileID: 5367359521910052953}
@@ -7383,6 +7440,7 @@ GameObject:
   - component: {fileID: 1133097133}
   - component: {fileID: 1133097132}
   - component: {fileID: 1133097131}
+  - component: {fileID: 1133097134}
   m_Layer: 5
   m_Name: OpenSettings
   m_TagString: Untagged
@@ -7517,6 +7575,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133097129}
   m_CullTransparentMesh: 1
+--- !u!114 &1133097134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133097129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f552af11108b3c445a9ef723cd1f9c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIChangeCursorOnOver
+  onEnterCursor: 2
 --- !u!1001 &1151764054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10067,6 +10138,7 @@ GameObject:
   - component: {fileID: 1720869718}
   - component: {fileID: 1720869717}
   - component: {fileID: 1720869716}
+  - component: {fileID: 1720869719}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -10201,6 +10273,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720869714}
   m_CullTransparentMesh: 1
+--- !u!114 &1720869719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720869714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f552af11108b3c445a9ef723cd1f9c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIChangeCursorOnOver
+  onEnterCursor: 2
 --- !u!1 &1728565071
 GameObject:
   m_ObjectHideFlags: 0
@@ -20036,3 +20121,4 @@ SceneRoots:
   - {fileID: 1073852464}
   - {fileID: 155049787}
   - {fileID: 1628243407}
+  - {fileID: 1029100768}
