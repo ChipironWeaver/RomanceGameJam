@@ -12,7 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
   m_Name: Outro_4_11_CHOIX FIN
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: 2f80d2b8a668d8b3c3d216c4ebc31c17, type: 2}
+  - {fileID: 11400000, guid: db7695a84026aa27dc56384567f28d7c, type: 2}
+  - {fileID: 11400000, guid: 0417c14c1b8ff985de2751b66e0b2841, type: 2}
+  - {fileID: 11400000, guid: 2784baf03060daa21866e7745510003f, type: 2}
+  - {fileID: 11400000, guid: d95c42968ce500e56e942697a0b64725, type: 2}
+  - {fileID: 11400000, guid: 800ce13407d7822082bc6acfa9834f0c, type: 2}
+  - {fileID: 11400000, guid: 6577e69754faae5e8adf3ea1e8b0b9fb, type: 2}
+  - {fileID: 11400000, guid: 9e28b8717ee570e50c26e365ef3a9e68, type: 2}
+  - {fileID: 11400000, guid: 90387e106b5311e10ccd0c944f3937a6, type: 2}
+  - {fileID: 11400000, guid: 643e1b58142daec6b499576b08cd8184, type: 2}
+  - {fileID: 11400000, guid: 67cf7afeff9a34fc65541e44a0229513, type: 2}
+  - {fileID: 11400000, guid: 209910c36ca31a57932cd760a8ceb5b8, type: 2}
   endEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -25,8 +37,11 @@ MonoBehaviour:
         m_Calls: []
     branching:
       _eventConditions: []
-      _reputationConditions: []
-      _conditionType: 0
+      _reputationConditions:
+      - reputationType: 0
+        reputationCharacter: 2
+        conditionNumber: 26
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
   - choiceString: Rejoindre Karin.
@@ -36,8 +51,11 @@ MonoBehaviour:
         m_Calls: []
     branching:
       _eventConditions: []
-      _reputationConditions: []
-      _conditionType: 0
+      _reputationConditions:
+      - reputationType: 0
+        reputationCharacter: 4
+        conditionNumber: 22
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
   - choiceString: Rejoindre Angelina.

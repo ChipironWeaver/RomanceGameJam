@@ -27,6 +27,26 @@ MonoBehaviour:
   endBranches:
   - branching:
       _eventConditions: []
+      _reputationConditions:
+      - reputationType: 0
+        reputationCharacter: 4
+        conditionNumber: 22
+      _conditionType: 5
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: a737d15bdd33aafeaaf8cf638c99134c, type: 2}
+  - branching:
+      _eventConditions: []
+      _reputationConditions:
+      - reputationType: 0
+        reputationCharacter: 3
+        conditionNumber: 25
+      _conditionType: 5
+      _conditionNumber: 0
+      _conditionPercentage: 0
+    linkedDialogueSequence: {fileID: 11400000, guid: 45c1e523f819d4a383eb646fc43c5191, type: 2}
+  - branching:
+      _eventConditions: []
       _reputationConditions: []
       _conditionType: 0
       _conditionNumber: 0

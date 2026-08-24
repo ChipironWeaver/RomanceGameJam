@@ -10,15 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
-  m_Name: Outro 4_10
+  m_Name: Outro 4_10_8KarinS
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogues:
-  - {fileID: 11400000, guid: bf22eba3ae939ddc475b8574a703b6bd, type: 2}
-  - {fileID: 11400000, guid: 9a33cba3bacb68fdac601434207e21c7, type: 2}
-  - {fileID: 11400000, guid: 2a105e064131304428569469743a6265, type: 2}
-  - {fileID: 11400000, guid: e9a940498fb82513aa44d823f3ac16ac, type: 2}
-  - {fileID: 11400000, guid: df1eb3419e710ab66e7354d15ea29de1, type: 2}
-  - {fileID: 11400000, guid: 03425a0641112a2735d26f238306eef0, type: 2}
+  - {fileID: 11400000, guid: a184e16be98e60789d3b3eaed7e15c2e, type: 2}
   endEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -26,26 +21,6 @@ MonoBehaviour:
   choices: []
   hasEndBranch: 1
   endBranches:
-  - branching:
-      _eventConditions: []
-      _reputationConditions:
-      - reputationType: 0
-        reputationCharacter: 2
-        conditionNumber: 26
-      _conditionType: 5
-      _conditionNumber: 0
-      _conditionPercentage: 0
-    linkedDialogueSequence: {fileID: 11400000, guid: 69102e3a87f87c74e9d37f6a428aa224, type: 2}
-  - branching:
-      _eventConditions: []
-      _reputationConditions:
-      - reputationType: 0
-        reputationCharacter: 4
-        conditionNumber: 22
-      _conditionType: 5
-      _conditionNumber: 0
-      _conditionPercentage: 0
-    linkedDialogueSequence: {fileID: 11400000, guid: c98eb2eeb345b67459a6ec8f030529d3, type: 2}
   - branching:
       _eventConditions: []
       _reputationConditions:

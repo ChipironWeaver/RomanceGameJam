@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: Outro 4_4_4
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: *Ce n'était pas une question indirecte.*
+  dialogueText: "*Ce n'\xE9tait pas une question indirecte.*"
   speakingCharacter: 2
-  npcName: 
+  npcName: Daria (sms)
   npcIcon: {fileID: 0}
+  playMusic: 0
+  musicIndex: 0
+  playSFX: 0
+  sfxType: 0
   triggerAnimation: 0
   animatedCharacters: 0
   triggerName: 

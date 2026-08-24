@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: Outro 4_8_3
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: *si quelqu'un avait raté son groupe d'amis (｡•́︿•̀｡) parce qu'elle était restée trop longtemps dans un bar (pas sa faute btw)*
+  dialogueText: "*si quelqu'un avait rat\xE9 son groupe d'amis parce qu'elle \xE9tait
+    rest\xE9e trop longtemps dans un bar (pas sa faute btw)*"
   speakingCharacter: 3
-  npcName: 
+  npcName: Angelina (sms)
   npcIcon: {fileID: 0}
+  playMusic: 0
+  musicIndex: 0
+  playSFX: 0
+  sfxType: 0
   triggerAnimation: 0
   animatedCharacters: 0
   triggerName: 

@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc39640901c470a8f014bd80b1725ab, type: 3}
   m_Name: Outro 4_8_8
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  dialogueText: (︶︹︺)
+  dialogueText: :(
   speakingCharacter: 3
-  npcName: 
+  npcName: Angelina (sms)
   npcIcon: {fileID: 0}
+  playMusic: 0
+  musicIndex: 0
+  playSFX: 0
+  sfxType: 0
   triggerAnimation: 0
   animatedCharacters: 0
   triggerName: 
