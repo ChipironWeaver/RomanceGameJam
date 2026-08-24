@@ -6163,7 +6163,63 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: D D4
+  - name: BS D5
+    setDay: 0
+    setDayIndex: 0
+    state: 0
+    bigText: Vendredi
+    smallText: 11h53
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 0}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: D D5 Matin itro
+    setDay: 0
+    setDayIndex: 0
+    state: 2
+    bigText: 
+    smallText: 
+    backgroundImage: {fileID: 0}
+    day: 0
+    mainCharacters: 0
+    isSpecial: 0
+    datableRecipe:
+      name: 
+      day: 0
+      description: 
+      hint: 
+      liquids: 
+      decorations: []
+    sequence: {fileID: 11400000, guid: e5bf4d1b16fb20fcf532ae55be914daa, type: 2}
+    changeBasedOnLastResult: 0
+    goodSequence: {fileID: 0}
+    averageSequence: {fileID: 0}
+    badSequence: {fileID: 0}
+    moveMainCharacters: 0
+    activation: 0
+    instantMove: 0
+    otherEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: BS D5 Daria
     setDay: 0
     setDayIndex: 0
     state: 0
@@ -6191,10 +6247,10 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: D D5 Daria pre
     setDay: 0
     setDayIndex: 0
-    state: 0
+    state: 2
     bigText: 
     smallText: 
     backgroundImage: {fileID: 0}
@@ -6219,79 +6275,33 @@ MonoBehaviour:
     otherEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: 
+  - name: GP D5 Daria
     setDay: 0
     setDayIndex: 0
-    state: 0
+    state: 1
     bigText: 
     smallText: 
     backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
+    day: 5
+    mainCharacters: 2
+    isSpecial: 1
     datableRecipe:
-      name: 
-      day: 0
+      name: Ice Sky Normal
+      day: 4
       description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
-    sequence: {fileID: 0}
-    changeBasedOnLastResult: 0
-    goodSequence: {fileID: 0}
-    averageSequence: {fileID: 0}
-    badSequence: {fileID: 0}
-    moveMainCharacters: 0
-    activation: 0
-    instantMove: 0
-    otherEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    setDay: 0
-    setDayIndex: 0
-    state: 0
-    bigText: 
-    smallText: 
-    backgroundImage: {fileID: 0}
-    day: 0
-    mainCharacters: 0
-    isSpecial: 0
-    datableRecipe:
-      name: 
-      day: 0
-      description: 
-      hint: 
-      liquids: 
-      decorations: []
+      hint: "Une boisson un peu sucr\xE9e."
+      liquids: 000000000500000002000000
+      decorations:
+      - hasToBeEmpty: 0
+        validIndexes: 0000000001000000
+      - hasToBeEmpty: 0
+        validIndexes: 000000000100000002000000
+      - hasToBeEmpty: 0
+        validIndexes: 00000000
+      - hasToBeEmpty: 0
+        validIndexes: 02000000
+      - hasToBeEmpty: 0
+        validIndexes: 000000000100000002000000
     sequence: {fileID: 0}
     changeBasedOnLastResult: 0
     goodSequence: {fileID: 0}

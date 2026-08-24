@@ -40,21 +40,21 @@ MonoBehaviour:
         eventCharacter: 2
         invertCondition: 0
       _reputationConditions: []
-      _conditionType: 0
+      _conditionType: 5
       _conditionNumber: 0
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: b63ffb717fabd3c01cbb7d1bec1347ad, type: 2}
   - branching:
       _eventConditions:
       - eventName: JEUDI
-        eventCharacter: 2
-        invertCondition: 1
+        eventCharacter: 3
+        invertCondition: 0
       - eventName: JEUDI
-        eventCharacter: 1
-        invertCondition: 1
+        eventCharacter: 4
+        invertCondition: 0
       _reputationConditions: []
-      _conditionType: 0
-      _conditionNumber: 0
+      _conditionType: 1
+      _conditionNumber: 1
       _conditionPercentage: 0
     linkedDialogueSequence: {fileID: 11400000, guid: d70c7114a1cd33a011f0e6d0ef32d07d, type: 2}
   - branching:
