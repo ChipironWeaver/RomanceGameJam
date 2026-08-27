@@ -4945,7 +4945,7 @@ MonoBehaviour:
       hint: 
       liquids: 
       decorations: []
-    sequence: {fileID: 0}
+    sequence: {fileID: 11400000, guid: abbd41b6715354746a09fadc710b75fe, type: 2}
     changeBasedOnLastResult: 1
     goodSequence: {fileID: 11400000, guid: ed610d8c98a47b349a2013c4c82363e1, type: 2}
     averageSequence: {fileID: 11400000, guid: abbd41b6715354746a09fadc710b75fe, type: 2}
@@ -7546,8 +7546,8 @@ MonoBehaviour:
             m_StringArgument: MainMenu
             m_BoolArgument: 0
           m_CallState: 2
-  _autostart: 1
-  _autoIndex: 8
+  _autostart: 0
+  _autoIndex: 18
   _blackScreen: {fileID: 312514440}
   _dialogueController: {fileID: 8713159423576416512}
   _barTendingController: {fileID: 5367359521910052953}
@@ -7566,8 +7566,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   gameStateScene: {fileID: 11400000, guid: a0da90a42ea1b984a934db622c967b75, type: 2}
-  loadOnStart: 0
-  startOnStart: 0
+  loadOnStart: 1
+  startOnStart: 1
 --- !u!1001 &1086190271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20237,7 +20237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a45e074e2cdd164b9cbc700477b99c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueController
-  _dialogueSkipCooldown: 0.5
+  _dialogueSkipCooldown: 0.25
   _choiceButtonPrefab: {fileID: 1437269672531194878, guid: 464528c233ef6a44590b8666b22097e5, type: 3}
   _panelAnimation:
     target: {fileID: 6225575938713522825}

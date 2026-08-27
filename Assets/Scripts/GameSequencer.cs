@@ -44,11 +44,16 @@ public class GameSequencer : MonoBehaviour
     }
     private void ActionReceiver(TypeOfState state)
     {
-        if(state == TypeOfState.CharacterMoved) print("Character Moved");
+        print("received : " + PrintState(state)+ " at index : ");
         if(state == TypeOfState.BarTending && _barTendingController.latestScore != 0) LatestScore = _barTendingController.latestScore; 
         if (CurrentIndex == -1) return;
-        if (CurrentIndex > _actions.Count) return; 
-        if(state == _actions[CurrentIndex-1].state) NextAction();
+        if (CurrentIndex > _actions.Count) return;
+        print("expected: " + PrintState(_actions[CurrentIndex - 1].state) + " at index : " + (CurrentIndex - 1));
+        if (state == _actions[CurrentIndex - 1].state) NextAction();
+        else
+        {
+            print("cant move on it's wrong action");
+        }
     }
 
     public void Start()
@@ -73,6 +78,8 @@ public class GameSequencer : MonoBehaviour
         print(CurrentIndex);
         GameStateAction action = _actions[CurrentIndex];
         if(action.setDay) GameState.Day = action.setDayIndex;
+
+        print("NEXT ACTION");
         
         switch(action.state)
         {
@@ -88,12 +95,15 @@ public class GameSequencer : MonoBehaviour
                         {
                             case 1:
                                 _dialogueController.StartDialogue(action.badSequence);
+                                CurrentIndex++;
                                 return;
                             case 2:
                                 _dialogueController.StartDialogue(action.averageSequence);
+                                CurrentIndex++;
                                 return;
                             case 3:
                                 _dialogueController.StartDialogue(action.goodSequence);
+                                CurrentIndex++;
                                 return;
                         }
                     }
@@ -166,5 +176,26 @@ public class GameSequencer : MonoBehaviour
         ImageShown,
         CharacterMoved,
         Other,
+    }
+
+    private string PrintState(TypeOfState state)
+    {
+        switch (state)
+        {
+            case TypeOfState.BarTending:
+               return "BarTending";
+            case TypeOfState.BlackScreen:
+                return "BlackScreen";
+            case TypeOfState.VisualNovel:
+                return "VisualNovel";
+            case TypeOfState.ImageShown:
+                return "ImageShown";
+            case TypeOfState.CharacterMoved:
+                return "CharacterMoved";
+            case TypeOfState.Other:
+                return "Other";
+        }
+
+        return "bob";
     }
 }

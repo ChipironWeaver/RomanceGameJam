@@ -12,7 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf97113cb3e54717a8245b031f02f2d8, type: 3}
   m_Name: D2 Sequence Waking Up
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: 9cc1234cb9839184ca04ef870cc0f998, type: 2}
+  - {fileID: 11400000, guid: 9888676d722dae645adca1bc1bc11977, type: 2}
+  - {fileID: 11400000, guid: 6453778ff34db1f4284e67d26f93c106, type: 2}
+  - {fileID: 11400000, guid: 9966088c545c5b64885f2265072e2765, type: 2}
+  - {fileID: 11400000, guid: f454775f90bdae4428c3f749dabc0238, type: 2}
+  - {fileID: 11400000, guid: bae1482ec5acdb344911add7ab491dd1, type: 2}
+  - {fileID: 11400000, guid: 561fd5809aac3fc4d9de1bb939f37c95, type: 2}
+  - {fileID: 11400000, guid: 0ca72e2e796f7a54a80f90a5bac7dd0f, type: 2}
+  - {fileID: 11400000, guid: be84a8595150df742855074e2c08709e, type: 2}
+  - {fileID: 11400000, guid: c7d955203d51c7347af2d906ba143b40, type: 2}
+  - {fileID: 11400000, guid: a4b2c0e93bb3d9e4282227a377048f81, type: 2}
+  - {fileID: 11400000, guid: 1993170d48a9bfd41811de8333d2ad4c, type: 2}
+  - {fileID: 11400000, guid: 69c6e2f22dd1d83489c9c5a5be07e3e2, type: 2}
   endEvent:
     m_PersistentCalls:
       m_Calls: []
