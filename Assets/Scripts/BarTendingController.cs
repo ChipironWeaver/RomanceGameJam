@@ -86,6 +86,7 @@ public class BarTendingController : MonoBehaviour
     private int _currentGameState = -1;
     private List<int> _activeDecorationGroups = new List<int>();
     private List<GameObject> _drinkUiList = new List<GameObject>();
+    private List<GameObject> _decorationGroupUiList = new List<GameObject>();
     private List<GameObject> _decorationUiList = new List<GameObject>();
 
     private List<Recipe> _usableRecipes = new List<Recipe>();
@@ -131,8 +132,8 @@ public class BarTendingController : MonoBehaviour
     {
         foreach(GameObject ui in _drinkUiList) Destroy(ui);
         _drinkUiList.Clear();
-        foreach(GameObject ui in _decorationUiList) Destroy(ui);
-        _decorationUiList.Clear();
+        foreach(GameObject ui in _decorationGroupUiList) Destroy(ui);
+        _decorationGroupUiList.Clear();
     }
     
     public void GameplayStart(float day, MainCharacters characters = MainCharacters.None, bool skipDialogue = false,Recipe recipe = null)
@@ -349,7 +350,7 @@ public class BarTendingController : MonoBehaviour
         group.name = "Decoration Panel " + _decorationGroups[index].name + " at " + index;
         UIDrinkReferences uiGroupReferences = group.GetComponent<UIDrinkReferences>();
         uiGroupReferences.nameText.text = _decorationGroups[index].name;
-        _decorationUiList.Add(group);
+        _decorationGroupUiList.Add(group);
         
         
         GameObject removeGroupButton = Instantiate(_decorationPrefab, uiGroupReferences.groupChild.transform);
@@ -369,6 +370,8 @@ public class BarTendingController : MonoBehaviour
             if (_decorationGroups[index].decorations[y].sprite)
                 uiDecoReference.image.sprite = _decorationGroups[index].decorations[y].sprite;
 
+            _decorationUiList.Add(decoration);
+            
             int y1 = y;
             uiDecoReference.button.onClick.AddListener(() => ShowDecoration(FindGroupCount(index) + y1));
             uiDecoReference.button.onClick.AddListener(() => AudioManager.Instance.PlaySfx(_decorationGroups[index].sfxType));
@@ -419,7 +422,7 @@ public class BarTendingController : MonoBehaviour
         
         if(decoration.linkedImage) decoration.linkedImage.color = _uiSelectedColor;
         
-        if(_activeDecorationGroups[groupIndex] != -1) foreach(int y in _decorationGroups[groupIndex].decorations[_activeDecorationGroups[groupIndex]].optionToDisable) _decorationUiList[y].SetActive(true);
+        if(_activeDecorationGroups[groupIndex] != -1) foreach(int y in _decorationGroups[groupIndex].decorations[_activeDecorationGroups[groupIndex]].optionToDisable) _decorationGroupUiList[y].SetActive(true);
         
         else foreach (int y in group.noDecorationState.optionToDisable) _decorationUiList[y].SetActive(true);
         
@@ -474,11 +477,14 @@ public class BarTendingController : MonoBehaviour
             _activeDecorationGroups[index] = -1;
             foreach (int y in _decorationGroups[index].noDecorationState.optionToDisable)
             {
-                print("trying to disable " + y);
+                print("trying to disable " + y + " with decoration count at " + _decorationGroupUiList.Count);
+                
                 if(y < _decorationUiList.Count)
                 {
-                    _decorationUiList[y].SetActive(false);
                     int groupIndex = FindGroupIndex(y);
+                    print("disabling " + y);
+                    print(_decorationGroupUiList[groupIndex].name);
+                    _decorationUiList[y].SetActive(false);
                     blackList ??= new List<int>();
                     if (!blackList.Contains(y))
                     {

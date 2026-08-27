@@ -822,7 +822,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <font-weight="600">Charger un partie
+  m_text: <font-weight="600">Charger une partie
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f49d1a4b50e93b44a24f50efeebee51, type: 2}
   m_sharedMaterial: {fileID: -4793551250725166852, guid: 0f49d1a4b50e93b44a24f50efeebee51, type: 2}
